@@ -1,0 +1,21 @@
+gene_symbol	ensembl_id	category	regulation	confidence	primary_evidence_pmid	notes
+CYP3A4	ENSG00000160868	phase_I_oxidation	induced	A	9784494	Founding PXR target; direct DR3 binding in promoter (Lehmann 1998)
+CYP3A5	ENSG00000106258	phase_I_oxidation	induced	A	11470509	Direct PXR target; shares regulatory architecture with CYP3A4
+CYP2B6	ENSG00000197408	phase_I_oxidation	induced	A	14559847	Direct PXR target; phenobarbital-responsive enhancer module
+CYP2C8	ENSG00000138115	phase_I_oxidation	induced	A	15102540	PXR-regulated; constitutively expressed in liver
+CYP2C9	ENSG00000138109	phase_I_oxidation	induced	A	15102540	PXR-regulated; warfarin metabolism
+CYP1A2	ENSG00000140505	phase_I_oxidation	induced	B	19150975	PXR contributes alongside AhR; cross-talk-dependent
+CYP7A1	ENSG00000167910	phase_I_oxidation	repressed	A	11502817	Bile acid synthesis; PXR represses via competitive binding
+UGT1A1	ENSG00000241635	phase_II_conjugation	induced	A	12867500	Direct PXR target; bilirubin glucuronidation
+UGT1A6	ENSG00000167165	phase_II_conjugation	induced	B	14977870	PXR-responsive; xenobiotic conjugation
+SULT2A1	ENSG00000105398	phase_II_conjugation	induced	A	12183641	Direct PXR target; bile acid sulfation
+GSTA1	ENSG00000243955	phase_II_conjugation	induced	A	16330484	PXR/CAR co-regulated; antioxidant defense
+GSTA2	ENSG00000244067	phase_II_conjugation	induced	B	16330484	Co-regulated with GSTA1
+ABCB1	ENSG00000085563	phase_III_transport	induced	A	11502817	MDR1/P-gp; direct PXR target; major DDI mediator
+ABCC2	ENSG00000023839	phase_III_transport	induced	A	12055180	MRP2; direct PXR target; biliary efflux
+ABCC3	ENSG00000108846	phase_III_transport	induced	A	16204472	MRP3; basolateral efflux; PXR-induced
+SLCO1B1	ENSG00000134538	phase_III_transport	repressed	B	19211799	OATP1B1; PXR represses; statin uptake
+G6PC1	ENSG00000131482	endobiotic_metabolism	repressed	B	17875675	Gluconeogenesis; PXR represses via FOXO1 interference
+PCK1	ENSG00000124253	endobiotic_metabolism	repressed	B	17875675	Gluconeogenesis; PXR represses
+CPT1A	ENSG00000110090	endobiotic_metabolism	repressed	B	17283172	Fatty acid oxidation; PXR represses
+NFKB1	ENSG00000109320	inflammation_crosstalk	repressed	B	16702404	NF-kB p50; PXR-NFkB mutual antagonism

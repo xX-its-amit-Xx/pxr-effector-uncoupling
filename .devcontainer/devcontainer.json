@@ -1,0 +1,29 @@
+{
+  "name": "pxr-effector-uncoupling",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {}
+  },
+  "onCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh",
+  "postCreateCommand": "source $HOME/.local/bin/env && uv sync --extra dev",
+  "remoteEnv": {
+    "PATH": "${containerEnv:PATH}:/root/.local/bin"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "charliermarsh.ruff"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/workspaces/pxr-effector-uncoupling/.venv/bin/python",
+        "jupyter.notebookFileRoot": "${workspaceFolder}"
+      }
+    }
+  },
+  "forwardPorts": [8888],
+  "portsAttributes": {
+    "8888": { "label": "Jupyter Lab" }
+  }
+}
