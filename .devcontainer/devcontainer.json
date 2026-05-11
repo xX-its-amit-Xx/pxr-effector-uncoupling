@@ -1,11 +1,9 @@
 {
   "name": "pxr-effector-uncoupling",
-  "image": "mcr.microsoft.com/devcontainers/python:3.11-bullseye",
-  "features": {
-    "ghcr.io/devcontainers/features/common-utils:2": {}
+  "build": {
+    "dockerfile": "Dockerfile"
   },
-  "onCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh",
-  "postCreateCommand": "source $HOME/.local/bin/env && uv sync --extra dev",
+  "postCreateCommand": "uv sync --extra dev",
   "remoteEnv": {
     "PATH": "${containerEnv:PATH}:/root/.local/bin"
   },
