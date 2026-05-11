@@ -3,6 +3,9 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
+  "features": {
+    "ghcr.io/devcontainers/features/sshd:1": { "version": "latest" }
+  },
   "postCreateCommand": "uv sync --extra dev",
   "remoteEnv": {
     "PATH": "${containerEnv:PATH}:/root/.local/bin"
