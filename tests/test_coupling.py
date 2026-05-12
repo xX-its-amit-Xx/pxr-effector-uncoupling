@@ -22,7 +22,7 @@ def _make_adata(n_cells: int, gene_vals: dict[str, np.ndarray], cell_type: str) 
 def test_perfectly_correlated():
     """NR1I2 and PERFECT_GENE are identical → ρ ≈ 1."""
     rng = np.random.default_rng(0)
-    nr = rng.normal(size=300)
+    nr = np.abs(rng.normal(size=300)) + 0.1
     adata = _make_adata(300, {NR1I2_SYMBOL: nr, "PERFECT_GENE": nr}, "cell_type_A")
     result = coupling_per_cell_type(adata, ["PERFECT_GENE"], cells_per_metacell=10, min_metacells=5)
     assert "cell_type_A" in result.index
@@ -33,9 +33,12 @@ def test_perfectly_correlated():
 def test_uncorrelated():
     """NR1I2 and RANDOM_GENE are independent → |ρ| small."""
     rng = np.random.default_rng(1)
-    nr = rng.normal(size=300)
-    rand = rng.normal(size=300)
-    adata = _make_adata(300, {NR1I2_SYMBOL: nr, "RANDOM_GENE": rand}, "cell_type_B")
+    nr = np.abs(rng.normal(size=300)) + 0.1
+    rand = np.abs(rng.normal(size=300)) + 0.1
+    # Extra noise genes give PCA genuine structure so k-means avoids spurious correlation
+    noise = {f"NOISE_{i}": np.abs(rng.normal(size=300)) + 0.1 for i in range(10)}
+    gene_vals = {NR1I2_SYMBOL: nr, "RANDOM_GENE": rand, **noise}
+    adata = _make_adata(300, gene_vals, "cell_type_B")
     result = coupling_per_cell_type(adata, ["RANDOM_GENE"], cells_per_metacell=10, min_metacells=5)
     assert "cell_type_B" in result.index
     rho = result.loc["cell_type_B", "RANDOM_GENE"]
@@ -45,11 +48,11 @@ def test_uncorrelated():
 def test_decoupling_score():
     """Decoupling score = ρ_hepatocyte − ρ_other."""
     rng = np.random.default_rng(2)
-    nr_hep = rng.normal(size=300)
-    nr_other = rng.normal(size=300)
+    nr_hep = np.abs(rng.normal(size=300)) + 0.1
+    nr_other = np.abs(rng.normal(size=300)) + 0.1
 
     adata_hep = _make_adata(300, {NR1I2_SYMBOL: nr_hep, "TARGET": nr_hep}, "hepatocyte")
-    adata_other = _make_adata(300, {NR1I2_SYMBOL: nr_other, "TARGET": rng.normal(size=300)}, "other_ct")
+    adata_other = _make_adata(300, {NR1I2_SYMBOL: nr_other, "TARGET": np.abs(rng.normal(size=300)) + 0.1}, "other_ct")
 
     import anndata
     combined = anndata.concat([adata_hep, adata_other])

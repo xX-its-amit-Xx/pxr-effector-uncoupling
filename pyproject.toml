@@ -38,3 +38,8 @@ src = ["src"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I"]
+
+[tool.uv]
+override-dependencies = [
+    "scikit-learn<1.7",
+]
