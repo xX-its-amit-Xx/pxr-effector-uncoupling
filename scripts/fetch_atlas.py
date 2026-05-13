@@ -80,7 +80,29 @@ def main() -> None:
     keep = counts[counts >= MIN_CELLS_PER_TYPE].index
     adata = adata[adata.obs["cell_type"].isin(keep)].copy()
     log.info(
-        "After filter: %d cells, %d cell types",
+        "After min-cells filter: %d cells, %d cell types",
+        adata.n_obs,
+        adata.obs["cell_type"].nunique(),
+    )
+
+    # Subsample to at most MAX_CELLS_PER_TYPE per cell type to keep H5AD < 100 MB.
+    # 5000 cells per type >> the 600 needed for stable metacell correlations.
+    MAX_CELLS_PER_TYPE = 5000
+    import numpy as np
+
+    rng = np.random.default_rng(42)
+    idx = []
+    for ct, grp in adata.obs.groupby("cell_type"):
+        n = len(grp)
+        if n > MAX_CELLS_PER_TYPE:
+            chosen = rng.choice(grp.index, size=MAX_CELLS_PER_TYPE, replace=False)
+        else:
+            chosen = grp.index.values
+        idx.extend(chosen.tolist())
+    adata = adata[idx].copy()
+    log.info(
+        "After subsample (max %d/type): %d cells, %d cell types",
+        MAX_CELLS_PER_TYPE,
         adata.n_obs,
         adata.obs["cell_type"].nunique(),
     )
