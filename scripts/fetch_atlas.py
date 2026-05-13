@@ -48,8 +48,8 @@ def main() -> None:
     log.info("Cell types: %s", cell_types)
 
     value_filter = (
-        "is_primary_data == True && organism_ontology_term_id == 'NCBITaxon:9606'"
-        f" && cell_type in {cell_types!r}"
+        "is_primary_data == True and organism_ontology_term_id == 'NCBITaxon:9606'"
+        f" and cell_type in {cell_types!r}"
     )
 
     log.info("Opening Census version %s", CENSUS_VERSION)

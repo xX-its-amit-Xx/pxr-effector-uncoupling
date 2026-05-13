@@ -73,13 +73,13 @@ def fetch_expression(
     if NR1I2_ENSEMBL not in gene_ensembl_ids:
         gene_ensembl_ids = [NR1I2_ENSEMBL] + list(gene_ensembl_ids)
 
-    value_filter = "is_primary_data == True && organism_ontology_term_id == 'NCBITaxon:9606'"
+    value_filter = "is_primary_data == True and organism_ontology_term_id == 'NCBITaxon:9606'"
     if tissues:
         tissue_str = str(tissues)
-        value_filter += f" && tissue_general in {tissue_str}"
+        value_filter += f" and tissue_general in {tissue_str}"
     if cell_types:
         ct_str = str(cell_types)
-        value_filter += f" && cell_type in {ct_str}"
+        value_filter += f" and cell_type in {ct_str}"
 
     log.info("Opening Census version %s", CENSUS_VERSION)
     with cellxgene_census.open_soma(census_version=CENSUS_VERSION) as census:
