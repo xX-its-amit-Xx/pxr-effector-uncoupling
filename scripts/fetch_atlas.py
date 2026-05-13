@@ -47,10 +47,9 @@ def main() -> None:
     log.info("Fetching %d genes for %d curated cell types", len(ensembl_ids), len(cell_types))
     log.info("Cell types: %s", cell_types)
 
-    value_filter = (
-        "is_primary_data == True and organism_ontology_term_id == 'NCBITaxon:9606'"
-        f" and cell_type in {cell_types!r}"
-    )
+    # organism_ontology_term_id is not in per-organism obs; organism is already
+    # scoped by the organism= argument to get_anndata().
+    value_filter = f"is_primary_data == True and cell_type in {cell_types!r}"
 
     log.info("Opening Census version %s", CENSUS_VERSION)
     with cellxgene_census.open_soma(census_version=CENSUS_VERSION) as census:
