@@ -1,5 +1,8 @@
 data/raw/
-data/processed/
+# processed CSVs and figures are committed as project outputs
+!data/processed/*.csv
+data/processed/*
+!data/processed/
 *.h5ad
 *.h5
 .venv/
