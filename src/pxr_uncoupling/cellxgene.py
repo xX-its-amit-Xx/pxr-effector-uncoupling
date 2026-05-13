@@ -90,18 +90,9 @@ def fetch_expression(
             obs_column_names=["cell_type", "tissue_general", "donor_id", "dataset_id"],
         )
 
-    # swap var_names from Ensembl IDs to gene symbols
-    id_to_sym = dict(zip(adata.var["feature_id"], adata.var["feature_name"]))
-    adata.var_names = [id_to_sym.get(g, g) for g in adata.var_names]
+    # tiledbsoma 2.x uses integer soma IDs as var index; use feature_name directly.
+    adata.var_names = adata.var["feature_name"].tolist()
     adata.var.index.name = "gene_symbol"
-
-    # rename NR1I2 var_name if Census uses a different alias
-    if NR1I2_SYMBOL not in adata.var_names:
-        # try to locate it by feature_id
-        nr_mask = adata.var["feature_id"] == NR1I2_ENSEMBL
-        if nr_mask.any():
-            old_name = adata.var_names[nr_mask][0]
-            adata.var_names = [NR1I2_SYMBOL if n == old_name else n for n in adata.var_names]
 
     # drop under-represented cell types
     counts = adata.obs["cell_type"].value_counts()

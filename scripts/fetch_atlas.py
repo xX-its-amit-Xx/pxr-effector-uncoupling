@@ -64,16 +64,10 @@ def main() -> None:
 
     log.info("Raw fetch: %d cells x %d genes", adata.n_obs, adata.n_vars)
 
-    # Rename var_names from Ensembl IDs to gene symbols
-    id_to_sym = dict(zip(adata.var["feature_id"], adata.var["feature_name"]))
-    adata.var_names = [id_to_sym.get(g, g) for g in adata.var_names]
+    # tiledbsoma 2.x uses integer soma IDs as var index; rename to gene symbols directly.
+    adata.var_names = adata.var["feature_name"].tolist()
     adata.var.index.name = "gene_symbol"
-
-    if NR1I2_SYMBOL not in adata.var_names:
-        nr_mask = adata.var["feature_id"] == NR1I2_ENSEMBL
-        if nr_mask.any():
-            old_name = adata.var_names[nr_mask][0]
-            adata.var_names = [NR1I2_SYMBOL if n == old_name else n for n in adata.var_names]
+    log.info("Gene symbols: %s", adata.var_names)
 
     # Drop under-represented cell types
     counts = adata.obs["cell_type"].value_counts()
