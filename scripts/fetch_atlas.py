@@ -35,11 +35,23 @@ def load_target_genes() -> pd.DataFrame:
     return pd.read_csv(DATA_TARGETS / "pxr_canonical_targets.tsv", sep="\t")
 
 
+def load_negative_control_genes() -> pd.DataFrame:
+    path = DATA_TARGETS / "negative_control_genes.tsv"
+    if not path.exists():
+        return pd.DataFrame(columns=["gene_symbol", "ensembl_id", "category", "rationale"])
+    return pd.read_csv(path, sep="\t")
+
+
 def main() -> None:
     targets = load_target_genes()
+    controls = load_negative_control_genes()
     ensembl_ids = targets["ensembl_id"].tolist()
     if NR1I2_ENSEMBL not in ensembl_ids:
         ensembl_ids = [NR1I2_ENSEMBL] + ensembl_ids
+    if not controls.empty:
+        control_ids = [g for g in controls["ensembl_id"].tolist() if g not in ensembl_ids]
+        ensembl_ids = ensembl_ids + control_ids
+        log.info("Including %d negative-control genes in fetch", len(control_ids))
 
     cell_types = list(CELL_TYPE_TISSUE_MAP.keys())
     log.info("Fetching %d genes for %d curated cell types", len(ensembl_ids), len(cell_types))
