@@ -90,7 +90,7 @@ def main() -> None:
     )
 
     FIGURES.mkdir(parents=True, exist_ok=True)
-    fig = decoupling_heatmap(
+    decoupling_heatmap(
         coupling_df=coupling,
         target_meta=target_meta,
         cell_type_tissue_map=CELL_TYPE_TISSUE_MAP,

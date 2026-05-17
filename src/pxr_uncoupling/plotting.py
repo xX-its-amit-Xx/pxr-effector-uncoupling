@@ -5,7 +5,6 @@ from __future__ import annotations
 from pathlib import Path
 
 import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
 import seaborn as sns
 from matplotlib.colors import TwoSlopeNorm
@@ -51,9 +50,7 @@ def decoupling_heatmap(
 
     # order genes by category
     gene_order = (
-        target_meta.sort_values("category")
-        .index.intersection(coupling_df.columns)
-        .tolist()
+        target_meta.sort_values("category").index.intersection(coupling_df.columns).tolist()
     )
     # order cell types by tissue
     ct_order = sorted(
@@ -70,9 +67,7 @@ def decoupling_heatmap(
     ax.set_facecolor(COLOR_CREAM)
 
     norm = TwoSlopeNorm(vmin=-1, vcenter=0, vmax=1)
-    cmap = sns.diverging_palette(
-        h_neg=20, h_pos=145, s=60, l=45, sep=1, as_cmap=True
-    )
+    cmap = sns.diverging_palette(h_neg=20, h_pos=145, s=60, l=45, sep=1, as_cmap=True)
 
     sns.heatmap(
         plot_df,
@@ -91,9 +86,7 @@ def decoupling_heatmap(
             if gene in target_meta.index:
                 reg = target_meta.loc[gene, "regulation"]
                 color = COLOR_ACCENT if reg == "induced" else COLOR_SAGE
-                ax.add_patch(
-                    plt.Rectangle((-0.5, i), 0.4, 1, color=color, clip_on=False)
-                )
+                ax.add_patch(plt.Rectangle((-0.5, i), 0.4, 1, color=color, clip_on=False))
 
     # column annotations: disease category
     if disease_annotations:

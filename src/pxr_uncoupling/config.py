@@ -13,10 +13,10 @@ NR1I2_ENSEMBL = "ENSG00000144852"
 NR1I2_SYMBOL = "NR1I2"
 
 # ── analysis thresholds ───────────────────────────────────────────────────────
-MIN_CELLS_PER_TYPE = 50          # drop cell types below this
-MIN_DETECTION_FRACTION = 0.05    # NR1I2 > 0 in at least this fraction
-TARGET_CELLS_PER_METACELL = 30   # k-means target
-MIN_METACELLS = 20               # drop cell type if fewer metacells than this
+MIN_CELLS_PER_TYPE = 50  # drop cell types below this
+MIN_DETECTION_FRACTION = 0.05  # NR1I2 > 0 in at least this fraction
+TARGET_CELLS_PER_METACELL = 30  # k-means target
+MIN_METACELLS = 20  # drop cell type if fewer metacells than this
 
 # ── curated cell types to query ───────────────────────────────────────────────
 # Cell Ontology labels as they appear in CELLxGENE Census obs.cell_type.

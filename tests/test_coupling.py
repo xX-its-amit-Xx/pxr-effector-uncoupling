@@ -3,11 +3,10 @@
 import numpy as np
 import pandas as pd
 import pytest
-import scipy.sparse as sp
 from anndata import AnnData
 
-from pxr_uncoupling.coupling import build_metacells, coupling_per_cell_type, decoupling_score
 from pxr_uncoupling.config import NR1I2_SYMBOL
+from pxr_uncoupling.coupling import coupling_per_cell_type, decoupling_score
 
 
 def _make_adata(n_cells: int, gene_vals: dict[str, np.ndarray], cell_type: str) -> AnnData:
@@ -51,10 +50,16 @@ def test_decoupling_score():
     nr_hep = np.abs(rng.normal(size=300)) + 0.1
     nr_other = np.abs(rng.normal(size=300)) + 0.1
 
+    target_other = np.abs(rng.normal(size=300)) + 0.1
     adata_hep = _make_adata(300, {NR1I2_SYMBOL: nr_hep, "TARGET": nr_hep}, "hepatocyte")
-    adata_other = _make_adata(300, {NR1I2_SYMBOL: nr_other, "TARGET": np.abs(rng.normal(size=300)) + 0.1}, "other_ct")
+    adata_other = _make_adata(
+        300,
+        {NR1I2_SYMBOL: nr_other, "TARGET": target_other},
+        "other_ct",
+    )
 
     import anndata
+
     combined = anndata.concat([adata_hep, adata_other])
 
     coupling = coupling_per_cell_type(combined, ["TARGET"], cells_per_metacell=10, min_metacells=5)

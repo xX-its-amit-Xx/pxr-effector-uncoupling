@@ -1,0 +1,57 @@
+cff-version: 1.2.0
+title: "pxr-effector-uncoupling: cell-type-resolved coupling of PXR (NR1I2) target genes"
+message: "If you use this software or its results, please cite as below."
+type: software
+authors:
+  - family-names: Shenoy
+    given-names: Amit
+    email: shenoy.am@husky.neu.edu
+repository-code: "https://github.com/ashenoy00000/pxr-effector-uncoupling"
+abstract: >-
+  A reproducible analysis identifying hepatocyte-selective coupling of canonical
+  PXR (NR1I2) target genes across 10 human cell types using ~47,000 single cells
+  from the CELLxGENE Census. Uses metacell-aggregated Spearman correlations,
+  permutation-based significance, BH-FDR control, and a parameter sensitivity
+  sweep. Nominates CYP2C8, CYP2C9, SLCO1B1, ABCC2 and CYP3A5 as candidate
+  hepatocyte-selective pharmacodynamic readouts for PXR modulators.
+keywords:
+  - PXR
+  - NR1I2
+  - single-cell
+  - CELLxGENE
+  - pharmacology
+  - drug-drug interactions
+  - hepatocyte
+license: MIT
+date-released: "2026-05-17"
+version: "0.2.0"
+references:
+  - type: article
+    title: "The human orphan nuclear receptor PXR is activated by compounds that regulate CYP3A4 gene expression and cause drug interactions"
+    authors:
+      - family-names: Lehmann
+        given-names: J. M.
+    journal: "Journal of Clinical Investigation"
+    year: 1998
+    volume: 102
+    issue: 5
+    start: 1016
+    end: 1023
+    doi: "10.1172/JCI3703"
+  - type: article
+    title: "MetaCell: analysis of single-cell RNA-seq data using K-nn graph partitions"
+    authors:
+      - family-names: Baran
+        given-names: Y.
+    journal: "Genome Biology"
+    year: 2019
+    volume: 20
+    start: 206
+    doi: "10.1186/s13059-019-1812-2"
+  - type: article
+    title: "CZ CELLxGENE Discover: A single-cell data platform for scalable exploration, analysis and modeling of aggregated data"
+    authors:
+      - name: "CZI Single-Cell Biology Program"
+    journal: "bioRxiv"
+    year: 2023
+    doi: "10.1101/2023.10.30.563174"

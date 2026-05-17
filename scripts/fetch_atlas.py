@@ -19,18 +19,16 @@ log = logging.getLogger(__name__)
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 import cellxgene_census  # noqa: E402
-import anndata  # noqa: E402
+import pandas as pd  # noqa: E402
 
 from pxr_uncoupling.config import (  # noqa: E402
-    CENSUS_VERSION,
     CELL_TYPE_TISSUE_MAP,
-    NR1I2_ENSEMBL,
-    NR1I2_SYMBOL,
+    CENSUS_VERSION,
     DATA_RAW,
     DATA_TARGETS,
     MIN_CELLS_PER_TYPE,
+    NR1I2_ENSEMBL,
 )
-import pandas as pd  # noqa: E402
 
 
 def load_target_genes() -> pd.DataFrame:

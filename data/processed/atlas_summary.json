@@ -1,0 +1,43 @@
+{
+  "n_cells_total": 46884,
+  "n_genes": 21,
+  "n_cell_types": 10,
+  "n_datasets": 168,
+  "n_donors": 3326,
+  "cells_per_cell_type": {
+    "CD4-positive, alpha-beta T cell": 5000,
+    "CD8-positive, alpha-beta T cell": 5000,
+    "enterocyte of epithelium of large intestine": 5000,
+    "enterocyte of epithelium of small intestine": 5000,
+    "extravillous trophoblast": 5000,
+    "hepatocyte": 5000,
+    "macrophage": 5000,
+    "monocyte": 5000,
+    "natural killer cell": 5000,
+    "intestinal crypt stem cell": 1884
+  },
+  "donors_per_cell_type": {
+    "CD4-positive, alpha-beta T cell": 1000,
+    "CD8-positive, alpha-beta T cell": 1074,
+    "enterocyte of epithelium of large intestine": 8,
+    "enterocyte of epithelium of small intestine": 4,
+    "extravillous trophoblast": 58,
+    "hepatocyte": 76,
+    "intestinal crypt stem cell": 27,
+    "macrophage": 971,
+    "monocyte": 815,
+    "natural killer cell": 1705
+  },
+  "datasets_per_cell_type": {
+    "CD4-positive, alpha-beta T cell": 57,
+    "CD8-positive, alpha-beta T cell": 41,
+    "enterocyte of epithelium of large intestine": 2,
+    "enterocyte of epithelium of small intestine": 2,
+    "extravillous trophoblast": 6,
+    "hepatocyte": 10,
+    "intestinal crypt stem cell": 2,
+    "macrophage": 89,
+    "monocyte": 60,
+    "natural killer cell": 95
+  }
+}

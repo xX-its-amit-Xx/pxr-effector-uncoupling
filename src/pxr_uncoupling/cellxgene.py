@@ -7,19 +7,14 @@ from pathlib import Path
 
 import anndata as ad
 import cellxgene_census
-import numpy as np
 import pandas as pd
-import pyarrow.parquet as pq
 
 from .config import (
     CENSUS_VERSION,
-    DATA_PROCESSED,
     DATA_RAW,
     DATA_TARGETS,
     MIN_CELLS_PER_TYPE,
     NR1I2_ENSEMBL,
-    NR1I2_SYMBOL,
-    TISSUES_OF_INTEREST,
 )
 
 log = logging.getLogger(__name__)
@@ -98,7 +93,11 @@ def fetch_expression(
     counts = adata.obs["cell_type"].value_counts()
     keep = counts[counts >= min_cells_per_type].index
     adata = adata[adata.obs["cell_type"].isin(keep)].copy()
-    log.info("After cell type filter: %d cells, %d cell types", adata.n_obs, adata.obs["cell_type"].nunique())
+    log.info(
+        "After cell type filter: %d cells, %d cell types",
+        adata.n_obs,
+        adata.obs["cell_type"].nunique(),
+    )
 
     return adata
 

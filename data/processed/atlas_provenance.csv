@@ -1,0 +1,365 @@
+cell_type,dataset_id,n_cells,n_donors
+"CD4-positive, alpha-beta T cell",218acb0f-9f2f-4f76-b90b-15a4b7c7f629,1197,239
+"CD4-positive, alpha-beta T cell",ebc2e1ff-c8f9-466a-acf4-9d291afaf8b3,883,115
+"CD4-positive, alpha-beta T cell",1e6a6ef9-7ec9-4c90-bbfb-2ad3c3165fd1,533,116
+"CD4-positive, alpha-beta T cell",01ad3cd7-3929-4654-84c0-6db05bd5fd59,521,71
+"CD4-positive, alpha-beta T cell",53d208b0-2cfd-4366-9866-c3c6114081bc,327,14
+"CD4-positive, alpha-beta T cell",242c6e7f-9016-4048-af70-d631f5eea188,216,14
+"CD4-positive, alpha-beta T cell",9f222629-9e39-47d0-b83f-e08d610c7479,195,98
+"CD4-positive, alpha-beta T cell",bd65a70f-b274-4133-b9dd-0d1431b6af34,96,6
+"CD4-positive, alpha-beta T cell",a37f857c-779f-464e-9310-3db43a1811e7,83,33
+"CD4-positive, alpha-beta T cell",b0e547f0-462b-4f81-b31b-5b0a5d96f537,77,68
+"CD4-positive, alpha-beta T cell",9fddb063-056d-4202-8b8a-4b0ee531d3ce,74,20
+"CD4-positive, alpha-beta T cell",5af90777-6760-4003-9dba-8f945fec6fdf,71,10
+"CD4-positive, alpha-beta T cell",19e46756-9100-4e01-8b0e-23b557558a4c,61,18
+"CD4-positive, alpha-beta T cell",01209dce-3575-4bed-b1df-129f57fbc031,52,4
+"CD4-positive, alpha-beta T cell",29244e1d-02e6-4133-b411-516ef7474638,49,8
+"CD4-positive, alpha-beta T cell",7c497c66-c2e2-4291-8b96-339e5e65f314,45,1
+"CD4-positive, alpha-beta T cell",8fbed309-d3d4-441b-b3ff-e2dcbcec2d35,42,12
+"CD4-positive, alpha-beta T cell",644a578d-ffdc-446b-9679-e7ab4c919c13,40,5
+"CD4-positive, alpha-beta T cell",518d9049-2a76-44f8-8abc-1e2b59ab5ba1,39,13
+"CD4-positive, alpha-beta T cell",cda2c8cd-be1c-42e5-b2cd-162caa1c4ce7,39,15
+"CD4-positive, alpha-beta T cell",b6b5ea88-e092-46e4-b9c5-e93b52d5c195,33,8
+"CD4-positive, alpha-beta T cell",b61a921b-7fa3-4b42-b455-aaaf32447920,31,8
+"CD4-positive, alpha-beta T cell",7b20c613-9add-43d1-87e9-defd3d9b9f8c,28,6
+"CD4-positive, alpha-beta T cell",2672b679-8048-4f5e-9786-f1b196ccfd08,25,5
+"CD4-positive, alpha-beta T cell",80a2c5b6-02e7-4fc0-9f12-179f5247c1bc,25,5
+"CD4-positive, alpha-beta T cell",d8da613f-e681-4c69-b463-e94f5e66847f,24,14
+"CD4-positive, alpha-beta T cell",842c6f5d-4a94-4eef-8510-8c792d1124bc,22,16
+"CD4-positive, alpha-beta T cell",02792605-4760-4023-82ad-40fc4458a5db,19,5
+"CD4-positive, alpha-beta T cell",fa8605cf-f27e-44af-ac2a-476bee4410d3,19,8
+"CD4-positive, alpha-beta T cell",7b55fe5c-d5c8-48e0-a1a3-54c5b9074f3f,16,1
+"CD4-positive, alpha-beta T cell",350237e0-9f48-4cbd-9140-3b44495549f3,13,4
+"CD4-positive, alpha-beta T cell",b3c9904b-2ffd-4038-8620-ee1c5b072e9c,11,3
+"CD4-positive, alpha-beta T cell",df1edb87-e512-43ae-b5f4-cb179cfc2bb4,11,7
+"CD4-positive, alpha-beta T cell",17e9d436-a264-4c94-a42d-48c8daf6fdd9,9,1
+"CD4-positive, alpha-beta T cell",8e47ed12-c658-4252-b126-381df8d52a3d,8,5
+"CD4-positive, alpha-beta T cell",43560d7c-acd6-4ede-830d-c9ffc6cd0862,7,4
+"CD4-positive, alpha-beta T cell",9ea768a2-87ab-46b6-a73d-c4e915f25af3,7,4
+"CD4-positive, alpha-beta T cell",68b6114f-e990-4033-bfb3-c35536633aaa,5,3
+"CD4-positive, alpha-beta T cell",c0fb0d06-225b-4611-b802-d2f34b438a29,5,1
+"CD4-positive, alpha-beta T cell",c54c9659-1b6b-4d4a-96f0-7dc987410f2d,5,1
+"CD4-positive, alpha-beta T cell",3faad104-2ab8-4434-816d-474d8d2641db,4,4
+"CD4-positive, alpha-beta T cell",b07fb54c-d7ad-4995-8bb0-8f3d8611cabe,4,3
+"CD4-positive, alpha-beta T cell",1873a18a-66fd-4a4d-8277-a872c93f5b59,3,2
+"CD4-positive, alpha-beta T cell",2872f4b0-b171-46e2-abc6-befcf6de6306,3,1
+"CD4-positive, alpha-beta T cell",2ac76f1b-43ef-4271-8686-2f165570989f,3,1
+"CD4-positive, alpha-beta T cell",3dc61ca1-ce40-46b6-8337-f27260fd9a03,3,3
+"CD4-positive, alpha-beta T cell",456e8b9b-f872-488b-871d-94534090a865,3,1
+"CD4-positive, alpha-beta T cell",c7775e88-49bf-4ba2-a03b-93f00447c958,3,3
+"CD4-positive, alpha-beta T cell",9c1b5626-58df-4401-ae7b-f66d068c1551,2,1
+"CD4-positive, alpha-beta T cell",a82c43bb-a703-446d-aa24-049bf013121f,2,1
+"CD4-positive, alpha-beta T cell",1a2e3350-28a8-4f49-b33c-5b67ceb001f6,1,1
+"CD4-positive, alpha-beta T cell",3f6ab2aa-6c63-4753-b652-3a9b9e7c8ee5,1,1
+"CD4-positive, alpha-beta T cell",59632ec0-6f10-48c6-af79-81024e84843e,1,1
+"CD4-positive, alpha-beta T cell",7f7faf6b-f11d-4f07-bc1c-188a4472748d,1,1
+"CD4-positive, alpha-beta T cell",d18736c3-6292-4379-919a-d6d973204c87,1,1
+"CD4-positive, alpha-beta T cell",d7dcfd8f-2ee7-4385-b9ac-e074c23ed190,1,1
+"CD4-positive, alpha-beta T cell",ed5d841d-6346-47d4-ab2f-7119ad7e3a35,1,1
+"CD8-positive, alpha-beta T cell",9dbab10c-118d-496b-966a-67f1763a6b7d,1301,167
+"CD8-positive, alpha-beta T cell",218acb0f-9f2f-4f76-b90b-15a4b7c7f629,921,235
+"CD8-positive, alpha-beta T cell",1e6a6ef9-7ec9-4c90-bbfb-2ad3c3165fd1,435,115
+"CD8-positive, alpha-beta T cell",01ad3cd7-3929-4654-84c0-6db05bd5fd59,409,62
+"CD8-positive, alpha-beta T cell",ebc2e1ff-c8f9-466a-acf4-9d291afaf8b3,363,97
+"CD8-positive, alpha-beta T cell",9f222629-9e39-47d0-b83f-e08d610c7479,296,131
+"CD8-positive, alpha-beta T cell",53d208b0-2cfd-4366-9866-c3c6114081bc,283,18
+"CD8-positive, alpha-beta T cell",5af90777-6760-4003-9dba-8f945fec6fdf,240,11
+"CD8-positive, alpha-beta T cell",242c6e7f-9016-4048-af70-d631f5eea188,134,13
+"CD8-positive, alpha-beta T cell",a37f857c-779f-464e-9310-3db43a1811e7,106,32
+"CD8-positive, alpha-beta T cell",19e46756-9100-4e01-8b0e-23b557558a4c,62,18
+"CD8-positive, alpha-beta T cell",9fddb063-056d-4202-8b8a-4b0ee531d3ce,43,16
+"CD8-positive, alpha-beta T cell",cda2c8cd-be1c-42e5-b2cd-162caa1c4ce7,43,14
+"CD8-positive, alpha-beta T cell",29244e1d-02e6-4133-b411-516ef7474638,32,7
+"CD8-positive, alpha-beta T cell",b6b5ea88-e092-46e4-b9c5-e93b52d5c195,32,10
+"CD8-positive, alpha-beta T cell",fa8605cf-f27e-44af-ac2a-476bee4410d3,29,9
+"CD8-positive, alpha-beta T cell",01209dce-3575-4bed-b1df-129f57fbc031,23,3
+"CD8-positive, alpha-beta T cell",02792605-4760-4023-82ad-40fc4458a5db,21,5
+"CD8-positive, alpha-beta T cell",518d9049-2a76-44f8-8abc-1e2b59ab5ba1,21,12
+"CD8-positive, alpha-beta T cell",7f7faf6b-f11d-4f07-bc1c-188a4472748d,20,1
+"CD8-positive, alpha-beta T cell",b0e547f0-462b-4f81-b31b-5b0a5d96f537,19,17
+"CD8-positive, alpha-beta T cell",de2c780c-1747-40bd-9ccf-9588ec186cee,18,9
+"CD8-positive, alpha-beta T cell",d8da613f-e681-4c69-b463-e94f5e66847f,17,9
+"CD8-positive, alpha-beta T cell",b61a921b-7fa3-4b42-b455-aaaf32447920,16,8
+"CD8-positive, alpha-beta T cell",8fbed309-d3d4-441b-b3ff-e2dcbcec2d35,14,8
+"CD8-positive, alpha-beta T cell",7c497c66-c2e2-4291-8b96-339e5e65f314,13,1
+"CD8-positive, alpha-beta T cell",2872f4b0-b171-46e2-abc6-befcf6de6306,12,4
+"CD8-positive, alpha-beta T cell",644a578d-ffdc-446b-9679-e7ab4c919c13,11,4
+"CD8-positive, alpha-beta T cell",80a2c5b6-02e7-4fc0-9f12-179f5247c1bc,10,4
+"CD8-positive, alpha-beta T cell",b3c9904b-2ffd-4038-8620-ee1c5b072e9c,8,4
+"CD8-positive, alpha-beta T cell",43560d7c-acd6-4ede-830d-c9ffc6cd0862,7,5
+"CD8-positive, alpha-beta T cell",13b61a7d-5605-4948-ba48-02c588960143,6,5
+"CD8-positive, alpha-beta T cell",99950e99-2758-41d2-b2c9-643edcdf6d82,6,5
+"CD8-positive, alpha-beta T cell",c7775e88-49bf-4ba2-a03b-93f00447c958,6,6
+"CD8-positive, alpha-beta T cell",2ac76f1b-43ef-4271-8686-2f165570989f,5,1
+"CD8-positive, alpha-beta T cell",9ea768a2-87ab-46b6-a73d-c4e915f25af3,5,1
+"CD8-positive, alpha-beta T cell",b07fb54c-d7ad-4995-8bb0-8f3d8611cabe,5,3
+"CD8-positive, alpha-beta T cell",350237e0-9f48-4cbd-9140-3b44495549f3,3,3
+"CD8-positive, alpha-beta T cell",7b55fe5c-d5c8-48e0-a1a3-54c5b9074f3f,2,1
+"CD8-positive, alpha-beta T cell",8e47ed12-c658-4252-b126-381df8d52a3d,2,2
+"CD8-positive, alpha-beta T cell",d7dcfd8f-2ee7-4385-b9ac-e074c23ed190,1,1
+enterocyte of epithelium of large intestine,53d208b0-2cfd-4366-9866-c3c6114081bc,3469,5
+enterocyte of epithelium of large intestine,019c7af2-c827-4454-9970-44d5e39ce068,1531,3
+enterocyte of epithelium of small intestine,b6ee0939-b5b9-4e03-9d69-96fb6bf5d434,2827,1
+enterocyte of epithelium of small intestine,019c7af2-c827-4454-9970-44d5e39ce068,2173,3
+extravillous trophoblast,b7efc0ba-9136-4f3f-adb2-d07849e59a3d,2102,5
+extravillous trophoblast,ab326369-b63c-48d8-8a7f-82ffa0df7002,1026,5
+extravillous trophoblast,74cff64f-9da9-4b2a-9b3b-8a04a1598040,885,17
+extravillous trophoblast,3966ba97-beb8-4d0b-9954-d3775cd2cd61,513,10
+extravillous trophoblast,5bc42b88-bb76-4954-927b-8bb7369adc64,340,13
+extravillous trophoblast,f7c1c579-2dc0-47e2-ba19-8165c5a0e353,134,8
+hepatocyte,34f5307e-7b4d-4a48-b68f-2ba844c6414b,3004,14
+hepatocyte,fd072bc3-2dfb-46f8-b4e3-467cb3223182,615,14
+hepatocyte,e84f2780-51e8-4cfa-8aa0-13bbfef677c7,513,3
+hepatocyte,53d208b0-2cfd-4366-9866-c3c6114081bc,351,4
+hepatocyte,ec6ceff8-c8bc-488d-b6bf-30df2fa92169,324,2
+hepatocyte,76af615b-12fe-4ebb-b8c6-239ad29e26e3,98,17
+hepatocyte,6c87755e-a671-41a8-9c7e-4e43b850a57b,46,12
+hepatocyte,4ce8d8ec-b94c-4b79-afcb-b094336d8a78,18,7
+hepatocyte,9968be68-ab65-4a38-9e1a-c9b6abece194,18,2
+hepatocyte,02792605-4760-4023-82ad-40fc4458a5db,13,6
+intestinal crypt stem cell,8e47ed12-c658-4252-b126-381df8d52a3d,1190,15
+intestinal crypt stem cell,4dd00779-7f73-4f50-89bb-e2d3c6b71b18,694,12
+macrophage,56c4912d-2bae-4b64-98f2-af8a84389208,1264,140
+macrophage,fd072bc3-2dfb-46f8-b4e3-467cb3223182,551,19
+macrophage,1e6a6ef9-7ec9-4c90-bbfb-2ad3c3165fd1,325,107
+macrophage,53d208b0-2cfd-4366-9866-c3c6114081bc,319,16
+macrophage,72955cdb-bd92-4135-aa52-21f33f9640db,181,44
+macrophage,2adb1f8a-a6b1-4909-8ee8-484814e2d4bf,160,30
+macrophage,34f5307e-7b4d-4a48-b68f-2ba844c6414b,136,25
+macrophage,a37f857c-779f-464e-9310-3db43a1811e7,132,30
+macrophage,74cff64f-9da9-4b2a-9b3b-8a04a1598040,123,21
+macrophage,6c87755e-a671-41a8-9c7e-4e43b850a57b,110,24
+macrophage,5af90777-6760-4003-9dba-8f945fec6fdf,99,10
+macrophage,ca46ffe6-0a26-4d8d-82fa-81722daf1102,96,17
+macrophage,43245158-5ae1-4e71-a9a6-67eef49c26bc,93,6
+macrophage,d4e69e01-3ba2-4d6b-a15d-e7048f78f22e,77,14
+macrophage,f1606894-59df-4794-a37f-baa7c6fb6de1,71,30
+macrophage,518d9049-2a76-44f8-8abc-1e2b59ab5ba1,64,19
+macrophage,f0f0d7c4-3bec-428e-9539-c99d36548d96,51,5
+macrophage,d8da613f-e681-4c69-b463-e94f5e66847f,47,24
+macrophage,3966ba97-beb8-4d0b-9954-d3775cd2cd61,46,10
+macrophage,4ed927e9-c099-49af-b8ce-a2652d069333,46,9
+macrophage,576f193c-75d0-4a11-bd25-8676587e6dc2,46,19
+macrophage,821a8e3e-87ec-41ee-bd69-cd4377057d38,45,5
+macrophage,8f4f8502-9170-4ac2-9707-3b6985ebfe5f,45,25
+macrophage,e7c5ba7e-4be0-4696-af50-a07d0dc7aac5,44,14
+macrophage,9d8e5dca-03a3-457d-b7fb-844c75735c83,43,16
+macrophage,ac2fea99-ce08-4fca-8d03-a19f37bf21a3,42,7
+macrophage,b693123e-95e6-4331-8b50-f367489a767e,38,6
+macrophage,13149914-ea03-4f01-8bf6-b793b667127b,35,13
+macrophage,e84f2780-51e8-4cfa-8aa0-13bbfef677c7,35,8
+macrophage,0920bcb8-4b3a-4e9d-a353-56f529fd3b32,34,10
+macrophage,be884a28-0eac-4eca-9c23-1294a93cf56e,34,7
+macrophage,02792605-4760-4023-82ad-40fc4458a5db,31,8
+macrophage,96baf2e0-60c5-48cf-b1d1-cba657851507,31,10
+macrophage,9fddb063-056d-4202-8b8a-4b0ee531d3ce,29,16
+macrophage,5bc42b88-bb76-4954-927b-8bb7369adc64,25,8
+macrophage,0436a180-cb44-47ba-8ffa-807b7a468469,23,9
+macrophage,1b9d8702-5af8-4142-85ed-020eb06ec4f6,22,7
+macrophage,be39785b-67cb-4177-be19-a40ee3747e45,22,7
+macrophage,350237e0-9f48-4cbd-9140-3b44495549f3,21,6
+macrophage,b3c9904b-2ffd-4038-8620-ee1c5b072e9c,19,8
+macrophage,3c75a463-6a87-4132-83a8-c3002624394d,18,12
+macrophage,55003f67-c494-46f1-83fb-902745646379,17,11
+macrophage,8fbed309-d3d4-441b-b3ff-e2dcbcec2d35,17,8
+macrophage,7b20c613-9add-43d1-87e9-defd3d9b9f8c,15,6
+macrophage,a77176ec-96c8-4448-a3e7-b56940bdfab6,15,5
+macrophage,b61a921b-7fa3-4b42-b455-aaaf32447920,15,5
+macrophage,1e4214ce-7347-4ec7-97b3-fcf7c1938e8b,14,2
+macrophage,d7dcfd8f-2ee7-4385-b9ac-e074c23ed190,14,4
+macrophage,1e5bd3b8-6a0e-4959-8d69-cafed30fe814,13,5
+macrophage,3dc61ca1-ce40-46b6-8337-f27260fd9a03,12,7
+macrophage,80a2c5b6-02e7-4fc0-9f12-179f5247c1bc,12,6
+macrophage,3f32121d-126b-4e8d-9f69-d86502d2a1b1,11,5
+macrophage,124744b8-4681-474a-9894-683896122708,10,4
+macrophage,6ceeaa86-9ceb-4582-b390-6d4dd6ff0572,10,8
+macrophage,9dbab10c-118d-496b-966a-67f1763a6b7d,9,5
+macrophage,edc8d3fe-153c-4e3d-8be0-2108d30f8d70,9,5
+macrophage,3de0ad6d-4378-4f62-b37b-ec0b75a50d94,8,5
+macrophage,5d3fc988-765d-48ba-bfb5-151ef2988cac,8,3
+macrophage,842c6f5d-4a94-4eef-8510-8c792d1124bc,8,8
+macrophage,90d4a63b-5c02-43eb-acde-c49345681601,8,5
+macrophage,9fcb0b73-c734-40a5-be9c-ace7eea401c9,8,6
+macrophage,b550fd94-97e0-42e2-90f7-7434781ea2f8,8,7
+macrophage,1d89d081-f43d-401a-be76-bd6ef9259f4e,6,5
+macrophage,cda2c8cd-be1c-42e5-b2cd-162caa1c4ce7,6,6
+macrophage,1196334f-a441-474a-95ee-400780941690,5,3
+macrophage,13b61a7d-5605-4948-ba48-02c588960143,5,3
+macrophage,1a2e3350-28a8-4f49-b33c-5b67ceb001f6,5,3
+macrophage,7bb64315-9e5a-41b9-9235-59acf9642a3e,5,4
+macrophage,d967b47c-a9e6-4337-b2f4-977f690cb67f,5,3
+macrophage,e595c979-c2de-4dad-8c02-8334a8e56de6,5,4
+macrophage,601c7454-17ff-432c-8e0d-902bfddb8013,4,1
+macrophage,644a578d-ffdc-446b-9679-e7ab4c919c13,4,1
+macrophage,9a281de7-cee5-4e80-8584-1929f46f152f,4,4
+macrophage,fbdd8c17-b34a-4cbc-abc4-1aeaa294a538,4,2
+macrophage,30f5e171-83d7-4fc0-bf75-384f122346b3,3,1
+macrophage,31f657dc-1875-4c4b-a5ca-ce63b3ef3a82,3,2
+macrophage,595c9010-99ec-462d-b6a1-2b2fe5407871,3,3
+macrophage,e22482ee-19e8-40bc-9f6e-541dc3c82c20,3,3
+macrophage,f801b7a9-80a6-4d09-9161-71474deb58ae,3,1
+macrophage,15d374d6-0dfd-4d8e-ade7-81f73dc921ee,2,2
+macrophage,4a90bbba-df97-4a28-83ae-7386fe7d9167,2,1
+macrophage,965386e9-1e4f-466d-bf59-ebdca4b66b9b,2,2
+macrophage,1873a18a-66fd-4a4d-8277-a872c93f5b59,1,1
+macrophage,29244e1d-02e6-4133-b411-516ef7474638,1,1
+macrophage,3c361813-5d5e-4868-bfe5-e7591e7b5381,1,1
+macrophage,44882825-0da1-4547-b721-2c6105d4a9d1,1,1
+macrophage,4c6f9f26-5470-455b-8933-c408232fbf56,1,1
+macrophage,bdd109f1-ca27-45dc-bb9f-473008449428,1,1
+macrophage,dc30c3ec-46d6-4cd8-8ec1-b544a3d0f503,1,1
+monocyte,b252b015-b488-4d5c-b16e-968c13e48a2c,1655,41
+monocyte,56c4912d-2bae-4b64-98f2-af8a84389208,351,66
+monocyte,242c6e7f-9016-4048-af70-d631f5eea188,320,14
+monocyte,fa8605cf-f27e-44af-ac2a-476bee4410d3,245,15
+monocyte,e84f2780-51e8-4cfa-8aa0-13bbfef677c7,241,13
+monocyte,53d208b0-2cfd-4366-9866-c3c6114081bc,212,11
+monocyte,9dbab10c-118d-496b-966a-67f1763a6b7d,206,96
+monocyte,4a5b00e0-1ba3-4fd4-af89-d3512eb20720,174,52
+monocyte,2adb1f8a-a6b1-4909-8ee8-484814e2d4bf,172,23
+monocyte,b0e547f0-462b-4f81-b31b-5b0a5d96f537,135,104
+monocyte,fd072bc3-2dfb-46f8-b4e3-467cb3223182,133,17
+monocyte,d9f3a82c-24bb-4277-b715-8ec92a33dd32,132,51
+monocyte,72955cdb-bd92-4135-aa52-21f33f9640db,127,35
+monocyte,1e5bd3b8-6a0e-4959-8d69-cafed30fe814,79,6
+monocyte,d8da613f-e681-4c69-b463-e94f5e66847f,62,24
+monocyte,2672b679-8048-4f5e-9786-f1b196ccfd08,58,5
+monocyte,edc8d3fe-153c-4e3d-8be0-2108d30f8d70,57,17
+monocyte,2f132ec9-24b5-422f-9be0-ccef03b4fe28,55,12
+monocyte,02792605-4760-4023-82ad-40fc4458a5db,51,6
+monocyte,429d21fd-bb9a-4abf-922b-c15138524bdd,47,11
+monocyte,b61a921b-7fa3-4b42-b455-aaaf32447920,41,9
+monocyte,cf83c98a-3791-4537-bbde-a719f6d73c13,35,10
+monocyte,093d3bfe-6f0f-4ac0-a7a1-829f94d0a49f,34,6
+monocyte,dea717d4-7bc0-4e46-950f-fd7e1cc8df7d,34,25
+monocyte,8fbed309-d3d4-441b-b3ff-e2dcbcec2d35,32,9
+monocyte,644a578d-ffdc-446b-9679-e7ab4c919c13,27,4
+monocyte,6c87755e-a671-41a8-9c7e-4e43b850a57b,27,10
+monocyte,3de0ad6d-4378-4f62-b37b-ec0b75a50d94,24,7
+monocyte,ac2fea99-ce08-4fca-8d03-a19f37bf21a3,23,6
+monocyte,9fddb063-056d-4202-8b8a-4b0ee531d3ce,21,12
+monocyte,e7c5ba7e-4be0-4696-af50-a07d0dc7aac5,20,10
+monocyte,1873a18a-66fd-4a4d-8277-a872c93f5b59,17,5
+monocyte,ca46ffe6-0a26-4d8d-82fa-81722daf1102,15,10
+monocyte,b550fd94-97e0-42e2-90f7-7434781ea2f8,14,11
+monocyte,d4e69e01-3ba2-4d6b-a15d-e7048f78f22e,12,4
+monocyte,5bc42b88-bb76-4954-927b-8bb7369adc64,9,6
+monocyte,518d9049-2a76-44f8-8abc-1e2b59ab5ba1,8,6
+monocyte,0b4a15a7-4e9e-4555-9733-2423e5c66469,7,5
+monocyte,456e8b9b-f872-488b-871d-94534090a865,7,3
+monocyte,a37f857c-779f-464e-9310-3db43a1811e7,7,6
+monocyte,c7775e88-49bf-4ba2-a03b-93f00447c958,7,3
+monocyte,7bb64315-9e5a-41b9-9235-59acf9642a3e,6,6
+monocyte,80a2c5b6-02e7-4fc0-9f12-179f5247c1bc,6,5
+monocyte,5b25a46f-f1cf-4caa-9e10-6ab81dfe9174,5,3
+monocyte,6ceeaa86-9ceb-4582-b390-6d4dd6ff0572,5,3
+monocyte,96baf2e0-60c5-48cf-b1d1-cba657851507,5,4
+monocyte,d7dcfd8f-2ee7-4385-b9ac-e074c23ed190,5,3
+monocyte,e22482ee-19e8-40bc-9f6e-541dc3c82c20,5,5
+monocyte,34f5307e-7b4d-4a48-b68f-2ba844c6414b,4,2
+monocyte,601c7454-17ff-432c-8e0d-902bfddb8013,4,1
+monocyte,8c42cfd0-0b0a-46d5-910c-fc833d83c45e,4,1
+monocyte,ccfdcad0-7104-46b9-addf-fd66a2a15907,3,2
+monocyte,e595c979-c2de-4dad-8c02-8334a8e56de6,3,2
+monocyte,12c3efd8-d515-42e6-b93c-4961e599d524,2,1
+monocyte,2872f4b0-b171-46e2-abc6-befcf6de6306,2,1
+monocyte,3241c34f-581a-4de3-81fe-28e3de182680,2,1
+monocyte,8e47ed12-c658-4252-b126-381df8d52a3d,2,2
+monocyte,babbf9f3-f482-45a5-ba76-c41f4c2f503e,2,2
+monocyte,2ac76f1b-43ef-4271-8686-2f165570989f,1,1
+monocyte,cda2c8cd-be1c-42e5-b2cd-162caa1c4ce7,1,1
+natural killer cell,3faad104-2ab8-4434-816d-474d8d2641db,820,506
+natural killer cell,218acb0f-9f2f-4f76-b90b-15a4b7c7f629,434,178
+natural killer cell,ebc2e1ff-c8f9-466a-acf4-9d291afaf8b3,338,98
+natural killer cell,01ad3cd7-3929-4654-84c0-6db05bd5fd59,306,62
+natural killer cell,9dbab10c-118d-496b-966a-67f1763a6b7d,296,107
+natural killer cell,1e6a6ef9-7ec9-4c90-bbfb-2ad3c3165fd1,246,74
+natural killer cell,2c820d53-cbd7-4e0a-be7a-a0ad1989a98f,221,1
+natural killer cell,2a498ace-872a-4935-984b-1afa70fd9886,199,53
+natural killer cell,fd072bc3-2dfb-46f8-b4e3-467cb3223182,172,15
+natural killer cell,e84f2780-51e8-4cfa-8aa0-13bbfef677c7,131,13
+natural killer cell,9f222629-9e39-47d0-b83f-e08d610c7479,127,72
+natural killer cell,242c6e7f-9016-4048-af70-d631f5eea188,117,14
+natural killer cell,5af90777-6760-4003-9dba-8f945fec6fdf,112,10
+natural killer cell,ed5d841d-6346-47d4-ab2f-7119ad7e3a35,91,8
+natural killer cell,644a578d-ffdc-446b-9679-e7ab4c919c13,81,5
+natural killer cell,72955cdb-bd92-4135-aa52-21f33f9640db,64,34
+natural killer cell,53d208b0-2cfd-4366-9866-c3c6114081bc,60,12
+natural killer cell,093d3bfe-6f0f-4ac0-a7a1-829f94d0a49f,57,8
+natural killer cell,e7c5ba7e-4be0-4696-af50-a07d0dc7aac5,57,18
+natural killer cell,d18736c3-6292-4379-919a-d6d973204c87,56,24
+natural killer cell,19e46756-9100-4e01-8b0e-23b557558a4c,49,18
+natural killer cell,de2c780c-1747-40bd-9ccf-9588ec186cee,48,16
+natural killer cell,8fbed309-d3d4-441b-b3ff-e2dcbcec2d35,45,15
+natural killer cell,5e717147-0f75-4de1-8bd2-6fda01b8d75f,43,23
+natural killer cell,7b55fe5c-d5c8-48e0-a1a3-54c5b9074f3f,41,1
+natural killer cell,b0e547f0-462b-4f81-b31b-5b0a5d96f537,39,37
+natural killer cell,02792605-4760-4023-82ad-40fc4458a5db,38,6
+natural killer cell,2672b679-8048-4f5e-9786-f1b196ccfd08,35,5
+natural killer cell,59b69042-47c2-47fd-ad03-d21beb99818f,35,8
+natural killer cell,456e8b9b-f872-488b-871d-94534090a865,33,11
+natural killer cell,350237e0-9f48-4cbd-9140-3b44495549f3,32,8
+natural killer cell,cd2f23c1-aef1-48ae-8eb4-0bcf124e567d,31,14
+natural killer cell,90d4a63b-5c02-43eb-acde-c49345681601,30,6
+natural killer cell,c7775e88-49bf-4ba2-a03b-93f00447c958,27,17
+natural killer cell,965386e9-1e4f-466d-bf59-ebdca4b66b9b,25,12
+natural killer cell,429d21fd-bb9a-4abf-922b-c15138524bdd,24,7
+natural killer cell,842c6f5d-4a94-4eef-8510-8c792d1124bc,23,15
+natural killer cell,fa8605cf-f27e-44af-ac2a-476bee4410d3,23,10
+natural killer cell,30cd5311-6c09-46c9-94f1-71fe4b91813c,21,10
+natural killer cell,1e5bd3b8-6a0e-4959-8d69-cafed30fe814,19,6
+natural killer cell,74cff64f-9da9-4b2a-9b3b-8a04a1598040,19,8
+natural killer cell,7c497c66-c2e2-4291-8b96-339e5e65f314,19,1
+natural killer cell,8c42cfd0-0b0a-46d5-910c-fc833d83c45e,19,3
+natural killer cell,d4e69e01-3ba2-4d6b-a15d-e7048f78f22e,19,7
+natural killer cell,d8da613f-e681-4c69-b463-e94f5e66847f,17,12
+natural killer cell,ddb22b3d-a75c-4dd1-9730-dff7fc8ca530,17,4
+natural killer cell,2ac76f1b-43ef-4271-8686-2f165570989f,16,1
+natural killer cell,a37f857c-779f-464e-9310-3db43a1811e7,15,12
+natural killer cell,cda2c8cd-be1c-42e5-b2cd-162caa1c4ce7,14,9
+natural killer cell,56c4912d-2bae-4b64-98f2-af8a84389208,13,8
+natural killer cell,7f7faf6b-f11d-4f07-bc1c-188a4472748d,12,1
+natural killer cell,9fddb063-056d-4202-8b8a-4b0ee531d3ce,11,7
+natural killer cell,b61a921b-7fa3-4b42-b455-aaaf32447920,11,7
+natural killer cell,dea717d4-7bc0-4e46-950f-fd7e1cc8df7d,11,8
+natural killer cell,e04daea4-4412-45b5-989e-76a9be070a89,11,3
+natural killer cell,5d3fc988-765d-48ba-bfb5-151ef2988cac,10,3
+natural killer cell,3de0ad6d-4378-4f62-b37b-ec0b75a50d94,8,4
+natural killer cell,518d9049-2a76-44f8-8abc-1e2b59ab5ba1,7,5
+natural killer cell,80a2c5b6-02e7-4fc0-9f12-179f5247c1bc,6,4
+natural killer cell,9ea768a2-87ab-46b6-a73d-c4e915f25af3,6,3
+natural killer cell,b6b5ea88-e092-46e4-b9c5-e93b52d5c195,6,5
+natural killer cell,ac2fea99-ce08-4fca-8d03-a19f37bf21a3,5,3
+natural killer cell,c54c9659-1b6b-4d4a-96f0-7dc987410f2d,5,1
+natural killer cell,0b4a15a7-4e9e-4555-9733-2423e5c66469,4,2
+natural killer cell,1f1c5c14-5949-4c81-b28e-b272e271b672,4,3
+natural killer cell,3dc61ca1-ce40-46b6-8337-f27260fd9a03,4,4
+natural killer cell,9c1b5626-58df-4401-ae7b-f66d068c1551,4,1
+natural killer cell,9fcb0b73-c734-40a5-be9c-ace7eea401c9,4,2
+natural killer cell,c0fb0d06-225b-4611-b802-d2f34b438a29,4,1
+natural killer cell,d7dcfd8f-2ee7-4385-b9ac-e074c23ed190,4,3
+natural killer cell,17e9d436-a264-4c94-a42d-48c8daf6fdd9,3,1
+natural killer cell,1e4214ce-7347-4ec7-97b3-fcf7c1938e8b,3,1
+natural killer cell,29244e1d-02e6-4133-b411-516ef7474638,3,3
+natural killer cell,364bd0c7-f7fd-48ed-99c1-ae26872b1042,3,3
+natural killer cell,43560d7c-acd6-4ede-830d-c9ffc6cd0862,3,1
+natural killer cell,a77176ec-96c8-4448-a3e7-b56940bdfab6,3,1
+natural killer cell,a82c43bb-a703-446d-aa24-049bf013121f,3,1
+natural killer cell,f0f0d7c4-3bec-428e-9539-c99d36548d96,3,3
+natural killer cell,0bae7ebf-eb54-46a6-be9a-3461cecefa4c,2,2
+natural killer cell,2872f4b0-b171-46e2-abc6-befcf6de6306,2,1
+natural killer cell,3f6ab2aa-6c63-4753-b652-3a9b9e7c8ee5,2,1
+natural killer cell,59632ec0-6f10-48c6-af79-81024e84843e,2,1
+natural killer cell,8d73847b-33e7-48f0-837f-e3e6579bf12d,2,1
+natural killer cell,b3a5a10f-b1cb-4e8e-abce-bf345448625b,2,1
+natural killer cell,babbf9f3-f482-45a5-ba76-c41f4c2f503e,2,1
+natural killer cell,cd4c96bb-ad66-4e83-ba9e-a7df8790eb12,2,2
+natural killer cell,1d89d081-f43d-401a-be76-bd6ef9259f4e,1,1
+natural killer cell,68b6114f-e990-4033-bfb3-c35536633aaa,1,1
+natural killer cell,7bb64315-9e5a-41b9-9235-59acf9642a3e,1,1
+natural killer cell,86282760-5099-4c71-8cdd-412dcbbbd0b9,1,1
+natural killer cell,b3c9904b-2ffd-4038-8620-ee1c5b072e9c,1,1
+natural killer cell,bdd109f1-ca27-45dc-bb9f-473008449428,1,1
+natural killer cell,c2a461b1-0c15-4047-9fcb-1f966fe55100,1,1
+natural killer cell,ccfdcad0-7104-46b9-addf-fd66a2a15907,1,1
+natural killer cell,eb499fd8-7000-419f-8854-926b9b61b11f,1,1
