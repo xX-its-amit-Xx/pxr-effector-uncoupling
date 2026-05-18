@@ -28,10 +28,10 @@ We re-ran the same pipeline on a curated 20-gene negative-control set (10 liver-
 
 | Metric | PXR targets (n=20) | Negative controls (n=20) |
 |--------|--------------------|--------------------------|
-| Median decoupling score | **0.665** | −0.029 |
-| Per-cell-type mean DS (range) | 0.26 – 0.66 | −0.34 – 0.07 |
+| Median decoupling score | **0.575** | −0.126 |
+| Per-cell-type mean DS (range) | 0.24 – 0.65 | −0.44 – −0.01 |
 
-**Mann-Whitney U (one-sided): p = 5.7 × 10⁻²⁷**. In every cell type the mean PXR-target decoupling score exceeds the matched-control mean by 0.37 to 0.64 units. This rules out the alternative explanation that decoupling reflects a generic hepatocyte-vs-others signature; it is specific to PXR target genes.
+**Mann-Whitney U (one-sided): p = 1.0 × 10⁻³¹**. In every cell type the mean PXR-target decoupling score exceeds the matched-control mean by 0.43 to 0.68 units. This rules out the alternative explanation that decoupling reflects a generic hepatocyte-vs-others signature; it is specific to PXR target genes.
 
 See `figures/supp_negative_control.png` for the distribution comparison and per-cell-type breakdown, and `data/targets/negative_control_genes.tsv` for the control-gene curation.
 
@@ -82,8 +82,8 @@ See `figures/supp_*.png` and `notebooks/05_robustness.ipynb` for full diagnostic
 ### Data
 - **Source**: CELLxGENE Census v2025-01-30 (`cellxgene-census` 1.17.x)
 - **Filter**: `is_primary_data == True`, organism = *Homo sapiens*
-- **Subsampling**: capped at 5,000 cells per cell type (random seed 42) to keep the H5AD < 100 MB
-- **Final atlas**: 46,884 cells × 41 genes (NR1I2 + 20 curated PXR canonical targets + 20 negative-control genes); see `data/targets/pxr_canonical_targets.tsv` for evidence-graded target curation (PMIDs included) and `data/targets/negative_control_genes.tsv` for the matched control set
+- **Subsampling**: capped at 1,500 cells per (cell type, dataset_id) pair (random seed 42). The per-dataset cap prevents any single large study from crowding out smaller datasets — the per-cell-type cap used in earlier versions of this work compressed hepatocytes from 10 datasets into 5,000 slots dominated by one study and produced poor per-dataset reproducibility (median pairwise ρ=0.33).
+- **Atlas**: NR1I2 + 20 curated PXR canonical targets + 20 negative-control genes; see `data/targets/pxr_canonical_targets.tsv` for evidence-graded target curation (PMIDs included) and `data/targets/negative_control_genes.tsv` for the matched control set
 
 ### Cell types profiled (n = 10)
 

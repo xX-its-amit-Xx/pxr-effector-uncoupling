@@ -1,10 +1,10 @@
 {
-  "u": 23247.0,
-  "pvalue": 5.7128665429044795e-27,
-  "median_target": 0.6647252333693796,
-  "median_null": -0.029150138521711215,
-  "n_target": 164,
-  "n_null": 169,
+  "u": 25280.0,
+  "pvalue": 1.031414148530207e-31,
+  "median_target": 0.5754634390750262,
+  "median_null": -0.12586696786918755,
+  "n_target": 171,
+  "n_null": 171,
   "target_genes_used": [
     "CYP3A4",
     "CYP3A5",
@@ -53,49 +53,49 @@
   "target_genes_missing": [],
   "per_cell_type": {
     "CD4-positive, alpha-beta T cell": {
-      "target_mean_DS": 0.654,
-      "control_mean_DS": 0.061,
-      "target_minus_control": 0.594
+      "target_mean_DS": 0.502,
+      "control_mean_DS": -0.056,
+      "target_minus_control": 0.558
     },
     "CD8-positive, alpha-beta T cell": {
-      "target_mean_DS": 0.61,
-      "control_mean_DS": 0.065,
-      "target_minus_control": 0.545
+      "target_mean_DS": 0.586,
+      "control_mean_DS": -0.028,
+      "target_minus_control": 0.614
     },
     "enterocyte of epithelium of large intestine": {
-      "target_mean_DS": 0.501,
-      "control_mean_DS": -0.016,
-      "target_minus_control": 0.517
+      "target_mean_DS": 0.449,
+      "control_mean_DS": -0.066,
+      "target_minus_control": 0.515
     },
     "enterocyte of epithelium of small intestine": {
-      "target_mean_DS": 0.29,
-      "control_mean_DS": -0.075,
-      "target_minus_control": 0.365
+      "target_mean_DS": 0.253,
+      "control_mean_DS": -0.172,
+      "target_minus_control": 0.425
     },
     "extravillous trophoblast": {
-      "target_mean_DS": 0.663,
-      "control_mean_DS": 0.021,
-      "target_minus_control": 0.643
+      "target_mean_DS": 0.652,
+      "control_mean_DS": -0.006,
+      "target_minus_control": 0.658
     },
     "intestinal crypt stem cell": {
-      "target_mean_DS": 0.255,
-      "control_mean_DS": -0.336,
-      "target_minus_control": 0.591
+      "target_mean_DS": 0.241,
+      "control_mean_DS": -0.438,
+      "target_minus_control": 0.679
     },
     "macrophage": {
-      "target_mean_DS": 0.58,
-      "control_mean_DS": 0.069,
-      "target_minus_control": 0.51
+      "target_mean_DS": 0.535,
+      "control_mean_DS": -0.021,
+      "target_minus_control": 0.556
     },
     "monocyte": {
-      "target_mean_DS": 0.619,
-      "control_mean_DS": 0.057,
-      "target_minus_control": 0.562
+      "target_mean_DS": 0.517,
+      "control_mean_DS": -0.024,
+      "target_minus_control": 0.541
     },
     "natural killer cell": {
-      "target_mean_DS": 0.599,
-      "control_mean_DS": 0.027,
-      "target_minus_control": 0.572
+      "target_mean_DS": 0.52,
+      "control_mean_DS": -0.05,
+      "target_minus_control": 0.57
     }
   }
 }
