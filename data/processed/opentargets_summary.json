@@ -1,0 +1,179 @@
+{
+  "per_gene": {
+    "NR1I2": {
+      "ensembl_id": "ENSG00000144852",
+      "group": "receptor",
+      "n_disease_associations": 1198,
+      "n_drug_response_top50": 0,
+      "drug_response_fraction": 0.0
+    },
+    "CYP2C8": {
+      "ensembl_id": "ENSG00000138115",
+      "group": "PXR target (top hepatocyte-selective)",
+      "n_disease_associations": 266,
+      "n_drug_response_top50": 0,
+      "drug_response_fraction": 0.0
+    },
+    "CYP2C9": {
+      "ensembl_id": "ENSG00000138109",
+      "group": "PXR target (top hepatocyte-selective)",
+      "n_disease_associations": 350,
+      "n_drug_response_top50": 2,
+      "drug_response_fraction": 0.04
+    },
+    "SLCO1B1": {
+      "ensembl_id": "ENSG00000134538",
+      "group": "PXR target (top hepatocyte-selective)",
+      "n_disease_associations": 336,
+      "n_drug_response_top50": 5,
+      "drug_response_fraction": 0.1
+    },
+    "ABCC2": {
+      "ensembl_id": "ENSG00000023839",
+      "group": "PXR target (top hepatocyte-selective)",
+      "n_disease_associations": 591,
+      "n_drug_response_top50": 0,
+      "drug_response_fraction": 0.0
+    },
+    "CYP3A5": {
+      "ensembl_id": "ENSG00000106258",
+      "group": "PXR target (top hepatocyte-selective)",
+      "n_disease_associations": 375,
+      "n_drug_response_top50": 0,
+      "drug_response_fraction": 0.0
+    },
+    "ALB": {
+      "ensembl_id": "ENSG00000163631",
+      "group": "negative control",
+      "n_disease_associations": 2602,
+      "n_drug_response_top50": 0,
+      "drug_response_fraction": 0.0
+    },
+    "HNF4A": {
+      "ensembl_id": "ENSG00000101076",
+      "group": "negative control",
+      "n_disease_associations": 749,
+      "n_drug_response_top50": 1,
+      "drug_response_fraction": 0.02
+    },
+    "GAPDH": {
+      "ensembl_id": "ENSG00000111640",
+      "group": "negative control",
+      "n_disease_associations": 889,
+      "n_drug_response_top50": 0,
+      "drug_response_fraction": 0.0
+    }
+  },
+  "top_diseases_pxr_targets": {
+    "ABCC2": [
+      {
+        "disease_name": "Dubin-Johnson syndrome",
+        "score": 0.8168561092796948
+      },
+      {
+        "disease_name": "Intrahepatic cholestasis of pregnancy",
+        "score": 0.4808221279139194
+      },
+      {
+        "disease_name": "genetic disorder",
+        "score": 0.47163092794718003
+      },
+      {
+        "disease_name": "cholestasis",
+        "score": 0.47079311288909975
+      },
+      {
+        "disease_name": "hypothyroidism",
+        "score": 0.32163508206336344
+      }
+    ],
+    "CYP2C8": [
+      {
+        "disease_name": "Abnormality of the skeletal system",
+        "score": 0.3211518152079769
+      },
+      {
+        "disease_name": "melanoma",
+        "score": 0.22315966331067058
+      },
+      {
+        "disease_name": "hepatocellular carcinoma",
+        "score": 0.21268276504645098
+      },
+      {
+        "disease_name": "urinary bladder carcinoma",
+        "score": 0.19985030642075247
+      },
+      {
+        "disease_name": "lung adenocarcinoma",
+        "score": 0.19282828918174316
+      }
+    ],
+    "CYP2C9": [
+      {
+        "disease_name": "cholesterol embolism",
+        "score": 0.4868290635834234
+      },
+      {
+        "disease_name": "response to anticoagulant",
+        "score": 0.4059659423152314
+      },
+      {
+        "disease_name": "Abnormality of the skeletal system",
+        "score": 0.2256704798348272
+      },
+      {
+        "disease_name": "placenta praevia",
+        "score": 0.08865794748903648
+      },
+      {
+        "disease_name": "colorectal carcinoma",
+        "score": 0.0826447973562391
+      }
+    ],
+    "CYP3A5": [
+      {
+        "disease_name": "HIV infection",
+        "score": 0.6057890191101166
+      },
+      {
+        "disease_name": "HIV-1 infection",
+        "score": 0.5921112630086154
+      },
+      {
+        "disease_name": "chronic hepatitis C virus infection",
+        "score": 0.5665520286550164
+      },
+      {
+        "disease_name": "hepatitis C virus infection",
+        "score": 0.5470341059328856
+      },
+      {
+        "disease_name": "infection",
+        "score": 0.5160402674705425
+      }
+    ],
+    "SLCO1B1": [
+      {
+        "disease_name": "Rotor syndrome",
+        "score": 0.6574955426788922
+      },
+      {
+        "disease_name": "response to statin",
+        "score": 0.4203783996504734
+      },
+      {
+        "disease_name": "gout",
+        "score": 0.40816931705242376
+      },
+      {
+        "disease_name": "Disorder of bilirubin metabolism and excretion",
+        "score": 0.3695798546847018
+      },
+      {
+        "disease_name": "Jaundice",
+        "score": 0.367749417718937
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+gene_symbol,ensembl_id,group,n_disease_associations,n_drug_response_top50,drug_response_fraction
+NR1I2,ENSG00000144852,receptor,1198,0,0.0
+CYP2C8,ENSG00000138115,PXR target (top hepatocyte-selective),266,0,0.0
+CYP2C9,ENSG00000138109,PXR target (top hepatocyte-selective),350,2,0.04
+SLCO1B1,ENSG00000134538,PXR target (top hepatocyte-selective),336,5,0.1
+ABCC2,ENSG00000023839,PXR target (top hepatocyte-selective),591,0,0.0
+CYP3A5,ENSG00000106258,PXR target (top hepatocyte-selective),375,0,0.0
+ALB,ENSG00000163631,negative control,2602,0,0.0
+HNF4A,ENSG00000101076,negative control,749,1,0.02
+GAPDH,ENSG00000111640,negative control,889,0,0.0

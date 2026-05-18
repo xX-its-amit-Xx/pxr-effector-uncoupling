@@ -1,0 +1,1291 @@
+{
+  "data": {
+    "target": {
+      "id": "ENSG00000111640",
+      "approvedSymbol": "GAPDH",
+      "associatedDiseases": {
+        "count": 889,
+        "rows": [
+          {
+            "disease": {
+              "id": "EFO_0005772",
+              "name": "neurodegenerative disease",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                }
+              ]
+            },
+            "score": 0.55307368855439,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.2149362973938762
+              },
+              {
+                "id": "affected_pathway",
+                "score": 0.8990174062016053
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0020092",
+              "name": "neuroinflammatory disorder",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                },
+                {
+                  "id": "EFO_0000540",
+                  "name": "immune system disease"
+                }
+              ]
+            },
+            "score": 0.2509163098655105,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.012158615952232422
+              },
+              {
+                "id": "affected_pathway",
+                "score": 0.41213034607746346
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000616",
+              "name": "neoplasm",
+              "therapeuticAreas": [
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.11553867713222923,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.9502617533619473
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0013587",
+              "name": "glycogen storage disease due to lactate dehydrogenase H-subunit deficiency",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.11429804853996418,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.9400580542144529
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "HP_0100806",
+              "name": "Sepsis",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.10579436473248678,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.3896285307087053
+              },
+              {
+                "id": "rna_expression",
+                "score": 0.11518068385519105
+              },
+              {
+                "id": "genetic_association",
+                "score": 0.15198269940290526
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0004975",
+              "name": "Alzheimer disease",
+              "therapeuticAreas": [
+                {
+                  "id": "MONDO_0002025",
+                  "name": "psychiatric disorder"
+                },
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.10089641901041169,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.8213506570895762
+              },
+              {
+                "id": "rna_expression",
+                "score": 0.03393632952320493
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0004992",
+              "name": "cancer",
+              "therapeuticAreas": [
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.09999881737701072,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.8224523068240355
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0003060",
+              "name": "non-small cell lung carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000010",
+                  "name": "respiratory or thoracic disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.0968083085602327,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.7962115831321894
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000182",
+              "name": "hepatocellular carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "EFO_0001379",
+                  "name": "endocrine system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.08939022521849688,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.7352006640367985
+              },
+              {
+                "id": "genetic_association",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0007739",
+              "name": "Huntington disease",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.0855651285763663,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.7037406964125373
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0007915",
+              "name": "systemic lupus erythematosus",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000540",
+                  "name": "immune system disease"
+                },
+                {
+                  "id": "EFO_0009690",
+                  "name": "urinary system disease"
+                },
+                {
+                  "id": "OTAR_0000006",
+                  "name": "musculoskeletal or connective tissue disease"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.0842094634933239,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.6925908658037869
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0005148",
+              "name": "type 2 diabetes mellitus",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0001379",
+                  "name": "endocrine system disease"
+                },
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.08290124403147575,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.6818312574158937
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0002974",
+              "name": "cervical cancer",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000017",
+                  "name": "reproductive system or breast disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.07872199469344242,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.6474585183273958
+              },
+              {
+                "id": "genetic_association",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0012454",
+              "name": "alcohol sensitivity, acute",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "MONDO_0002025",
+                  "name": "psychiatric disorder"
+                }
+              ]
+            },
+            "score": 0.07624791715893008,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.6271101699279376
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0003918",
+              "name": "obstructive sleep apnea",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000010",
+                  "name": "respiratory or thoracic disease"
+                },
+                {
+                  "id": "MONDO_0002025",
+                  "name": "psychiatric disorder"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                },
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                }
+              ]
+            },
+            "score": 0.07428555079162505,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.6109704515996791
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0019200",
+              "name": "retinitis pigmentosa",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "MONDO_0024458",
+                  "name": "disorder of visual system"
+                }
+              ]
+            },
+            "score": 0.07407169967429617,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.06687238773727831
+              },
+              {
+                "id": "animal_model",
+                "score": 0.5924935104172226
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "Orphanet_124",
+              "name": "Blackfan-Diamond anemia",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0005803",
+                  "name": "hematologic disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.0721442461780102,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.5933590341322026
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0001365",
+              "name": "age-related macular degeneration",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "MONDO_0024458",
+                  "name": "disorder of visual system"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.07183933058332302,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.07050308555634772
+              },
+              {
+                "id": "animal_model",
+                "score": 0.573225447742748
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "Orphanet_891",
+              "name": "Familial exudative vitreoretinopathy",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "MONDO_0024458",
+                  "name": "disorder of visual system"
+                }
+              ]
+            },
+            "score": 0.07063534222448968,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.5809488719932835
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000641",
+              "name": "papillary thyroid carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0001379",
+                  "name": "endocrine system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.07045971740225375,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.5795044245090805
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000756",
+              "name": "melanoma",
+              "therapeuticAreas": [
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.06883209683411802,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.5661178632875552
+              },
+              {
+                "id": "genetic_association",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0004144",
+              "name": "acatalasia",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                }
+              ]
+            },
+            "score": 0.06770343624076129,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.5568350584206945
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000222",
+              "name": "acute myeloid leukemia",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0005803",
+                  "name": "hematologic disease"
+                },
+                {
+                  "id": "EFO_0000540",
+                  "name": "immune system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                },
+                {
+                  "id": "OTAR_0000006",
+                  "name": "musculoskeletal or connective tissue disease"
+                }
+              ]
+            },
+            "score": 0.067002108728805,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.5510669059047205
+              },
+              {
+                "id": "genetic_association",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0010722",
+              "name": "X-linked retinal dysplasia",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "MONDO_0024458",
+                  "name": "disorder of visual system"
+                }
+              ]
+            },
+            "score": 0.0665225259439729,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.5471225195805187
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0001066",
+              "name": "experimental autoimmune encephalomyelitis",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0005932",
+                  "name": "animal disease"
+                },
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                }
+              ]
+            },
+            "score": 0.06531529525434619,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.537193505502193
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0001056",
+              "name": "gastric cancer",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.0636215871711473,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.5232633995604233
+              },
+              {
+                "id": "genetic_association",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0018177",
+              "name": "glioblastoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.0615730012493494,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.5064145581310519
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0011060",
+              "name": "early-onset non-syndromic cataract",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "MONDO_0024458",
+                  "name": "disorder of visual system"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.06000970761586248,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.4935570615242947
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0009549",
+              "name": "severe early-childhood-onset retinal dystrophy",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "MONDO_0024458",
+                  "name": "disorder of visual system"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.058750261599953627,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.4831985962116568
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0007142",
+              "name": "Townes-Brocks syndrome",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.05836117323193293,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.47999849210811973
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "HP_0040175",
+              "name": "Platelet-activating factor acetylhydrolase deficiency",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.057527927561119345,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.47314536282031955
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0016672",
+              "name": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "EFO_0005803",
+                  "name": "hematologic disease"
+                }
+              ]
+            },
+            "score": 0.05679887996721839,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.46714922315470986
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0013461",
+              "name": "inosine triphosphatase deficiency",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.0567674656795702,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.466890852565725
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "Orphanet_46532",
+              "name": "Hereditary persistence of fetal hemoglobin - beta-thalassemia",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "EFO_0005803",
+                  "name": "hematologic disease"
+                }
+              ]
+            },
+            "score": 0.056508759781290906,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.4647630947740843
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0003897",
+              "name": "stomach neoplasm",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.05636092783941702,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.46354723317886104
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0100096",
+              "name": "COVID-19",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0005741",
+                  "name": "infectious disease"
+                }
+              ]
+            },
+            "score": 0.05402826559090711,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.44436197181626635
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0008663",
+              "name": "snowflake vitreoretinal degeneration",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                },
+                {
+                  "id": "MONDO_0024458",
+                  "name": "disorder of visual system"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.05381821843918628,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.4426344137410213
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0019537",
+              "name": "hemoglobin D disease",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0005803",
+                  "name": "hematologic disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.05371473607987456,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.44178331062436504
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0005090",
+              "name": "schizophrenia",
+              "therapeuticAreas": [
+                {
+                  "id": "MONDO_0002025",
+                  "name": "psychiatric disorder"
+                },
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                }
+              ]
+            },
+            "score": 0.05211605749129938,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.4286347861964538
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "Orphanet_98993",
+              "name": "Posterior polar cataract",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "MONDO_0024458",
+                  "name": "disorder of visual system"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.052054501243774275,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.428128509431344
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0007716",
+              "name": "alpha thalassemia-intellectual disability syndrome type 1",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0005803",
+                  "name": "hematologic disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.05203684353960601,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.4279832815185813
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "Orphanet_98791",
+              "name": "Alpha-thalassemia - intellectual disability syndrome linked to chromosome 16",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "EFO_0005803",
+                  "name": "hematologic disease"
+                }
+              ]
+            },
+            "score": 0.05203684353960601,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.4279832815185813
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0019353",
+              "name": "Stargardt disease",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                },
+                {
+                  "id": "MONDO_0024458",
+                  "name": "disorder of visual system"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.050780272033678034,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.4176484579591837
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000571",
+              "name": "lung adenocarcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000010",
+                  "name": "respiratory or thoracic disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.05066257507802125,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.41668044518438124
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0859382",
+              "name": "cataract 50 with or without glaucoma",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "MONDO_0024458",
+                  "name": "disorder of visual system"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.05052156613539874,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.415520700167543
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0005180",
+              "name": "Parkinson disease",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.05050276428413138,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.41536606207928345
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0007354",
+              "name": "coloboma of optic nerve",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                },
+                {
+                  "id": "MONDO_0024458",
+                  "name": "disorder of visual system"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.05026470813639287,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.4134081406458427
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0009979",
+              "name": "reticular dystrophy of the retinal pigment epithelium",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "MONDO_0024458",
+                  "name": "disorder of visual system"
+                }
+              ]
+            },
+            "score": 0.05021111905746358,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.4129673908175742
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0016489",
+              "name": "delta-beta-thalassemia",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0005803",
+                  "name": "hematologic disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.04975284003765456,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.40919821987238214
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0010269",
+              "name": "Coats disease",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                },
+                {
+                  "id": "MONDO_0024458",
+                  "name": "disorder of visual system"
+                },
+                {
+                  "id": "EFO_0000319",
+                  "name": "cardiovascular disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.04902846352247254,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.40324049805578827
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

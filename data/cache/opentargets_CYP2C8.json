@@ -1,0 +1,1303 @@
+{
+  "data": {
+    "target": {
+      "id": "ENSG00000138115",
+      "approvedSymbol": "CYP2C8",
+      "associatedDiseases": {
+        "count": 266,
+        "rows": [
+          {
+            "disease": {
+              "id": "HP_0000924",
+              "name": "Abnormality of the skeletal system",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.3211518152079769,
+            "datatypeScores": [
+              {
+                "id": "genetic_association",
+                "score": 0.5282703499636582
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000756",
+              "name": "melanoma",
+              "therapeuticAreas": [
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.22315966331067058,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.2936645607525046
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000182",
+              "name": "hepatocellular carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "EFO_0001379",
+                  "name": "endocrine system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.21268276504645098,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.7525629140284713
+              },
+              {
+                "id": "rna_expression",
+                "score": 0.3714054449461823
+              },
+              {
+                "id": "genetic_association",
+                "score": 0
+              },
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0004986",
+              "name": "urinary bladder carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0009690",
+                  "name": "urinary system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.19985030642075247,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.4954636000534711
+              },
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000571",
+              "name": "lung adenocarcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000010",
+                  "name": "respiratory or thoracic disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.19282828918174316,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.26444989696105514
+              },
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000178",
+              "name": "gastric carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1896691718676564,
+            "datatypeScores": [
+              {
+                "id": "rna_expression",
+                "score": 0.16051973495913047
+              },
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0001378",
+              "name": "multiple myeloma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000540",
+                  "name": "immune system disease"
+                },
+                {
+                  "id": "EFO_0005803",
+                  "name": "hematologic disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.187798098894657,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.09896427567494036
+              },
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0011719",
+              "name": "gastrointestinal stromal tumor",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.18769523564445562,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.09558023095782708
+              },
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0005922",
+              "name": "esophageal squamous cell carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.18759361658960796,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.021277577916406734
+              },
+              {
+                "id": "rna_expression",
+                "score": 0.08278041708215925
+              },
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0003060",
+              "name": "non-small cell lung carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000010",
+                  "name": "respiratory or thoracic disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.187469381288815,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.08814996565368506
+              },
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0006544",
+              "name": "bladder transitional cell carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0009690",
+                  "name": "urinary system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.187469381288815,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.08814996565368505
+              },
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000181",
+              "name": "head and neck squamous cell carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.18571387697906264,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.030396539880581056
+              },
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000637",
+              "name": "osteosarcoma",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000006",
+                  "name": "musculoskeletal or connective tissue disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.18534429712437792,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.01823792392834863
+              },
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000222",
+              "name": "acute myeloid leukemia",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0005803",
+                  "name": "hematologic disease"
+                },
+                {
+                  "id": "EFO_0000540",
+                  "name": "immune system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                },
+                {
+                  "id": "OTAR_0000006",
+                  "name": "musculoskeletal or connective tissue disease"
+                }
+              ]
+            },
+            "score": 0.18534429712437792,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.01823792392834863
+              },
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000305",
+              "name": "breast carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010285",
+                  "name": "integumentary system disease"
+                },
+                {
+                  "id": "OTAR_0000017",
+                  "name": "reproductive system or breast disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.18525190216070678,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.015198269940290528
+              },
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0001663",
+              "name": "prostate carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                },
+                {
+                  "id": "OTAR_0000017",
+                  "name": "reproductive system or breast disease"
+                }
+              ]
+            },
+            "score": 0.18515950719703558,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.012158615952232422
+              },
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000673",
+              "name": "prostate adenocarcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                },
+                {
+                  "id": "OTAR_0000017",
+                  "name": "reproductive system or breast disease"
+                }
+              ]
+            },
+            "score": 0.18515950719703558,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.012158615952232422
+              },
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0002916",
+              "name": "esophageal carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.18515950719703558,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.012158615952232422
+              },
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0016748",
+              "name": "hemangioblastoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                },
+                {
+                  "id": "EFO_0000319",
+                  "name": "cardiovascular disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_1000229",
+              "name": "Eccrine Porocarcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010285",
+                  "name": "integumentary system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0006318",
+              "name": "breast ductal adenocarcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010285",
+                  "name": "integumentary system disease"
+                },
+                {
+                  "id": "OTAR_0000017",
+                  "name": "reproductive system or breast disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_1000417",
+              "name": "Ovarian Endometrioid Adenocarcinoma with Squamous Differentiation",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000017",
+                  "name": "reproductive system or breast disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                },
+                {
+                  "id": "EFO_0001379",
+                  "name": "endocrine system disease"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0003865",
+              "name": "kidney neoplasm",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0009690",
+                  "name": "urinary system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0005631",
+              "name": "rectal adenocarcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0008550",
+              "name": "Hepatobiliary Neoplasm",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_1000456",
+              "name": "Parathyroid Gland Carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "EFO_0001379",
+                  "name": "endocrine system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0005341",
+              "name": "skin basal cell carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010285",
+                  "name": "integumentary system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_1001949",
+              "name": "colon adenocarcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_1000294",
+              "name": "HER2 Positive Breast Carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010285",
+                  "name": "integumentary system disease"
+                },
+                {
+                  "id": "OTAR_0000017",
+                  "name": "reproductive system or breast disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0005184",
+              "name": "pancreatic ductal adenocarcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                },
+                {
+                  "id": "EFO_0001379",
+                  "name": "endocrine system disease"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0005543",
+              "name": "glioma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_1001471",
+              "name": "Merkel cell skin cancer",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010285",
+                  "name": "integumentary system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0008515",
+              "name": "nodular melanoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010285",
+                  "name": "integumentary system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000349",
+              "name": "clear cell renal carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0009690",
+                  "name": "urinary system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0018531",
+              "name": "carcinoma of liver and intrahepatic biliary tract",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "EFO_0001379",
+                  "name": "endocrine system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0001071",
+              "name": "lung carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000010",
+                  "name": "respiratory or thoracic disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0006545",
+              "name": "brain glioblastoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0016683",
+              "name": "gliomatosis cerebri",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_1000020",
+              "name": "cecum adenocarcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0000640",
+              "name": "central nervous system primitive neuroectodermal neoplasm",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000389",
+              "name": "cutaneous melanoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010285",
+                  "name": "integumentary system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0044925",
+              "name": "oral cavity carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000641",
+              "name": "papillary thyroid carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0001379",
+                  "name": "endocrine system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000708",
+              "name": "squamous cell lung carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000010",
+                  "name": "respiratory or thoracic disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_1000233",
+              "name": "Endometrial Endometrioid Adenocarcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000017",
+                  "name": "reproductive system or breast disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0019472",
+              "name": "extranodal nasal NK/T cell lymphoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0005803",
+                  "name": "hematologic disease"
+                },
+                {
+                  "id": "EFO_0005741",
+                  "name": "infectious disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000702",
+              "name": "small cell lung carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0001379",
+                  "name": "endocrine system disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "OTAR_0000010",
+                  "name": "respiratory or thoracic disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_1000143",
+              "name": "Breast Carcinoma by Gene Expression Profile",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010285",
+                  "name": "integumentary system disease"
+                },
+                {
+                  "id": "OTAR_0000017",
+                  "name": "reproductive system or breast disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000478",
+              "name": "esophageal adenocarcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0020638",
+              "name": "superficial spreading melanoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010285",
+                  "name": "integumentary system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1847899273423509,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,1211 @@
+{
+  "data": {
+    "target": {
+      "id": "ENSG00000134538",
+      "approvedSymbol": "SLCO1B1",
+      "associatedDiseases": {
+        "count": 336,
+        "rows": [
+          {
+            "disease": {
+              "id": "MONDO_0009379",
+              "name": "Rotor syndrome",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.6574955426788922,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.17111187421812576
+              },
+              {
+                "id": "animal_model",
+                "score": 0.34586702903119154
+              },
+              {
+                "id": "genetic_association",
+                "score": 0.8066321142183233
+              },
+              {
+                "id": "genetic_literature",
+                "score": 0.607930797611621
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "GO_0036273",
+              "name": "response to statin",
+              "therapeuticAreas": [
+                {
+                  "id": "GO_0008150",
+                  "name": "biological_process"
+                }
+              ]
+            },
+            "score": 0.4203783996504734,
+            "datatypeScores": [
+              {
+                "id": "genetic_association",
+                "score": 0.6914905467892314
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0004274",
+              "name": "gout",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                },
+                {
+                  "id": "OTAR_0000006",
+                  "name": "musculoskeletal or connective tissue disease"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.40816931705242376,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.03647584785669726
+              },
+              {
+                "id": "genetic_association",
+                "score": 0.6695837405961161
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "Orphanet_309816",
+              "name": "Disorder of bilirubin metabolism and excretion",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                }
+              ]
+            },
+            "score": 0.3695798546847018,
+            "datatypeScores": [
+              {
+                "id": "affected_pathway",
+                "score": 0.607930797611621
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "HP_0000952",
+              "name": "Jaundice",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.367749417718937,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.021277577916406734
+              },
+              {
+                "id": "genetic_association",
+                "score": 0.603855988897874
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0024431",
+              "name": "bilirubin metabolism disease",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                }
+              ]
+            },
+            "score": 0.3537316541992882,
+            "datatypeScores": [
+              {
+                "id": "genetic_association",
+                "score": 0.5818617112161358
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0005556",
+              "name": "Gilbert syndrome",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.3444747058002529,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.044074982826842524
+              },
+              {
+                "id": "animal_model",
+                "score": 0.3703514419049995
+              },
+              {
+                "id": "genetic_association",
+                "score": 0.547137717850459
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "GO_1903491",
+              "name": "response to simvastatin",
+              "therapeuticAreas": [
+                {
+                  "id": "GO_0008150",
+                  "name": "biological_process"
+                }
+              ]
+            },
+            "score": 0.30982808998405215,
+            "datatypeScores": [
+              {
+                "id": "genetic_association",
+                "score": 0.5096436818158816
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0009003",
+              "name": "ovarian dysfunction",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0001379",
+                  "name": "endocrine system disease"
+                },
+                {
+                  "id": "OTAR_0000017",
+                  "name": "reproductive system or breast disease"
+                }
+              ]
+            },
+            "score": 0.30162883505716515,
+            "datatypeScores": [
+              {
+                "id": "genetic_association",
+                "score": 0.49615653005601124
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000400",
+              "name": "diabetes mellitus",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0001379",
+                  "name": "endocrine system disease"
+                },
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.2923691608042618,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.08794182989779865
+              },
+              {
+                "id": "genetic_association",
+                "score": 0.47652797753088255
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0021896",
+              "name": "response to rosuvastatin",
+              "therapeuticAreas": [
+                {
+                  "id": "GO_0008150",
+                  "name": "biological_process"
+                }
+              ]
+            },
+            "score": 0.2861725412384913,
+            "datatypeScores": [
+              {
+                "id": "genetic_association",
+                "score": 0.470732100368624
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "HP_0001082",
+              "name": "Cholecystitis",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.2751023881034802,
+            "datatypeScores": [
+              {
+                "id": "genetic_association",
+                "score": 0.45252253905259526
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "GO_0031427",
+              "name": "response to methotrexate",
+              "therapeuticAreas": [
+                {
+                  "id": "GO_0008150",
+                  "name": "biological_process"
+                }
+              ]
+            },
+            "score": 0.2741324655011982,
+            "datatypeScores": [
+              {
+                "id": "genetic_association",
+                "score": 0.450927090021073
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0004145",
+              "name": "myopathy",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000006",
+                  "name": "musculoskeletal or connective tissue disease"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.2739233078527065,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.46739533461253474
+              },
+              {
+                "id": "genetic_association",
+                "score": 0.4272132748406665
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0004329",
+              "name": "alcohol drinking",
+              "therapeuticAreas": [
+                {
+                  "id": "GO_0008150",
+                  "name": "biological_process"
+                }
+              ]
+            },
+            "score": 0.25799549110269543,
+            "datatypeScores": [
+              {
+                "id": "genetic_association",
+                "score": 0.4243829924660551
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "GO_0097327",
+              "name": "response to antineoplastic agent",
+              "therapeuticAreas": [
+                {
+                  "id": "GO_0008150",
+                  "name": "biological_process"
+                }
+              ]
+            },
+            "score": 0.2524433175290646,
+            "datatypeScores": [
+              {
+                "id": "genetic_association",
+                "score": 0.41525008853119333
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0002146",
+              "name": "hypogonadism",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0001379",
+                  "name": "endocrine system disease"
+                },
+                {
+                  "id": "OTAR_0000017",
+                  "name": "reproductive system or breast disease"
+                }
+              ]
+            },
+            "score": 0.2516739046935156,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.012158615952232422
+              },
+              {
+                "id": "genetic_association",
+                "score": 0.4133765320430067
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0007442",
+              "name": "placenta praevia",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000014",
+                  "name": "pregnancy or perinatal disease"
+                },
+                {
+                  "id": "OTAR_0000017",
+                  "name": "reproductive system or breast disease"
+                }
+              ]
+            },
+            "score": 0.2514083001893367,
+            "datatypeScores": [
+              {
+                "id": "genetic_association",
+                "score": 0.41354756359941786
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0001068",
+              "name": "malaria",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0005741",
+                  "name": "infectious disease"
+                },
+                {
+                  "id": "EFO_0005803",
+                  "name": "hematologic disease"
+                },
+                {
+                  "id": "EFO_0001379",
+                  "name": "endocrine system disease"
+                },
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                }
+              ]
+            },
+            "score": 0.24313458996784512,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.01823792392834863
+              },
+              {
+                "id": "genetic_association",
+                "score": 0.39902604233712696
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0009866",
+              "name": "pulmonary vascular congestion",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.23422331153229284,
+            "datatypeScores": [
+              {
+                "id": "genetic_association",
+                "score": 0.38527956216807313
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0021661",
+              "name": "coronary atherosclerosis",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000319",
+                  "name": "cardiovascular disease"
+                }
+              ]
+            },
+            "score": 0.23101205926633184,
+            "datatypeScores": [
+              {
+                "id": "genetic_association",
+                "score": 0.37999729603091237
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "HP_0001626",
+              "name": "Abnormality of the cardiovascular system",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.19112302811119092,
+            "datatypeScores": [
+              {
+                "id": "genetic_association",
+                "score": 0.31438286867856724
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0005423",
+              "name": "adolescent idiopathic scoliosis",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000006",
+                  "name": "musculoskeletal or connective tissue disease"
+                }
+              ]
+            },
+            "score": 0.18272636909362572,
+            "datatypeScores": [
+              {
+                "id": "genetic_association",
+                "score": 0.3005710021790361
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000319",
+              "name": "cardiovascular disease",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000319",
+                  "name": "cardiovascular disease"
+                }
+              ]
+            },
+            "score": 0.15840631803932675,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.0499076377010026
+              },
+              {
+                "id": "genetic_association",
+                "score": 0.25807098300657566
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000182",
+              "name": "hepatocellular carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "EFO_0001379",
+                  "name": "endocrine system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.09602229839664607,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.7849642428332695
+              },
+              {
+                "id": "rna_expression",
+                "score": 0.019130820497474593
+              },
+              {
+                "id": "genetic_association",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "HP_0002904",
+              "name": "Hyperbilirubinemia",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.09190255440376492,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.7558636177408897
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MP_0001914",
+              "name": "hemorrhage",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.05696375489297379,
+            "datatypeScores": [
+              {
+                "id": "genetic_association",
+                "score": 0.0937010513643451
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0009518",
+              "name": "complication",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000009",
+                  "name": "injury, poisoning or other complication"
+                }
+              ]
+            },
+            "score": 0.05696375489297379,
+            "datatypeScores": [
+              {
+                "id": "genetic_association",
+                "score": 0.0937010513643451
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0011725",
+              "name": "Crigler-Najjar syndrome type 2",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.05607763461469412,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.46121725396218144
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0005546",
+              "name": "congenital disorder of glycosylation type II",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                }
+              ]
+            },
+            "score": 0.05606957572064059,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.46115097261827526
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0015762",
+              "name": "progressive familial intrahepatic cholestasis",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0001379",
+                  "name": "endocrine system disease"
+                },
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                },
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.055416651310697604,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.4557809172393726
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0001645",
+              "name": "coronary artery disease",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000319",
+                  "name": "cardiovascular disease"
+                }
+              ]
+            },
+            "score": 0.055335925979601505,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.455116982039731
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0011601",
+              "name": "neonatal intrahepatic cholestasis due to citrin deficiency",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.054668252104961096,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.449625617913555
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0019072",
+              "name": "intrahepatic cholestasis",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.0501397696132953,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.06594360457426057
+              },
+              {
+                "id": "animal_model",
+                "score": 0.3958946675846478
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0958237",
+              "name": "isolated hyperferritinemia",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.0497158820521861,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.4088942544735764
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0009048",
+              "name": "Intrahepatic cholestasis of pregnancy",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.04850489206166922,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.012158615952232422
+              },
+              {
+                "id": "animal_model",
+                "score": 0.3958946675846478
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "Orphanet_79301",
+              "name": "Congenital bile acid synthesis defect type 1",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                }
+              ]
+            },
+            "score": 0.04620856923122828,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.38004793812690496
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0014790",
+              "name": "TMEM199-CDG",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                }
+              ]
+            },
+            "score": 0.04366216403245067,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.3591047221491846
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0030991",
+              "name": "bile acid conjugation defect 1",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.043654772435356974,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.3590439290694234
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0011698",
+              "name": "glycine N-methyltransferase deficiency",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                }
+              ]
+            },
+            "score": 0.04298398499910423,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.35352695708109794
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0021020",
+              "name": "Crigler-Najjar syndrome type 1",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.04230950176430466,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.3479795885528919
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "Orphanet_79302",
+              "name": "Congenital bile acid synthesis defect type 3",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                }
+              ]
+            },
+            "score": 0.041854918543042484,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.34424081414758045
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0100058",
+              "name": "hypervalinemia and hyperleucine-isoleucinemia",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.04107510504965776,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.3378271442327778
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0009549",
+              "name": "female reproductive system disease",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000017",
+                  "name": "reproductive system or breast disease"
+                }
+              ]
+            },
+            "score": 0.04073042981943005,
+            "datatypeScores": [
+              {
+                "id": "genetic_association",
+                "score": 0.06699846426509032
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0007254",
+              "name": "breast cancer",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010285",
+                  "name": "integumentary system disease"
+                },
+                {
+                  "id": "OTAR_0000017",
+                  "name": "reproductive system or breast disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.04057262735692142,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.3336944559834703
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0030815",
+              "name": "cholestasis, progressive familial intrahepatic, 11",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0001379",
+                  "name": "endocrine system disease"
+                },
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                },
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.040313770549007276,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.3315654570173781
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0032799",
+              "name": "mitochondrial DNA depletion syndrome 16 (hepatic type)",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                }
+              ]
+            },
+            "score": 0.04008463103910275,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.3296808715447821
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0014225",
+              "name": "hemochromatosis type 5",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                }
+              ]
+            },
+            "score": 0.03989244951466671,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.32810025147099187
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "Orphanet_247790",
+              "name": "FTH1-related iron overload",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                }
+              ]
+            },
+            "score": 0.03989244951466671,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.32810025147099187
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "Orphanet_79211",
+              "name": "Combined hyperlipidemia",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0001379",
+                  "name": "endocrine system disease"
+                },
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.0394119957035766,
+            "datatypeScores": [
+              {
+                "id": "animal_model",
+                "score": 0.32414870128651635
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

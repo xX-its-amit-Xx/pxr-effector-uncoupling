@@ -1,0 +1,46 @@
+gene_symbol,group,disease_name,score,therapeutic_areas
+NR1I2,receptor,skin disease,0.32311252838098753,integumentary system disease
+NR1I2,receptor,adolescent idiopathic scoliosis,0.32053047437400084,musculoskeletal or connective tissue disease
+NR1I2,receptor,ulcerative colitis,0.3017790490474869,"gastrointestinal disease; immune system disease; genetic, familial or congenital disease"
+NR1I2,receptor,neurodegenerative disease,0.20345480355822892,nervous system disease
+NR1I2,receptor,Abnormality of the skeletal system,0.17854021283805555,phenotype
+CYP2C8,PXR target (top hepatocyte-selective),Abnormality of the skeletal system,0.3211518152079769,phenotype
+CYP2C8,PXR target (top hepatocyte-selective),melanoma,0.22315966331067058,cancer or benign tumor
+CYP2C8,PXR target (top hepatocyte-selective),hepatocellular carcinoma,0.21268276504645098,gastrointestinal disease; endocrine system disease; cancer or benign tumor
+CYP2C8,PXR target (top hepatocyte-selective),urinary bladder carcinoma,0.19985030642075247,urinary system disease; cancer or benign tumor
+CYP2C8,PXR target (top hepatocyte-selective),lung adenocarcinoma,0.19282828918174316,respiratory or thoracic disease; cancer or benign tumor
+CYP2C9,PXR target (top hepatocyte-selective),cholesterol embolism,0.4868290635834234,cardiovascular disease
+CYP2C9,PXR target (top hepatocyte-selective),response to anticoagulant,0.4059659423152314,biological_process
+CYP2C9,PXR target (top hepatocyte-selective),Abnormality of the skeletal system,0.2256704798348272,phenotype
+CYP2C9,PXR target (top hepatocyte-selective),placenta praevia,0.08865794748903648,pregnancy or perinatal disease; reproductive system or breast disease
+CYP2C9,PXR target (top hepatocyte-selective),colorectal carcinoma,0.0826447973562391,gastrointestinal disease; cancer or benign tumor
+SLCO1B1,PXR target (top hepatocyte-selective),Rotor syndrome,0.6574955426788922,"nutritional or metabolic disease; genetic, familial or congenital disease"
+SLCO1B1,PXR target (top hepatocyte-selective),response to statin,0.4203783996504734,biological_process
+SLCO1B1,PXR target (top hepatocyte-selective),gout,0.40816931705242376,nutritional or metabolic disease; musculoskeletal or connective tissue disease; phenotype
+SLCO1B1,PXR target (top hepatocyte-selective),Disorder of bilirubin metabolism and excretion,0.3695798546847018,"genetic, familial or congenital disease; nutritional or metabolic disease"
+SLCO1B1,PXR target (top hepatocyte-selective),Jaundice,0.367749417718937,gastrointestinal disease; phenotype
+ABCC2,PXR target (top hepatocyte-selective),Dubin-Johnson syndrome,0.8168561092796948,"nutritional or metabolic disease; genetic, familial or congenital disease"
+ABCC2,PXR target (top hepatocyte-selective),Intrahepatic cholestasis of pregnancy,0.4808221279139194,"gastrointestinal disease; genetic, familial or congenital disease"
+ABCC2,PXR target (top hepatocyte-selective),genetic disorder,0.47163092794718003,"genetic, familial or congenital disease"
+ABCC2,PXR target (top hepatocyte-selective),cholestasis,0.47079311288909975,gastrointestinal disease; phenotype
+ABCC2,PXR target (top hepatocyte-selective),hypothyroidism,0.32163508206336344,endocrine system disease
+CYP3A5,PXR target (top hepatocyte-selective),HIV infection,0.6057890191101166,infectious disease; reproductive system or breast disease
+CYP3A5,PXR target (top hepatocyte-selective),HIV-1 infection,0.5921112630086154,infectious disease; reproductive system or breast disease
+CYP3A5,PXR target (top hepatocyte-selective),chronic hepatitis C virus infection,0.5665520286550164,infectious disease; gastrointestinal disease; endocrine system disease
+CYP3A5,PXR target (top hepatocyte-selective),hepatitis C virus infection,0.5470341059328856,infectious disease; gastrointestinal disease; endocrine system disease
+CYP3A5,PXR target (top hepatocyte-selective),infection,0.5160402674705425,biological_process
+ALB,negative control,hyperthyroxinemia,0.7006021736736501,endocrine system disease
+ALB,negative control,congenital analbuminemia,0.6927697269806876,"hematologic disease; genetic, familial or congenital disease"
+ALB,negative control,"Ehlers-Danlos syndrome, arthrochalasic type",0.3326218692162316,"genetic, familial or congenital disease"
+ALB,negative control,"Ehlers-Danlos syndrome, arthrochalasia type",0.3326218692162316,"genetic, familial or congenital disease"
+ALB,negative control,Abruptio Placentae,0.2700592149124462,pregnancy or perinatal disease; reproductive system or breast disease
+HNF4A,negative control,MODY,0.8258786338560885,"endocrine system disease; genetic, familial or congenital disease; nutritional or metabolic disease; phenotype"
+HNF4A,negative control,type 2 diabetes mellitus,0.7763132041013777,endocrine system disease; nutritional or metabolic disease; phenotype
+HNF4A,negative control,renal cysts and diabetes syndrome,0.7462059176477103,"immune system disease; genetic, familial or congenital disease; nutritional or metabolic disease; endocrine system disease; phenotype"
+HNF4A,negative control,maturity-onset diabetes of the young,0.6914597561097602,"immune system disease; genetic, familial or congenital disease; nutritional or metabolic disease; endocrine system disease; phenotype"
+HNF4A,negative control,monogenic diabetes,0.6787212047889375,"immune system disease; genetic, familial or congenital disease; nutritional or metabolic disease; endocrine system disease; phenotype"
+GAPDH,negative control,neurodegenerative disease,0.55307368855439,nervous system disease
+GAPDH,negative control,neuroinflammatory disorder,0.2509163098655105,nervous system disease; immune system disease
+GAPDH,negative control,neoplasm,0.11553867713222923,cancer or benign tumor
+GAPDH,negative control,glycogen storage disease due to lactate dehydrogenase H-subunit deficiency,0.11429804853996418,"nutritional or metabolic disease; genetic, familial or congenital disease"
+GAPDH,negative control,Sepsis,0.10579436473248678,phenotype

@@ -1,0 +1,1207 @@
+{
+  "data": {
+    "target": {
+      "id": "ENSG00000144852",
+      "approvedSymbol": "NR1I2",
+      "associatedDiseases": {
+        "count": 1198,
+        "rows": [
+          {
+            "disease": {
+              "id": "EFO_0000701",
+              "name": "skin disease",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010285",
+                  "name": "integumentary system disease"
+                }
+              ]
+            },
+            "score": 0.32311252838098753,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.05401285928154107
+              },
+              {
+                "id": "genetic_association",
+                "score": 0.5287949312861507
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0005423",
+              "name": "adolescent idiopathic scoliosis",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000006",
+                  "name": "musculoskeletal or connective tissue disease"
+                }
+              ]
+            },
+            "score": 0.32053047437400084,
+            "datatypeScores": [
+              {
+                "id": "genetic_association",
+                "score": 0.5272482914721043
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000729",
+              "name": "ulcerative colitis",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "EFO_0000540",
+                  "name": "immune system disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.3017790490474869,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.7095374713225772
+              },
+              {
+                "id": "genetic_association",
+                "score": 0.46092674709774745
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0005772",
+              "name": "neurodegenerative disease",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                }
+              ]
+            },
+            "score": 0.20345480355822892,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.18970474216378502
+              },
+              {
+                "id": "affected_pathway",
+                "score": 0.3251824657907956
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "HP_0000924",
+              "name": "Abnormality of the skeletal system",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.17854021283805555,
+            "datatypeScores": [
+              {
+                "id": "genetic_association",
+                "score": 0.2936850930064521
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0001073",
+              "name": "obesity",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.1569889304846295,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.7537526138567099
+              },
+              {
+                "id": "genetic_association",
+                "score": 0.2205472392979467
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000616",
+              "name": "neoplasm",
+              "therapeuticAreas": [
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.11908589520094144,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.9794362752207523
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000182",
+              "name": "hepatocellular carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "EFO_0001379",
+                  "name": "endocrine system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.11547769480562235,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.9450502076639837
+              },
+              {
+                "id": "rna_expression",
+                "score": 0.018839956858031404
+              },
+              {
+                "id": "genetic_association",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_1001951",
+              "name": "colorectal carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.11298227730029198,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.9292363353211062
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0007254",
+              "name": "breast cancer",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010285",
+                  "name": "integumentary system disease"
+                },
+                {
+                  "id": "OTAR_0000017",
+                  "name": "reproductive system or breast disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.10994244472097744,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.9042348664758271
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0008903",
+              "name": "lung cancer",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000010",
+                  "name": "respiratory or thoracic disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.10816513516282573,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.889617170143167
+              },
+              {
+                "id": "genetic_association",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0004992",
+              "name": "cancer",
+              "therapeuticAreas": [
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.10559574433120227,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.8684849060621411
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000756",
+              "name": "melanoma",
+              "therapeuticAreas": [
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.10535891142605781,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.8665370453346136
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0003060",
+              "name": "non-small cell lung carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000010",
+                  "name": "respiratory or thoracic disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.10241012670473308,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.8422844105535692
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0003872",
+              "name": "colitis",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "EFO_0000540",
+                  "name": "immune system disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.09968042275011119,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.8198336319012448
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000407",
+              "name": "dilated cardiomyopathy",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000319",
+                  "name": "cardiovascular disease"
+                },
+                {
+                  "id": "OTAR_0000006",
+                  "name": "musculoskeletal or connective tissue disease"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.09887965662786545,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.8132476345690509
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0001066",
+              "name": "experimental autoimmune encephalomyelitis",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0005932",
+                  "name": "animal disease"
+                },
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                }
+              ]
+            },
+            "score": 0.09796732081178794,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.8057440188642552
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000401",
+              "name": "diabetic nephropathy",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                },
+                {
+                  "id": "EFO_0009690",
+                  "name": "urinary system disease"
+                }
+              ]
+            },
+            "score": 0.0973081134372683,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.8003222884871345
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0008800",
+              "name": "microphthalmia with limb anomalies",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.09605756339036588,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.7900369891420818
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0018899",
+              "name": "posterior cortical atrophy",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "MONDO_0002025",
+                  "name": "psychiatric disorder"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.09575228715715511,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.7875262080267795
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0004975",
+              "name": "Alzheimer disease",
+              "therapeuticAreas": [
+                {
+                  "id": "MONDO_0002025",
+                  "name": "psychiatric disorder"
+                },
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.0952488682910918,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.7833857789841888
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0005922",
+              "name": "esophageal squamous cell carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.09386682336861431,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.7720189842116
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0003767",
+              "name": "inflammatory bowel disease",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000540",
+                  "name": "immune system disease"
+                },
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.09372075939263415,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.770817663464617
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0008170",
+              "name": "ovarian cancer",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0001379",
+                  "name": "endocrine system disease"
+                },
+                {
+                  "id": "OTAR_0000017",
+                  "name": "reproductive system or breast disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.09328767813754078,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.7672557345674893
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000280",
+              "name": "Barrett's esophagus",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                }
+              ]
+            },
+            "score": 0.09232409872440736,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.5938055910091896
+              },
+              {
+                "id": "rna_expression",
+                "score": 0.6108792619800375
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0004979",
+              "name": "asthma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                },
+                {
+                  "id": "OTAR_0000010",
+                  "name": "respiratory or thoracic disease"
+                }
+              ]
+            },
+            "score": 0.0906980078307016,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.7459566795022314
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000341",
+              "name": "chronic obstructive pulmonary disease",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000010",
+                  "name": "respiratory or thoracic disease"
+                }
+              ]
+            },
+            "score": 0.08895313375859563,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.7316057527276624
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0003095",
+              "name": "non-alcoholic fatty liver disease",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0001379",
+                  "name": "endocrine system disease"
+                },
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                }
+              ]
+            },
+            "score": 0.08632944401702695,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.7100269007277606
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000181",
+              "name": "head and neck squamous cell carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.08567115910357187,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.704612757242669
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000519",
+              "name": "glioblastoma multiforme",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.08383585132592422,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.6895180475745784
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000571",
+              "name": "lung adenocarcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000010",
+                  "name": "respiratory or thoracic disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.0836771975443386,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.6882131804564052
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "HP_0012393",
+              "name": "Allergy",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.08333359230804249,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.6853871578429267
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0003928",
+              "name": "necrotizing enterocolitis",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.083332134436068,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.6853751673994402
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000681",
+              "name": "renal cell carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0009690",
+                  "name": "urinary system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.08167317483204381,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.6717308545060833
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000544",
+              "name": "infection",
+              "therapeuticAreas": [
+                {
+                  "id": "GO_0008150",
+                  "name": "biological_process"
+                }
+              ]
+            },
+            "score": 0.08155972120816322,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.6707977415240933
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_1001052",
+              "name": "myeloid sarcoma",
+              "therapeuticAreas": [
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                },
+                {
+                  "id": "EFO_0005803",
+                  "name": "hematologic disease"
+                },
+                {
+                  "id": "EFO_0000540",
+                  "name": "immune system disease"
+                },
+                {
+                  "id": "OTAR_0000006",
+                  "name": "musculoskeletal or connective tissue disease"
+                }
+              ]
+            },
+            "score": 0.08052842645239727,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.6623157337049667
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0015459",
+              "name": "nasopharyngeal carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0005741",
+                  "name": "infectious disease"
+                },
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "OTAR_0000010",
+                  "name": "respiratory or thoracic disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.08008366194491635,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.6586577144926791
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000199",
+              "name": "oral squamous cell carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.07968866219117893,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.6554089914859712
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000222",
+              "name": "acute myeloid leukemia",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0005803",
+                  "name": "hematologic disease"
+                },
+                {
+                  "id": "EFO_0000540",
+                  "name": "immune system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                },
+                {
+                  "id": "OTAR_0000006",
+                  "name": "musculoskeletal or connective tissue disease"
+                }
+              ]
+            },
+            "score": 0.07957545726056499,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.654477923911679
+              },
+              {
+                "id": "genetic_association",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0006343",
+              "name": "chronic periodontitis",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "OTAR_0000006",
+                  "name": "musculoskeletal or connective tissue disease"
+                }
+              ]
+            },
+            "score": 0.07926272395531947,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.6519058112100843
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0009448",
+              "name": "pulmonary fibrosis",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000010",
+                  "name": "respiratory or thoracic disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.07924332194427923,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.6517462370355526
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0800195",
+              "name": "achalasia-alacrima syndrome",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.079030080596781,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.6499924079127642
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "OTAR_0000003",
+              "name": "cyst",
+              "therapeuticAreas": [
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.07896994561094513,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.6494978204854442
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0007739",
+              "name": "Huntington disease",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.0785629065651361,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.6461500788723514
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0002691",
+              "name": "liver cancer",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "EFO_0001379",
+                  "name": "endocrine system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.07821374340149644,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.6432783444166255
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0003778",
+              "name": "psoriatic arthritis",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000540",
+                  "name": "immune system disease"
+                },
+                {
+                  "id": "OTAR_0000006",
+                  "name": "musculoskeletal or connective tissue disease"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.07776084301935926,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.6395534107242011
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0100053",
+              "name": "anaphylaxis",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000540",
+                  "name": "immune system disease"
+                }
+              ]
+            },
+            "score": 0.07763497088577592,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.6385181602147858
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000495",
+              "name": "fetal growth restriction",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000014",
+                  "name": "pregnancy or perinatal disease"
+                },
+                {
+                  "id": "OTAR_0000017",
+                  "name": "reproductive system or breast disease"
+                }
+              ]
+            },
+            "score": 0.07583203716133904,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.6236897148430423
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0006544",
+              "name": "bladder transitional cell carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0009690",
+                  "name": "urinary system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.07540209259705584,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.6201535840369347
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0003830",
+              "name": "prostatitis",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0005741",
+                  "name": "infectious disease"
+                },
+                {
+                  "id": "OTAR_0000017",
+                  "name": "reproductive system or breast disease"
+                }
+              ]
+            },
+            "score": 0.07447034071896741,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.6124902785937083
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
