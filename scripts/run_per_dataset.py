@@ -38,8 +38,13 @@ from pxr_uncoupling.reproducibility import (  # noqa: E402
 
 
 def main() -> None:
+    import pandas as pd
+
     adata = ad.read_h5ad(DATA_RAW / "nr1i2_atlas.h5ad")
-    target_genes = [g for g in adata.var_names if g != NR1I2_SYMBOL]
+    pxr_targets = pd.read_csv(DATA_RAW.parent / "targets" / "pxr_canonical_targets.tsv", sep="\t")[
+        "gene_symbol"
+    ].tolist()
+    target_genes = [g for g in pxr_targets if g in adata.var_names and g != NR1I2_SYMBOL]
 
     # Per-dataset coupling: use a smaller metacell size + more permissive
     # min_metacells so smaller datasets still produce a row. We accept lower

@@ -48,8 +48,16 @@ def main() -> None:
     log.info("Genes: %s", adata.var_names.tolist())
 
     # ── 2. Coupling ρ per cell type ────────────────────────────────────────────
-    target_genes = [g for g in adata.var_names if g != NR1I2_SYMBOL]
-    log.info("Computing coupling for %d target genes across cell types ...", len(target_genes))
+    # Restrict to the curated PXR target set. The atlas may also contain
+    # negative-control genes (handled separately by run_negative_control.py).
+    target_meta_path = DATA_RAW.parent / "targets" / "pxr_canonical_targets.tsv"
+    pxr_targets = pd.read_csv(target_meta_path, sep="\t")["gene_symbol"].tolist()
+    target_genes = [g for g in pxr_targets if g in adata.var_names and g != NR1I2_SYMBOL]
+    log.info(
+        "Computing coupling for %d PXR target genes (of %d curated) across cell types",
+        len(target_genes),
+        len(pxr_targets),
+    )
 
     coupling = coupling_per_cell_type(
         adata,
@@ -99,20 +107,21 @@ def main() -> None:
     log.info("Heatmap saved to %s", FIGURES / "final_heatmap.png")
 
     # ── 5. Summary ──────────────────────────────────────────────────────────────
-    print("\n=== CHECKPOINT 3: ANALYSIS COMPLETE ===")
-    print(f"Cell types analysed : {coupling.shape[0]}")
-    print(f"Target genes        : {coupling.shape[1]}")
+    log.info("=== CHECKPOINT 3: ANALYSIS COMPLETE ===")
+    log.info("Cell types analysed : %d", coupling.shape[0])
+    log.info("Target genes        : %d", coupling.shape[1])
     if "hepatocyte" in coupling.index:
         hep_mean = coupling.loc["hepatocyte"].mean()
-        print(f"Mean hepatocyte ρ   : {hep_mean:.3f}")
+        log.info("Mean hepatocyte rho : %.3f", hep_mean)
         if ds is not None:
             best_gene = gene_mean_ds.index[0]
-            print(f"Top decoupled gene  : {best_gene} (mean DS={gene_mean_ds.iloc[0]:.3f})")
-    print("Outputs:")
-    print(f"  {coupling_path}")
-    if ds is not None:
-        print(f"  {ds_path}")
-    print(f"  {FIGURES / 'final_heatmap.png'}")
+            log.info("Top decoupled gene  : %s (mean DS=%.3f)", best_gene, gene_mean_ds.iloc[0])
+    log.info(
+        "Outputs: %s, %s, %s",
+        coupling_path,
+        ds_path if ds is not None else "(no decoupling)",
+        FIGURES / "final_heatmap.png",
+    )
 
 
 if __name__ == "__main__":

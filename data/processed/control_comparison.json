@@ -1,0 +1,101 @@
+{
+  "u": 23247.0,
+  "pvalue": 5.7128665429044795e-27,
+  "median_target": 0.6647252333693796,
+  "median_null": -0.029150138521711215,
+  "n_target": 164,
+  "n_null": 169,
+  "target_genes_used": [
+    "CYP3A4",
+    "CYP3A5",
+    "CYP2B6",
+    "CYP2C8",
+    "CYP2C9",
+    "CYP1A2",
+    "CYP7A1",
+    "UGT1A1",
+    "UGT1A6",
+    "SULT2A1",
+    "GSTA1",
+    "GSTA2",
+    "ABCB1",
+    "ABCC2",
+    "ABCC3",
+    "SLCO1B1",
+    "G6PC1",
+    "PCK1",
+    "CPT1A",
+    "NFKB1"
+  ],
+  "control_genes_used": [
+    "ALB",
+    "TF",
+    "APOA1",
+    "APOA2",
+    "APOB",
+    "HP",
+    "FGB",
+    "F2_ENSG00000180210",
+    "SERPINA1",
+    "TTR",
+    "HNF4A",
+    "HNF1A",
+    "FOXA1",
+    "FOXA2",
+    "CEBPA",
+    "GAPDH",
+    "ACTB",
+    "B2M",
+    "PPIA",
+    "HPRT1"
+  ],
+  "control_genes_missing": [],
+  "target_genes_missing": [],
+  "per_cell_type": {
+    "CD4-positive, alpha-beta T cell": {
+      "target_mean_DS": 0.654,
+      "control_mean_DS": 0.061,
+      "target_minus_control": 0.594
+    },
+    "CD8-positive, alpha-beta T cell": {
+      "target_mean_DS": 0.61,
+      "control_mean_DS": 0.065,
+      "target_minus_control": 0.545
+    },
+    "enterocyte of epithelium of large intestine": {
+      "target_mean_DS": 0.501,
+      "control_mean_DS": -0.016,
+      "target_minus_control": 0.517
+    },
+    "enterocyte of epithelium of small intestine": {
+      "target_mean_DS": 0.29,
+      "control_mean_DS": -0.075,
+      "target_minus_control": 0.365
+    },
+    "extravillous trophoblast": {
+      "target_mean_DS": 0.663,
+      "control_mean_DS": 0.021,
+      "target_minus_control": 0.643
+    },
+    "intestinal crypt stem cell": {
+      "target_mean_DS": 0.255,
+      "control_mean_DS": -0.336,
+      "target_minus_control": 0.591
+    },
+    "macrophage": {
+      "target_mean_DS": 0.58,
+      "control_mean_DS": 0.069,
+      "target_minus_control": 0.51
+    },
+    "monocyte": {
+      "target_mean_DS": 0.619,
+      "control_mean_DS": 0.057,
+      "target_minus_control": 0.562
+    },
+    "natural killer cell": {
+      "target_mean_DS": 0.599,
+      "control_mean_DS": 0.027,
+      "target_minus_control": 0.572
+    }
+  }
+}

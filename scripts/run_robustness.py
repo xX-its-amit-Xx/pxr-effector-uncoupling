@@ -50,8 +50,20 @@ def main() -> None:
     h5ad_path = DATA_RAW / "nr1i2_atlas.h5ad"
     log.info("Loading %s", h5ad_path)
     adata = ad.read_h5ad(h5ad_path)
-    target_genes = [g for g in adata.var_names if g != NR1I2_SYMBOL]
-    log.info("Atlas: %d cells × %d genes; %d targets", adata.n_obs, adata.n_vars, len(target_genes))
+    # Restrict to the curated PXR target set; negative controls are handled by
+    # run_negative_control.py, not this script.
+    import pandas as pd
+
+    pxr_targets = pd.read_csv(DATA_RAW.parent / "targets" / "pxr_canonical_targets.tsv", sep="\t")[
+        "gene_symbol"
+    ].tolist()
+    target_genes = [g for g in pxr_targets if g in adata.var_names and g != NR1I2_SYMBOL]
+    log.info(
+        "Atlas: %d cells × %d genes; using %d PXR target genes",
+        adata.n_obs,
+        adata.n_vars,
+        len(target_genes),
+    )
 
     DATA_PROCESSED.mkdir(parents=True, exist_ok=True)
 

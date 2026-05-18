@@ -6,7 +6,7 @@ APOA2	ENSG00000158874	liver_enriched_non_pxr	Apolipoprotein A-II
 APOB	ENSG00000084674	liver_enriched_non_pxr	Apolipoprotein B
 HP	ENSG00000257017	liver_enriched_non_pxr	Haptoglobin; acute-phase response
 FGB	ENSG00000171564	liver_enriched_non_pxr	Fibrinogen beta chain
-F2	ENSG00000180210	liver_enriched_non_pxr	Prothrombin
+F2_ENSG00000180210	ENSG00000180210	liver_enriched_non_pxr	Prothrombin (symbol disambiguated in CELLxGENE due to F2 collision)
 SERPINA1	ENSG00000197249	liver_enriched_non_pxr	Alpha-1 antitrypsin
 TTR	ENSG00000118271	liver_enriched_non_pxr	Transthyretin
 HNF4A	ENSG00000101076	hepatocyte_tf	Hepatocyte master TF; upstream of PXR but not a PXR target
