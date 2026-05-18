@@ -49,6 +49,20 @@ To confirm that our top hepatocyte-selective genes are independently catalogued 
 
 Matched controls (ALB → analbuminemia / Ehlers-Danlos; HNF4A → MODY / type 2 diabetes; GAPDH → neurodegenerative disease) show no comparable pharmacology signature — their top diseases reflect structural, developmental, or housekeeping biology. The hepatocyte-selective genes our pipeline ranks at the top are *the same* genes that drug-development pharmacology has independently flagged as DDI-relevant, demonstrating that the metacell-coupling signal recovers genuine pharmacogenomic substrate, not a generic liver-marker pattern.
 
+### External validation: GTEx bulk RNA-seq
+
+We re-tested the hepatocyte-selectivity pattern in an entirely independent data modality (GTEx v8, bulk RNA-seq, 17,382 samples across 54 tissues, 948 donors). For each tissue, we computed within-tissue Spearman ρ(NR1I2, target) across donors (`figures/supp_gtex_validation.png`):
+
+| Gene | Liver ρ | Intestine mean ρ | Immune mean ρ | Liver − immune |
+|------|---------|-------------------|----------------|-----------------|
+| CYP2C9  | **0.68** | 0.56 | 0.11 | +0.56 |
+| CYP2C8  | **0.61** | 0.31 | 0.25 | +0.37 |
+| CYP3A5  | **0.60** | 0.59 | 0.27 | +0.33 |
+| ABCC2   | **0.44** | 0.16 | 0.06 | +0.38 |
+| SLCO1B1 | **0.32** | 0.04 | 0.11 | +0.21 |
+
+All 5 top hep-selective genes show liver ρ > immune-tissue mean ρ in bulk, mirroring the hepatocyte-vs-immune contrast seen in single-cell metacelling. Magnitudes are lower than the metacell estimates (single-cell aggregation reduces sampling noise; bulk donor-level signal includes age/sex/handling confounders that attenuate ρ) — so finding the same directional pattern at bulk resolution is a **conservative** replication. Both intestinal tissues (Small_Intestine, Colon, Stomach, Esophagus_Mucosa) and immune tissues (Whole_Blood, Spleen, EBV-LCLs) recover the epithelial-barrier-vs-circulating taxonomy from the scRNA-seq result.
+
 ## Robustness
 
 The headline pattern is stable across analytical choices:
