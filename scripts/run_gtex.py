@@ -128,21 +128,15 @@ def main() -> None:
     summary: dict[str, dict[str, float]] = {}
     for gene in PXR_TARGETS:
         liver_rho = float(rho_df.loc["Liver", gene]) if "Liver" in rho_df.index else np.nan
-        immune_tissues = [
-            t for t in rho_df.index if TISSUE_GROUP.get(t) == "immune"
-        ]
+        immune_tissues = [t for t in rho_df.index if TISSUE_GROUP.get(t) == "immune"]
         immune_rho = rho_df.loc[immune_tissues, gene].mean() if immune_tissues else np.nan
-        intestinal_tissues = [
-            t for t in rho_df.index if TISSUE_GROUP.get(t) == "intestine"
-        ]
+        intestinal_tissues = [t for t in rho_df.index if TISSUE_GROUP.get(t) == "intestine"]
         intestinal_rho = (
             rho_df.loc[intestinal_tissues, gene].mean() if intestinal_tissues else np.nan
         )
         summary[gene] = {
             "liver_rho": liver_rho,
-            "intestine_mean_rho": float(intestinal_rho)
-            if not np.isnan(intestinal_rho)
-            else np.nan,
+            "intestine_mean_rho": float(intestinal_rho) if not np.isnan(intestinal_rho) else np.nan,
             "immune_mean_rho": float(immune_rho) if not np.isnan(immune_rho) else np.nan,
             "liver_minus_immune": float(liver_rho - immune_rho)
             if not (np.isnan(liver_rho) or np.isnan(immune_rho))
