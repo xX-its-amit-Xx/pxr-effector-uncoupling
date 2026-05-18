@@ -89,26 +89,28 @@ def main() -> None:
         adata.obs["cell_type"].nunique(),
     )
 
-    # Subsample to at most MAX_CELLS_PER_TYPE per cell type to keep H5AD < 100 MB.
-    # 5000 cells per type >> the 600 needed for stable metacell correlations.
-    MAX_CELLS_PER_TYPE = 5000
+    # Per-(cell_type, dataset_id) cap so the largest dataset cannot crowd out smaller
+    # ones — directly addresses per-dataset reproducibility (previously median pairwise
+    # rho=0.33 across hepatocyte datasets when a single dataset filled 60% of slots).
+    MAX_CELLS_PER_TYPE_PER_DATASET = 1500
     import numpy as np
 
     rng = np.random.default_rng(42)
     idx = []
-    for ct, grp in adata.obs.groupby("cell_type"):
+    for (ct, ds), grp in adata.obs.groupby(["cell_type", "dataset_id"], observed=True):
         n = len(grp)
-        if n > MAX_CELLS_PER_TYPE:
-            chosen = rng.choice(grp.index, size=MAX_CELLS_PER_TYPE, replace=False)
+        if n > MAX_CELLS_PER_TYPE_PER_DATASET:
+            chosen = rng.choice(grp.index, size=MAX_CELLS_PER_TYPE_PER_DATASET, replace=False)
         else:
             chosen = grp.index.values
         idx.extend(chosen.tolist())
     adata = adata[idx].copy()
     log.info(
-        "After subsample (max %d/type): %d cells, %d cell types",
-        MAX_CELLS_PER_TYPE,
+        "After per-(type,dataset) subsample (max %d): %d cells, %d cell types, %d datasets",
+        MAX_CELLS_PER_TYPE_PER_DATASET,
         adata.n_obs,
         adata.obs["cell_type"].nunique(),
+        adata.obs["dataset_id"].nunique(),
     )
 
     DATA_RAW.mkdir(parents=True, exist_ok=True)
