@@ -1,0 +1,12 @@
+{
+  "n_signatures_total": 121,
+  "n_landmark_genes": 978,
+  "n_cell_lines": 18,
+  "HEPG2_signature_strength_L1": 0.5931601518236197,
+  "HT29_signature_strength_L1": 0.29143967855120656,
+  "non_hepatic_signature_strength_L1_mean": 0.4038657915370141,
+  "HEPG2_signature_strength_ratio_vs_others": 1.4687061005246267,
+  "HEPG2_intra_line_rho_median": 0.3103842746902862,
+  "non_hepatic_intra_line_rho_median_mean": 0.161483033649759,
+  "note": "L1000 landmark set (978 genes) excludes the top-6 hep-selective PXR panel directly. This analysis tests overall signature strength and intra-line consistency as an indirect probe of PXR functional engagement."
+}

@@ -50,6 +50,12 @@ To confirm that our top hepatocyte-selective genes are independently catalogued 
 
 Matched controls (ALB → analbuminemia / Ehlers-Danlos; HNF4A → MODY / type 2 diabetes; GAPDH → neurodegenerative disease) show no comparable pharmacology signature — their top diseases reflect structural, developmental, or housekeeping biology. The hepatocyte-selective genes our pipeline ranks at the top are *the same* genes that drug-development pharmacology has independently flagged as DDI-relevant, demonstrating that the metacell-coupling signal recovers genuine pharmacogenomic substrate, not a generic liver-marker pattern.
 
+### External validation: LINCS L1000 rifampicin perturbation
+
+We tested whether a PXR ligand (rifampicin) elicits a cell-type-specific transcriptional response by fetching all 121 publicly available LINCS L1000 rifampicin signatures across 18 cell lines from iLINCS. **Honest limitation up front:** L1000's 978 "landmark" genes deliberately exclude most drug-metabolism genes, so none of our top-6 hep-selective panel is directly measured; the public iLINCS API exposes landmark expression only (BING-inferred extension requires a registered clue.io session). The achievable test is whether hepatic cell lines show a *stronger* and more *consistent* rifampicin response across landmarks than non-hepatic lines.
+
+**HEPG2 ranks #1 of 18 cell lines** in mean rifampicin signature strength (0.59 vs non-hepatic mean 0.40, **1.47×**), with replicate consistency in the top tier (median pairwise Spearman ρ = 0.31 across 15 intra-HEPG2 pairs). HT29 (the only intestinal line in L1000, a poorly-differentiated colorectal-adenocarcinoma line with reduced endogenous PXR) ranks lowest. See `figures/supp_lincs_rifampicin.png` and `data/processed/lincs_signature_strength.csv`. A direct panel-level overlay is left as a future test once authenticated clue.io BING access is in place.
+
 ### External validation: GTEx bulk RNA-seq
 
 We re-tested the hepatocyte-selectivity pattern in an entirely independent data modality (GTEx v8, bulk RNA-seq, 17,382 samples across 54 tissues, 948 donors). For each tissue, we computed within-tissue Spearman ρ(NR1I2, target) across donors (`figures/supp_gtex_validation.png`):
