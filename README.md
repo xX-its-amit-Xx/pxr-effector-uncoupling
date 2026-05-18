@@ -6,21 +6,22 @@ A cell-type-resolved, statistically-grounded map of which PXR (NR1I2) target gen
 
 ## Key Finding
 
-Five canonical PXR target genes show strong, statistically significant coupling to NR1I2 in hepatocytes and effectively no coupling in other cell types:
+The hepatocyte transcriptional program is engaged by a small panel of canonical PXR target genes with very high coupling magnitude; the same genes are an order of magnitude less coupled in circulating immune and placental cell types.
 
-| Gene | Mean DS | Hepatocyte ρ (95% CI) | BH q-value (hepatocyte) |
-|------|---------|------------------------|--------------------------|
-| CYP2C8  | 0.866 | 0.89 (0.82 – 0.93) | 0.0105 |
-| CYP2C9  | 0.821 | 0.93 (0.88 – 0.96) | 0.0105 |
-| SLCO1B1 | 0.790 | 0.87 (0.83 – 0.91) | 0.0105 |
-| ABCC2   | 0.769 | 0.86 (0.81 – 0.91) | 0.0105 |
-| CYP3A5  | 0.724 | 0.90 (0.86 – 0.93) | 0.0105 |
+| Gene | Hepatocyte ρ (95% CI) | BH q-value (hepatocyte) | Mean DS |
+|------|------------------------|--------------------------|---------|
+| CYP2C9  | 0.89 (0.86 – 0.92) | 0.0041 | 0.698 |
+| CYP3A5  | 0.87 (0.84 – 0.90) | 0.0041 | 0.631 |
+| ABCC2   | 0.85 (0.82 – 0.87) | 0.0041 | 0.677 |
+| SLCO1B1 | 0.85 (0.81 – 0.88) | 0.0041 | 0.756 |
+| CYP2C8  | 0.81 (0.77 – 0.85) | 0.0041 | 0.695 |
+| CPT1A   | 0.77 (0.73 – 0.82) | 0.0041 | 0.658 |
 
-CIs from 500-resample percentile bootstrap of metacells; q-values from a metacell-label permutation null (500 permutations, two-sided), BH-adjusted across the full (cell type × gene) family of 200 tests.
+CIs from 500-resample percentile bootstrap of metacells; q-values from a metacell-label permutation null (500 permutations, two-sided), BH-adjusted across the full 10 × 20 family of 200 tests.
 
-After BH-FDR correction, **16 of 20** PXR target genes reach q < 0.05 in hepatocytes. The next most-coupled cell types are intestinal epithelium — **11/20** in small-intestine enterocytes, **10/20** in intestinal crypt stem cells, **3/20** in large-intestine enterocytes — exactly the tissues with documented PXR-driven CYP3A4 induction and clinical drug-drug interactions (Lehmann et al. 1998, Geick et al. 2001). **0/20** in any of the four immune cell types (CD4 T, CD8 T, NK, macrophage), 0/20 in monocytes, 0/20 in extravillous trophoblast, 1/20 (likely false positive) in NK cells. The pattern is **epithelial barrier vs. circulating/immune** — PXR-coupled where it matters for xenobiotic exposure (liver + gut), decoupled where the receptor is transcribed but has no programmatic readout (blood / placenta).
+**Effect-size pattern across cell types.** After BH-FDR correction, **18 of 20** PXR target genes reach q < 0.05 in hepatocytes (mean ρ 0.62, top genes 0.77–0.89). Intestinal epithelium shows intermediate magnitude and breadth — **12/20** in small-intestine enterocytes (mean ρ 0.35), **10/20** in intestinal crypt stem cells (mean ρ 0.37), **7/20** in large-intestine enterocytes (mean ρ 0.17) — consistent with documented PXR-driven CYP3A4 induction in gut (Lehmann et al. 1998, Geick et al. 2001). Circulating immune cells (macrophage 16/20, CD4 T 14/20, monocyte 14/20, NK 14/20, CD8 T 10/20) reach statistical significance with the much larger sample sizes available here (50–110 k cells per type), but the **effect sizes are 4–8× smaller than hepatocyte**: immune mean ρ 0.03–0.12, top-gene ρ 0.19–0.24. Placental extravillous trophoblast shows 0/20 — true near-zero coupling (mean ρ 0.014). The interpretable axis is therefore **effect size, not significance**: epithelial-barrier tissues engage the PXR transcriptional program at a magnitude that is qualitatively different from circulating immune cells, even though immune cells are not formally silent at our sample size.
 
-These results support hepatocyte-selective target engagement as a design criterion for tissue-restricted PXR agonists in cholestasis and metabolic indications.
+These results support hepatocyte-selective target engagement as a design criterion for tissue-restricted PXR agonists in cholestasis and metabolic indications, with the explicit caveat that "non-hepatic" should be interpreted as "very weak coupling," not as "no signal."
 
 ### Specificity vs. matched negative controls
 
