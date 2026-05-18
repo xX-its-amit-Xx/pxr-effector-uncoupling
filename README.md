@@ -66,15 +66,15 @@ All 5 top hep-selective genes show liver ρ > immune-tissue mean ρ in bulk, mir
 
 ## Robustness
 
-The headline pattern is stable across analytical choices:
+The headline pattern is stable across analytical choices, with one honest caveat about the boundary of the top-5 panel:
 
 | Check | Result |
 |-------|--------|
-| Bootstrap CI excludes 0 (top-5 genes, hepatocyte) | All 5 |
-| BH-FDR q < 0.05 (top-5 genes, hepatocyte) | All 5 |
-| Spearman of decoupling rankings vs. reference, across 18 parameter combinations | median **0.97** |
-| Top-5 hepatocyte-selective gene set Jaccard vs. reference, across 18 combinations | 1.00 at every combination |
-| Std of ρ across 20 × 80% cell-level subsamples, per (cell_type, gene) | median **0.051** |
+| Bootstrap CI excludes 0 (top-6 hep-coupled genes) | All 6 |
+| BH-FDR q < 0.05 (top-6 hep-coupled genes) | All 6 (q ≈ 0.004) |
+| Spearman of decoupling rankings vs. reference, across 17 parameter combinations | median **0.95** (range 0.90–1.00) |
+| Top-5 hepatocyte-selective gene set Jaccard vs. reference | median **0.67**; the top-4 panel (SLCO1B1, CYP2C9, CYP2C8, ABCC2) is stable in all 17 combinations; the 5th slot oscillates between CPT1A and CYP3A5 depending on (cells_per_metacell, min_metacells, seed) — both are bona-fide PXR targets at the boundary of selectivity, with DS values within ~0.03 of each other |
+| Std of ρ across 20 × 80% cell-level subsamples, per (cell_type, gene) | median **0.022** |
 
 See `figures/supp_*.png` and `notebooks/05_robustness.ipynb` for full diagnostics.
 
