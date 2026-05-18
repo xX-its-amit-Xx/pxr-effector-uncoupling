@@ -1,0 +1,24 @@
+{
+  "n_donors": 3,
+  "drugs_tested": [
+    "rifampin",
+    "rifabutin",
+    "rifapentine"
+  ],
+  "panel_mean_log2FC_per_drug": {
+    "rifabutin": 1.325,
+    "rifampin": 1.098,
+    "rifapentine": 0.814
+  },
+  "control_mean_log2FC_per_drug": {
+    "rifabutin": 0.151,
+    "rifampin": 0.047,
+    "rifapentine": 0.333
+  },
+  "panel_minus_control_per_drug": {
+    "rifabutin": 1.173,
+    "rifampin": 1.052,
+    "rifapentine": 0.481
+  },
+  "note": "Direct primary-hepatocyte rifamycin perturbation overlay. Sheet 'Rifampin vs Vehicle' uses 10 \u00b5M at 72 h; Rifabutin 5 \u00b5M at 72 h; Rifapentine 10 \u00b5M at 72 h. n=3 donors; tech reps collapsed."
+}
