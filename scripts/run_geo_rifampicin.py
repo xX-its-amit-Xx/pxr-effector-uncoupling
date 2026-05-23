@@ -44,12 +44,18 @@ import numpy as np  # noqa: E402
 import pandas as pd  # noqa: E402
 from scipy.stats import ttest_rel  # noqa: E402
 
-from pxr_uncoupling.config import (  # noqa: E402
-    COLOR_ACCENT,
-    COLOR_CREAM,
-    COLOR_SAGE,
-    DATA_PROCESSED,
-    FIGURES,
+from pxr_uncoupling.config import DATA_PROCESSED, FIGURES  # noqa: E402
+from pxr_uncoupling.figure_style import (  # noqa: E402
+    COLOR_HEPATIC,
+    COLOR_NEG,
+    COLOR_RECEPTOR,
+    COLOR_TEXT,
+    COLOR_ZERO_LINE,
+    DOUBLE_COL,
+    add_panel_label,
+    add_subtitle,
+    apply_style,
+    polish_axes,
 )
 
 XLSX = DATA_PROCESSED.parent / "cache" / "GSE139896_processed.xlsx"
@@ -200,57 +206,86 @@ def main() -> None:
     log.info("Summary: %s", json.dumps(summary, indent=2))
 
     # Figure ───────────────────────────────────────────────────────────────────
-    fig, axes = plt.subplots(1, 3, figsize=(14, 5), sharey=True)
-    fig.patch.set_facecolor(COLOR_CREAM)
+    apply_style()
+    from matplotlib.patches import Patch
+
+    fig, axes = plt.subplots(1, 3, figsize=(DOUBLE_COL, 3.6), sharey=True)
+    for ax in axes:
+        polish_axes(ax)
 
     gene_order = PANEL + RECEPTOR + CONTROLS
     color_map = {
-        "PXR panel": COLOR_ACCENT,
-        "negative control": COLOR_SAGE,
-        "receptor (NR1I2)": "#8a6a9c",
+        "PXR panel": COLOR_HEPATIC,
+        "negative control": COLOR_NEG,
+        "receptor (NR1I2)": COLOR_RECEPTOR,
     }
 
-    for ax, drug in zip(axes, drug_sheets.keys(), strict=False):
-        ax.set_facecolor(COLOR_CREAM)
+    panel_labels = ["a", "b", "c"]
+    for k, (ax, drug) in enumerate(zip(axes, drug_sheets.keys(), strict=False)):
         sub = stats[stats["drug"] == drug].set_index("gene")
         x = np.arange(len(gene_order))
         means = sub.loc[gene_order, "mean_log2FC"].values
         stds = sub.loc[gene_order, "std_log2FC"].values
         colors = [color_map[_gene_class(g)] for g in gene_order]
-        ax.bar(x, means, yerr=stds, capsize=3, color=colors, edgecolor="white", linewidth=0.7)
-        # Star significant bars (paired t-test p < 0.05)
+        ax.bar(
+            x,
+            means,
+            yerr=stds,
+            capsize=2,
+            color=colors,
+            edgecolor="white",
+            linewidth=0.5,
+            width=0.75,
+            error_kw={"elinewidth": 0.6, "capthick": 0.5, "ecolor": COLOR_TEXT},
+        )
         for j, (g, p) in enumerate(
             zip(gene_order, sub.loc[gene_order, "p_value"].values, strict=False)
         ):
             if not np.isnan(p) and p < 0.05:
+                top = means[j] + (stds[j] if not np.isnan(stds[j]) else 0)
                 ax.text(
                     j,
-                    means[j] + (stds[j] if not np.isnan(stds[j]) else 0) + 0.15,
+                    top + 0.2,
                     "*",
                     ha="center",
-                    fontsize=14,
-                    color="black",
+                    fontsize=9,
+                    color=COLOR_TEXT,
+                    fontweight="bold",
                 )
-        ax.axhline(0, color="#888", lw=0.7, linestyle="--")
+        ax.axhline(0, color=COLOR_ZERO_LINE, lw=0.5, linestyle="--")
         ax.set_xticks(x)
-        ax.set_xticklabels(gene_order, rotation=45, ha="right", fontsize=9)
-        ax.set_title(f"{drug} vs vehicle\n(primary hepatocytes, n=3 donors)", fontsize=11)
-        ax.spines[["top", "right"]].set_visible(False)
-    axes[0].set_ylabel("log₂ fold change vs methanol vehicle\n(mean ± SD across 3 donors)")
+        ax.set_xticklabels(gene_order, rotation=35, ha="right", fontsize=6.5)
+        ax.set_title(drug, loc="left", pad=4)
+        add_panel_label(ax, panel_labels[k], dx=-0.16 if k == 0 else -0.05, dy=1.06)
 
-    # Shared legend
-    from matplotlib.patches import Patch
+    axes[0].set_ylabel(r"log$_2$ fold change vs vehicle")
 
     leg = [
-        Patch(facecolor=COLOR_ACCENT, label="Top-6 PXR panel"),
-        Patch(facecolor="#8a6a9c", label="Receptor (NR1I2)"),
-        Patch(facecolor=COLOR_SAGE, label="Matched controls"),
+        Patch(facecolor=COLOR_HEPATIC, label="Top-6 PXR panel"),
+        Patch(facecolor=COLOR_RECEPTOR, label="Receptor (NR1I2)"),
+        Patch(facecolor=COLOR_NEG, label="Matched controls"),
     ]
-    axes[-1].legend(handles=leg, loc="upper right", fontsize=8, frameon=False)
+    axes[-1].legend(handles=leg, loc="upper right", handlelength=0.9, handleheight=0.7)
 
-    plt.tight_layout()
+    fig.suptitle(
+        "Direct rifamycin perturbation of primary human hepatocytes",
+        x=0.012,
+        y=0.97,
+        ha="left",
+        fontsize=9,
+        fontweight="bold",
+        color=COLOR_TEXT,
+    )
+    add_subtitle(
+        fig,
+        "GSE139896 (Dyavar et al. 2020). 3 donors, mean ± SD, 72 h treatment. `*` paired t-test p < 0.05.",  # noqa: E501
+        x=0.012,
+        y=0.93,
+    )
+
+    plt.tight_layout(rect=(0, 0, 1, 0.88))
     out = FIGURES / "supp_geo_rifamycin.png"
-    fig.savefig(out, dpi=200, bbox_inches="tight", facecolor=COLOR_CREAM)
+    fig.savefig(out, dpi=300, bbox_inches="tight", facecolor="white")
     log.info("Wrote %s", out)
 
 

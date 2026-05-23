@@ -21,15 +21,20 @@ sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 import anndata as ad  # noqa: E402
 import matplotlib.pyplot as plt  # noqa: E402
-import seaborn as sns  # noqa: E402
 from matplotlib.colors import TwoSlopeNorm  # noqa: E402
 
 from pxr_uncoupling.config import (  # noqa: E402
-    COLOR_CREAM,
     DATA_PROCESSED,
     DATA_RAW,
     FIGURES,
     NR1I2_SYMBOL,
+)
+from pxr_uncoupling.figure_style import (  # noqa: E402
+    COLOR_MUTED_TEXT,
+    COLOR_TEXT,
+    DOUBLE_COL,
+    add_subtitle,
+    apply_style,
 )
 from pxr_uncoupling.reproducibility import (  # noqa: E402
     cross_dataset_agreement,
@@ -72,43 +77,75 @@ def main() -> None:
         json.dump(summary, fh, indent=2)
     log.info("Cross-dataset agreement summary: %s", summary)
 
-    # Heatmap: datasets × genes
+    # Heatmap: datasets × genes ──────────────────────────────────────────────
+    apply_style()
     FIGURES.mkdir(parents=True, exist_ok=True)
-    fig_w = max(8, per_ds.shape[1] * 0.45 + 2)
-    fig_h = max(3, per_ds.shape[0] * 0.45 + 1.5)
-    fig, ax = plt.subplots(figsize=(fig_w, fig_h))
-    fig.patch.set_facecolor(COLOR_CREAM)
-    ax.set_facecolor(COLOR_CREAM)
+    from matplotlib.colors import LinearSegmentedColormap
+
+    cmap = LinearSegmentedColormap.from_list(
+        "pxr_div",
+        [
+            (0.00, "#8a3220"),
+            (0.25, "#c0533a"),
+            (0.50, "#ffffff"),
+            (0.75, "#3d7a78"),
+            (1.00, "#1d4d4c"),
+        ],
+        N=256,
+    )
     norm = TwoSlopeNorm(vmin=-1, vcenter=0, vmax=1)
-    cmap = sns.diverging_palette(h_neg=20, h_pos=145, s=60, l=45, sep=1, as_cmap=True)
-    sns.heatmap(
-        per_ds,
-        ax=ax,
-        cmap=cmap,
-        norm=norm,
-        linewidths=0.4,
-        linecolor="#e0d5c5",
-        cbar_kws={"label": "Spearman ρ (hepatocyte)", "shrink": 0.6},
-        mask=per_ds.isna(),
+
+    fig_w = min(DOUBLE_COL, 0.28 * per_ds.shape[1] + 2.5)
+    fig_h = 0.32 * per_ds.shape[0] + 1.4
+    fig = plt.figure(figsize=(fig_w, fig_h))
+    gs = fig.add_gridspec(nrows=1, ncols=2, width_ratios=[1.0, 0.04], wspace=0.04)
+    ax = fig.add_subplot(gs[0, 0])
+    cax = fig.add_subplot(gs[0, 1])
+
+    # Short dataset labels: last 8 chars of UUID
+    short_idx = [f"…{x[-8:]}" if len(x) > 12 else x for x in per_ds.index]
+
+    im = ax.imshow(per_ds.values, aspect="auto", cmap=cmap, norm=norm, interpolation="nearest")
+    ax.set_xticks(range(per_ds.shape[1]))
+    ax.set_xticklabels(per_ds.columns, rotation=35, ha="right", fontsize=6.5)
+    ax.set_yticks(range(per_ds.shape[0]))
+    ax.set_yticklabels(short_idx, fontsize=6, family="monospace")
+    ax.tick_params(length=0)
+    for s in ax.spines.values():
+        s.set_visible(False)
+    ax.set_xlabel("")
+    ax.set_ylabel("CELLxGENE dataset id  (truncated)", fontsize=6.5, color=COLOR_MUTED_TEXT)
+
+    cb = fig.colorbar(im, cax=cax)
+    cb.outline.set_visible(False)
+    cb.set_label("Spearman ρ (hepatocyte)", fontsize=7, color=COLOR_TEXT, labelpad=4)
+    cb.ax.tick_params(labelsize=6, length=2.5)
+    cb.set_ticks([-1, -0.5, 0, 0.5, 1])
+
+    fig.suptitle(
+        "Per-dataset hepatocyte coupling",
+        x=0.012,
+        y=0.97,
+        ha="left",
+        fontsize=9,
+        fontweight="bold",
+        color=COLOR_TEXT,
     )
-    ax.set_title(
-        "Hepatocyte coupling within individual datasets\n"
-        f"({summary['n_datasets']} datasets ≥ 300 hepatocyte cells; "
-        f"median pairwise ρ = {summary['median_pairwise_rho']:.2f}, "
-        f"range {summary['min_pairwise_rho']:.2f}–{summary['max_pairwise_rho']:.2f})",
-        fontsize=10,
-        pad=12,
+    add_subtitle(
+        fig,
+        f"{summary['n_datasets']} datasets ≥ 300 hepatocyte cells. "
+        f"Median pairwise ρ across datasets = {summary['median_pairwise_rho']:.2f} "
+        f"(range {summary['min_pairwise_rho']:.2f} to {summary['max_pairwise_rho']:.2f}).",
+        x=0.012,
+        y=0.93,
     )
-    ax.set_xlabel("PXR target gene")
-    ax.set_ylabel("CELLxGENE dataset_id")
-    ax.tick_params(axis="x", labelrotation=45, labelsize=8)
-    ax.tick_params(axis="y", labelsize=8)
-    plt.tight_layout()
+
+    plt.tight_layout(rect=(0, 0, 1, 0.88))
     fig.savefig(
         FIGURES / "supp_per_dataset_hepatocyte.png",
         dpi=300,
         bbox_inches="tight",
-        facecolor=COLOR_CREAM,
+        facecolor="white",
     )
     log.info("Wrote %s", FIGURES / "supp_per_dataset_hepatocyte.png")
 

@@ -1,4 +1,4 @@
-"""Supplementary / reviewer-facing figures."""
+"""Supplementary figures — Nature-tier rendering."""
 
 from __future__ import annotations
 
@@ -8,16 +8,41 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
-from matplotlib.colors import TwoSlopeNorm
+from matplotlib.colors import LinearSegmentedColormap, TwoSlopeNorm
 
-from .config import COLOR_ACCENT, COLOR_CREAM, FIGURES
+from .config import FIGURES
+from .figure_style import (
+    CELL_TYPE_ORDER,
+    COLOR_HEPATIC,
+    COLOR_IMMUNE,
+    COLOR_NEG,
+    COLOR_TEXT,
+    COLOR_ZERO_LINE,
+    COMPARTMENT_COLOR,
+    DOUBLE_COL,
+    ONE_AND_A_HALF_COL,
+    SINGLE_COL,
+    add_panel_label,
+    add_subtitle,
+    apply_style,
+    compartment_of,
+    polish_axes,
+    short_cell_type,
+)
 
 
-def _styled_fig(figsize: tuple[float, float]):
-    fig, ax = plt.subplots(figsize=figsize)
-    fig.patch.set_facecolor(COLOR_CREAM)
-    ax.set_facecolor(COLOR_CREAM)
-    return fig, ax
+def _diverging_cmap() -> LinearSegmentedColormap:
+    return LinearSegmentedColormap.from_list(
+        "pxr_div",
+        [
+            (0.00, "#8a3220"),
+            (0.25, "#c0533a"),
+            (0.50, "#ffffff"),
+            (0.75, "#3d7a78"),
+            (1.00, "#1d4d4c"),
+        ],
+        N=256,
+    )
 
 
 def heatmap_with_significance(
@@ -27,64 +52,114 @@ def heatmap_with_significance(
     q_threshold: float = 0.05,
     dpi: int = 300,
 ) -> plt.Figure:
-    """
-    Heatmap of ρ overlaid with stars on (cell_type, gene) cells where q<threshold.
-
-    Cells with q<0.05 get a single asterisk; q<0.01 gets two.
-    """
+    """Heatmap of ρ with FDR significance stars."""
+    apply_style()
     if output_path is None:
         FIGURES.mkdir(parents=True, exist_ok=True)
         output_path = FIGURES / "supp_heatmap_significance.png"
 
-    common_ct = coupling.index.intersection(qvalues.index)
+    common_ct = [c for c in CELL_TYPE_ORDER if c in coupling.index and c in qvalues.index]
     common_g = coupling.columns.intersection(qvalues.columns)
-    rho = coupling.loc[common_ct, common_g].T  # genes × cell_types
+    rho = coupling.loc[common_ct, common_g].T
     q = qvalues.loc[common_ct, common_g].T
 
-    fig_w = max(10, len(common_ct) * 0.65 + 4)
-    fig_h = max(7, len(common_g) * 0.42 + 2)
-    fig, ax = _styled_fig((fig_w, fig_h))
-
-    norm = TwoSlopeNorm(vmin=-1, vcenter=0, vmax=1)
-    cmap = sns.diverging_palette(h_neg=20, h_pos=145, s=60, l=45, sep=1, as_cmap=True)
-
-    sns.heatmap(
-        rho,
-        ax=ax,
-        cmap=cmap,
-        norm=norm,
-        linewidths=0.4,
-        linecolor="#e0d5c5",
-        cbar_kws={"label": "Spearman ρ (NR1I2 ~ target)", "shrink": 0.6},
-        mask=rho.isna(),
+    n_ct = len(common_ct)
+    n_g = len(common_g)
+    fig_w = min(DOUBLE_COL, 0.42 * n_ct + 3.0)
+    fig_h = 0.22 * n_g + 1.4
+    fig = plt.figure(figsize=(fig_w, fig_h))
+    gs = fig.add_gridspec(
+        nrows=2,
+        ncols=2,
+        width_ratios=[1.0, 0.04],
+        height_ratios=[0.04, 1.0],
+        wspace=0.04,
+        hspace=0.02,
     )
+    ax_top = fig.add_subplot(gs[0, 0])
+    ax = fig.add_subplot(gs[1, 0])
+    cax = fig.add_subplot(gs[1, 1])
 
-    # overlay stars for significance
-    for i, gene in enumerate(rho.index):
-        for j, ct in enumerate(rho.columns):
-            qv = q.loc[gene, ct] if (gene in q.index and ct in q.columns) else np.nan
+    cmap = _diverging_cmap()
+    norm = TwoSlopeNorm(vmin=-1, vcenter=0, vmax=1)
+    im = ax.imshow(rho.values, aspect="auto", cmap=cmap, norm=norm, interpolation="nearest")
+
+    # compartment band
+    ax_top.set_xlim(-0.5, n_ct - 0.5)
+    ax_top.set_ylim(0, 1)
+    for j, ct in enumerate(common_ct):
+        comp = compartment_of(ct)
+        ax_top.add_patch(
+            plt.Rectangle((j - 0.5, 0), 1, 1, color=COMPARTMENT_COLOR.get(comp, "#bbb"))
+        )
+    ax_top.set_axis_off()
+
+    # significance markers
+    for i in range(n_g):
+        for j in range(n_ct):
+            qv = q.iat[i, j]
             if pd.isna(qv):
                 continue
-            if qv < 0.01:
-                mark = "**"
-            elif qv < q_threshold:
-                mark = "*"
-            else:
+            mark = "**" if qv < 0.01 else ("*" if qv < q_threshold else "")
+            if not mark:
                 continue
-            ax.text(j + 0.5, i + 0.5, mark, ha="center", va="center", fontsize=8, color="#222")
+            v = rho.iat[i, j]
+            text_color = "white" if not np.isnan(v) and abs(v) > 0.55 else COLOR_TEXT
+            ax.text(
+                j,
+                i,
+                mark,
+                ha="center",
+                va="center",
+                fontsize=7,
+                color=text_color,
+                fontweight="bold",
+            )
 
-    ax.tick_params(axis="x", labelrotation=45, labelsize=8)
-    ax.tick_params(axis="y", labelsize=8)
-    ax.set_xlabel("Cell type")
-    ax.set_ylabel("")
-    ax.set_title(
-        "Coupling ρ with FDR significance overlay\n"
-        f"(* q<{q_threshold}, ** q<0.01; BH-FDR over (cell type × gene) family)",
-        fontsize=10,
-        pad=12,
+    last_comp = None
+    for j, ct in enumerate(common_ct):
+        comp = compartment_of(ct)
+        if last_comp is not None and comp != last_comp:
+            ax.axvline(j - 0.5, color="white", lw=1.2)
+        last_comp = comp
+
+    ax.set_xticks(range(n_ct))
+    ax.set_xticklabels(
+        [short_cell_type(c) for c in common_ct], rotation=35, ha="right", fontsize=6.5
     )
-    plt.tight_layout()
-    fig.savefig(output_path, dpi=dpi, bbox_inches="tight", facecolor=COLOR_CREAM)
+    ax.set_yticks(range(n_g))
+    ax.set_yticklabels(list(rho.index), fontsize=6.5)
+    ax.tick_params(length=0)
+    ax.set_xlabel("")
+    ax.set_ylabel("")
+    for s in ax.spines.values():
+        s.set_visible(False)
+
+    cb = fig.colorbar(im, cax=cax)
+    cb.outline.set_visible(False)
+    cb.set_label("Spearman ρ", fontsize=7, color=COLOR_TEXT, labelpad=4)
+    cb.ax.tick_params(labelsize=6, length=2.5)
+    cb.set_ticks([-1, -0.5, 0, 0.5, 1])
+
+    fig.suptitle(
+        "Coupling ρ with FDR-significance overlay",
+        x=0.012,
+        y=0.97,
+        ha="left",
+        fontsize=9,
+        fontweight="bold",
+        color=COLOR_TEXT,
+    )
+    add_subtitle(
+        fig,
+        f"`*` q < {q_threshold},  `**` q < 0.01 ; BH-FDR over the 10 × 20 (cell type × gene) family.",  # noqa: E501
+        y=0.93,
+    )
+
+    plt.subplots_adjust(top=0.92, right=0.92, bottom=0.16, left=0.18)
+    fig.savefig(output_path, dpi=dpi, bbox_inches="tight", facecolor="white")
+    # consume unused names so linters stay quiet
+    _ = (COLOR_IMMUNE, COLOR_HEPATIC)
     return fig
 
 
@@ -98,21 +173,21 @@ def decoupling_with_ci_forest(
     output_path: Path | None = None,
     dpi: int = 300,
 ) -> plt.Figure:
-    """Forest plot of hepatocyte ρ ± 95% CI for the top-N decoupled genes."""
+    """Forest plot of hepatocyte ρ with 95% CIs for the top decoupled genes."""
+    apply_style()
     if output_path is None:
         FIGURES.mkdir(parents=True, exist_ok=True)
         output_path = FIGURES / "supp_forest_hepatocyte.png"
 
-    # rank by mean decoupling score
     ds = coupling.loc[reference_cell_type] - coupling.drop(index=reference_cell_type)
     ranking = ds.mean(axis=0).sort_values(ascending=False).head(top_n).index.tolist()
-
     rho = coupling.loc[reference_cell_type, ranking]
     lo = ci_lower.loc[reference_cell_type, ranking]
     hi = ci_upper.loc[reference_cell_type, ranking]
     q = qvalues.loc[reference_cell_type, ranking] if reference_cell_type in qvalues.index else None
 
-    fig, ax = _styled_fig((6, max(3, 0.45 * top_n + 1)))
+    fig, ax = plt.subplots(figsize=(SINGLE_COL + 1.2, max(2.4, 0.28 * top_n + 0.8)))
+    polish_axes(ax)
     y = np.arange(len(ranking))
     err_lo = (rho - lo).clip(lower=0).values
     err_hi = (hi - rho).clip(lower=0).values
@@ -122,31 +197,37 @@ def decoupling_with_ci_forest(
         y,
         xerr=[err_lo, err_hi],
         fmt="o",
-        color=COLOR_ACCENT,
-        ecolor="#a0866a",
-        capsize=4,
-        markersize=7,
-        lw=1.5,
+        color=COLOR_HEPATIC,
+        ecolor=COLOR_HEPATIC,
+        elinewidth=1.0,
+        capsize=2.5,
+        capthick=0.7,
+        markersize=4.5,
+        markeredgecolor="white",
+        markeredgewidth=0.7,
     )
-    ax.axvline(0, color="#888", ls="--", lw=0.8)
+    ax.axvline(0, color=COLOR_ZERO_LINE, ls="--", lw=0.5)
     ax.set_yticks(y)
     labels = list(ranking)
     if q is not None:
         labels = [
-            f"{g} {'***' if q[g] < 0.001 else '**' if q[g] < 0.01 else '*' if q[g] < 0.05 else ''}"
+            f"{g}  {'***' if q[g] < 0.001 else '**' if q[g] < 0.01 else '*' if q[g] < 0.05 else ''}"
             for g in ranking
         ]
-    ax.set_yticklabels(labels, fontsize=9)
+    ax.set_yticklabels(labels, fontsize=6.5)
     ax.invert_yaxis()
-    ax.set_xlabel(f"Spearman ρ in {reference_cell_type} (95% bootstrap CI)")
+    ax.set_xlabel(f"Spearman ρ in {reference_cell_type}  (95% bootstrap CI)")
     ax.set_xlim(-0.2, 1.05)
-    ax.set_title(
-        f"Top {top_n} hepatocyte-selective PXR targets — point estimates with CIs",
-        fontsize=10,
-        pad=10,
+    ax.set_title(f"Top {top_n} hepatocyte-coupled PXR targets", loc="left", pad=4)
+    add_subtitle(
+        fig,
+        "Bars: 95% percentile bootstrap CI over metacell rows. `*` q<0.05, `**` q<0.01, `***` q<0.001.",  # noqa: E501
+        x=0.02,
+        y=0.94,
     )
-    plt.tight_layout()
-    fig.savefig(output_path, dpi=dpi, bbox_inches="tight", facecolor=COLOR_CREAM)
+
+    plt.tight_layout(rect=(0, 0, 1, 0.94))
+    fig.savefig(output_path, dpi=dpi, bbox_inches="tight", facecolor="white")
     return fig
 
 
@@ -155,55 +236,68 @@ def sensitivity_plot(
     output_path: Path | None = None,
     dpi: int = 300,
 ) -> plt.Figure:
-    """Scatter: Spearman of decoupling ranks vs reference across parameter sweep."""
+    """Decoupling-rank agreement + top-5 Jaccard across the parameter sweep."""
+    apply_style()
     if output_path is None:
         FIGURES.mkdir(parents=True, exist_ok=True)
         output_path = FIGURES / "supp_sensitivity.png"
 
-    fig, axes = plt.subplots(1, 2, figsize=(12, 4))
-    fig.patch.set_facecolor(COLOR_CREAM)
+    fig, axes = plt.subplots(1, 2, figsize=(DOUBLE_COL, 2.6))
     for ax in axes:
-        ax.set_facecolor(COLOR_CREAM)
+        polish_axes(ax)
 
-    # 1. Spearman of decoupling ranking, coloured by cells_per_metacell
-    palette = {15: "#c87c5a", 30: "#8a9a7b", 60: "#6a8fa5"}
+    palette = {15: COLOR_HEPATIC, 30: COLOR_NEG, 60: COLOR_IMMUNE}
+    seeds_observed = sorted(agreement["seed"].unique().tolist())
     for cpm, grp in agreement.groupby("cells_per_metacell"):
+        c = palette.get(cpm, "#555")
+        jit = 6 * (cpm - 30) / 30
         axes[0].scatter(
-            grp["seed"] + 0.1 * (cpm - 30) / 30,  # tiny jitter per cpm
+            grp["seed"] + jit,
             grp["spearman_of_decoupling"],
-            color=palette.get(cpm, "#888"),
-            label=f"cpm={cpm}",
-            s=80,
-            alpha=0.85,
+            color=c,
+            label=str(cpm),
+            s=28,
+            alpha=0.95,
             edgecolors="white",
+            linewidth=0.6,
         )
-    axes[0].axhline(1.0, ls="--", lw=0.8, color="#888")
-    axes[0].set_xlabel("Random seed")
-    axes[0].set_ylabel("Spearman ρ of decoupling rankings vs. reference")
-    axes[0].set_ylim(0.85, 1.02)
-    axes[0].legend(title="cells/metacell", fontsize=8)
-    axes[0].set_title("Decoupling-rank agreement across parameter sweep", fontsize=10)
-
-    # 2. Jaccard of top-5 hepatocyte-selective genes
-    for cpm, grp in agreement.groupby("cells_per_metacell"):
         axes[1].scatter(
-            grp["seed"] + 0.1 * (cpm - 30) / 30,
+            grp["seed"] + jit,
             grp["jaccard_top5"],
-            color=palette.get(cpm, "#888"),
-            label=f"cpm={cpm}",
-            s=80,
-            alpha=0.85,
+            color=c,
+            label=str(cpm),
+            s=28,
+            alpha=0.95,
             edgecolors="white",
+            linewidth=0.6,
         )
-    axes[1].axhline(1.0, ls="--", lw=0.8, color="#888")
-    axes[1].set_xlabel("Random seed")
-    axes[1].set_ylabel("Jaccard overlap of top-5 hepatocyte-selective genes")
-    axes[1].set_ylim(0.5, 1.05)
-    axes[1].legend(title="cells/metacell", fontsize=8)
-    axes[1].set_title("Top-5 gene overlap with reference parameter set", fontsize=10)
+
+    for ax in axes:
+        ax.axhline(1.0, ls="--", lw=0.5, color=COLOR_ZERO_LINE)
+        ax.set_xticks(seeds_observed)
+        ax.set_xlabel("Random seed")
+
+    axes[0].set_ylim(0.85, 1.02)
+    axes[0].set_ylabel("Spearman ρ of decoupling rankings\nvs reference parameters")
+    axes[0].set_title("Rank stability across parameter sweep", loc="left", pad=4)
+    add_panel_label(axes[0], "a", dx=-0.15)
+
+    axes[1].set_ylim(0.4, 1.08)
+    axes[1].set_ylabel("Jaccard overlap of top-5 hep-selective set")
+    axes[1].set_title("Top-5 overlap vs reference", loc="left", pad=4)
+    add_panel_label(axes[1], "b", dx=-0.15)
+
+    leg = axes[1].legend(
+        title="cells / metacell",
+        fontsize=6,
+        title_fontsize=6.5,
+        loc="lower right",
+        handlelength=0.8,
+    )
+    leg.get_title().set_fontweight("bold")
 
     plt.tight_layout()
-    fig.savefig(output_path, dpi=dpi, bbox_inches="tight", facecolor=COLOR_CREAM)
+    fig.savefig(output_path, dpi=dpi, bbox_inches="tight", facecolor="white")
     return fig
 
 
@@ -212,29 +306,43 @@ def subsample_stability_plot(
     output_path: Path | None = None,
     dpi: int = 300,
 ) -> plt.Figure:
-    """Box of subsample std per cell type — how reproducible is each cell type's row?"""
+    """Per-cell-type ρ-std under 80% cell-level resampling."""
+    apply_style()
     if output_path is None:
         FIGURES.mkdir(parents=True, exist_ok=True)
         output_path = FIGURES / "supp_subsample_stability.png"
 
-    fig, ax = _styled_fig((9, 4.5))
-    order = summary.groupby("cell_type")["std"].median().sort_values().index.tolist()
+    cts = summary["cell_type"].unique().tolist()
+    order = [c for c in CELL_TYPE_ORDER if c in cts]
+    palette = {c: COMPARTMENT_COLOR.get(compartment_of(c), COLOR_HEPATIC) for c in order}
+
+    fig, ax = plt.subplots(figsize=(ONE_AND_A_HALF_COL + 2.2, 3.2))
+    polish_axes(ax)
     sns.boxplot(
         data=summary,
         x="cell_type",
         y="std",
         order=order,
         ax=ax,
-        color=COLOR_ACCENT,
-        linewidth=0.8,
-        fliersize=2,
+        palette=palette,
+        linewidth=0.6,
+        fliersize=1.8,
+        hue="cell_type",
+        legend=False,
+        width=0.65,
     )
-    ax.tick_params(axis="x", labelrotation=45, labelsize=8)
+    ax.set_xticks(range(len(order)))
+    ax.set_xticklabels([short_cell_type(c) for c in order], rotation=25, ha="right", fontsize=6.5)
     ax.set_xlabel("")
     ax.set_ylabel("Std of ρ across 20 × 80% subsamples")
-    ax.set_title(
-        "Per-cell-type coupling stability under cell-level subsampling", fontsize=10, pad=10
+    ax.set_title("Coupling stability under cell-level subsampling", loc="left", pad=4)
+    add_subtitle(
+        fig,
+        "Each box: distribution of per-gene ρ standard deviation across 20 independent 80%-subsamples within a cell type.",  # noqa: E501
+        x=0.02,
+        y=0.93,
     )
-    plt.tight_layout()
-    fig.savefig(output_path, dpi=dpi, bbox_inches="tight", facecolor=COLOR_CREAM)
+
+    plt.tight_layout(rect=(0, 0, 1, 0.88))
+    fig.savefig(output_path, dpi=dpi, bbox_inches="tight", facecolor="white")
     return fig

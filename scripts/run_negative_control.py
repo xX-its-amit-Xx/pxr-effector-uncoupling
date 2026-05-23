@@ -35,9 +35,6 @@ import pandas as pd  # noqa: E402
 import seaborn as sns  # noqa: E402
 
 from pxr_uncoupling.config import (  # noqa: E402
-    COLOR_ACCENT,
-    COLOR_CREAM,
-    COLOR_SAGE,
     DATA_PROCESSED,
     DATA_RAW,
     DATA_TARGETS,
@@ -47,6 +44,19 @@ from pxr_uncoupling.config import (  # noqa: E402
     TARGET_CELLS_PER_METACELL,
 )
 from pxr_uncoupling.coupling import coupling_per_cell_type, decoupling_score  # noqa: E402
+from pxr_uncoupling.figure_style import (  # noqa: E402
+    COLOR_HEPATIC,
+    COLOR_MUTED_TEXT,
+    COLOR_NEG,
+    COLOR_TEXT,
+    COLOR_ZERO_LINE,
+    DOUBLE_COL,
+    add_panel_label,
+    add_subtitle,
+    apply_style,
+    polish_axes,
+    short_cell_type,
+)
 from pxr_uncoupling.statistics import compare_to_null_genes  # noqa: E402
 
 
@@ -150,10 +160,12 @@ def main() -> None:
     combined.index.name = "cell_type"
     combined = combined.reset_index()
 
-    fig, axes = plt.subplots(1, 2, figsize=(13, 5), gridspec_kw={"width_ratios": [1, 1.4]})
-    fig.patch.set_facecolor(COLOR_CREAM)
+    apply_style()
+    fig, axes = plt.subplots(
+        1, 2, figsize=(DOUBLE_COL, 3.8), gridspec_kw={"width_ratios": [1, 1.5]}
+    )
     for ax in axes:
-        ax.set_facecolor(COLOR_CREAM)
+        polish_axes(ax)
 
     # Panel A: pooled distribution
     sns.violinplot(
@@ -161,9 +173,11 @@ def main() -> None:
         x="set",
         y="DS",
         ax=axes[0],
-        palette={"PXR target": COLOR_ACCENT, "negative control": COLOR_SAGE},
+        palette={"PXR target": COLOR_HEPATIC, "negative control": COLOR_NEG},
+        hue="set",
+        legend=False,
         inner="quartile",
-        linewidth=0.8,
+        linewidth=0.6,
         cut=0,
     )
     sns.stripplot(
@@ -171,64 +185,87 @@ def main() -> None:
         x="set",
         y="DS",
         ax=axes[0],
-        color="#2a2a2a",
-        size=2,
+        color=COLOR_TEXT,
+        size=1.2,
         alpha=0.35,
         jitter=0.25,
     )
-    axes[0].axhline(0, color="#888", ls="--", lw=0.8)
+    axes[0].axhline(0, color=COLOR_ZERO_LINE, ls="--", lw=0.5)
     axes[0].set_xlabel("")
-    axes[0].set_ylabel("Decoupling score (ρ_hepatocyte − ρ_other)")
+    axes[0].set_ylabel("Decoupling score  (ρ_hepatocyte − ρ_other)")
     p = summary["pvalue"]
-    axes[0].set_title(
-        f"PXR target decoupling vs. matched controls\n"
-        f"Mann-Whitney U (one-sided): p = {p:.2g}  "
-        f"(median {summary['median_target']:.2f} vs {summary['median_null']:.2f})",
-        fontsize=10,
+    axes[0].set_title("Distribution of DS by gene class", loc="left", pad=4)
+    add_panel_label(axes[0], "a", dx=-0.20)
+    axes[0].text(
+        0.02,
+        0.98,
+        f"Mann-Whitney U  p = {p:.1e}\nmedian {summary['median_target']:.2f} vs {summary['median_null']:.2f}",  # noqa: E501
+        transform=axes[0].transAxes,
+        va="top",
+        ha="left",
+        fontsize=6.5,
+        color=COLOR_MUTED_TEXT,
     )
 
-    # Panel B: per-cell-type means
+    # Panel B: per-cell-type
     per_ct_sorted = per_ct.sort_values("target_mean_DS")
     y = np.arange(len(per_ct_sorted))
-    axes[1].scatter(
-        per_ct_sorted["target_mean_DS"],
-        y,
-        color=COLOR_ACCENT,
-        s=70,
-        label="PXR targets",
-        edgecolors="white",
-        linewidths=0.8,
-    )
-    axes[1].scatter(
-        per_ct_sorted["control_mean_DS"],
-        y,
-        color=COLOR_SAGE,
-        s=70,
-        label="Negative controls",
-        edgecolors="white",
-        linewidths=0.8,
-    )
     for i in y:
         axes[1].plot(
             [per_ct_sorted["control_mean_DS"].iloc[i], per_ct_sorted["target_mean_DS"].iloc[i]],
             [i, i],
-            color="#888",
-            lw=0.6,
+            color=COLOR_MUTED_TEXT,
+            lw=0.5,
             alpha=0.6,
         )
-    axes[1].axvline(0, color="#888", ls="--", lw=0.8)
+    axes[1].scatter(
+        per_ct_sorted["target_mean_DS"],
+        y,
+        color=COLOR_HEPATIC,
+        s=22,
+        label="PXR targets",
+        edgecolors="white",
+        linewidths=0.5,
+    )
+    axes[1].scatter(
+        per_ct_sorted["control_mean_DS"],
+        y,
+        color=COLOR_NEG,
+        s=22,
+        label="Matched controls",
+        edgecolors="white",
+        linewidths=0.5,
+    )
+    axes[1].axvline(0, color=COLOR_ZERO_LINE, ls="--", lw=0.5)
     axes[1].set_yticks(y)
-    axes[1].set_yticklabels(per_ct_sorted.index, fontsize=8)
+    axes[1].set_yticklabels([short_cell_type(c) for c in per_ct_sorted.index], fontsize=6.5)
     axes[1].set_xlabel("Mean decoupling score across genes")
-    axes[1].legend(loc="lower right", fontsize=8)
-    axes[1].set_title("Per cell type: PXR targets vs. controls", fontsize=10)
+    axes[1].legend(loc="lower right", handlelength=0.7, handleheight=0.7)
+    axes[1].set_title("Per cell type", loc="left", pad=4)
+    add_panel_label(axes[1], "b", dx=-0.20)
 
-    plt.tight_layout()
+    fig.suptitle(
+        "Decoupling is specific to PXR target genes",
+        x=0.012,
+        y=0.97,
+        ha="left",
+        fontsize=9,
+        fontweight="bold",
+        color=COLOR_TEXT,
+    )
+    add_subtitle(
+        fig,
+        "20 PXR targets vs 20 matched controls (liver-enriched non-PXR + hepatocyte master TFs + housekeeping).",  # noqa: E501
+        x=0.012,
+        y=0.93,
+    )
+
+    plt.tight_layout(rect=(0, 0, 1, 0.88))
     fig.savefig(
         FIGURES / "supp_negative_control.png",
         dpi=300,
         bbox_inches="tight",
-        facecolor=COLOR_CREAM,
+        facecolor="white",
     )
     log.info("Wrote %s", FIGURES / "supp_negative_control.png")
 

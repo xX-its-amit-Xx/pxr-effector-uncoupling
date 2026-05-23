@@ -31,12 +31,16 @@ import numpy as np  # noqa: E402
 import pandas as pd  # noqa: E402
 from scipy.stats import spearmanr  # noqa: E402
 
-from pxr_uncoupling.config import (  # noqa: E402
-    COLOR_ACCENT,
-    COLOR_CREAM,
-    COLOR_SAGE,
-    DATA_PROCESSED,
-    FIGURES,
+from pxr_uncoupling.config import DATA_PROCESSED, FIGURES  # noqa: E402
+from pxr_uncoupling.figure_style import (  # noqa: E402
+    COLOR_HEPATIC,
+    COLOR_IMMUNE,
+    COLOR_INTESTINE,
+    COLOR_MUTED_TEXT,
+    COLOR_TEXT,
+    DOUBLE_COL,
+    add_subtitle,
+    apply_style,
 )
 from pxr_uncoupling.gtex import fetch_many  # noqa: E402
 
@@ -154,6 +158,7 @@ def main() -> None:
     summary_df.to_csv(DATA_PROCESSED / "gtex_summary.csv")
 
     # 3. Heatmap figure ────────────────────────────────────────────────────────
+    apply_style()
     plot_genes = PXR_TARGETS + CONTROLS
     plot_mat = rho_df[plot_genes].copy()
 
@@ -164,53 +169,93 @@ def main() -> None:
 
     plot_mat = plot_mat.reindex(sorted(plot_mat.index, key=_group_sort_key))
 
-    fig, ax = plt.subplots(figsize=(8, 14))
-    fig.patch.set_facecolor(COLOR_CREAM)
-    ax.set_facecolor(COLOR_CREAM)
-    cmap = plt.cm.RdBu_r
-    im = ax.imshow(plot_mat.values, cmap=cmap, vmin=-1, vmax=1, aspect="auto")
-    ax.set_xticks(range(len(plot_genes)))
-    ax.set_xticklabels(plot_genes, rotation=45, ha="right")
-    ax.set_yticks(range(len(plot_mat.index)))
-    ax.set_yticklabels([t.replace("_", " ") for t in plot_mat.index], fontsize=8)
-    ax.set_title(
-        "GTEx v8 within-tissue Spearman rho(NR1I2, gene)\n"
-        "top-5 PXR targets (left) vs negative controls (right)",
-        fontsize=11,
-        loc="left",
-        pad=10,
+    from matplotlib.colors import LinearSegmentedColormap, TwoSlopeNorm
+
+    cmap = LinearSegmentedColormap.from_list(
+        "pxr_div",
+        [
+            (0.00, "#8a3220"),
+            (0.25, "#c0533a"),
+            (0.50, "#ffffff"),
+            (0.75, "#3d7a78"),
+            (1.00, "#1d4d4c"),
+        ],
+        N=256,
     )
-    ax.axvline(len(PXR_TARGETS) - 0.5, color="k", lw=1.5)
+    norm = TwoSlopeNorm(vmin=-1, vcenter=0, vmax=1)
+
+    # Layout: heatmap + left tissue-group band + thin colourbar
+    fig = plt.figure(figsize=(DOUBLE_COL * 0.85, 0.16 * len(plot_mat.index) + 1.2))
+    gs = fig.add_gridspec(
+        nrows=1,
+        ncols=3,
+        width_ratios=[0.04, 1.0, 0.03],
+        wspace=0.04,
+    )
+    ax_left = fig.add_subplot(gs[0, 0])
+    ax = fig.add_subplot(gs[0, 1])
+    cax = fig.add_subplot(gs[0, 2])
+
+    # left band: tissue group
+    group_color = {
+        "liver": COLOR_HEPATIC,
+        "intestine": COLOR_INTESTINE,
+        "kidney": "#7a8a9f",
+        "adrenal": "#8a6a9c",
+        "immune": COLOR_IMMUNE,
+    }
+    ax_left.set_xlim(0, 1)
+    ax_left.set_ylim(-0.5, len(plot_mat.index) - 0.5)
     for i, tissue in enumerate(plot_mat.index):
-        grp = TISSUE_GROUP.get(tissue, "")
-        if grp == "liver":
-            ax.add_patch(
-                plt.Rectangle(
-                    (-0.5, i - 0.5),
-                    len(plot_genes),
-                    1.0,
-                    fill=False,
-                    edgecolor=COLOR_ACCENT,
-                    lw=2,
-                )
-            )
-        elif grp == "immune":
-            ax.add_patch(
-                plt.Rectangle(
-                    (-0.5, i - 0.5),
-                    len(plot_genes),
-                    1.0,
-                    fill=False,
-                    edgecolor=COLOR_SAGE,
-                    lw=1.5,
-                    linestyle="--",
-                )
-            )
-    cbar = fig.colorbar(im, ax=ax, shrink=0.4, label="Spearman rho")
-    cbar.outline.set_visible(False)
-    plt.tight_layout()
+        grp = TISSUE_GROUP.get(tissue, None)
+        if grp:
+            ax_left.add_patch(plt.Rectangle((0, i - 0.5), 1, 1, color=group_color.get(grp, "#bbb")))
+    ax_left.invert_yaxis()
+    ax_left.set_axis_off()
+
+    im = ax.imshow(plot_mat.values, cmap=cmap, norm=norm, aspect="auto", interpolation="nearest")
+    ax.set_xticks(range(len(plot_genes)))
+    ax.set_xticklabels(plot_genes, rotation=35, ha="right", fontsize=6.5)
+    ax.set_yticks(range(len(plot_mat.index)))
+    ax.set_yticklabels([t.replace("_", " ") for t in plot_mat.index], fontsize=6.5)
+    ax.tick_params(length=0)
+    ax.axvline(len(PXR_TARGETS) - 0.5, color="white", lw=1.4)
+    # subtle separator between gene-class groups
+    fig.text(
+        0.55 * (len(PXR_TARGETS) + 1) / (len(plot_genes) + 1) - 0.05,
+        0.02,
+        "← PXR targets    Controls →",
+        fontsize=6.5,
+        color=COLOR_MUTED_TEXT,
+    )
+    for s in ax.spines.values():
+        s.set_visible(False)
+
+    cb = fig.colorbar(im, cax=cax)
+    cb.outline.set_visible(False)
+    cb.set_label("Spearman ρ", fontsize=7, color=COLOR_TEXT, labelpad=4)
+    cb.ax.tick_params(labelsize=6, length=2.5)
+    cb.set_ticks([-1, -0.5, 0, 0.5, 1])
+
+    fig.suptitle(
+        "GTEx v8 within-tissue ρ(NR1I2, gene)",
+        x=0.012,
+        y=0.97,
+        ha="left",
+        fontsize=9,
+        fontweight="bold",
+        color=COLOR_TEXT,
+    )
+    add_subtitle(
+        fig,
+        "Top-5 hep-selective PXR targets (left of divider) vs three matched controls; 54 tissues; n ≥ 70 donors / tissue.",  # noqa: E501
+        x=0.012,
+        y=0.93,
+    )
+
+    plt.subplots_adjust(top=0.92, right=0.92, bottom=0.08, left=0.18)
     out = FIGURES / "supp_gtex_validation.png"
-    fig.savefig(out, dpi=200, bbox_inches="tight", facecolor=COLOR_CREAM)
+    fig.savefig(out, dpi=300, bbox_inches="tight", facecolor="white")
     log.info("Wrote %s", out)
 
     # 4. Console summary ──────────────────────────────────────────────────────

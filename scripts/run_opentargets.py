@@ -29,13 +29,15 @@ sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 import matplotlib.pyplot as plt  # noqa: E402
 import pandas as pd  # noqa: E402
 
-from pxr_uncoupling.config import (  # noqa: E402
-    COLOR_ACCENT,
-    COLOR_CREAM,
-    COLOR_SAGE,
-    DATA_PROCESSED,
-    FIGURES,
-    NR1I2_ENSEMBL,
+from pxr_uncoupling.config import DATA_PROCESSED, FIGURES, NR1I2_ENSEMBL  # noqa: E402
+from pxr_uncoupling.figure_style import (  # noqa: E402
+    COLOR_HEPATIC,
+    COLOR_MUTED_TEXT,
+    COLOR_NEG,
+    COLOR_TEXT,
+    DOUBLE_COL,
+    add_subtitle,
+    apply_style,
 )
 from pxr_uncoupling.opentargets import (  # noqa: E402
     count_drug_response_phenotypes,
@@ -133,11 +135,11 @@ def main() -> None:
         json.dump(summary, fh, indent=2, default=str)
 
     # 3. Plot: side-by-side disease tables, PXR targets vs controls ───────────
-    fig, axes = plt.subplots(1, 2, figsize=(14, 5))
-    fig.patch.set_facecolor(COLOR_CREAM)
+    apply_style()
+    fig, axes = plt.subplots(1, 2, figsize=(DOUBLE_COL, 3.4))
 
     def _render_table(ax, group_filter: str, title: str, accent: str) -> None:
-        ax.set_facecolor(COLOR_CREAM)
+        ax.set_facecolor("white")
         ax.axis("off")
         subset = top_diseases[top_diseases["group"].str.contains(group_filter)]
         subset_order = [
@@ -149,30 +151,29 @@ def main() -> None:
             )
             if sym in subset["gene_symbol"].values
         ]
-        # header
         ax.text(
             0.0,
             0.98,
             "Gene",
-            fontsize=11,
+            fontsize=7.5,
             weight="bold",
-            color="#222",
+            color=COLOR_TEXT,
             transform=ax.transAxes,
             va="top",
         )
         ax.text(
-            0.18,
+            0.22,
             0.98,
-            "Top 3 Open Targets diseases (score)",
-            fontsize=11,
+            "Top 3 Open Targets diseases  (score)",
+            fontsize=7.5,
             weight="bold",
-            color="#222",
+            color=COLOR_TEXT,
             transform=ax.transAxes,
             va="top",
         )
         ax.add_patch(
             plt.Rectangle(
-                (-0.02, 0.93), 1.04, 0.01, transform=ax.transAxes, color=accent, alpha=0.6
+                (-0.02, 0.93), 1.04, 0.008, transform=ax.transAxes, color=accent, alpha=0.9
             )
         )
         y = 0.87
@@ -182,7 +183,7 @@ def main() -> None:
                 0.0,
                 y,
                 sym,
-                fontsize=10,
+                fontsize=7,
                 weight="bold",
                 color=accent,
                 transform=ax.transAxes,
@@ -192,29 +193,42 @@ def main() -> None:
                 f"• {r['disease_name'][:55]}  ({r['score']:.2f})" for _, r in gene_rows.iterrows()
             )
             ax.text(
-                0.18,
+                0.22,
                 y,
                 disease_block,
-                fontsize=9,
+                fontsize=6.5,
                 weight="normal",
-                color="#333",
+                color=COLOR_TEXT,
                 transform=ax.transAxes,
                 va="top",
                 family="monospace",
             )
             y -= 0.165
-        ax.set_title(title, fontsize=11, loc="left", pad=14)
+        ax.set_title(title, loc="left", pad=8)
 
-    _render_table(axes[0], "PXR target", "Top 5 hepatocyte-selective PXR targets", COLOR_ACCENT)
-    _render_table(
-        axes[1], "negative control", "Matched negative controls (1 per category)", COLOR_SAGE
+    _render_table(axes[0], "PXR target", "Top-5 hep-selective PXR targets", COLOR_HEPATIC)
+    _render_table(axes[1], "negative control", "Matched negative controls", COLOR_NEG)
+
+    fig.suptitle(
+        "Open Targets disease associations",
+        x=0.012,
+        y=0.97,
+        ha="left",
+        fontsize=9,
+        fontweight="bold",
+        color=COLOR_TEXT,
+    )
+    add_subtitle(
+        fig,
+        "Top three disease associations per gene from Open Targets Platform v4 (score: 0–1, evidence-aggregated).",  # noqa: E501
+        x=0.012,
+        y=0.93,
     )
 
-    plt.tight_layout()
-    fig.savefig(
-        FIGURES / "supp_opentargets.png", dpi=300, bbox_inches="tight", facecolor=COLOR_CREAM
-    )
+    plt.tight_layout(rect=(0, 0, 1, 0.88))
+    fig.savefig(FIGURES / "supp_opentargets.png", dpi=300, bbox_inches="tight", facecolor="white")
     log.info("Wrote %s", FIGURES / "supp_opentargets.png")
+    _ = COLOR_MUTED_TEXT  # silence unused import linter
 
     print("\n=== OPEN TARGETS EXTERNAL VALIDATION ===")
     pxr_subset = per_gene[per_gene["group"].str.contains("PXR target")]

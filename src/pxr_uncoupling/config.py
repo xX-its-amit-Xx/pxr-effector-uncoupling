@@ -62,6 +62,9 @@ OPENTARGETS_CACHE = DATA_RAW / "opentargets_nr1i2.json"
 
 # ── plotting ──────────────────────────────────────────────────────────────────
 # Terracotta palette matching amit.sh
-COLOR_ACCENT = "#c87c5a"
-COLOR_SAGE = "#8a9a7b"
-COLOR_CREAM = "#f5e9d4"
+# Publication palette (Nature-tier defaults). The canonical definitions live
+# in pxr_uncoupling.figure_style; these aliases preserve backward compatibility
+# for scripts that import directly from config.
+COLOR_ACCENT = "#c0533a"  # hepatic terracotta
+COLOR_SAGE = "#7d8c6a"  # control olive
+COLOR_CREAM = "#ffffff"  # white background (previously cream — kept name for compat)

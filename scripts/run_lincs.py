@@ -45,12 +45,19 @@ import numpy as np  # noqa: E402
 import pandas as pd  # noqa: E402
 from scipy.stats import spearmanr  # noqa: E402
 
-from pxr_uncoupling.config import (  # noqa: E402
-    COLOR_ACCENT,
-    COLOR_CREAM,
-    COLOR_SAGE,
-    DATA_PROCESSED,
-    FIGURES,
+from pxr_uncoupling.config import DATA_PROCESSED, FIGURES  # noqa: E402
+from pxr_uncoupling.figure_style import (  # noqa: E402
+    COLOR_HEPATIC,
+    COLOR_IMMUNE,
+    COLOR_INTESTINE,
+    COLOR_MUTED_TEXT,
+    COLOR_TEXT,
+    COLOR_ZERO_LINE,
+    DOUBLE_COL,
+    add_panel_label,
+    add_subtitle,
+    apply_style,
+    polish_axes,
 )
 from pxr_uncoupling.lincs import download_signature, find_signatures  # noqa: E402
 
@@ -170,89 +177,87 @@ def main() -> None:
     log.info("Summary: %s", json.dumps(summary, indent=2))
 
     # 5. Figure ───────────────────────────────────────────────────────────────
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(13, 6))
-    fig.patch.set_facecolor(COLOR_CREAM)
+    apply_style()
+    from matplotlib.patches import Patch
+
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(DOUBLE_COL, 3.6))
+    for ax in (ax1, ax2):
+        polish_axes(ax)
+
+    def _cline_color(cl: str) -> str:
+        if cl in HEPATIC_LINES:
+            return COLOR_HEPATIC
+        if cl in INTESTINAL_LINES:
+            return COLOR_INTESTINE
+        return COLOR_IMMUNE
 
     # 5a. Bar chart: per-line signature L1 strength
-    colors = [
-        COLOR_ACCENT if cl in HEPATIC_LINES else "#d6a96e" if cl in INTESTINAL_LINES else COLOR_SAGE
-        for cl in per_line["cellline"]
-    ]
-    ax1.set_facecolor(COLOR_CREAM)
+    colors = [_cline_color(cl) for cl in per_line["cellline"]]
     bars = ax1.barh(
         per_line["cellline"][::-1],
         per_line["signature_strength_L1"][::-1],
         color=colors[::-1],
         edgecolor="white",
-        linewidth=0.8,
+        linewidth=0.5,
+        height=0.78,
     )
     for bar, n in zip(bars, per_line["n_signatures"][::-1], strict=False):
         ax1.text(
-            bar.get_width() + 0.005,
+            bar.get_width() + 0.008,
             bar.get_y() + bar.get_height() / 2,
             f"n={n}",
             va="center",
-            fontsize=8,
-            color="#555",
+            fontsize=5.5,
+            color=COLOR_MUTED_TEXT,
         )
-    ax1.set_xlabel(
-        "Mean |log fold change| across 978 landmark genes\n(rifampicin signature L1 strength)"
-    )
-    ax1.set_title("Rifampicin signature strength by cell line", fontsize=11, loc="left")
-    ax1.spines[["top", "right"]].set_visible(False)
-    # Legend
-    from matplotlib.patches import Patch
-
+    ax1.set_xlabel("Mean |log fold change|, 978 landmark genes")
+    ax1.set_title("Rifampicin signature strength by cell line", loc="left", pad=4)
+    add_panel_label(ax1, "a", dx=-0.20)
     leg = [
-        Patch(facecolor=COLOR_ACCENT, label="Hepatic (HEPG2)"),
-        Patch(facecolor="#d6a96e", label="Intestinal (HT29)"),
-        Patch(facecolor=COLOR_SAGE, label="Non-epithelial / other"),
+        Patch(facecolor=COLOR_HEPATIC, label="Hepatic (HEPG2)"),
+        Patch(facecolor=COLOR_INTESTINE, label="Intestinal (HT29)"),
+        Patch(facecolor=COLOR_IMMUNE, label="Non-epithelial"),
     ]
-    ax1.legend(handles=leg, loc="lower right", fontsize=8, frameon=False)
+    ax1.legend(handles=leg, loc="lower right", handlelength=0.9, handleheight=0.7)
 
-    # 5b. Intra-line consistency vs signature strength scatter
-    ax2.set_facecolor(COLOR_CREAM)
+    # 5b. Strength vs consistency
     for _, r in per_line.iterrows():
         if r["intra_line_n_pairs"] == 0 or np.isnan(r["intra_line_rho_median"]):
             continue
-        cl = r["cellline"]
-        if cl in HEPATIC_LINES:
-            c = COLOR_ACCENT
-        elif cl in INTESTINAL_LINES:
-            c = "#d6a96e"
-        else:
-            c = COLOR_SAGE
+        c = _cline_color(r["cellline"])
         ax2.scatter(
             r["signature_strength_L1"],
             r["intra_line_rho_median"],
-            s=44 + 8 * r["n_signatures"],
+            s=18 + 3 * r["n_signatures"],
             color=c,
             edgecolor="white",
-            linewidth=0.8,
-            alpha=0.85,
+            linewidth=0.6,
+            alpha=0.92,
         )
         ax2.annotate(
-            cl,
+            r["cellline"],
             (r["signature_strength_L1"], r["intra_line_rho_median"]),
-            fontsize=8,
-            xytext=(5, 3),
+            fontsize=5.5,
+            xytext=(4, 2),
             textcoords="offset points",
-            color="#333",
+            color=COLOR_TEXT,
         )
-    ax2.set_xlabel("Signature strength (mean |log FC|, 978 landmarks)")
-    ax2.set_ylabel("Intra-cell-line replicate consistency\n(median pairwise Spearman ρ)")
-    ax2.axhline(0, color="#888", lw=0.7, linestyle="--")
-    ax2.set_title(
-        "Hepatic and epithelial-barrier lines show stronger,\n"
-        "more reproducible rifampicin responses",
-        fontsize=11,
-        loc="left",
-    )
-    ax2.spines[["top", "right"]].set_visible(False)
+    ax2.set_xlabel("Signature strength")
+    ax2.set_ylabel("Intra-line replicate consistency (median pairwise Spearman ρ)")
+    ax2.axhline(0, color=COLOR_ZERO_LINE, lw=0.5, linestyle="--")
+    ax2.set_title("Strength × consistency", loc="left", pad=4)
+    add_panel_label(ax2, "b", dx=-0.13)
 
-    plt.tight_layout()
+    add_subtitle(
+        fig,
+        "121 rifampicin signatures across 18 LINCS L1000 cell lines. Bubble area scales with n signatures per line.",  # noqa: E501
+        x=0.012,
+        y=0.93,
+    )
+
+    plt.tight_layout(rect=(0, 0, 1, 0.88))
     out = FIGURES / "supp_lincs_rifampicin.png"
-    fig.savefig(out, dpi=200, bbox_inches="tight", facecolor=COLOR_CREAM)
+    fig.savefig(out, dpi=300, bbox_inches="tight", facecolor="white")
     log.info("Wrote %s", out)
 
 
