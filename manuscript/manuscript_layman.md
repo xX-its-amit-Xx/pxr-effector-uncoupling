@@ -105,9 +105,19 @@ We pulled cells from CELLxGENE Census version 2025-01-30. To keep one big study 
 
 For each cell type, we grouped cells into ~30-cell "metacells", computed Spearman ρ between NR1I2 and each of 20 known PXR target genes, and made a heatmap (rows = genes, columns = cell types).
 
+![Fig. 1 — main coupling heatmap with novice-friendly sidebar](../figures/fig1_annotated.png)
+
+**👀 What you're looking at (Fig. 1)**
+- The big colourful grid. Each square is one gene-times-cell-type combination. **Dark green = the gene moves in lockstep with PXR** in that cell type (we say they're "linked" or "coupled"). **White = no relationship.** **Dark red = opposite relationship** (one goes up, the other goes down — rare for PXR targets).
+- The leftmost column (**Hepatocyte = liver cells**) is almost entirely dark green. That's the whole point: PXR's network is fully engaged in liver cells.
+- The five columns in the middle (Macrophage, Monocyte, NK cell, CD4 T, CD8 T) are **immune cells**. Pale almost everywhere — PXR is there, but it's not doing its job.
+- The rightmost column (EVT) is placenta. Almost entirely white — PXR is there but completely silent.
+- The colour band across the top groups columns by tissue compartment so you don't have to remember which cell type goes where.
+- The gene names on the left side are colour-coded by whether PXR *induces* (terracotta) or *represses* (olive) them in the textbook. Almost everything is induced.
+
 **The picture is striking:**
 
-- In **hepatocyte**, almost every column row is dark green (ρ = 0.6–0.9). The PXR program is engaged.
+- In **hepatocyte**, almost every row is dark green (ρ = 0.6–0.9). The PXR program is engaged.
 - In **small-intestine enterocyte** and **intestinal crypt stem cell**, the colour is medium green (ρ ≈ 0.3–0.6). Real but weaker engagement.
 - In **CD4 T, CD8 T, NK, macrophage, monocyte** cells, the colour is pale almost everywhere (ρ ≈ 0.05–0.25).
 - In **extravillous trophoblast** (a placental cell type), the colour is essentially zero (ρ ≈ 0).
@@ -115,6 +125,14 @@ For each cell type, we grouped cells into ~30-cell "metacells", computed Spearma
 > **What you should take away:** "The PXR program is fully on in the liver, partially on in the gut, very faintly on in immune cells, off in the placenta."
 
 A subtle but important point: with 50,000–110,000 immune cells per type, **even very tiny correlations reach formal statistical significance** (q < 0.05). So the paper deliberately reframes the headline from "PXR is off in immune cells" to "PXR is **8× weaker** in immune cells". The honest claim is about *effect size*, not on/off.
+
+![Fig. 2 — FDR significance overlay + top-10 forest plot](../figures/supp_heatmap_significance.png)
+
+![Fig. 2 (continued) — top-10 forest plot of hep-coupled genes with confidence intervals](../figures/supp_forest_hepatocyte.png)
+
+**👀 What you're looking at (Fig. 2)**
+- **Top image**: the same heatmap as Fig. 1, but now with **`*`** marks added on each cell where the relationship is statistically significant (`*` = q < 0.05, `**` = q < 0.01). The pattern is: hepatocyte column has `**` everywhere; immune columns have lots of `*` but the colours are pale (effect is small even when significant).
+- **Bottom image**: a "forest plot". Each gene is one horizontal line. The dot is our best estimate of the coupling ρ in hepatocyte; the error bars are the 95% confidence interval (how much wiggle room there is). All six top genes (SLCO1B1, CYP2C9, CYP2C8, ABCC2, CPT1A, CYP3A5) have dots way above zero and tight error bars — high confidence.
 
 ### Section 3 — Ranking the most "liver-specific" PXR genes (Fig. 2)
 
@@ -146,6 +164,21 @@ Hepatocytes in the atlas come from nine different studies (i.e. nine different r
 
 > **Honest take:** "Our headline genes are right, but the precise ρ numbers will differ across cohorts. This is a real limitation of any cross-atlas analysis."
 
+![Fig. S1 — parameter sensitivity sweep](../figures/supp_sensitivity.png)
+
+![Fig. S2 — subsample stability](../figures/supp_subsample_stability.png)
+
+**👀 What you're looking at (Figs. S1 + S2)**
+- **S1 (top)**: two scatter plots showing how stable our ranking is when we change analysis knobs. Each dot is a different parameter combo. Panel **a** shows the ranking stays the same (ρ ≈ 0.95) across all combos. Panel **b** shows the top-5 genes overlap 67–100% across combos.
+- **S2 (bottom)**: a box plot of how much each cell type's coupling values wiggle when we randomly drop 20% of cells. Hepatocyte (terracotta) has tiny wiggle (std ≈ 0.02). Even the noisiest cell types stay below 0.10 — much smaller than the effects we care about.
+- **Bottom line**: the answer doesn't depend on the analysis choices we made.
+
+![Fig. S3 — per-dataset hepatocyte coupling](../figures/supp_per_dataset_hepatocyte.png)
+
+**👀 What you're looking at (Fig. S3)**
+- A heatmap showing the same coupling values for hepatocytes, but split by which of the 9 source studies the cells came from. Rows = studies; columns = genes.
+- The takeaway is honest: different studies give different *absolute* ρ values — some show ρ ≈ 0.7 for a gene, others show ρ ≈ 0.2 for the same gene. **The ranking of genes is preserved across studies**, but the absolute numbers are a lower bound shaped by study-specific factors (donor demographics, tissue prep, sequencing).
+
 ### Section 6 — Is this really PXR, or just a generic 'liver vs everything else' signature? (Fig. 3)
 
 A serious worry: maybe any gene that's enriched in liver would look "decoupled" in our framework. To rule this out, we curated a **20-gene matched control set**:
@@ -157,19 +190,58 @@ We ran the same metacell-coupling pipeline on these. The PXR-target gene set has
 
 Critically, HNF4A and HNF1A — which are themselves hepatocyte master TFs and very liver-enriched — sit in the control distribution. So the decoupling signal is not "anything liver-enriched scores high". It's specifically PXR-target.
 
+![Fig. 3 — negative control specificity](../figures/supp_negative_control.png)
+
+**👀 What you're looking at (Fig. 3)**
+- **Panel a (left)**: two violin shapes, one for the 20 PXR target genes, one for the 20 matched control genes. The terracotta shape (PXR) sits clearly above zero; the olive shape (controls) sits clearly below. They barely overlap. The number `p = 1.0e-31` quantifies this — the two distributions are astronomically different.
+- **Panel b (right)**: per-cell-type breakdown. Each row is one non-hepatocyte cell type. Terracotta dot = average decoupling score for PXR target genes in that cell type. Olive dot = same for controls. The lines connecting them = how far apart they are. **In every single cell type, PXR targets sit to the right of controls.**
+- **Bottom line**: this rules out the alternative explanation "it's just a generic liver-vs-other-cells signature".
+
 ### Section 7 — Independent replications (Figs. 4, 5, 6, 7)
 
 We replicated the pattern in four orthogonal data sources:
 
 - **GTEx bulk RNA-seq (Fig. 4).** GTEx is a separate, much-cited public project that profiles bulk human tissue from autopsy donors (54 tissues, ~17,000 samples). When we compute the same within-tissue correlation between NR1I2 and the same target genes, **liver tissue shows ρ = 0.32–0.68 across the 5 top genes, while immune tissue (blood, spleen, lymphocyte cultures) shows ρ = 0.06–0.27**. Same shape as our single-cell finding, in independent data, with no relationship to our analysis pipeline.
 
-- **Direct PXR-drug experiment in primary human liver cells (Fig. 5).** This is the strongest piece of evidence. We re-analysed [Dyavar et al. 2020](https://doi.org/10.1038/s41598-020-69228-z), an RNA-seq study where primary human hepatocytes from 3 donors were treated with three different PXR-activating drugs (rifampin, rifabutin, rifapentine — all anti-TB antibiotics that work via PXR) for 72 hours. The key result: **CYP2C8 goes up 9–19× (fold), CYP2C9 goes up 2–4×, CYP3A5 goes up 2–3×, ABCC2 goes up 1.5×. All controls (ALB, HNF4A, GAPDH) stay flat. SLCO1B1 and CPT1A don't change.**
+  ![Fig. 4 — GTEx tissue-level coupling validation](../figures/supp_gtex_validation.png)
+
+  **👀 What you're looking at (Fig. 4)**
+  - A 54-row heatmap. Each row = one tissue (Liver at top, immune tissues lower down). Columns = the 5 top PXR target genes (left) + 3 controls (right). Same colour scale as Fig. 1: dark green = high ρ, white = no link.
+  - Look at the Liver row: green across the 5 PXR target columns. Look at Whole Blood / Spleen / EBV-LCL rows: nearly white. Same pattern as scRNA-seq, in totally different data.
+  - The 3 control genes on the right (ALB, HNF4A, GAPDH) show no consistent pattern across tissues — exactly as expected.
+
+- **Direct PXR-drug experiment in primary human liver cells (Fig. 5).** This is the strongest piece of evidence. We re-analysed [Dyavar et al. 2020](https://doi.org/10.1038/s41598-020-69228-z), an RNA-seq study where primary human hepatocytes from 3 donors were treated with three different PXR-activating drugs (rifampin, rifabutin, rifapentine — all anti-TB antibiotics that work via PXR) for 72 hours.
+
+  ![Fig. 5 — GEO rifamycin direct perturbation with novice sidebar](../figures/fig5_annotated.png)
+
+  **👀 What you're looking at (Fig. 5)**
+  - Three side-by-side panels, one per drug (rifampin, rifabutin, rifapentine). Three drugs that all activate PXR by different routes = three independent shots at the same hypothesis.
+  - Each bar is one gene. **Terracotta bars = our top-6 PXR panel candidates**. Purple = PXR (the receptor itself, which mostly doesn't change). **Olive = control genes that shouldn't move**.
+  - Bar height = log₂ fold change. log₂ = +1 means the gene doubled; +2 = quadrupled; +3 = 8×; +4 = 16×.
+  - The tall terracotta bar in each panel is **CYP2C8**, up 9–19× across all three drugs. The classic PXR target with the strongest response.
+  - The little olive bars on the right (ALB, HNF4A, GAPDH) barely move. Good — they're not supposed to.
+  - **Crucially: SLCO1B1 and CPT1A barely move either.** They looked like good PXR biomarkers in the scRNA-seq analysis but they don't actually respond to PXR drugs.
+  - Asterisks (*) = statistically significant change in a paired t-test across 3 donors.
+
+  The key result: **CYP2C8 goes up 9–19× (fold), CYP2C9 goes up 2–4×, CYP3A5 goes up 2–3×, ABCC2 goes up 1.5×. All controls (ALB, HNF4A, GAPDH) stay flat. SLCO1B1 and CPT1A don't change.**
 
   This last point is critical: SLCO1B1 and CPT1A *appeared* in our top-6 because they correlate with NR1I2 across hepatocytes, but they don't actually respond when you turn PXR on. The simplest explanation is that they share **upstream regulators** with the PXR program — HNF4A and FOXA1/2 control both — so they ride the same regulatory backbone without being direct PXR targets. **This refines the actionable panel from 6 genes to the 4 that genuinely respond.**
 
 - **LINCS L1000 (Fig. 6).** LINCS is a public dataset where ~3000 drugs have been profiled in ~18 cancer cell lines. We pulled all 121 rifampicin signatures across the 18 cell lines and asked which lines showed the strongest, most consistent transcriptional response. **HEPG2 (liver) ranks #1**, with a response 1.47× the non-hepatic average. (Caveat: LINCS only measures 978 "landmark" genes per signature and our specific PXR-target genes aren't in that set — so this test is about overall response strength, not gene-specific.)
 
+  ![Fig. 6 — LINCS L1000 rifampicin signature strength across cell lines](../figures/supp_lincs_rifampicin.png)
+
+  **👀 What you're looking at (Fig. 6)**
+  - **Panel a (left)**: bar chart of how big a transcriptional response each cell line showed to rifampicin. HEPG2 (liver, terracotta) is at the top. HT29 (intestinal cancer line, ochre) is at the bottom — but HT29 is a poorly-differentiated cancer line that has lost much of its endogenous PXR, so this isn't inconsistent with our scRNA-seq finding that *primary* intestinal cells have intermediate PXR engagement.
+  - **Panel b (right)**: signature strength (x-axis) vs how consistent the response is across replicates (y-axis). HEPG2 sits in the top-right corner = strong AND consistent. The story holds.
+
 - **Open Targets disease graph (Fig. 7).** Open Targets is a public knowledge base that catalogues which genes are linked to which diseases based on aggregate published evidence. Our top hep-selective genes map to exactly the textbook drug-response phenotypes: **CYP2C9 → warfarin response (the most famous DDI), SLCO1B1 → statin response (the most famous transporter DDI), ABCC2 → Dubin-Johnson syndrome and cholestasis, CYP3A5 → HIV/HCV (protease-inhibitor metabolism), CYP2C8 → various drug-metabolism cancers**. The matched-control genes map to structural or developmental disorders (analbuminemia, MODY, neurodegeneration) — no pharmacology signature. Independent corroboration that our top picks are the same genes drug-development pharmacology already knows about.
+
+  ![Fig. 7 — Open Targets disease associations](../figures/supp_opentargets.png)
+
+  **👀 What you're looking at (Fig. 7)**
+  - Two side-by-side text tables. Left side: our 5 top PXR target genes with their top 3 Open Targets disease associations. Right side: the 3 matched control genes with theirs.
+  - On the left you see drug-related diseases everywhere (warfarin, statins, cholestasis, HIV, etc). On the right you see structural diseases (analbuminemia, MODY/diabetes) and aging diseases (neurodegeneration). Totally different disease categories — confirming our top picks are *specifically* drug-metabolism genes.
 
 ---
 
