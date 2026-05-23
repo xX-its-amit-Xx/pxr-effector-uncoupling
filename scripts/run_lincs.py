@@ -23,7 +23,7 @@ Reads  : iLINCS L1000 API (cached per signature)
 Writes : data/processed/lincs_signature_strength.csv
          data/processed/lincs_intra_line_consistency.csv
          data/processed/lincs_summary.json
-         figures/supp_lincs_rifampicin.png
+         figures/fig6_lincs_rifampicin.png
 """
 
 import json
@@ -295,7 +295,7 @@ def main() -> None:
     )
 
     plt.tight_layout(rect=(0, 0, 1, 0.87))
-    out = FIGURES / "supp_lincs_rifampicin.png"
+    out = FIGURES / "fig6_lincs_rifampicin.png"
     fig.savefig(out, dpi=300, bbox_inches="tight", facecolor="white")
     log.info("Wrote %s", out)
 

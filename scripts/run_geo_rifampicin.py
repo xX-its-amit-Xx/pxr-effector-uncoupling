@@ -23,7 +23,7 @@ Reads  : data/cache/GSE139896_processed.xlsx (downloaded from NCBI GEO FTP)
 Writes : data/processed/geo_rifamycin_logFC.csv
          data/processed/geo_rifamycin_stats.csv
          data/processed/geo_rifamycin_summary.json
-         figures/supp_geo_rifamycin.png
+         figures/fig5_rifamycin_perturbation.png
 """
 
 import json
@@ -284,7 +284,7 @@ def main() -> None:
     )
 
     plt.tight_layout(rect=(0, 0, 1, 0.88))
-    out = FIGURES / "supp_geo_rifamycin.png"
+    out = FIGURES / "fig5_rifamycin_perturbation.png"
     fig.savefig(out, dpi=300, bbox_inches="tight", facecolor="white")
     log.info("Wrote %s", out)
 

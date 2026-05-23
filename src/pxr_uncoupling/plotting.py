@@ -52,7 +52,7 @@ def decoupling_heatmap(
     apply_style()
     if output_path is None:
         FIGURES.mkdir(parents=True, exist_ok=True)
-        output_path = FIGURES / "final_heatmap.png"
+        output_path = FIGURES / "fig1_coupling_heatmap.png"
 
     gene_order = (
         target_meta.sort_values(["category"]).index.intersection(coupling_df.columns).tolist()

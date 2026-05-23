@@ -10,7 +10,7 @@ Reads  : data/targets/pxr_canonical_targets.tsv, negative_control_genes.tsv
 Writes : data/processed/opentargets_per_gene.csv
          data/processed/opentargets_top_diseases.csv
          data/cache/opentargets_<symbol>.json (per-gene cached responses)
-         figures/supp_opentargets.png
+         figures/fig7_opentargets.png
 """
 
 import json
@@ -226,8 +226,8 @@ def main() -> None:
     )
 
     plt.tight_layout(rect=(0, 0, 1, 0.88))
-    fig.savefig(FIGURES / "supp_opentargets.png", dpi=300, bbox_inches="tight", facecolor="white")
-    log.info("Wrote %s", FIGURES / "supp_opentargets.png")
+    fig.savefig(FIGURES / "fig7_opentargets.png", dpi=300, bbox_inches="tight", facecolor="white")
+    log.info("Wrote %s", FIGURES / "fig7_opentargets.png")
     _ = COLOR_MUTED_TEXT  # silence unused import linter
 
     print("\n=== OPEN TARGETS EXTERNAL VALIDATION ===")

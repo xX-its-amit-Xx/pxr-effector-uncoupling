@@ -56,7 +56,7 @@ def heatmap_with_significance(
     apply_style()
     if output_path is None:
         FIGURES.mkdir(parents=True, exist_ok=True)
-        output_path = FIGURES / "supp_heatmap_significance.png"
+        output_path = FIGURES / "fig2a_significance_overlay.png"
 
     common_ct = [c for c in CELL_TYPE_ORDER if c in coupling.index and c in qvalues.index]
     common_g = coupling.columns.intersection(qvalues.columns)
@@ -177,7 +177,7 @@ def decoupling_with_ci_forest(
     apply_style()
     if output_path is None:
         FIGURES.mkdir(parents=True, exist_ok=True)
-        output_path = FIGURES / "supp_forest_hepatocyte.png"
+        output_path = FIGURES / "fig2b_forest_hepatocyte.png"
 
     ds = coupling.loc[reference_cell_type] - coupling.drop(index=reference_cell_type)
     ranking = ds.mean(axis=0).sort_values(ascending=False).head(top_n).index.tolist()
@@ -240,7 +240,7 @@ def sensitivity_plot(
     apply_style()
     if output_path is None:
         FIGURES.mkdir(parents=True, exist_ok=True)
-        output_path = FIGURES / "supp_sensitivity.png"
+        output_path = FIGURES / "figS1_parameter_sensitivity.png"
 
     fig, axes = plt.subplots(1, 2, figsize=(DOUBLE_COL, 2.6))
     for ax in axes:
@@ -310,7 +310,7 @@ def subsample_stability_plot(
     apply_style()
     if output_path is None:
         FIGURES.mkdir(parents=True, exist_ok=True)
-        output_path = FIGURES / "supp_subsample_stability.png"
+        output_path = FIGURES / "figS2_subsample_stability.png"
 
     cts = summary["cell_type"].unique().tolist()
     order = [c for c in CELL_TYPE_ORDER if c in cts]

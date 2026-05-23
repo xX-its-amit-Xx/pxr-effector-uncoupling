@@ -3,7 +3,7 @@
 Inputs : data/raw/nr1i2_atlas.h5ad
 Outputs: data/processed/per_dataset_hepatocyte.csv
          data/processed/per_dataset_summary.json
-         figures/supp_per_dataset_hepatocyte.png
+         figures/figS3_per_dataset_hepatocyte.png
 """
 
 import json
@@ -149,12 +149,12 @@ def main() -> None:
         y=0.88,
     )
     fig.savefig(
-        FIGURES / "supp_per_dataset_hepatocyte.png",
+        FIGURES / "figS3_per_dataset_hepatocyte.png",
         dpi=300,
         bbox_inches="tight",
         facecolor="white",
     )
-    log.info("Wrote %s", FIGURES / "supp_per_dataset_hepatocyte.png")
+    log.info("Wrote %s", FIGURES / "figS3_per_dataset_hepatocyte.png")
 
     log.info("=== PER-DATASET REPRODUCIBILITY ===")
     log.info("Datasets analysed    : %d", summary["n_datasets"])

@@ -6,7 +6,7 @@ Reads  : data/raw/nr1i2_atlas.h5ad  (must include negative_control_genes)
 Writes : data/processed/control_coupling.csv
          data/processed/control_decoupling.csv
          data/processed/control_comparison.json
-         figures/supp_negative_control.png
+         figures/fig3_negative_control.png
 
 Reviewer ask: prove the hepatocyte-selective decoupling pattern is specific
 to PXR target genes, not a generic 'hepatocyte vs everyone else' transcriptional
@@ -264,12 +264,12 @@ def main() -> None:
 
     plt.tight_layout(rect=(0, 0, 1, 0.84))
     fig.savefig(
-        FIGURES / "supp_negative_control.png",
+        FIGURES / "fig3_negative_control.png",
         dpi=300,
         bbox_inches="tight",
         facecolor="white",
     )
-    log.info("Wrote %s", FIGURES / "supp_negative_control.png")
+    log.info("Wrote %s", FIGURES / "fig3_negative_control.png")
 
     print("\n=== NEGATIVE-CONTROL COMPARISON ===")
     print(f"PXR targets         : {len(target_genes)} genes")

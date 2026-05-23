@@ -377,23 +377,23 @@ The annotated version (with a side panel that talks you through the picture step
 
 ### Fig. 2 — significance overlay + forest plot of top genes
 
-![Fig. 2a — heatmap with FDR significance stars](../figures/supp_heatmap_significance.png)
+![Fig. 2a — heatmap with FDR significance stars](../figures/fig2a_significance_overlay.png)
 
 **(*FDR* = false-discovery rate. Adjustment for the fact that running 200 tests means some will look significant by chance. Single `*` = q < 0.05; `**` = q < 0.01. Note that immune columns now also pick up lots of stars — that's because of huge sample size, not big effect. The point is that *despite* statistical significance, the colour intensity (the actual effect) is very different.)**
 
-![Fig. 2b — top-10 forest plot of hepatocyte ρ with confidence intervals](../figures/supp_forest_hepatocyte.png)
+![Fig. 2b — top-10 forest plot of hepatocyte ρ with confidence intervals](../figures/fig2b_forest_hepatocyte.png)
 
 **(*Forest plot* = each gene is one horizontal row. The dot is the point estimate of ρ; the horizontal line is the 95% confidence interval. The narrower the line, the more sure we are of the dot's location. All six top genes sit well above zero with tight error bars — no ambiguity that these are strongly coupled to PXR in hepatocytes.)**
 
 ### Fig. 3 — negative-control specificity
 
-![Fig. 3 — PXR target distribution vs matched controls](../figures/supp_negative_control.png)
+![Fig. 3 — PXR target distribution vs matched controls](../figures/fig3_negative_control.png)
 
 **(*Violin plot* = a curvy shape whose width tells you how many data points sit at that value. Wider = more data points there. *Decoupling score* (y-axis) = the gene's hepatocyte ρ minus its average ρ in non-hepatocyte cell types. Positive = hepatocyte-selective. The terracotta (PXR target) violin is clearly above zero; the olive (control) violin is clearly below. They barely overlap. The p-value `1.0e-31` quantifies "these distributions are obviously different".)**
 
 ### Fig. 4 — GTEx tissue-level validation
 
-![Fig. 4 — GTEx within-tissue coupling across 54 tissues](../figures/supp_gtex_validation.png)
+![Fig. 4 — GTEx within-tissue coupling across 54 tissues](../figures/fig4_gtex_validation.png)
 
 **(This is a completely independent dataset, processed by different people for a different purpose. Same pattern. Note that the absolute ρ values are *lower* than in single-cell — that's expected because bulk samples are noisier — but the *shape* is the same: liver row at the top is green, immune rows lower down are pale.)**
 
@@ -407,27 +407,27 @@ The annotated version:
 
 ### Fig. 6 — LINCS L1000 cell-line response strength
 
-![Fig. 6 — LINCS L1000 rifampicin signature strength](../figures/supp_lincs_rifampicin.png)
+![Fig. 6 — LINCS L1000 rifampicin signature strength](../figures/fig6_lincs_rifampicin.png)
 
 **(*Panel a* = how big a rifampicin response each cell line shows across the 978 LINCS landmark genes. HEPG2 is at the top. *Panel b* = strength vs replicate consistency. HEPG2 lives in the upper right — both strong AND consistent. HT29 (intestinal cancer line) is at the lower-left, but that's not as bad as it looks — HT29 is poorly-differentiated and has lost much of its PXR. Limitations: LINCS doesn't measure our 6 specific genes, so this is a coarse test.)**
 
 ### Fig. 7 — Open Targets disease associations
 
-![Fig. 7 — Open Targets top diseases](../figures/supp_opentargets.png)
+![Fig. 7 — Open Targets top diseases](../figures/fig7_opentargets.png)
 
 **(Two text tables. Left: our top-5 hep-selective PXR target genes, with each gene's top 3 disease associations from the Open Targets knowledge base. Right: same for the 3 matched controls. The left side is wall-to-wall drug-handling biology (warfarin, statins, HIV protease inhibitors, cholestasis). The right side is structural and developmental disorders. Independent confirmation that we picked the right genes.)**
 
 ### Fig. S1, S2, S3 — robustness and reproducibility
 
-![Fig. S1 — parameter sensitivity sweep](../figures/supp_sensitivity.png)
+![Fig. S1 — parameter sensitivity sweep](../figures/figS1_parameter_sensitivity.png)
 
 **(Two scatter plots showing the answer doesn't depend on the analytical knobs. Each dot = one parameter combo. Panel a: the rankings stay nearly identical (ρ ≈ 0.95). Panel b: the top-5 gene set has 67–100% overlap with the reference.)**
 
-![Fig. S2 — subsample stability](../figures/supp_subsample_stability.png)
+![Fig. S2 — subsample stability](../figures/figS2_subsample_stability.png)
 
 **(Box plot of how much the ρ values wiggle when we randomly drop 20% of cells. Hepatocyte (terracotta) barely wiggles at all. Even the noisiest cell types stay well below 0.1, which is small compared to the effects we're claiming.)**
 
-![Fig. S3 — per-dataset hepatocyte coupling](../figures/supp_per_dataset_hepatocyte.png)
+![Fig. S3 — per-dataset hepatocyte coupling](../figures/figS3_per_dataset_hepatocyte.png)
 
 **(A heatmap split by which source study contributed each subset of hepatocytes. The honest finding: different studies give different absolute ρ numbers, but the gene *ranking* is preserved. Our headline numbers should be read as an aggregate across studies, not a population estimate.)**
 

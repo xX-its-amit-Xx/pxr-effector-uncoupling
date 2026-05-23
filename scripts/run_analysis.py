@@ -3,7 +3,7 @@
 Reads  : data/raw/nr1i2_atlas.h5ad
 Writes : data/processed/coupling.csv
          data/processed/decoupling.csv
-         figures/final_heatmap.png
+         figures/fig1_coupling_heatmap.png
 """
 
 import logging
@@ -102,9 +102,9 @@ def main() -> None:
         coupling_df=coupling,
         target_meta=target_meta,
         cell_type_tissue_map=CELL_TYPE_TISSUE_MAP,
-        output_path=FIGURES / "final_heatmap.png",
+        output_path=FIGURES / "fig1_coupling_heatmap.png",
     )
-    log.info("Heatmap saved to %s", FIGURES / "final_heatmap.png")
+    log.info("Heatmap saved to %s", FIGURES / "fig1_coupling_heatmap.png")
 
     # ── 5. Summary ──────────────────────────────────────────────────────────────
     log.info("=== CHECKPOINT 3: ANALYSIS COMPLETE ===")
@@ -120,7 +120,7 @@ def main() -> None:
         "Outputs: %s, %s, %s",
         coupling_path,
         ds_path if ds is not None else "(no decoupling)",
-        FIGURES / "final_heatmap.png",
+        FIGURES / "fig1_coupling_heatmap.png",
     )
 
 

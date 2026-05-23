@@ -11,7 +11,7 @@ Reads  : (GTEx API, cached)
 Writes : data/processed/gtex_coupling.csv             # rows=tissue, cols=gene
          data/processed/gtex_per_tissue_n.csv         # sample sizes
          data/cache/gtex_<symbol>.json                # per-gene cache
-         figures/supp_gtex_validation.png
+         figures/fig4_gtex_validation.png
 """
 
 import logging
@@ -254,7 +254,7 @@ def main() -> None:
         x=0.012,
         y=0.935,
     )
-    out = FIGURES / "supp_gtex_validation.png"
+    out = FIGURES / "fig4_gtex_validation.png"
     fig.savefig(out, dpi=300, bbox_inches="tight", facecolor="white")
     log.info("Wrote %s", out)
 

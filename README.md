@@ -2,7 +2,7 @@
 
 A cell-type-resolved, statistically-grounded map of which PXR (NR1I2) target genes stay coupled to receptor expression vs. which decouple — distinguishing epithelial-barrier tissues (liver + intestine) where PXR drives a transcriptional program from immune and placental tissues where it does not, and nominating hepatocyte-selective readouts for next-generation PXR modulators.
 
-![Decoupling heatmap](figures/final_heatmap.png)
+![Decoupling heatmap](figures/fig1_coupling_heatmap.png)
 
 ## Key Finding
 
@@ -34,11 +34,11 @@ We re-ran the same pipeline on a curated 20-gene negative-control set (10 liver-
 
 **Mann-Whitney U (one-sided): p = 1.0 × 10⁻³¹**. In every cell type the mean PXR-target decoupling score exceeds the matched-control mean by 0.43 to 0.68 units. This rules out the alternative explanation that decoupling reflects a generic hepatocyte-vs-others signature; it is specific to PXR target genes.
 
-See `figures/supp_negative_control.png` for the distribution comparison and per-cell-type breakdown, and `data/targets/negative_control_genes.tsv` for the control-gene curation.
+See `figures/fig3_negative_control.png` for the distribution comparison and per-cell-type breakdown, and `data/targets/negative_control_genes.tsv` for the control-gene curation.
 
 ### External validation: Open Targets
 
-To confirm that our top hepatocyte-selective genes are independently catalogued as pharmacology-relevant, we queried the Open Targets Platform GraphQL API for the top disease associations of each gene. The pattern is exactly what textbook pharmacology predicts (`figures/supp_opentargets.png`):
+To confirm that our top hepatocyte-selective genes are independently catalogued as pharmacology-relevant, we queried the Open Targets Platform GraphQL API for the top disease associations of each gene. The pattern is exactly what textbook pharmacology predicts (`figures/fig7_opentargets.png`):
 
 | Gene | Top diseases on Open Targets | Pharmacology link |
 |------|------------------------------|-------------------|
@@ -68,17 +68,17 @@ We re-analysed GSE139896 (Dyavar et al. 2020, *Sci Rep* 10:12565) — RNA-seq of
 
 **This refines the story.** Four of the six top-decoupled genes are confirmed *direct* PXR-responsive pharmacodynamic readouts (CYP2C8/2C9/3A5/ABCC2; all three rifamycins induce them, controls don't move). SLCO1B1 and CPT1A are *hepatocyte-coupled but not directly PXR-induced* — likely reflecting shared regulatory logic with HNF4A and FOXA1/2 master TFs rather than direct NR1I2 control (consistent with prior literature on SLCO1B1's HNF4A-dominant regulation). The scRNA-seq decoupling ranking therefore decomposes into (i) genes whose coupling is functional PXR engagement and (ii) genes coupled by shared hepatic-TF backbone. Only the first subset should be used as PXR pharmacodynamic biomarkers; the second subset is a useful negative control that the metacell-coupling approach correctly flags as hepatocyte-enriched but should not be assumed PXR-driven.
 
-See `figures/supp_geo_rifamycin.png` for the per-drug panel response, `data/processed/geo_rifamycin_stats.csv` for full stats, and `scripts/run_geo_rifampicin.py` for the analysis.
+See `figures/fig5_rifamycin_perturbation.png` for the per-drug panel response, `data/processed/geo_rifamycin_stats.csv` for full stats, and `scripts/run_geo_rifampicin.py` for the analysis.
 
 ### External validation: LINCS L1000 rifampicin perturbation
 
 We tested whether a PXR ligand (rifampicin) elicits a cell-type-specific transcriptional response by fetching all 121 publicly available LINCS L1000 rifampicin signatures across 18 cell lines from iLINCS. **Honest limitation up front:** L1000's 978 "landmark" genes deliberately exclude most drug-metabolism genes, so none of our top-6 hep-selective panel is directly measured; the public iLINCS API exposes landmark expression only (BING-inferred extension requires a registered clue.io session). The achievable test is whether hepatic cell lines show a *stronger* and more *consistent* rifampicin response across landmarks than non-hepatic lines.
 
-**HEPG2 ranks #1 of 18 cell lines** in mean rifampicin signature strength (0.59 vs non-hepatic mean 0.40, **1.47×**), with replicate consistency in the top tier (median pairwise Spearman ρ = 0.31 across 15 intra-HEPG2 pairs). HT29 (the only intestinal line in L1000, a poorly-differentiated colorectal-adenocarcinoma line with reduced endogenous PXR) ranks lowest. See `figures/supp_lincs_rifampicin.png` and `data/processed/lincs_signature_strength.csv`. A direct panel-level overlay is left as a future test once authenticated clue.io BING access is in place.
+**HEPG2 ranks #1 of 18 cell lines** in mean rifampicin signature strength (0.59 vs non-hepatic mean 0.40, **1.47×**), with replicate consistency in the top tier (median pairwise Spearman ρ = 0.31 across 15 intra-HEPG2 pairs). HT29 (the only intestinal line in L1000, a poorly-differentiated colorectal-adenocarcinoma line with reduced endogenous PXR) ranks lowest. See `figures/fig6_lincs_rifampicin.png` and `data/processed/lincs_signature_strength.csv`. A direct panel-level overlay is left as a future test once authenticated clue.io BING access is in place.
 
 ### External validation: GTEx bulk RNA-seq
 
-We re-tested the hepatocyte-selectivity pattern in an entirely independent data modality (GTEx v8, bulk RNA-seq, 17,382 samples across 54 tissues, 948 donors). For each tissue, we computed within-tissue Spearman ρ(NR1I2, target) across donors (`figures/supp_gtex_validation.png`):
+We re-tested the hepatocyte-selectivity pattern in an entirely independent data modality (GTEx v8, bulk RNA-seq, 17,382 samples across 54 tissues, 948 donors). For each tissue, we computed within-tissue Spearman ρ(NR1I2, target) across donors (`figures/fig4_gtex_validation.png`):
 
 | Gene | Liver ρ | Intestine mean ρ | Immune mean ρ | Liver − immune |
 |------|---------|-------------------|----------------|-----------------|
@@ -102,7 +102,7 @@ The headline pattern is stable across analytical choices, with one honest caveat
 | Top-5 hepatocyte-selective gene set Jaccard vs. reference | median **0.67**; the top-4 panel (SLCO1B1, CYP2C9, CYP2C8, ABCC2) is stable in all 17 combinations; the 5th slot oscillates between CPT1A and CYP3A5 depending on (cells_per_metacell, min_metacells, seed) — both are bona-fide PXR targets at the boundary of selectivity, with DS values within ~0.03 of each other |
 | Std of ρ across 20 × 80% cell-level subsamples, per (cell_type, gene) | median **0.022** |
 
-See `figures/supp_*.png` and `notebooks/05_robustness.ipynb` for full diagnostics.
+See `figures/figS1_parameter_sensitivity.png`, `figures/figS2_subsample_stability.png`, and `notebooks/05_robustness.ipynb` for full diagnostics.
 
 ## Methods
 
@@ -161,7 +161,7 @@ Cells are subsampled to 80% within each cell type 20 times and the coupling pipe
 ## Limitations
 
 - **No experimental perturbation.** Spearman ρ is a co-expression measure, not a causal claim. Genes flagged as decoupled may still be PXR-responsive under appropriate ligand exposure; the analysis identifies *baseline transcriptional coupling*, which is a necessary-but-not-sufficient condition for a useful pharmacodynamic readout.
-- **Census composition bias.** Cell-type counts reflect the studies deposited in CELLxGENE; hepatocyte numbers (and donor diversity) are dominated by a handful of large liver atlases. Per-dataset stability (`figures/supp_per_dataset_hepatocyte.png`) shows that the coupling pattern strength **varies considerably across datasets** (median pairwise ρ of coupling vectors = 0.33 across 5 eligible hepatocyte datasets, range −0.09 to 0.66). One large dataset carries most of the signal; smaller datasets show weaker but directionally-consistent coupling. This is a real limitation: a future iteration should re-fetch without the 5,000-cell-per-type subsampling cap so each dataset retains its full cell complement, and should extend per-dataset analysis to intestinal cell types. See `data/processed/atlas_provenance.csv` for the full dataset breakdown.
+- **Census composition bias.** Cell-type counts reflect the studies deposited in CELLxGENE; hepatocyte numbers (and donor diversity) are dominated by a handful of large liver atlases. Per-dataset stability (`figures/figS3_per_dataset_hepatocyte.png`) shows that the coupling pattern strength **varies considerably across datasets** (median pairwise ρ of coupling vectors = 0.33 across 5 eligible hepatocyte datasets, range −0.09 to 0.66). One large dataset carries most of the signal; smaller datasets show weaker but directionally-consistent coupling. This is a real limitation: a future iteration should re-fetch without the 5,000-cell-per-type subsampling cap so each dataset retains its full cell complement, and should extend per-dataset analysis to intestinal cell types. See `data/processed/atlas_provenance.csv` for the full dataset breakdown.
 - **NR1I2 sparsity in immune cells.** PXR transcript is rarely detected in T/NK cells; "no coupling" can reflect *no signal* rather than *real independence*. We avoid this trap by requiring `MIN_METACELLS ≥ 20`, but power is still asymmetric across cell types — interpret null calls cautiously.
 - **Curated target set.** The 20-gene panel is conservative (evidence grade A/B from PMID-tagged primary literature). Adding speculative targets would inflate FDR cost without changing the headline.
 - **Single ontology.** All cell types are Cell Ontology labels from CELLxGENE. The hepatocyte label aggregates periportal/pericentral zones that may differ in PXR activity; future work could re-run within published zonation labels.
@@ -177,14 +177,17 @@ data/
                           coupling_{p,q}values.csv, sensitivity_*.csv,
                           subsample_*.csv, atlas_provenance.csv
 figures/
-  final_heatmap.png       Main figure
-  supp_heatmap_significance.png   Coupling ρ with q-value overlay
-  supp_forest_hepatocyte.png      Top-10 ρ with 95% CIs
-  supp_sensitivity.png            Decoupling-rank agreement across parameter sweep
-  supp_subsample_stability.png    Per-cell-type ρ std under 80% subsampling
-  supp_negative_control.png       PXR targets vs 20 matched negative controls
-  supp_per_dataset_hepatocyte.png Coupling vectors per CELLxGENE dataset
-  supp_opentargets.png            Open Targets external disease validation
+  fig1_coupling_heatmap.png         Fig 1  — main coupling heatmap, 10 cell types × 20 genes
+  fig2a_significance_overlay.png    Fig 2a — heatmap with BH-FDR q-value stars
+  fig2b_forest_hepatocyte.png       Fig 2b — top-10 hepatocyte ρ with 95% bootstrap CIs
+  fig3_negative_control.png         Fig 3  — PXR targets vs 20 matched negative controls
+  fig4_gtex_validation.png          Fig 4  — GTEx bulk-tissue replication across 54 tissues
+  fig5_rifamycin_perturbation.png   Fig 5  — direct rifamycin induction in primary hepatocytes
+  fig6_lincs_rifampicin.png         Fig 6  — LINCS L1000 rifampicin signature strength by cell line
+  fig7_opentargets.png              Fig 7  — Open Targets external disease validation
+  figS1_parameter_sensitivity.png   Fig S1 — decoupling-rank agreement across parameter sweep
+  figS2_subsample_stability.png     Fig S2 — per-cell-type ρ std under 80% subsampling
+  figS3_per_dataset_hepatocyte.png  Fig S3 — coupling vectors per CELLxGENE dataset
 notebooks/
   01_nr1i2_atlas.ipynb    Atlas QC and NR1I2 detection
   02_coupling.ipynb       Metacell coupling — walkthrough + full computation
