@@ -184,19 +184,23 @@ def main() -> None:
     )
     norm = TwoSlopeNorm(vmin=-1, vcenter=0, vmax=1)
 
-    # Layout: heatmap + left tissue-group band + thin colourbar
-    fig = plt.figure(figsize=(DOUBLE_COL * 0.85, 0.16 * len(plot_mat.index) + 1.2))
+    # Layout: heatmap + thin colourbar. Tissue-group identity is conveyed by
+    # colouring the y-axis tick labels themselves (no separate side band).
+    fig_height = 0.16 * len(plot_mat.index) + 2.2
+    fig = plt.figure(figsize=(DOUBLE_COL * 0.85, fig_height))
     gs = fig.add_gridspec(
         nrows=1,
-        ncols=3,
-        width_ratios=[0.04, 1.0, 0.03],
+        ncols=2,
+        width_ratios=[1.0, 0.03],
         wspace=0.04,
+        top=0.86,
+        bottom=0.09,
+        left=0.30,
+        right=0.92,
     )
-    ax_left = fig.add_subplot(gs[0, 0])
-    ax = fig.add_subplot(gs[0, 1])
-    cax = fig.add_subplot(gs[0, 2])
+    ax = fig.add_subplot(gs[0, 0])
+    cax = fig.add_subplot(gs[0, 1])
 
-    # left band: tissue group
     group_color = {
         "liver": COLOR_HEPATIC,
         "intestine": COLOR_INTESTINE,
@@ -204,20 +208,18 @@ def main() -> None:
         "adrenal": "#8a6a9c",
         "immune": COLOR_IMMUNE,
     }
-    ax_left.set_xlim(0, 1)
-    ax_left.set_ylim(-0.5, len(plot_mat.index) - 0.5)
-    for i, tissue in enumerate(plot_mat.index):
-        grp = TISSUE_GROUP.get(tissue, None)
-        if grp:
-            ax_left.add_patch(plt.Rectangle((0, i - 0.5), 1, 1, color=group_color.get(grp, "#bbb")))
-    ax_left.invert_yaxis()
-    ax_left.set_axis_off()
 
     im = ax.imshow(plot_mat.values, cmap=cmap, norm=norm, aspect="auto", interpolation="nearest")
     ax.set_xticks(range(len(plot_genes)))
     ax.set_xticklabels(plot_genes, rotation=35, ha="right", fontsize=6.5)
     ax.set_yticks(range(len(plot_mat.index)))
     ax.set_yticklabels([t.replace("_", " ") for t in plot_mat.index], fontsize=6.5)
+    # Colour the labels of tissues that belong to a tracked compartment.
+    for tick_label, tissue in zip(ax.get_yticklabels(), plot_mat.index, strict=False):
+        grp = TISSUE_GROUP.get(tissue)
+        if grp:
+            tick_label.set_color(group_color.get(grp, COLOR_TEXT))
+            tick_label.set_fontweight("medium")
     ax.tick_params(length=0)
     ax.axvline(len(PXR_TARGETS) - 0.5, color="white", lw=1.4)
     # subtle separator between gene-class groups
@@ -250,10 +252,8 @@ def main() -> None:
         fig,
         "Top-5 hep-selective PXR targets (left of divider) vs three matched controls; 54 tissues; n ≥ 70 donors / tissue.",  # noqa: E501
         x=0.012,
-        y=0.93,
+        y=0.935,
     )
-
-    plt.subplots_adjust(top=0.92, right=0.92, bottom=0.08, left=0.18)
     out = FIGURES / "supp_gtex_validation.png"
     fig.savefig(out, dpi=300, bbox_inches="tight", facecolor="white")
     log.info("Wrote %s", out)

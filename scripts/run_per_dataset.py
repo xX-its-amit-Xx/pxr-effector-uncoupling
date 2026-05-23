@@ -96,9 +96,18 @@ def main() -> None:
     norm = TwoSlopeNorm(vmin=-1, vcenter=0, vmax=1)
 
     fig_w = min(DOUBLE_COL, 0.28 * per_ds.shape[1] + 2.5)
-    fig_h = 0.32 * per_ds.shape[0] + 1.4
+    fig_h = 0.32 * per_ds.shape[0] + 2.6  # extra height for title block
     fig = plt.figure(figsize=(fig_w, fig_h))
-    gs = fig.add_gridspec(nrows=1, ncols=2, width_ratios=[1.0, 0.04], wspace=0.04)
+    gs = fig.add_gridspec(
+        nrows=1,
+        ncols=2,
+        width_ratios=[1.0, 0.04],
+        wspace=0.04,
+        top=0.78,
+        bottom=0.18,
+        left=0.22,
+        right=0.92,
+    )
     ax = fig.add_subplot(gs[0, 0])
     cax = fig.add_subplot(gs[0, 1])
 
@@ -125,7 +134,7 @@ def main() -> None:
     fig.suptitle(
         "Per-dataset hepatocyte coupling",
         x=0.012,
-        y=0.97,
+        y=0.96,
         ha="left",
         fontsize=9,
         fontweight="bold",
@@ -137,10 +146,8 @@ def main() -> None:
         f"Median pairwise ρ across datasets = {summary['median_pairwise_rho']:.2f} "
         f"(range {summary['min_pairwise_rho']:.2f} to {summary['max_pairwise_rho']:.2f}).",
         x=0.012,
-        y=0.93,
+        y=0.88,
     )
-
-    plt.tight_layout(rect=(0, 0, 1, 0.88))
     fig.savefig(
         FIGURES / "supp_per_dataset_hepatocyte.png",
         dpi=300,

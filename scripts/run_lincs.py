@@ -178,9 +178,12 @@ def main() -> None:
 
     # 5. Figure ───────────────────────────────────────────────────────────────
     apply_style()
+    from adjustText import adjust_text
     from matplotlib.patches import Patch
 
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(DOUBLE_COL, 3.6))
+    fig, (ax1, ax2) = plt.subplots(
+        1, 2, figsize=(DOUBLE_COL, 4.2), gridspec_kw={"width_ratios": [1.0, 1.25]}
+    )
     for ax in (ax1, ax2):
         polish_axes(ax)
 
@@ -220,42 +223,78 @@ def main() -> None:
     ]
     ax1.legend(handles=leg, loc="lower right", handlelength=0.9, handleheight=0.7)
 
-    # 5b. Strength vs consistency
-    for _, r in per_line.iterrows():
-        if r["intra_line_n_pairs"] == 0 or np.isnan(r["intra_line_rho_median"]):
-            continue
+    # 5b. Strength vs consistency. Plot every point, then let adjustText
+    # find collision-free label positions with thin leader lines.
+    rows_to_plot = [
+        r
+        for _, r in per_line.iterrows()
+        if r["intra_line_n_pairs"] > 0 and not np.isnan(r["intra_line_rho_median"])
+    ]
+    for r in rows_to_plot:
         c = _cline_color(r["cellline"])
+        x, y = r["signature_strength_L1"], r["intra_line_rho_median"]
         ax2.scatter(
-            r["signature_strength_L1"],
-            r["intra_line_rho_median"],
-            s=18 + 3 * r["n_signatures"],
+            x,
+            y,
+            s=22 + 3 * r["n_signatures"],
             color=c,
             edgecolor="white",
             linewidth=0.6,
             alpha=0.92,
+            zorder=3,
         )
-        ax2.annotate(
-            r["cellline"],
-            (r["signature_strength_L1"], r["intra_line_rho_median"]),
-            fontsize=5.5,
-            xytext=(4, 2),
-            textcoords="offset points",
-            color=COLOR_TEXT,
+    texts = []
+    for r in rows_to_plot:
+        cl = r["cellline"]
+        x, y = r["signature_strength_L1"], r["intra_line_rho_median"]
+        # Highlighted hep/intestinal lines get bold dark labels; others lighter.
+        is_highlight = cl in HEPATIC_LINES or cl in INTESTINAL_LINES
+        texts.append(
+            ax2.text(
+                x,
+                y,
+                cl,
+                fontsize=6,
+                color=COLOR_TEXT if is_highlight else COLOR_MUTED_TEXT,
+                fontweight="bold" if is_highlight else "normal",
+                zorder=4,
+            )
         )
+    adjust_text(
+        texts,
+        ax=ax2,
+        arrowprops=dict(arrowstyle="-", color=COLOR_MUTED_TEXT, lw=0.4, shrinkA=2, shrinkB=2),
+        expand=(1.3, 1.5),
+        force_text=(0.4, 0.6),
+        force_static=(0.2, 0.3),
+        max_move=40,
+    )
     ax2.set_xlabel("Signature strength")
-    ax2.set_ylabel("Intra-line replicate consistency (median pairwise Spearman ρ)")
+    ax2.set_ylabel(
+        "Intra-line replicate consistency\n(median pairwise Spearman ρ)",
+        fontsize=6.5,
+    )
     ax2.axhline(0, color=COLOR_ZERO_LINE, lw=0.5, linestyle="--")
     ax2.set_title("Strength × consistency", loc="left", pad=4)
-    add_panel_label(ax2, "b", dx=-0.13)
+    add_panel_label(ax2, "b", dx=-0.15)
 
+    fig.suptitle(
+        "LINCS L1000 rifampicin transcriptional response",
+        x=0.012,
+        y=0.985,
+        ha="left",
+        fontsize=9,
+        fontweight="bold",
+        color=COLOR_TEXT,
+    )
     add_subtitle(
         fig,
         "121 rifampicin signatures across 18 LINCS L1000 cell lines. Bubble area scales with n signatures per line.",  # noqa: E501
         x=0.012,
-        y=0.93,
+        y=0.945,
     )
 
-    plt.tight_layout(rect=(0, 0, 1, 0.88))
+    plt.tight_layout(rect=(0, 0, 1, 0.87))
     out = FIGURES / "supp_lincs_rifampicin.png"
     fig.savefig(out, dpi=300, bbox_inches="tight", facecolor="white")
     log.info("Wrote %s", out)

@@ -196,13 +196,15 @@ def main() -> None:
     p = summary["pvalue"]
     axes[0].set_title("Distribution of DS by gene class", loc="left", pad=4)
     add_panel_label(axes[0], "a", dx=-0.20)
+    # Statistics caption placed below the x-axis labels so it doesn't overlap
+    # the violin bodies.
     axes[0].text(
-        0.02,
-        0.98,
-        f"Mann-Whitney U  p = {p:.1e}\nmedian {summary['median_target']:.2f} vs {summary['median_null']:.2f}",  # noqa: E501
+        0.5,
+        -0.22,
+        f"Mann-Whitney U one-sided p = {p:.1e}  ;  median {summary['median_target']:.2f} vs {summary['median_null']:.2f}",  # noqa: E501
         transform=axes[0].transAxes,
         va="top",
-        ha="left",
+        ha="center",
         fontsize=6.5,
         color=COLOR_MUTED_TEXT,
     )
@@ -247,7 +249,7 @@ def main() -> None:
     fig.suptitle(
         "Decoupling is specific to PXR target genes",
         x=0.012,
-        y=0.97,
+        y=0.99,
         ha="left",
         fontsize=9,
         fontweight="bold",
@@ -257,10 +259,10 @@ def main() -> None:
         fig,
         "20 PXR targets vs 20 matched controls (liver-enriched non-PXR + hepatocyte master TFs + housekeeping).",  # noqa: E501
         x=0.012,
-        y=0.93,
+        y=0.95,
     )
 
-    plt.tight_layout(rect=(0, 0, 1, 0.88))
+    plt.tight_layout(rect=(0, 0, 1, 0.84))
     fig.savefig(
         FIGURES / "supp_negative_control.png",
         dpi=300,
