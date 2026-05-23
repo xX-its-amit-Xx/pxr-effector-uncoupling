@@ -223,8 +223,10 @@ def main() -> None:
     ]
     ax1.legend(handles=leg, loc="lower right", handlelength=0.9, handleheight=0.7)
 
-    # 5b. Strength vs consistency. Plot every point, then let adjustText
-    # find collision-free label positions with thin leader lines.
+    # 5b. Strength vs consistency. Plot every point. HEPG2 and HT29 (the two
+    # highlight cell lines) get explicit hand-placed annotations with leader
+    # lines so they always sit clear of their dots; all other labels are
+    # handed to adjustText for collision-free placement.
     rows_to_plot = [
         r
         for _, r in per_line.iterrows()
@@ -243,31 +245,72 @@ def main() -> None:
             alpha=0.92,
             zorder=3,
         )
+
+    # Pad the x-axis so HEPG2 (rightmost point) has room for its label
+    # without colliding with the data dot.
+    x_vals = [r["signature_strength_L1"] for r in rows_to_plot]
+    y_vals = [r["intra_line_rho_median"] for r in rows_to_plot]
+    x_span = max(x_vals) - min(x_vals)
+    ax2.set_xlim(min(x_vals) - 0.05 * x_span, max(x_vals) + 0.18 * x_span)
+    y_span = max(y_vals) - min(y_vals)
+    ax2.set_ylim(min(y_vals) - 0.08 * y_span, max(y_vals) + 0.12 * y_span)
+
+    # Hand-place the two highlight callouts with explicit leader lines.
+    highlight_offsets = {
+        "HEPG2": (24, -4),  # to the right of the rightmost dot
+        "HT29": (24, 6),  # to the right of the leftmost dot
+    }
+    for r in rows_to_plot:
+        cl = r["cellline"]
+        if cl not in highlight_offsets:
+            continue
+        dx, dy = highlight_offsets[cl]
+        ax2.annotate(
+            cl,
+            xy=(r["signature_strength_L1"], r["intra_line_rho_median"]),
+            xytext=(dx, dy),
+            textcoords="offset points",
+            fontsize=6,
+            fontweight="bold",
+            color=COLOR_TEXT,
+            ha="left",
+            va="center",
+            arrowprops=dict(
+                arrowstyle="-",
+                color=COLOR_MUTED_TEXT,
+                lw=0.5,
+                shrinkA=4,
+                shrinkB=2,
+            ),
+            zorder=5,
+        )
+
+    # adjustText handles the remaining (non-highlight) labels.
     texts = []
     for r in rows_to_plot:
         cl = r["cellline"]
+        if cl in highlight_offsets:
+            continue
         x, y = r["signature_strength_L1"], r["intra_line_rho_median"]
-        # Highlighted hep/intestinal lines get bold dark labels; others lighter.
-        is_highlight = cl in HEPATIC_LINES or cl in INTESTINAL_LINES
         texts.append(
             ax2.text(
                 x,
                 y,
                 cl,
                 fontsize=6,
-                color=COLOR_TEXT if is_highlight else COLOR_MUTED_TEXT,
-                fontweight="bold" if is_highlight else "normal",
+                color=COLOR_MUTED_TEXT,
                 zorder=4,
             )
         )
     adjust_text(
         texts,
         ax=ax2,
-        arrowprops=dict(arrowstyle="-", color=COLOR_MUTED_TEXT, lw=0.4, shrinkA=2, shrinkB=2),
-        expand=(1.3, 1.5),
-        force_text=(0.4, 0.6),
-        force_static=(0.2, 0.3),
-        max_move=40,
+        arrowprops=dict(arrowstyle="-", color=COLOR_MUTED_TEXT, lw=0.4, shrinkA=3, shrinkB=3),
+        expand=(1.6, 1.9),
+        force_text=(0.7, 1.0),
+        force_static=(0.5, 0.7),
+        min_arrow_len=4,
+        max_move=60,
     )
     ax2.set_xlabel("Signature strength")
     ax2.set_ylabel(
