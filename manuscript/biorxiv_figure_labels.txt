@@ -1,0 +1,26 @@
+bioRxiv Image Files — labels to enter for each upload
+======================================================
+
+File: fig1_coupling_heatmap.png
+Label: Figure 1. PXR target coupling to NR1I2 across ten cell types.
+
+File: fig2a_significance_overlay.png
+Label: Figure 2a. Coupling heatmap with Benjamini-Hochberg FDR significance overlay.
+
+File: fig2b_forest_hepatocyte.png
+Label: Figure 2b. Top-10 hepatocyte-coupled genes with 95% bootstrap confidence intervals.
+
+File: fig3_negative_control.png
+Label: Figure 3. Decoupling is specific to PXR target genes, not a generic hepatocyte signature.
+
+File: fig4_gtex_validation.png
+Label: Figure 4. The hepatic vs immune contrast replicates in independent bulk RNA-seq (GTEx v8).
+
+File: fig5_rifamycin_perturbation.png
+Label: Figure 5. Three PXR agonists induce four of the six top-decoupled panel genes in primary human hepatocytes (GSE139896).
+
+File: fig6_lincs_rifampicin.png
+Label: Figure 6. Rifampicin transcriptional signature strength and replicate consistency by LINCS L1000 cell line.
+
+File: fig7_opentargets.png
+Label: Figure 7. Top hep-selective genes recover textbook pharmacology in an independent disease-association graph (Open Targets).

@@ -1,0 +1,23 @@
+bioRxiv Supplemental Files — description
+=========================================
+
+This submission includes one supplemental file:
+
+  supplementary_information.pdf
+
+Contents
+--------
+A single PDF that bundles all three supplementary figures with their
+full captions:
+
+  Fig. S1  Decoupling-rank stability across the metacell parameter sweep
+  Fig. S2  Subsample stability of metacell coupling under 80%
+           cell-level resampling
+  Fig. S3  Per-dataset hepatocyte coupling shows preserved gene ranking
+           with substantial between-study magnitude variance
+
+Source code, intermediate data, and a fully reproducible pipeline that
+regenerates every figure in this submission (main + supplementary) are
+available at:
+
+  https://github.com/xX-its-amit-Xx/pxr-effector-uncoupling
