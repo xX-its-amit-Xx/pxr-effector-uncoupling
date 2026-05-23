@@ -66,7 +66,7 @@ def heatmap_with_significance(
     n_ct = len(common_ct)
     n_g = len(common_g)
     fig_w = min(DOUBLE_COL, 0.42 * n_ct + 3.0)
-    fig_h = 0.22 * n_g + 1.4
+    fig_h = 0.22 * n_g + 1.9  # extra room for title + subtitle + band
     fig = plt.figure(figsize=(fig_w, fig_h))
     gs = fig.add_gridspec(
         nrows=2,
@@ -75,6 +75,10 @@ def heatmap_with_significance(
         height_ratios=[0.04, 1.0],
         wspace=0.04,
         hspace=0.02,
+        top=0.85,
+        bottom=0.15,
+        left=0.18,
+        right=0.92,
     )
     ax_top = fig.add_subplot(gs[0, 0])
     ax = fig.add_subplot(gs[1, 0])
@@ -144,8 +148,9 @@ def heatmap_with_significance(
     fig.suptitle(
         "Coupling ρ with FDR-significance overlay",
         x=0.012,
-        y=0.97,
+        y=0.98,
         ha="left",
+        va="top",
         fontsize=9,
         fontweight="bold",
         color=COLOR_TEXT,
@@ -153,10 +158,10 @@ def heatmap_with_significance(
     add_subtitle(
         fig,
         f"`*` q < {q_threshold},  `**` q < 0.01 ; BH-FDR over the 10 × 20 (cell type × gene) family.",  # noqa: E501
-        y=0.93,
+        y=0.94,
     )
 
-    plt.subplots_adjust(top=0.92, right=0.92, bottom=0.16, left=0.18)
+    # gridspec top is already 0.85 — no plt.subplots_adjust here.
     fig.savefig(output_path, dpi=dpi, bbox_inches="tight", facecolor="white")
     # consume unused names so linters stay quiet
     _ = (COLOR_IMMUNE, COLOR_HEPATIC)
@@ -218,15 +223,24 @@ def decoupling_with_ci_forest(
     ax.invert_yaxis()
     ax.set_xlabel(f"Spearman ρ in {reference_cell_type}  (95% bootstrap CI)")
     ax.set_xlim(-0.2, 1.05)
-    ax.set_title(f"Top {top_n} hepatocyte-coupled PXR targets", loc="left", pad=4)
+    fig.suptitle(
+        f"Top {top_n} hepatocyte-coupled PXR targets",
+        x=0.02,
+        y=0.98,
+        ha="left",
+        va="top",
+        fontsize=9,
+        fontweight="bold",
+        color=COLOR_TEXT,
+    )
     add_subtitle(
         fig,
         "Bars: 95% percentile bootstrap CI over metacell rows. `*` q<0.05, `**` q<0.01, `***` q<0.001.",  # noqa: E501
         x=0.02,
-        y=0.94,
+        y=0.93,
     )
 
-    plt.tight_layout(rect=(0, 0, 1, 0.94))
+    plt.tight_layout(rect=(0, 0, 1, 0.86))
     fig.savefig(output_path, dpi=dpi, bbox_inches="tight", facecolor="white")
     return fig
 
@@ -335,7 +349,16 @@ def subsample_stability_plot(
     ax.set_xticklabels([short_cell_type(c) for c in order], rotation=25, ha="right", fontsize=6.5)
     ax.set_xlabel("")
     ax.set_ylabel("Std of ρ across 20 × 80% subsamples")
-    ax.set_title("Coupling stability under cell-level subsampling", loc="left", pad=4)
+    fig.suptitle(
+        "Coupling stability under cell-level subsampling",
+        x=0.02,
+        y=0.98,
+        ha="left",
+        va="top",
+        fontsize=9,
+        fontweight="bold",
+        color=COLOR_TEXT,
+    )
     add_subtitle(
         fig,
         "Each box: distribution of per-gene ρ standard deviation across 20 independent 80%-subsamples within a cell type.",  # noqa: E501
@@ -343,6 +366,6 @@ def subsample_stability_plot(
         y=0.93,
     )
 
-    plt.tight_layout(rect=(0, 0, 1, 0.88))
+    plt.tight_layout(rect=(0, 0, 1, 0.85))
     fig.savefig(output_path, dpi=dpi, bbox_inches="tight", facecolor="white")
     return fig

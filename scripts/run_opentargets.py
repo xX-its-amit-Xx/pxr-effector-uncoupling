@@ -212,8 +212,9 @@ def main() -> None:
     fig.suptitle(
         "Open Targets disease associations",
         x=0.012,
-        y=0.97,
+        y=0.98,
         ha="left",
+        va="top",
         fontsize=9,
         fontweight="bold",
         color=COLOR_TEXT,
@@ -225,7 +226,7 @@ def main() -> None:
         y=0.93,
     )
 
-    plt.tight_layout(rect=(0, 0, 1, 0.88))
+    plt.tight_layout(rect=(0, 0, 1, 0.85))
     fig.savefig(FIGURES / "fig7_opentargets.png", dpi=300, bbox_inches="tight", facecolor="white")
     log.info("Wrote %s", FIGURES / "fig7_opentargets.png")
     _ = COLOR_MUTED_TEXT  # silence unused import linter

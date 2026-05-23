@@ -270,8 +270,9 @@ def main() -> None:
     fig.suptitle(
         "Direct rifamycin perturbation of primary human hepatocytes",
         x=0.012,
-        y=0.97,
+        y=0.98,
         ha="left",
+        va="top",
         fontsize=9,
         fontweight="bold",
         color=COLOR_TEXT,
@@ -283,7 +284,7 @@ def main() -> None:
         y=0.93,
     )
 
-    plt.tight_layout(rect=(0, 0, 1, 0.88))
+    plt.tight_layout(rect=(0, 0, 1, 0.85))
     out = FIGURES / "fig5_rifamycin_perturbation.png"
     fig.savefig(out, dpi=300, bbox_inches="tight", facecolor="white")
     log.info("Wrote %s", out)

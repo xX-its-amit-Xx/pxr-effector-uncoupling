@@ -185,9 +185,14 @@ def add_panel_label(ax: plt.Axes, label: str, *, dx: float = -0.10, dy: float = 
     )
 
 
-def add_subtitle(fig: plt.Figure, text: str, *, x: float = 0.012, y: float = 0.95) -> None:
-    """Caption-like subtitle below a figure-level title."""
-    fig.text(x, y, text, fontsize=7.5, color=COLOR_MUTED_TEXT, ha="left")
+def add_subtitle(fig: plt.Figure, text: str, *, x: float = 0.012, y: float = 0.93) -> None:
+    """Caption-like subtitle below a figure-level title.
+
+    ``y`` is the TOP of the subtitle text (matching ``fig.suptitle`` semantics,
+    which uses ``va='top'`` by default). Pick ``y`` strictly below the
+    suptitle's ``y`` so the two never collide.
+    """
+    fig.text(x, y, text, fontsize=7.5, color=COLOR_MUTED_TEXT, ha="left", va="top")
 
 
 def short_cell_type(name: str) -> str:

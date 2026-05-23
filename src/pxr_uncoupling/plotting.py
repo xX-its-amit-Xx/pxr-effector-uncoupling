@@ -63,7 +63,7 @@ def decoupling_heatmap(
     n_ct = len(ct_order)
     n_g = len(gene_order)
     fig_w = min(DOUBLE_COL, 0.42 * n_ct + 3.4)
-    fig_h = 0.24 * n_g + 1.8
+    fig_h = 0.24 * n_g + 2.2  # extra top room for title + subtitle + band
     fig = plt.figure(figsize=(fig_w, fig_h))
     # main heatmap axes leave room top for compartment band and right for cbar
     gs = fig.add_gridspec(
@@ -73,6 +73,10 @@ def decoupling_heatmap(
         height_ratios=[0.04, 1.0],
         wspace=0.04,
         hspace=0.02,
+        top=0.84,  # leaves y=0.84-1.00 for title block
+        bottom=0.12,
+        left=0.18,
+        right=0.92,
     )
     ax_top = fig.add_subplot(gs[0, 0])  # compartment band
     ax = fig.add_subplot(gs[1, 0])
@@ -161,23 +165,26 @@ def decoupling_heatmap(
     cb.ax.tick_params(labelsize=6, length=2.5, color=COLOR_TEXT)
     cb.set_ticks([-1, -0.5, 0, 0.5, 1])
 
-    # Title block (figure-level)
+    # Title block (figure-level). Both use va='top' so y is the top of each
+    # text element — keeps title above subtitle, both above compartment band.
     fig.suptitle(
         "PXR target coupling to NR1I2 across cell types",
         x=0.012,
-        y=0.97,
+        y=0.98,
         ha="left",
+        va="top",
         fontsize=9,
         fontweight="bold",
         color=COLOR_TEXT,
     )
     fig.text(
         0.012,
-        0.95,
+        0.93,
         "Spearman ρ between NR1I2 and each canonical target, computed over metacells; n = 446,672 cells across 10 cell types.",  # noqa: E501
         fontsize=6.5,
         color=COLOR_MUTED_TEXT,
         ha="left",
+        va="top",
     )
 
     # Regulation legend (under the colorbar)
@@ -200,6 +207,6 @@ def decoupling_heatmap(
 
     # silence unused import linters
     _ = COLOR_INTESTINE
-    plt.subplots_adjust(top=0.92, right=0.92, bottom=0.16, left=0.18)
+    # gridspec.top is already set to 0.84 — don't overwrite it here.
     fig.savefig(output_path, dpi=dpi, bbox_inches="tight", facecolor="white")
     return fig
