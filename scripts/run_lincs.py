@@ -281,8 +281,9 @@ def main() -> None:
     fig.suptitle(
         "LINCS L1000 rifampicin transcriptional response",
         x=0.012,
-        y=0.985,
+        y=0.98,
         ha="left",
+        va="top",
         fontsize=9,
         fontweight="bold",
         color=COLOR_TEXT,
@@ -291,10 +292,10 @@ def main() -> None:
         fig,
         "121 rifampicin signatures across 18 LINCS L1000 cell lines. Bubble area scales with n signatures per line.",  # noqa: E501
         x=0.012,
-        y=0.945,
+        y=0.93,
     )
 
-    plt.tight_layout(rect=(0, 0, 1, 0.87))
+    plt.tight_layout(rect=(0, 0, 1, 0.85))
     out = FIGURES / "fig6_lincs_rifampicin.png"
     fig.savefig(out, dpi=300, bbox_inches="tight", facecolor="white")
     log.info("Wrote %s", out)

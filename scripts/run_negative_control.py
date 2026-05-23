@@ -249,8 +249,9 @@ def main() -> None:
     fig.suptitle(
         "Decoupling is specific to PXR target genes",
         x=0.012,
-        y=0.99,
+        y=0.98,
         ha="left",
+        va="top",
         fontsize=9,
         fontweight="bold",
         color=COLOR_TEXT,
@@ -259,10 +260,10 @@ def main() -> None:
         fig,
         "20 PXR targets vs 20 matched controls (liver-enriched non-PXR + hepatocyte master TFs + housekeeping).",  # noqa: E501
         x=0.012,
-        y=0.95,
+        y=0.93,
     )
 
-    plt.tight_layout(rect=(0, 0, 1, 0.84))
+    plt.tight_layout(rect=(0, 0, 1, 0.85))
     fig.savefig(
         FIGURES / "fig3_negative_control.png",
         dpi=300,
