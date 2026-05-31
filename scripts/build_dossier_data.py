@@ -7,6 +7,9 @@ The dossiers/<GENE>.md files are assembled separately from these caches,
 so the slow API pulls and the markdown writing stay decoupled.
 """
 
+# ruff: noqa: E501  # rendered output strings are intentionally long
+
+
 from __future__ import annotations
 
 import json

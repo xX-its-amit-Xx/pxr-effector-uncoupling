@@ -15,6 +15,9 @@ dossier ships with the most recent ~5 PubMed abstracts mentioning the gene
 together with PXR / NR1I2 — bounded query, no API key required.
 """
 
+# ruff: noqa: E501  # rendered output strings are intentionally long
+
+
 from __future__ import annotations
 
 import json
