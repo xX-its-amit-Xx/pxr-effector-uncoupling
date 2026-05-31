@@ -6,14 +6,19 @@ authors:
   - family-names: Shenoy
     given-names: Amit
     email: shenoy.am@husky.neu.edu
-repository-code: "https://github.com/ashenoy00000/pxr-effector-uncoupling"
+repository-code: "https://github.com/xX-its-amit-Xx/pxr-effector-uncoupling"
 abstract: >-
   A reproducible analysis identifying hepatocyte-selective coupling of canonical
-  PXR (NR1I2) target genes across 10 human cell types using ~47,000 single cells
-  from the CELLxGENE Census. Uses metacell-aggregated Spearman correlations,
-  permutation-based significance, BH-FDR control, and a parameter sensitivity
-  sweep. Nominates CYP2C8, CYP2C9, SLCO1B1, ABCC2 and CYP3A5 as candidate
-  hepatocyte-selective pharmacodynamic readouts for PXR modulators.
+  PXR (NR1I2) target genes across ten human cell types using 446,672 single cells
+  from CELLxGENE Census v2025-01-30. Uses metacell-aggregated Spearman correlations,
+  500-resample percentile bootstrap CIs, a metacell-label permutation null with
+  BH-FDR control, a 17-combination parameter sweep, a matched 20-gene negative-
+  control set, and four external validation layers (GTEx v8 bulk RNA-seq;
+  GSE139896 direct rifamycin perturbation in primary hepatocytes; LINCS L1000
+  rifampicin signatures across 18 cell lines; Open Targets disease associations).
+  Nominates CYP2C8, CYP2C9, CYP3A5 and ABCC2 as direct PXR-responsive hepatocyte-
+  selective pharmacodynamic readouts, with SLCO1B1 and CPT1A as hepatocyte-coupled
+  but indirectly regulated.
 keywords:
   - PXR
   - NR1I2
