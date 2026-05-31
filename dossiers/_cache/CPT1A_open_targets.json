@@ -1,0 +1,579 @@
+{
+  "data": {
+    "target": {
+      "id": "ENSG00000110090",
+      "approvedSymbol": "CPT1A",
+      "approvedName": "carnitine palmitoyltransferase 1A",
+      "biotype": "protein_coding",
+      "functionDescriptions": [
+        "Catalyzes the transfer of the acyl group of long-chain fatty acid-CoA conjugates onto carnitine, an essential step for the mitochondrial uptake of long-chain fatty acids and their subsequent beta-oxidation in the mitochondrion (PubMed:11350182, PubMed:14517221, PubMed:16651524, PubMed:9691089). Also possesses a lysine succinyltransferase activity that can regulate enzymatic activity of substrate proteins such as ENO1 and metabolism independent of its classical carnitine O-palmitoyltransferase activity (PubMed:29425493). Plays an important role in hepatic triglyceride metabolism (By similarity). Also plays a role in inducible regulatory T-cell (iTreg) differentiation once activated by butyryl-CoA that antagonizes malonyl- CoA-mediated CPT1A repression (By similarity). Sustains the IFN-I response by recruiting ZDHCC4 to palmitoylate MAVS at the mitochondria leading to MAVS stabilization and activation (PubMed:38016475). Promotes ROS-induced oxidative stress in liver injury via modulation of NFE2L2 and NLRP3-mediated signaling pathways (By similarity). {ECO:0000250|UniProtKB:P32198, ECO:0000269|PubMed:11350182, ECO:0000269|PubMed:14517221, ECO:0000269|PubMed:16651524, ECO:0000269|PubMed:29425493, ECO:0000269|PubMed:38016475, ECO:0000269|PubMed:9691089}."
+      ],
+      "nameSynonyms": [
+        {
+          "label": "Carnitine O-palmitoyltransferase 1, liver isoform",
+          "source": "uniprot"
+        },
+        {
+          "label": "Carnitine O-palmitoyltransferase I, liver isoform",
+          "source": "uniprot"
+        },
+        {
+          "label": "Carnitine palmitoyltransferase 1A",
+          "source": "uniprot"
+        },
+        {
+          "label": "Succinyltransferase CPT1A",
+          "source": "uniprot"
+        },
+        {
+          "label": "carnitine O-palmitoyltransferase 1, liver isoform",
+          "source": "NCBI_entrez"
+        },
+        {
+          "label": "carnitine palmitoyltransferase 1A (liver)",
+          "source": "NCBI_entrez"
+        },
+        {
+          "label": "carnitine palmitoyltransferase I, liver",
+          "source": "NCBI_entrez"
+        },
+        {
+          "label": "succinyltransferase CPT1A",
+          "source": "NCBI_entrez"
+        }
+      ],
+      "tractability": [
+        {
+          "modality": "SM",
+          "value": false,
+          "label": "Approved Drug"
+        },
+        {
+          "modality": "SM",
+          "value": false,
+          "label": "Advanced Clinical"
+        },
+        {
+          "modality": "SM",
+          "value": false,
+          "label": "Phase 1 Clinical"
+        },
+        {
+          "modality": "SM",
+          "value": false,
+          "label": "Structure with Ligand"
+        },
+        {
+          "modality": "SM",
+          "value": true,
+          "label": "High-Quality Ligand"
+        },
+        {
+          "modality": "SM",
+          "value": false,
+          "label": "High-Quality Pocket"
+        },
+        {
+          "modality": "SM",
+          "value": false,
+          "label": "Med-Quality Pocket"
+        },
+        {
+          "modality": "SM",
+          "value": true,
+          "label": "Druggable Family"
+        },
+        {
+          "modality": "AB",
+          "value": false,
+          "label": "Approved Drug"
+        },
+        {
+          "modality": "AB",
+          "value": false,
+          "label": "Advanced Clinical"
+        },
+        {
+          "modality": "AB",
+          "value": false,
+          "label": "Phase 1 Clinical"
+        },
+        {
+          "modality": "AB",
+          "value": false,
+          "label": "UniProt loc high conf"
+        },
+        {
+          "modality": "AB",
+          "value": false,
+          "label": "GO CC high conf"
+        },
+        {
+          "modality": "AB",
+          "value": false,
+          "label": "UniProt loc med conf"
+        },
+        {
+          "modality": "AB",
+          "value": true,
+          "label": "UniProt SigP or TMHMM"
+        },
+        {
+          "modality": "AB",
+          "value": false,
+          "label": "GO CC med conf"
+        },
+        {
+          "modality": "AB",
+          "value": false,
+          "label": "Human Protein Atlas loc"
+        },
+        {
+          "modality": "PR",
+          "value": false,
+          "label": "Approved Drug"
+        },
+        {
+          "modality": "PR",
+          "value": false,
+          "label": "Advanced Clinical"
+        },
+        {
+          "modality": "PR",
+          "value": false,
+          "label": "Phase 1 Clinical"
+        },
+        {
+          "modality": "PR",
+          "value": false,
+          "label": "Literature"
+        },
+        {
+          "modality": "PR",
+          "value": false,
+          "label": "UniProt Ubiquitination"
+        },
+        {
+          "modality": "PR",
+          "value": true,
+          "label": "Database Ubiquitination"
+        },
+        {
+          "modality": "PR",
+          "value": true,
+          "label": "Half-life Data"
+        },
+        {
+          "modality": "PR",
+          "value": true,
+          "label": "Small Molecule Binder"
+        },
+        {
+          "modality": "OC",
+          "value": false,
+          "label": "Approved Drug"
+        },
+        {
+          "modality": "OC",
+          "value": false,
+          "label": "Advanced Clinical"
+        },
+        {
+          "modality": "OC",
+          "value": false,
+          "label": "Phase 1 Clinical"
+        }
+      ],
+      "drugAndClinicalCandidates": {
+        "count": 0,
+        "rows": []
+      },
+      "associatedDiseases": {
+        "count": 489,
+        "rows": [
+          {
+            "disease": {
+              "id": "MONDO_0009705",
+              "name": "carnitine palmitoyl transferase 1A deficiency",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                }
+              ]
+            },
+            "score": 0.8360102017303558,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.03630697819069404
+              },
+              {
+                "id": "genetic_association",
+                "score": 0.9310123169309752
+              },
+              {
+                "id": "genetic_literature",
+                "score": 0.7971337499295236
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000508",
+              "name": "genetic disorder",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.4874075851713476,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.02735688589252295
+              },
+              {
+                "id": "genetic_association",
+                "score": 0.8003806229424784
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0005129",
+              "name": "cataract",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "MONDO_0024458",
+                  "name": "disorder of visual system"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.3982704506487376,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.15502235339096337
+              },
+              {
+                "id": "genetic_association",
+                "score": 0.647373531736969
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "GO_0009410",
+              "name": "response to xenobiotic stimulus",
+              "therapeuticAreas": [
+                {
+                  "id": "GO_0008150",
+                  "name": "biological_process"
+                }
+              ]
+            },
+            "score": 0.34590709052888235,
+            "datatypeScores": [
+              {
+                "id": "genetic_association",
+                "score": 0.5689908981217077
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000537",
+              "name": "hypertension",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000319",
+                  "name": "cardiovascular disease"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.3430581290324475,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.08041985330279584
+              },
+              {
+                "id": "genetic_association",
+                "score": 0.5602835801254157
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000266",
+              "name": "aortic stenosis",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000319",
+                  "name": "cardiovascular disease"
+                }
+              ]
+            },
+            "score": 0.32082742092586913,
+            "datatypeScores": [
+              {
+                "id": "genetic_association",
+                "score": 0.5277367460018549
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0003906",
+              "name": "heart valve prosthesis",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0002571",
+                  "name": "medical procedure"
+                }
+              ]
+            },
+            "score": 0.20751184572926498,
+            "datatypeScores": [
+              {
+                "id": "genetic_association",
+                "score": 0.3413412292065432
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0005148",
+              "name": "type 2 diabetes mellitus",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0001379",
+                  "name": "endocrine system disease"
+                },
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.13209661887694718,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.22129686364475112
+              },
+              {
+                "id": "genetic_association",
+                "score": 0.20622406436433754
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000616",
+              "name": "neoplasm",
+              "therapeuticAreas": [
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.11685711101498879,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.9611053714837736
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0007254",
+              "name": "breast cancer",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010285",
+                  "name": "integumentary system disease"
+                },
+                {
+                  "id": "OTAR_0000017",
+                  "name": "reproductive system or breast disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.11437770175899184,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.9407131716993754
+              }
+            ]
+          }
+        ]
+      },
+      "safetyLiabilities": [
+        {
+          "event": "Increased, Liver Steatosis",
+          "eventId": "HP_0001397",
+          "effects": [
+            {
+              "direction": "Inhibition/Decrease/Downregulation",
+              "dosing": null
+            }
+          ],
+          "biosamples": [],
+          "datasource": "AOP-Wiki",
+          "literature": null
+        }
+      ],
+      "pharmacogenomics": [],
+      "chemicalProbes": [
+        {
+          "id": "PD082159",
+          "control": "",
+          "drugId": "CHEMBL2216776",
+          "mechanismOfAction": [],
+          "isHighQuality": false,
+          "origin": [
+            "calculated"
+          ],
+          "probesDrugsScore": 60,
+          "probeMinerScore": 54,
+          "scoreInCells": null,
+          "scoreInOrganisms": 0,
+          "targetFromSourceId": "P50416",
+          "urls": [
+            {
+              "url": "http://probeminer.icr.ac.uk/#/"
+            }
+          ]
+        },
+        {
+          "id": "PD083600",
+          "control": "",
+          "drugId": "CHEMBL2216775",
+          "mechanismOfAction": [],
+          "isHighQuality": false,
+          "origin": [
+            "calculated"
+          ],
+          "probesDrugsScore": 60,
+          "probeMinerScore": 51,
+          "scoreInCells": null,
+          "scoreInOrganisms": 0,
+          "targetFromSourceId": "P50416",
+          "urls": [
+            {
+              "url": "http://probeminer.icr.ac.uk/#/"
+            }
+          ]
+        },
+        {
+          "id": "PD083813",
+          "control": "",
+          "drugId": "CHEMBL2216778",
+          "mechanismOfAction": [],
+          "isHighQuality": false,
+          "origin": [
+            "calculated"
+          ],
+          "probesDrugsScore": 87.4,
+          "probeMinerScore": 59,
+          "scoreInCells": null,
+          "scoreInOrganisms": 0,
+          "targetFromSourceId": "P50416",
+          "urls": [
+            {
+              "url": "http://probeminer.icr.ac.uk/#/"
+            }
+          ]
+        },
+        {
+          "id": "PD083825",
+          "control": "",
+          "drugId": "CHEMBL2216779",
+          "mechanismOfAction": [],
+          "isHighQuality": false,
+          "origin": [
+            "calculated"
+          ],
+          "probesDrugsScore": 59.2,
+          "probeMinerScore": 56,
+          "scoreInCells": null,
+          "scoreInOrganisms": 0,
+          "targetFromSourceId": "P50416",
+          "urls": [
+            {
+              "url": "http://probeminer.icr.ac.uk/#/"
+            }
+          ]
+        },
+        {
+          "id": "PD084823",
+          "control": "",
+          "drugId": "CHEMBL2216774",
+          "mechanismOfAction": [],
+          "isHighQuality": false,
+          "origin": [
+            "calculated"
+          ],
+          "probesDrugsScore": 60,
+          "probeMinerScore": 59,
+          "scoreInCells": null,
+          "scoreInOrganisms": 0,
+          "targetFromSourceId": "P50416",
+          "urls": [
+            {
+              "url": "http://probeminer.icr.ac.uk/#/"
+            }
+          ]
+        }
+      ],
+      "pathways": [
+        {
+          "pathwayId": "R-HSA-1989781",
+          "pathway": "PPARA activates gene expression",
+          "topLevelTerm": "Metabolism"
+        },
+        {
+          "pathwayId": "R-HSA-9933387",
+          "pathway": "RORA,B,C and NR1D1 (REV-ERBA) regulate gene expression",
+          "topLevelTerm": "Circadian clock"
+        },
+        {
+          "pathwayId": "R-HSA-200425",
+          "pathway": "Carnitine shuttle",
+          "topLevelTerm": "Metabolism"
+        }
+      ]
+    }
+  }
+}

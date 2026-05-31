@@ -1,0 +1,42 @@
+[
+  {
+    "pmid": "42178049",
+    "title": "Role of pregnane X receptor in the upregulation of human aldehyde oxidase gene expression.",
+    "first_author": "Chen",
+    "year": "",
+    "journal": "Biochem Pharmacol",
+    "abstract": "The present study was designed to test the hypothesis that pregnane\u00a0X\u00a0receptor (PXR) regulates human aldehyde oxidase (AOX1) gene expression. Treatment of LS180 human colon adenocarcinoma cells, a commonly used human PXR (hPXR) experimental model, with a hPXR agonist (rifampicin, T0901317, SR12813, ritonavir, or paclitaxel) increased AOX1 mRNA expression by 5.2-, 10.2-, 4.7-, 2.2-, and 6.5-fold, respectively, and increased the prototypic hPXR target gene (CYP3A4 mRNA) expression by 9.5-, 13.5-, 7.2-, 3.4-, and 18.0-fold, respectively. A Pearson correlation coefficient of 0.83 was obtained betw"
+  },
+  {
+    "pmid": "42025145",
+    "title": "Impact of the gut microbiome on hepatic cytochrome P450 3A4 (CYP3A4) in humanized pregnane X receptor-constitutive androstane receptor-CYP3A4/3A7 mice.",
+    "first_author": "Liem",
+    "year": "",
+    "journal": "Drug Metab Dispos",
+    "abstract": "The interaction between the gut microbiome and drug metabolism is bidirectional and can influence the pharmacokinetics of certain drugs. In mice, the gut microbiome has been shown to influence Cyp3a11. However, evidence for microbial regulation of human cytochrome P450 3A4 (CYP3A4) is lacking. We aimed to bridge this gap by manipulating the microbiome of a humanized mouse model expressing CYP3A4, CYP3A7, pregnane X receptor and constitutive androstane receptor. Three groups of male and female humanized mice were studied: conventional (CV), germ-free (GF), and germ-free mice conventionalized (G"
+  },
+  {
+    "pmid": "42014325",
+    "title": "Dexamethasone-Mediated Regulation of CYP3A4 and UGTs in Human Hepatoma HuH-7 Cells.",
+    "first_author": "Yu",
+    "year": "",
+    "journal": "Fundam Clin Pharmacol",
+    "abstract": "The application of human hepatic cell lines to early drug discovery and development instead of human primary hepatocytes (HPHs) has been limited because of the low level of drug-metabolizing enzymes (DMEs). The study aimed to evaluate the effects of dexamethasone (DEX) treatment on DME expression, activities, and regulation in HuH-7 hepatoma cells. Expression and transcriptional regulation of major CYPs and UGTs in HuH-7 cells was evaluated by immunoblotting, probe substrate assays, and treatments with nuclear receptor agonists, including DEX, and antagonists. DEX increased the expression and "
+  },
+  {
+    "pmid": "41957824",
+    "title": "Coenzyme Q10 protects against atorvastatin-induced hepatotoxicity via attenuation of oxidative stress and functional modulation of CYP3A1.",
+    "first_author": "Abdel-Rasol",
+    "year": "",
+    "journal": "BMC Pharmacol Toxicol",
+    "abstract": "Atorvastatin (ATO) is a widely prescribed lipid-lowering drug, but its use can be limited by hepatotoxicity, potentially linked to metabolism-related mechanisms. The cellular pathways connecting ATO metabolism to oxidative imbalance and apoptotic alterations remain incompletely defined. This study examined the roles of oxidative stress, mitochondrial-associated apoptosis, and the pregnane X receptor (PXR)-CYP3A4 axis in ATO-induced hepatic changes, and evaluated whether coenzyme Q10 (CoQ10) could modulate these effects depending on administration timing. Forty male albino rats were randomly as"
+  },
+  {
+    "pmid": "41795330",
+    "title": "Pregnane X receptor antagonist MI-891 reduces hepatic triglycerides in PXR-CAR-CYP3A4/3A7-humanized mice.",
+    "first_author": "Dohnalov\u00e1",
+    "year": "",
+    "journal": "Biomed Pharmacother",
+    "abstract": "Hepatic steatosis is a major metabolic concern associated with activation of the pregnane X receptor (PXR), a nuclear receptor known to promote lipogenesis and lipid accumulation in the liver. While the lipogenic effects of PXR agonists are well documented, there is no comprehensive data on the metabolic consequences of PXR inhibition. Here, we evaluated the impact of MI-891, a novel human PXR antagonist and inverse agonist, on hepatic lipid metabolism in high-fat diet (HFD)-fed PXR-CAR-CYP3A4/3A7-humanized female mice. Lipidomic analysis revealed a significant reduction in hepatic triglycerid"
+  }
+]

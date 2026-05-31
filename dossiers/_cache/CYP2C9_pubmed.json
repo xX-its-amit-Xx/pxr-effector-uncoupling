@@ -1,0 +1,42 @@
+[
+  {
+    "pmid": "42140551",
+    "title": "Guggulsterone-Mediated Selective Modulation of Nuclear Receptors: Implications for FXR-PXR Signaling and Hepatic Metabolic Homeostasis.",
+    "first_author": "Ganamurali",
+    "year": "",
+    "journal": "Prostaglandins Other Lipid Mediat",
+    "abstract": "Guggulsterone (GSS), a plant-derived steroid from Commiphora mukul, exhibits complex pharmacological behavior through modulation of nuclear receptors and detoxification enzymes. Acting as an antagonist of the Farnesoid X receptor (FXR) and an agonist of the Pregnane X receptor (PXR), guggulsterone influences the transcription of cytochrome P450 enzymes (notably CYP3A4 and CYP2C9) and transporters such as MDR1 and OAT2. This review synthesizes current mechanistic insights from molecular, pharmacokinetic, and in silico analyses, highlighting its dual regulatory effects on metabolism and drug res"
+  },
+  {
+    "pmid": "42014325",
+    "title": "Dexamethasone-Mediated Regulation of CYP3A4 and UGTs in Human Hepatoma HuH-7 Cells.",
+    "first_author": "Yu",
+    "year": "",
+    "journal": "Fundam Clin Pharmacol",
+    "abstract": "The application of human hepatic cell lines to early drug discovery and development instead of human primary hepatocytes (HPHs) has been limited because of the low level of drug-metabolizing enzymes (DMEs). The study aimed to evaluate the effects of dexamethasone (DEX) treatment on DME expression, activities, and regulation in HuH-7 hepatoma cells. Expression and transcriptional regulation of major CYPs and UGTs in HuH-7 cells was evaluated by immunoblotting, probe substrate assays, and treatments with nuclear receptor agonists, including DEX, and antagonists. DEX increased the expression and "
+  },
+  {
+    "pmid": "41961851",
+    "title": "Use of a cytochrome P450 humanized mouse model to refine schistosomiasis drug discovery.",
+    "first_author": "Davey",
+    "year": "",
+    "journal": "Proc Natl Acad Sci U S A",
+    "abstract": "Control of schistosomiasis, a neglected tropical disease caused by infection with Schistosoma spp., remains reliant on a single chemotherapy, praziquantel (PZQ). This strategy presents a risk to global health should PZQ-resistant schistosomes establish in endemic areas and justifies the search for new drugs. However, species-specific metabolic differences between humans and preclinical models hinder the optimization of next-generation anti-schistosomal therapeutics. Here, to bypass these species-specific limitations, we exploited a humanized mouse model, 8HUM, engineered to express the princip"
+  },
+  {
+    "pmid": "41787130",
+    "title": "In Silico Comparison of Rifampicin and 25-desacetyl Rifampicin-Induced PXR-Mediated CYP450 Transcriptional Response in 3D Primary Human Hepatocytes.",
+    "first_author": "Kahiya",
+    "year": "",
+    "journal": "Bull Math Biol",
+    "abstract": "The pregnane X receptor (PXR) regulates the expression of cytochrome P450 (CYP) enzymes and plays a crucial role in the metabolism of various drugs. Rifampicin (RIF) is a PXR ligand that forms the primary metabolite, 25-desacetyl rifampicin (25-DRIF), which retains the antimicrobial activity of the original drug. In this study, we quantified PXR activation and its associated effects on CYP3A4, CYP2C9, and CYP2B6 enzymes in response to 25-DRIF treatment by combining mathematical modeling with long-term mRNA expression analysis of these enzymes in 3D primary human hepatocyte (3D PHH) spheroids. "
+  },
+  {
+    "pmid": "40966069",
+    "title": "Deep Learning Models for Predicting Human Cytochrome P450 Inhibition and Induction.",
+    "first_author": "Xiao",
+    "year": "",
+    "journal": "J Chem Inf Model",
+    "abstract": "Given the critical roles played by human cytochrome P450 enzymes (CYPs) in drug metabolism, accurately predicting their potential inhibition and induction by drugs and drug candidates is a key objective for improving drug development and safety assessment. Traditional experimental methods for identifying CYP modulators are labor-intensive and costly, underscoring the need for efficient in silico prediction models. In this study, we present an advanced deep learning model for predicting CYP inhibition, with a primary focus on key enzymes involved in drug metabolism: CYP3A4, CYP2D6, CYP1A2, CYP2"
+  }
+]

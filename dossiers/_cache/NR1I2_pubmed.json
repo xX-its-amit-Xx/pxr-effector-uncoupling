@@ -1,0 +1,42 @@
+[
+  {
+    "pmid": "41812323",
+    "title": "Pregnane X receptor mitigates aristolochic acid-induced acute kidney injury via p53 ubiquitination.",
+    "first_author": "Liu",
+    "year": "",
+    "journal": "Ren Fail",
+    "abstract": "Aristolochic acid (AA), commonly used in Chinese herbal medicine to treat various diseases, can cause acute kidney injury (AKI). The pregnane X receptor (PXR), a nuclear receptor, is involved in drug metabolism, carcinogenesis, inflammation, apoptosis, oxidative stress and energy metabolism. Here, we demonstrate that PXR plays a protective role in AA-induced AKI. First, PXR expression was dramatically decreased in mice and Boston University mouse proximal tubular (BUMPT) cells treated with AA. Overexpression of PXR in BUMPT cells alleviated apoptosis induced by AA in vitro. The specific agonis"
+  },
+  {
+    "pmid": "42105596",
+    "title": "Differences in hepatic metabolism of Liandan Xiaoyan Formula between control and ulcerative colitis mice associated with FXR/PXR-CYP450 changes.",
+    "first_author": "Zheng",
+    "year": "",
+    "journal": "J Pharm Biomed Anal",
+    "abstract": "Understanding the metabolic process of traditional Chinese prescription (TCP) during disease states and its underlying mechanisms is crucial for evaluating therapeutic efficacy and safety. Cytochrome P450 (CYP450)-mediated hepatic metabolism plays a key role in this process. Liandan Xiaoyan Formula (LDXYF), a Chinese herbal prescription used to treat enteritis, exhibits different pharmacokinetic characteristics and metabolic profiles in ulcerative colitis (UC). To elucidate its underlying metabolic mechanisms, UPLC-Q-Exactive Orbitrap MS/MS technology was employed to compare the metabolite pro"
+  },
+  {
+    "pmid": "41934778",
+    "title": "Health hazards of per- and polyfluoroalkyl substances via nuclear receptors.",
+    "first_author": "Lu",
+    "year": "",
+    "journal": "Environ Pollut",
+    "abstract": "Per- and polyfluoroalkyl substances (PFAS) are highly persistent environmental contaminants that lead to continuous human exposure, posing a major global public health concern. However, the multisystem effects at the molecular level remain insufficiently understood. This review positions the nuclear receptor (NR) superfamily as a central regulatory hub linking PFAS exposure to multi-organ toxicity. First, we characterize the in vivo behavior of PFAS under realistic mixed-exposure scenarios, highlighting the limitations of traditional toxicological models based on single compounds and linear do"
+  },
+  {
+    "pmid": "41789926",
+    "title": "Pharmacokinetic drug-drug interactions with flucloxacillin and other isoxazolyl penicillins: A systematic literature review and practical guide.",
+    "first_author": "Wortman",
+    "year": "",
+    "journal": "Br J Clin Pharmacol",
+    "abstract": "Recent years have seen a notable increase in the number of publications concerning pharmacokinetic drug-drug interactions involving the isoxazolyl penicillins cloxacillin, dicloxacillin, flucloxacillin and oxacillin. Given that the findings predominantly rely on clinical observations, the interaction mechanisms and their clinical relevance remain insufficiently elucidated, thereby posing challenges for clinicians in managing these interactions. The aim of this literature review was to provide an overview of all reported pharmacokinetic drug-drug interactions involving isoxazolyl penicillins an"
+  },
+  {
+    "pmid": "40908379",
+    "title": "In silico identification of peptidomimetic inhibitors targeting PXR and RXR interaction to overcome the inactivation of vitamin D in asthma.",
+    "first_author": "Elgharbaoui",
+    "year": "",
+    "journal": "Mol Divers",
+    "abstract": "Asthma is a chronic inflammatory disorder of the airways. Standard treatments, such as inhaled corticosteroids like fluticasone, beclomethasone, and budesonide, are effective in managing asthma symptoms by reducing inflammation through immune suppression. However, prolonged corticosteroid therapy can impair vitamin D metabolism, exacerbating vitamin D deficiency, which is essential for immune regulation and anti-inflammatory responses via the vitamin D receptor (VDR). Activation of the pregnane X receptor (PXR) by corticosteroids induces cytochrome P450 enzyme CYP24A1, accelerating vitamin D c"
+  }
+]

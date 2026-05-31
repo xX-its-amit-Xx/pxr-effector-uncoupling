@@ -1,0 +1,2483 @@
+{
+  "data": {
+    "target": {
+      "id": "ENSG00000144852",
+      "approvedSymbol": "NR1I2",
+      "approvedName": "nuclear receptor subfamily 1 group I member 2",
+      "biotype": "protein_coding",
+      "functionDescriptions": [
+        "Nuclear receptor that acts as a transcription factor regulating genes involved in the metabolism and excretion of xenobiotics, drugs, and endogenous compounds. Activated by a broad range of endogenous steroids (e.g. pregnenolone, progesterone) and xenobiotics, including the antibiotic rifampicin and certain plant- derived metabolites. Upon ligand binding, translocates to the nucleus, forms a heterodimer with the retinoid X receptor/RXR, and binds to response elements in target promoters, leading to transcriptional activation. Target genes include cytochrome P450 enzymes such as CYP3A4 and ATP-binding cassette transporters including ABCB1/MDR1. {ECO:0000269|PubMed:11297522, ECO:0000269|PubMed:11668216, ECO:0000269|PubMed:12578355, ECO:0000269|PubMed:18768384, ECO:0000269|PubMed:19297428, ECO:0000269|PubMed:26534988, ECO:0000269|PubMed:9727070}."
+      ],
+      "nameSynonyms": [
+        {
+          "label": "Nuclear receptor subfamily 1 group I member 2",
+          "source": "uniprot"
+        },
+        {
+          "label": "Orphan nuclear receptor PAR1",
+          "source": "uniprot"
+        },
+        {
+          "label": "Orphan nuclear receptor PXR",
+          "source": "uniprot"
+        },
+        {
+          "label": "Pregnane X receptor",
+          "source": "uniprot"
+        },
+        {
+          "label": "Steroid and xenobiotic receptor",
+          "source": "uniprot"
+        },
+        {
+          "label": "pregnane X receptor",
+          "source": "HGNC"
+        },
+        {
+          "label": "orphan nuclear receptor PXR",
+          "source": "HGNC"
+        },
+        {
+          "label": "nuclear receptor subfamily 1 group I member 2",
+          "source": "NCBI_entrez"
+        },
+        {
+          "label": "orphan nuclear receptor PAR1",
+          "source": "NCBI_entrez"
+        },
+        {
+          "label": "orphan nuclear receptor PXR",
+          "source": "NCBI_entrez"
+        },
+        {
+          "label": "pregnane X receptor",
+          "source": "NCBI_entrez"
+        },
+        {
+          "label": "steroid and xenobiotic receptor",
+          "source": "NCBI_entrez"
+        }
+      ],
+      "tractability": [
+        {
+          "modality": "SM",
+          "value": false,
+          "label": "Approved Drug"
+        },
+        {
+          "modality": "SM",
+          "value": false,
+          "label": "Advanced Clinical"
+        },
+        {
+          "modality": "SM",
+          "value": false,
+          "label": "Phase 1 Clinical"
+        },
+        {
+          "modality": "SM",
+          "value": true,
+          "label": "Structure with Ligand"
+        },
+        {
+          "modality": "SM",
+          "value": true,
+          "label": "High-Quality Ligand"
+        },
+        {
+          "modality": "SM",
+          "value": true,
+          "label": "High-Quality Pocket"
+        },
+        {
+          "modality": "SM",
+          "value": false,
+          "label": "Med-Quality Pocket"
+        },
+        {
+          "modality": "SM",
+          "value": true,
+          "label": "Druggable Family"
+        },
+        {
+          "modality": "AB",
+          "value": false,
+          "label": "Approved Drug"
+        },
+        {
+          "modality": "AB",
+          "value": false,
+          "label": "Advanced Clinical"
+        },
+        {
+          "modality": "AB",
+          "value": false,
+          "label": "Phase 1 Clinical"
+        },
+        {
+          "modality": "AB",
+          "value": false,
+          "label": "UniProt loc high conf"
+        },
+        {
+          "modality": "AB",
+          "value": false,
+          "label": "GO CC high conf"
+        },
+        {
+          "modality": "AB",
+          "value": false,
+          "label": "UniProt loc med conf"
+        },
+        {
+          "modality": "AB",
+          "value": false,
+          "label": "UniProt SigP or TMHMM"
+        },
+        {
+          "modality": "AB",
+          "value": false,
+          "label": "GO CC med conf"
+        },
+        {
+          "modality": "AB",
+          "value": false,
+          "label": "Human Protein Atlas loc"
+        },
+        {
+          "modality": "PR",
+          "value": false,
+          "label": "Approved Drug"
+        },
+        {
+          "modality": "PR",
+          "value": false,
+          "label": "Advanced Clinical"
+        },
+        {
+          "modality": "PR",
+          "value": false,
+          "label": "Phase 1 Clinical"
+        },
+        {
+          "modality": "PR",
+          "value": false,
+          "label": "Literature"
+        },
+        {
+          "modality": "PR",
+          "value": false,
+          "label": "UniProt Ubiquitination"
+        },
+        {
+          "modality": "PR",
+          "value": true,
+          "label": "Database Ubiquitination"
+        },
+        {
+          "modality": "PR",
+          "value": false,
+          "label": "Half-life Data"
+        },
+        {
+          "modality": "PR",
+          "value": true,
+          "label": "Small Molecule Binder"
+        },
+        {
+          "modality": "OC",
+          "value": false,
+          "label": "Approved Drug"
+        },
+        {
+          "modality": "OC",
+          "value": false,
+          "label": "Advanced Clinical"
+        },
+        {
+          "modality": "OC",
+          "value": false,
+          "label": "Phase 1 Clinical"
+        }
+      ],
+      "drugAndClinicalCandidates": {
+        "count": 0,
+        "rows": []
+      },
+      "associatedDiseases": {
+        "count": 1198,
+        "rows": [
+          {
+            "disease": {
+              "id": "EFO_0000701",
+              "name": "skin disease",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010285",
+                  "name": "integumentary system disease"
+                }
+              ]
+            },
+            "score": 0.32311252838098753,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.05401285928154107
+              },
+              {
+                "id": "genetic_association",
+                "score": 0.5287949312861507
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0005423",
+              "name": "adolescent idiopathic scoliosis",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000006",
+                  "name": "musculoskeletal or connective tissue disease"
+                }
+              ]
+            },
+            "score": 0.32053047437400084,
+            "datatypeScores": [
+              {
+                "id": "genetic_association",
+                "score": 0.5272482914721043
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000729",
+              "name": "ulcerative colitis",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "EFO_0000540",
+                  "name": "immune system disease"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.3017790490474869,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.7095374713225772
+              },
+              {
+                "id": "genetic_association",
+                "score": 0.46092674709774745
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0005772",
+              "name": "neurodegenerative disease",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000618",
+                  "name": "nervous system disease"
+                }
+              ]
+            },
+            "score": 0.20345480355822892,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.18970474216378502
+              },
+              {
+                "id": "affected_pathway",
+                "score": 0.3251824657907956
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "HP_0000924",
+              "name": "Abnormality of the skeletal system",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.17854021283805555,
+            "datatypeScores": [
+              {
+                "id": "genetic_association",
+                "score": 0.2936850930064521
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0001073",
+              "name": "obesity",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000020",
+                  "name": "nutritional or metabolic disease"
+                },
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.1569889304846295,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.7537526138567099
+              },
+              {
+                "id": "genetic_association",
+                "score": 0.2205472392979467
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000616",
+              "name": "neoplasm",
+              "therapeuticAreas": [
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.11908589520094144,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.9794362752207523
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000182",
+              "name": "hepatocellular carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "EFO_0001379",
+                  "name": "endocrine system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.11547769480562235,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.9450502076639837
+              },
+              {
+                "id": "rna_expression",
+                "score": 0.018839956858031404
+              },
+              {
+                "id": "genetic_association",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_1001951",
+              "name": "colorectal carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.11298227730029198,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.9292363353211062
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0007254",
+              "name": "breast cancer",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010285",
+                  "name": "integumentary system disease"
+                },
+                {
+                  "id": "OTAR_0000017",
+                  "name": "reproductive system or breast disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.10994244472097744,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.9042348664758271
+              }
+            ]
+          }
+        ]
+      },
+      "safetyLiabilities": [
+        {
+          "event": "regulation of steroid hormone biosynthetic process",
+          "eventId": "",
+          "effects": [],
+          "biosamples": [
+            {
+              "tissueLabel": null,
+              "cellLabel": "H295R"
+            }
+          ],
+          "datasource": "ToxCast",
+          "literature": null
+        },
+        {
+          "event": "bone marrow and gastrointestinal toxicities",
+          "eventId": "",
+          "effects": [],
+          "biosamples": [],
+          "datasource": "ClinPGx",
+          "literature": null
+        },
+        {
+          "event": "anemia",
+          "eventId": "",
+          "effects": [],
+          "biosamples": [],
+          "datasource": "ClinPGx",
+          "literature": null
+        },
+        {
+          "event": "bone marrow and gastrointestinal toxicities or other adverse events",
+          "eventId": "",
+          "effects": [],
+          "biosamples": [],
+          "datasource": "ClinPGx",
+          "literature": null
+        },
+        {
+          "event": "exposure",
+          "eventId": "",
+          "effects": [],
+          "biosamples": [],
+          "datasource": "ClinPGx",
+          "literature": null
+        },
+        {
+          "event": "discontinuation due to neuropsychiatric adverse events",
+          "eventId": "",
+          "effects": [],
+          "biosamples": [],
+          "datasource": "ClinPGx",
+          "literature": null
+        },
+        {
+          "event": "adverse events",
+          "eventId": "",
+          "effects": [],
+          "biosamples": [],
+          "datasource": "ClinPGx",
+          "literature": null
+        },
+        {
+          "event": "hypertension",
+          "eventId": "",
+          "effects": [],
+          "biosamples": [],
+          "datasource": "ClinPGx",
+          "literature": null
+        },
+        {
+          "event": "regulation of transcription factor activity",
+          "eventId": "",
+          "effects": [],
+          "biosamples": [
+            {
+              "tissueLabel": null,
+              "cellLabel": "HepG2"
+            }
+          ],
+          "datasource": "ToxCast",
+          "literature": null
+        },
+        {
+          "event": "adverse events bone marrow, gastro-intestinal and other toxicities",
+          "eventId": "",
+          "effects": [],
+          "biosamples": [],
+          "datasource": "ClinPGx",
+          "literature": null
+        },
+        {
+          "event": "metabolism of temsirolimus",
+          "eventId": "",
+          "effects": [],
+          "biosamples": [],
+          "datasource": "ClinPGx",
+          "literature": null
+        },
+        {
+          "event": "flucloxacillin-induced liver injury",
+          "eventId": "",
+          "effects": [],
+          "biosamples": [],
+          "datasource": "ClinPGx",
+          "literature": null
+        },
+        {
+          "event": "severe anemia",
+          "eventId": "",
+          "effects": [],
+          "biosamples": [],
+          "datasource": "ClinPGx",
+          "literature": null
+        },
+        {
+          "event": "receptor binding",
+          "eventId": "",
+          "effects": [],
+          "biosamples": [
+            {
+              "tissueLabel": null,
+              "cellLabel": null
+            }
+          ],
+          "datasource": "ToxCast",
+          "literature": null
+        },
+        {
+          "event": "Increased, Liver Steatosis",
+          "eventId": "HP_0001397",
+          "effects": [
+            {
+              "direction": "Activation/Increase/Upregulation",
+              "dosing": null
+            }
+          ],
+          "biosamples": [],
+          "datasource": "AOP-Wiki",
+          "literature": null
+        },
+        {
+          "event": "Loss, Cochlear function",
+          "eventId": "",
+          "effects": [
+            {
+              "direction": "Activation/Increase/Upregulation",
+              "dosing": null
+            }
+          ],
+          "biosamples": [],
+          "datasource": "AOP-Wiki",
+          "literature": null
+        },
+        {
+          "event": "exposure to temsirolimus or sirolimus",
+          "eventId": "",
+          "effects": [],
+          "biosamples": [],
+          "datasource": "ClinPGx",
+          "literature": null
+        }
+      ],
+      "pharmacogenomics": [
+        {
+          "drugs": [
+            {
+              "drugFromSource": "risperidone",
+              "drugId": "CHEMBL85"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype and psychiatric disorders may have increased clearance of risperidone compared to patients with the CC genotype. Other clinical and genetic factors may affect clearance of risperidone.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased clearance of risperidone",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1523130",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1448266413"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sirolimus",
+              "drugId": "CHEMBL413"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype and bladder cancer may have increased metabolism of temsirolimus as compared to patients with the TT genotype, and an increased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CT or TT genotypes. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sirolimus",
+              "drugId": "CHEMBL413"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype and bladder cancer may have increased metabolism of temsirolimus as compared to patients with the TT genotype, and an increased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CT or TT genotypes. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased metabolism of temsirolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sirolimus",
+              "drugId": "CHEMBL413"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype and bladder cancer may have increased metabolism of temsirolimus as compared to patients with the TT genotype, and an increased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CT or TT genotypes. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sirolimus",
+              "drugId": "CHEMBL413"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype and bladder cancer may have increased metabolism of temsirolimus as compared to patients with the TT genotype, and an increased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CT or TT genotypes. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased metabolism of temsirolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "temsirolimus",
+              "drugId": "CHEMBL1201182"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype and bladder cancer may have increased metabolism of temsirolimus as compared to patients with the TT genotype, and an increased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CT or TT genotypes. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "temsirolimus",
+              "drugId": "CHEMBL1201182"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype and bladder cancer may have increased metabolism of temsirolimus as compared to patients with the TT genotype, and an increased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CT or TT genotypes. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased metabolism of temsirolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "temsirolimus",
+              "drugId": "CHEMBL1201182"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype and bladder cancer may have increased metabolism of temsirolimus as compared to patients with the TT genotype, and an increased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CT or TT genotypes. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "temsirolimus",
+              "drugId": "CHEMBL1201182"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype and bladder cancer may have increased metabolism of temsirolimus as compared to patients with the TT genotype, and an increased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CT or TT genotypes. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased metabolism of temsirolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "flucloxacillin",
+              "drugId": ""
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype may have an increased risk for flucloxacillin-induced liver injury as compared to patients with the CT or TT genotype. Other genetic and clinical factors may also influence risk of flucloxacillin-induced liver injury.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased risk for flucloxacillin-induced liver injury",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1448103928"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "carbamazepine",
+              "drugId": "CHEMBL108"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype and epilepsy may have increased clearance of carbamazepine as compared to patients with the TT genotype, or decreased clearance as compared to patients with the CC genotype. Other genetic and clinical factors may also influence clearance of carbamazepine.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased clearance of carbamazepine",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1447987045"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "repaglinide",
+              "drugId": "CHEMBL1272"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AA genotype may have increased metabolism of repaglinide as compared to patients with the GG genotype. Other clinical and genetic factors may also influence metabolism of repaglinide.",
+          "pgxCategory": "other",
+          "phenotypeText": "increased metabolism of repaglinide",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs2276706",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1184986643"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "irinotecan",
+              "drugId": "CHEMBL481"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the GG genotype and colonic neoplasms may have increased area under the curve of irinotecan-based therapy as compared to patients with the AA genotype. Other genetic and clinical factors may also influence the AUC of irinotecan.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased area under the curve of irinotecan-based therapy",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs10934498",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1448097455"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "atazanavir",
+              "drugId": "CHEMBL1163"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype and HIV may have decreased exposure to atazanavir as compared to patients with the CT and TT genotypes, although this is contradicted in some studies. Other clinical and genetic factors may also influence exposure to atazanavir in patients with HIV.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased exposure",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs2472677",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1185000534"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sirolimus",
+              "drugId": "CHEMBL413"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AA genotype and bladder cancer who are treated with temsirolimus may have decreased exposure to temsirolimus or sirolimus as compared to patients with the GG genotype, and increased likelihood of bone marrow and gastrointestinal toxicities, or other adverse events as compared to patients with the AG or GG genotypes. Other clinical and genetic factors may also influence metabolism of and likelihood of adverse events with temsirolimus or sirolimus in patients with bladder cancer.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased exposure to temsirolimus or sirolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1449140069"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sirolimus",
+              "drugId": "CHEMBL413"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AA genotype and bladder cancer who are treated with temsirolimus may have decreased exposure to temsirolimus or sirolimus as compared to patients with the GG genotype, and increased likelihood of bone marrow and gastrointestinal toxicities, or other adverse events as compared to patients with the AG or GG genotypes. Other clinical and genetic factors may also influence metabolism of and likelihood of adverse events with temsirolimus or sirolimus in patients with bladder cancer.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased likelihood of bone marrow and gastrointestinal toxicities or other adverse events",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1449140069"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sirolimus",
+              "drugId": "CHEMBL413"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AA genotype and bladder cancer who are treated with temsirolimus may have decreased exposure to temsirolimus or sirolimus as compared to patients with the GG genotype, and increased likelihood of bone marrow and gastrointestinal toxicities, or other adverse events as compared to patients with the AG or GG genotypes. Other clinical and genetic factors may also influence metabolism of and likelihood of adverse events with temsirolimus or sirolimus in patients with bladder cancer.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased exposure to temsirolimus or sirolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1449140069"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sirolimus",
+              "drugId": "CHEMBL413"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AA genotype and bladder cancer who are treated with temsirolimus may have decreased exposure to temsirolimus or sirolimus as compared to patients with the GG genotype, and increased likelihood of bone marrow and gastrointestinal toxicities, or other adverse events as compared to patients with the AG or GG genotypes. Other clinical and genetic factors may also influence metabolism of and likelihood of adverse events with temsirolimus or sirolimus in patients with bladder cancer.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased likelihood of bone marrow and gastrointestinal toxicities or other adverse events",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1449140069"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "temsirolimus",
+              "drugId": "CHEMBL1201182"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AA genotype and bladder cancer who are treated with temsirolimus may have decreased exposure to temsirolimus or sirolimus as compared to patients with the GG genotype, and increased likelihood of bone marrow and gastrointestinal toxicities, or other adverse events as compared to patients with the AG or GG genotypes. Other clinical and genetic factors may also influence metabolism of and likelihood of adverse events with temsirolimus or sirolimus in patients with bladder cancer.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased exposure to temsirolimus or sirolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1449140069"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "temsirolimus",
+              "drugId": "CHEMBL1201182"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AA genotype and bladder cancer who are treated with temsirolimus may have decreased exposure to temsirolimus or sirolimus as compared to patients with the GG genotype, and increased likelihood of bone marrow and gastrointestinal toxicities, or other adverse events as compared to patients with the AG or GG genotypes. Other clinical and genetic factors may also influence metabolism of and likelihood of adverse events with temsirolimus or sirolimus in patients with bladder cancer.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased likelihood of bone marrow and gastrointestinal toxicities or other adverse events",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1449140069"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "temsirolimus",
+              "drugId": "CHEMBL1201182"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AA genotype and bladder cancer who are treated with temsirolimus may have decreased exposure to temsirolimus or sirolimus as compared to patients with the GG genotype, and increased likelihood of bone marrow and gastrointestinal toxicities, or other adverse events as compared to patients with the AG or GG genotypes. Other clinical and genetic factors may also influence metabolism of and likelihood of adverse events with temsirolimus or sirolimus in patients with bladder cancer.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased exposure to temsirolimus or sirolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1449140069"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "temsirolimus",
+              "drugId": "CHEMBL1201182"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AA genotype and bladder cancer who are treated with temsirolimus may have decreased exposure to temsirolimus or sirolimus as compared to patients with the GG genotype, and increased likelihood of bone marrow and gastrointestinal toxicities, or other adverse events as compared to patients with the AG or GG genotypes. Other clinical and genetic factors may also influence metabolism of and likelihood of adverse events with temsirolimus or sirolimus in patients with bladder cancer.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased likelihood of bone marrow and gastrointestinal toxicities or other adverse events",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1449140069"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "tacrolimus",
+              "drugId": "CHEMBL3989887"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype who are undergoing kidney transplantation may have decreased dose-adjusted trough concentrations of tacrolimus as compared to patients with the CC genotype. Other genetic and clinical factors may also influence concentrations of tacrolimus.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased dose-adjusted trough concentrations of tacrolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs2276707",
+          "variantFunctionalConsequenceId": "SO_0002169",
+          "evidenceLevel": "3",
+          "studyId": "1444686914"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "docetaxel",
+              "drugId": "CHEMBL3545252"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with nasopharyngeal cancer and the CT genotype may have less severe anemia as compared to patients with the CC or TT genotype who are treated with docetaxel. Other clinical and genetic factors may also influence severity of anemia in patients with nasopharyngeal cancer who are treated with docetaxel.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "less severe anemia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814058",
+          "variantFunctionalConsequenceId": "SO_0001624",
+          "evidenceLevel": "3",
+          "studyId": "1448098320"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "risperidone",
+              "drugId": "CHEMBL85"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype and psychiatric disorders may have decreased clearance of risperidone compared to patients with the CT or TT genotypes. Other clinical and genetic factors may affect clearance of risperidone.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased clearance of risperidone",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1523130",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1448266413"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "memantine",
+              "drugId": "CHEMBL807"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype and dementia may have decreased clearance of memantine as compared to patients with the CC genotype. Other genetic and clinical factors may also influence clearance of memantine.",
+          "pgxCategory": "other",
+          "phenotypeText": "decreased clearance of memantine",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1523130",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1183631460"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "carbamazepine",
+              "drugId": "CHEMBL108"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype and epilepsy may have increased clearance of carbamazepine as compared to patients with the TT genotype. Other genetic and clinical factors may also influence clearance of carbamazepine.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased clearance of carbamazepine",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1447987045"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "tacrolimus",
+              "drugId": "CHEMBL3989887"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype may have decreased concentrations of tacrolimus as compared to patients with the CT or TT genotype. Other genetic and clinical factors, such as CYP3A5*3, may also influence a patient's tacrolimus concentrations.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased concentrations of tacrolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1447947019"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "repaglinide",
+              "drugId": "CHEMBL1272"
+            }
+          ],
+          "genotypeAnnotationText": "The AG genotype did not differ significantly in metabolism of repaglinide as compared to patients with the GG or AA genotypes. Other clinical and genetic factors may also influence metabolism of repaglinide.",
+          "pgxCategory": "other",
+          "phenotypeText": "metabolism of repaglinide",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs2276706",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1184986643"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "repaglinide",
+              "drugId": "CHEMBL1272"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the GG genotype may have decreased metabolism of repaglinide as compared to patients with the AA genotype. Other clinical and genetic factors may also influence metabolism of repaglinide.",
+          "pgxCategory": "other",
+          "phenotypeText": "decreased metabolism of repaglinide",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs2276706",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1184986643"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "dolutegravir",
+              "drugId": "CHEMBL1229211"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the rs2472677 CC genotype and HIV may have increased discontinuation due to neuropsychiatric adverse events when treated with dolutegravir as compared to patients with the CT or TT genotype]. Other genetic and clinical factors may also influence discontinuation due to neuropsychiatric adverse events.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased discontinuation due to neuropsychiatric adverse events",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs2472677",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1452872961"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "rifampin",
+              "drugId": "CHEMBL374478"
+            }
+          ],
+          "genotypeAnnotationText": "Genotype CT is associated with lower CYP3A4 acitvity induced by rifampin compared with genotype CC, particularly in livers from male subjects.",
+          "pgxCategory": "other",
+          "phenotypeText": "lower CYP3A4 activity induced by rifampin",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs2472677",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "655385045"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "atazanavir",
+              "drugId": "CHEMBL1163"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype and HIV may have increased exposure to atazanavir as compared to patients with the TT genotype, although this is contradicted in some studies. Other clinical and genetic factors may also influence exposure to atazanavir in patients with HIV.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased exposure to atazanavir",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs2472677",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1185000534"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "dolutegravir",
+              "drugId": "CHEMBL1229211"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the rs2472677 CT genotype and HIV may have decreased discontinuation due to neuropsychiatric adverse events when treated with dolutegravir as compared to patients with the CC genotype. Other genetic and clinical factors may also influence discontinuation due to neuropsychiatric adverse events.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased discontinuation due to neuropsychiatric adverse events",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs2472677",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1452872961"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "carbamazepine",
+              "drugId": "CHEMBL108"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the GG genotype may have decreased metabolism of carbamazepine in people with Epilepsy as compared to patients with genotype TT or GT. Other genetic and clinical factors may also influence metabolism of carbamazepine.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased metabolism of carbamazepine",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs4688040",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1446906328"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "carbamazepine",
+              "drugId": "CHEMBL108"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype and epilepsy may have increased metabolism of carbamazepine as compared to patients with the AA genotype. Other genetic and clinical factors may also influence metabolism of carbamazepine.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased metabolism of carbamazepine",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs2461817",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1447987052"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "risperidone",
+              "drugId": "CHEMBL85"
+            }
+          ],
+          "genotypeAnnotationText": "No information available.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": null,
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs7643645",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1444607318"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "risperidone",
+              "drugId": "CHEMBL85"
+            }
+          ],
+          "genotypeAnnotationText": "No information available.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "No information available",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs7643645",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1444607318"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "risperidone",
+              "drugId": "CHEMBL85"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the GG genotype may have decreased levels of the active metabolite of risperidone, 9-hydroxy-risperidone, as compared to those with the AA genotype. This variant does not appear to affect levels of risperidone. Other genetic and clinical factors may also influence levels of 9-hydroxy-risperidone.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased levels of the active metabolite",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs7643645",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1444607318"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sunitinib",
+              "drugId": "CHEMBL535"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AA genotype and cancer may have an increased risk for hypertension when treated with sunitinib as compared to patients with the GG genotype. Other genetic and clinical factors may also influence risk for hypertension in patients receiving sunitinib.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased risk for hypertension",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1446903240"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sunitinib",
+              "drugId": "CHEMBL535"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the GG genotype and cancer may have a decreased risk for hypertension when treated with sunitinib as compared to patients with the AA genotype. Other genetic and clinical factors may also influence risk for hypertension in patients receiving sunitinib.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased risk for hypertension",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1446903240"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "risperidone",
+              "drugId": "CHEMBL85"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype and psychiatric disorders may have decreased clearance of risperidone compared to patients with the CT or TT genotypes. Other clinical and genetic factors may affect clearance of risperidone.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased clearance of risperidone",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs2276707",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1448266429"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "docetaxel",
+              "drugId": "CHEMBL3545252"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with nasopharyngeal cancer and the TT genotype may have more severe anemia as compared to patients with the CT genotype who are treated with docetaxel. Other clinical and genetic factors may also influence severity of anemia in patients with nasopharyngeal cancer who are treated with docetaxel.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "severe anemia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814058",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1448098320"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "repaglinide",
+              "drugId": "CHEMBL1272"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype may have an metabolism of repaglinide as compared to patients with the CC genotypes. Other clinical and genetic factors may also influence metabolism of repaglinide.",
+          "pgxCategory": "other",
+          "phenotypeText": "metabolism of repaglinide",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814058",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1184986654"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "tacrolimus",
+              "drugId": "CHEMBL3989887"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype may have increased concentrations of tacrolimus as compared to patients with the CC genotype. Other genetic and clinical factors, such as CYP3A5*3, may also influence a patient's tacrolimus concentrations.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased concentrations of tacrolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1447947019"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "carbamazepine",
+              "drugId": "CHEMBL108"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype and epilepsy may have decreased clearance of carbamazepine as compared to patients with the CC genotype. Other genetic and clinical factors may also influence clearance of carbamazepine.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased clearance of carbamazepine",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1447987045"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "flucloxacillin",
+              "drugId": ""
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype may have a decreased risk for flucloxacillin-induced liver injury as compared to patients with the CC genotype. Other genetic and clinical factors may also influence risk of flucloxacillin-induced liver injury.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased risk for flucloxacillin-induced liver injury",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1448103928"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "tacrolimus",
+              "drugId": "CHEMBL3989887"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype may have increased concentrations of tacrolimus as compared to patients with the CC genotype. Other genetic and clinical factors, such as CYP3A5*3, may also influence a patient's tacrolimus concentrations.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased concentrations of tacrolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1447947019"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "atazanavir",
+              "drugId": "CHEMBL1163"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype and HIV may have increased exposure to atazanavir as compared to patients with the CT and TT genotypes, although this is contradicted in one study. Other clinical and genetic factors may also influence exposure to atazanavir in patients with HIV.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased exposure to atazanavir",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs2472677",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1185000534"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "rifampin",
+              "drugId": "CHEMBL374478"
+            }
+          ],
+          "genotypeAnnotationText": "Genotype TT is associated with lower CYP3A4 acitvity induced by rifampin compared with genotype CC, particularly in livers from male subjects.",
+          "pgxCategory": "other",
+          "phenotypeText": "lower CYP3A4 activity induced by rifampin",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs2472677",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "655385045"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "dolutegravir",
+              "drugId": "CHEMBL1229211"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the rs2472677 TT genotype and HIV may have decreased discontinuation due to neuropsychiatric adverse events when treated with dolutegravir as compared to patients with the CC genotype. Other genetic and clinical factors may also influence discontinuation due to neuropsychiatric adverse events.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased discontinuation due to neuropsychiatric adverse events",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs2472677",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1452872961"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "risperidone",
+              "drugId": "CHEMBL85"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AA genotype may have increased levels of the active metabolite of risperidone, 9-hydroxy-risperidone, as compared to those with the GG genotype. This variant does not appear to affect levels of risperidone. Other genetic and clinical factors may also influence levels of 9-hydroxy-risperidone.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased levels of the active metabolite",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs7643645",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1444607318"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sunitinib",
+              "drugId": "CHEMBL535"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AG genotype and cancer may have an increased risk for hypertension when treated with sunitinib as compared to patients with the GG genotype, or a decreased risk as compare to patients with the AA genotype. Other genetic and clinical factors may also influence risk for hypertension in patients receiving sunitinib.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased risk for hypertension",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1446903240"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "risperidone",
+              "drugId": "CHEMBL85"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype and psychiatric disorders may have increased clearance of risperidone compared to patients with the CC genotypes. Other clinical and genetic factors may affect clearance of risperidone.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased clearance of risperidone",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs2276707",
+          "variantFunctionalConsequenceId": "SO_0002169",
+          "evidenceLevel": "3",
+          "studyId": "1448266429"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "docetaxel",
+              "drugId": "CHEMBL3545252"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with nasopharyngeal cancer and the AA genotype may have more severe anemia when treated with docetaxel as compared to patients with the AG genotype. Other clinical and genetic factors may also influence the severity of anemia in patients with nasopharyngeal cancer who are treated with docetaxel.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "more severe anemia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3732359",
+          "variantFunctionalConsequenceId": "SO_0001624",
+          "evidenceLevel": "3",
+          "studyId": "1448098304"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "docetaxel",
+              "drugId": "CHEMBL3545252"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with nasopharyngeal cancer and the TT genotype may have more severe anemia who are treated with docetaxel as compared to patients with the CT genotype. Other clinical and genetic factors may also influence severity of anemia in patients with nasopharyngeal cancer who are treated with docetaxel.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "more severe anemia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3732360",
+          "variantFunctionalConsequenceId": "SO_0001624",
+          "evidenceLevel": "3",
+          "studyId": "1448098315"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "repaglinide",
+              "drugId": "CHEMBL1272"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype may have a decreased metabolism of repaglinide as compared to patients with the CT and TT genotypes. Other clinical and genetic factors may also influence metabolism of repaglinide.",
+          "pgxCategory": "other",
+          "phenotypeText": "decreased metabolism of repaglinide",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814058",
+          "variantFunctionalConsequenceId": "SO_0001624",
+          "evidenceLevel": "3",
+          "studyId": "1184986654"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "flucloxacillin",
+              "drugId": ""
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype may have a decreased risk for flucloxacillin-induced liver injury as compared to patients with the CC genotype. Other genetic and clinical factors may also influence risk of flucloxacillin-induced liver injury.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased risk for flucloxacillin-induced liver injury",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1448103928"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "irinotecan",
+              "drugId": "CHEMBL481"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AG genotype and colonic neoplasms may have increased area under the curve of irinotecan-based therapy as compared to patients with the AA genotype. Other genetic and clinical factors may also influence the AUC of irinotecan.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased area under the curve of irinotecan-based therapy",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs10934498",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1448097455"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "carbamazepine",
+              "drugId": "CHEMBL108"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the GT genotype may have increased metabolism of carbamazepine in people with Epilepsy as compared to patients with genotype GG. Other genetic and clinical factors may also influence metabolism of carbamazepine.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased metabolism of carbamazepine",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs4688040",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1446906328"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "carbamazepine",
+              "drugId": "CHEMBL108"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype may have increased metabolism of carbamazepine in people with Epilepsy as compared to patients with genotype GG. Other genetic and clinical factors may also influence metabolism of carbamazepine.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased metabolism of carbamazepine",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs4688040",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1446906328"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "carbamazepine",
+              "drugId": "CHEMBL108"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AG genotype and epilepsy may have decreased metabolism of carbamazepine as compared to patients with the GG genotype, or increased metabolism as compared to patients with the AA genotype. Other genetic and clinical factors may also influence metabolism of carbamazepine.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased metabolism of carbamazepine",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs7643645",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1447987059"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "carbamazepine",
+              "drugId": "CHEMBL108"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the GG genotype and epilepsy may have increased metabolism of carbamazepine as compared to patients with the AA genotype. Other genetic and clinical factors may also influence metabolism of carbamazepine.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased metabolism of carbamazepine",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs7643645",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1447987059"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sirolimus",
+              "drugId": "CHEMBL413"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the GG genotype and bladder cancer who are treated with temsirolimus may have increased exposure as compared to patients with the AA or AG genotypes and decreased likelihood of bone marrow and gastrointestinal toxicities or other adverse events as compared to patients with the AA genotypes. Other clinical and genetic factors may also influence metabolism of and likelihood of adverse events with temsirolimus or sirolimus in patients with bladder cancer.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased likelihood of bone marrow and gastrointestinal toxicities or other adverse events",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1449140069"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sirolimus",
+              "drugId": "CHEMBL413"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the GG genotype and bladder cancer who are treated with temsirolimus may have increased exposure as compared to patients with the AA or AG genotypes and decreased likelihood of bone marrow and gastrointestinal toxicities or other adverse events as compared to patients with the AA genotypes. Other clinical and genetic factors may also influence metabolism of and likelihood of adverse events with temsirolimus or sirolimus in patients with bladder cancer.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased exposure",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1449140069"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sirolimus",
+              "drugId": "CHEMBL413"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the GG genotype and bladder cancer who are treated with temsirolimus may have increased exposure as compared to patients with the AA or AG genotypes and decreased likelihood of bone marrow and gastrointestinal toxicities or other adverse events as compared to patients with the AA genotypes. Other clinical and genetic factors may also influence metabolism of and likelihood of adverse events with temsirolimus or sirolimus in patients with bladder cancer.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased likelihood of bone marrow and gastrointestinal toxicities or other adverse events",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1449140069"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sirolimus",
+              "drugId": "CHEMBL413"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the GG genotype and bladder cancer who are treated with temsirolimus may have increased exposure as compared to patients with the AA or AG genotypes and decreased likelihood of bone marrow and gastrointestinal toxicities or other adverse events as compared to patients with the AA genotypes. Other clinical and genetic factors may also influence metabolism of and likelihood of adverse events with temsirolimus or sirolimus in patients with bladder cancer.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased exposure",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1449140069"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "temsirolimus",
+              "drugId": "CHEMBL1201182"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the GG genotype and bladder cancer who are treated with temsirolimus may have increased exposure as compared to patients with the AA or AG genotypes and decreased likelihood of bone marrow and gastrointestinal toxicities or other adverse events as compared to patients with the AA genotypes. Other clinical and genetic factors may also influence metabolism of and likelihood of adverse events with temsirolimus or sirolimus in patients with bladder cancer.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased likelihood of bone marrow and gastrointestinal toxicities or other adverse events",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1449140069"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "temsirolimus",
+              "drugId": "CHEMBL1201182"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the GG genotype and bladder cancer who are treated with temsirolimus may have increased exposure as compared to patients with the AA or AG genotypes and decreased likelihood of bone marrow and gastrointestinal toxicities or other adverse events as compared to patients with the AA genotypes. Other clinical and genetic factors may also influence metabolism of and likelihood of adverse events with temsirolimus or sirolimus in patients with bladder cancer.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased exposure",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1449140069"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "temsirolimus",
+              "drugId": "CHEMBL1201182"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the GG genotype and bladder cancer who are treated with temsirolimus may have increased exposure as compared to patients with the AA or AG genotypes and decreased likelihood of bone marrow and gastrointestinal toxicities or other adverse events as compared to patients with the AA genotypes. Other clinical and genetic factors may also influence metabolism of and likelihood of adverse events with temsirolimus or sirolimus in patients with bladder cancer.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased likelihood of bone marrow and gastrointestinal toxicities or other adverse events",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1449140069"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "temsirolimus",
+              "drugId": "CHEMBL1201182"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the GG genotype and bladder cancer who are treated with temsirolimus may have increased exposure as compared to patients with the AA or AG genotypes and decreased likelihood of bone marrow and gastrointestinal toxicities or other adverse events as compared to patients with the AA genotypes. Other clinical and genetic factors may also influence metabolism of and likelihood of adverse events with temsirolimus or sirolimus in patients with bladder cancer.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased exposure",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1449140069"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "tacrolimus",
+              "drugId": "CHEMBL3989887"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype who are undergoing kidney transplantation may have decreased dose-adjusted trough concentrations of tacrolimus as compared to patients with the CC genotype. Other genetic and clinical factors may also influence concentrations of tacrolimus.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased dose-adjusted trough concentrations of tacrolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs2276707",
+          "variantFunctionalConsequenceId": "SO_0002169",
+          "evidenceLevel": "3",
+          "studyId": "1444686914"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "docetaxel",
+              "drugId": "CHEMBL3545252"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with nasopharyngeal cancer and the AG genotype may have less severe anemia when treated with docetaxel as compared to patients with the AA genotype. Other clinical and genetic factors may also influence the severity of anemia in patients with nasopharyngeal cancer who are treated with docetaxel.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "less severe anemia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3732359",
+          "variantFunctionalConsequenceId": "SO_0001624",
+          "evidenceLevel": "3",
+          "studyId": "1448098304"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "docetaxel",
+              "drugId": "CHEMBL3545252"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with nasopharyngeal cancer and the CT genotype may have less severe anemia who are treated with docetaxel as compared to patients with the TT genotype. Other clinical and genetic factors may also influence severity of anemia in patients with nasopharyngeal cancer who are treated with docetaxel.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "less severe anemia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3732360",
+          "variantFunctionalConsequenceId": "SO_0001624",
+          "evidenceLevel": "3",
+          "studyId": "1448098315"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "repaglinide",
+              "drugId": "CHEMBL1272"
+            }
+          ],
+          "genotypeAnnotationText": "The CT genotype did not differ significantly in metabolism of repaglinide as compared to patients with the CC or TT genotypes. Other clinical and genetic factors may also influence metabolism of repaglinide.",
+          "pgxCategory": "other",
+          "phenotypeText": "metabolism of repaglinide",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814058",
+          "variantFunctionalConsequenceId": "SO_0001624",
+          "evidenceLevel": "3",
+          "studyId": "1184986654"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "memantine",
+              "drugId": "CHEMBL807"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype and dementia may have increased clearance of memantine as compared to patients with the CT or TT genotype. Other genetic and clinical factors may also influence clearance of memantine.",
+          "pgxCategory": "other",
+          "phenotypeText": "increased clearance of memantine",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1523130",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1183631460"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "memantine",
+              "drugId": "CHEMBL807"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype and dementia may have decreased clearance of memantine as compared to patients with the CC genotype. Other genetic and clinical factors may also influence clearance of memantine.",
+          "pgxCategory": "other",
+          "phenotypeText": "decreased clearance of memantine",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1523130",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1183631460"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "risperidone",
+              "drugId": "CHEMBL85"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype and psychiatric disorders may have increased clearance of risperidone compared to patients with the CC genotype. Other clinical and genetic factors may affect clearance of risperidone.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased clearance of risperidone",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1523130",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1448266413"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sirolimus",
+              "drugId": "CHEMBL413"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype and bladder cancer may have increased metabolism of temsirolimus as compared to patients with the TT genotype. Patients with the CT genotype who are administered temsirolimus may also have a decreased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CC genotypes and a increased likelihood as compared to patients with the TT genotype. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased likelihood of adverse events",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sirolimus",
+              "drugId": "CHEMBL413"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype and bladder cancer may have increased metabolism of temsirolimus as compared to patients with the TT genotype. Patients with the CT genotype who are administered temsirolimus may also have a decreased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CC genotypes and a increased likelihood as compared to patients with the TT genotype. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased likelihood of adverse events",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sirolimus",
+              "drugId": "CHEMBL413"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype and bladder cancer may have increased metabolism of temsirolimus as compared to patients with the TT genotype. Patients with the CT genotype who are administered temsirolimus may also have a decreased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CC genotypes and a increased likelihood as compared to patients with the TT genotype. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased metabolism of temsirolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sirolimus",
+              "drugId": "CHEMBL413"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype and bladder cancer may have increased metabolism of temsirolimus as compared to patients with the TT genotype. Patients with the CT genotype who are administered temsirolimus may also have a decreased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CC genotypes and a increased likelihood as compared to patients with the TT genotype. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased likelihood of adverse events",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sirolimus",
+              "drugId": "CHEMBL413"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype and bladder cancer may have increased metabolism of temsirolimus as compared to patients with the TT genotype. Patients with the CT genotype who are administered temsirolimus may also have a decreased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CC genotypes and a increased likelihood as compared to patients with the TT genotype. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased likelihood of adverse events",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sirolimus",
+              "drugId": "CHEMBL413"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype and bladder cancer may have increased metabolism of temsirolimus as compared to patients with the TT genotype. Patients with the CT genotype who are administered temsirolimus may also have a decreased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CC genotypes and a increased likelihood as compared to patients with the TT genotype. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased metabolism of temsirolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "temsirolimus",
+              "drugId": "CHEMBL1201182"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype and bladder cancer may have increased metabolism of temsirolimus as compared to patients with the TT genotype. Patients with the CT genotype who are administered temsirolimus may also have a decreased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CC genotypes and a increased likelihood as compared to patients with the TT genotype. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased likelihood of adverse events",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "temsirolimus",
+              "drugId": "CHEMBL1201182"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype and bladder cancer may have increased metabolism of temsirolimus as compared to patients with the TT genotype. Patients with the CT genotype who are administered temsirolimus may also have a decreased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CC genotypes and a increased likelihood as compared to patients with the TT genotype. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased likelihood of adverse events",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "temsirolimus",
+              "drugId": "CHEMBL1201182"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype and bladder cancer may have increased metabolism of temsirolimus as compared to patients with the TT genotype. Patients with the CT genotype who are administered temsirolimus may also have a decreased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CC genotypes and a increased likelihood as compared to patients with the TT genotype. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased metabolism of temsirolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "temsirolimus",
+              "drugId": "CHEMBL1201182"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype and bladder cancer may have increased metabolism of temsirolimus as compared to patients with the TT genotype. Patients with the CT genotype who are administered temsirolimus may also have a decreased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CC genotypes and a increased likelihood as compared to patients with the TT genotype. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased likelihood of adverse events",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "temsirolimus",
+              "drugId": "CHEMBL1201182"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype and bladder cancer may have increased metabolism of temsirolimus as compared to patients with the TT genotype. Patients with the CT genotype who are administered temsirolimus may also have a decreased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CC genotypes and a increased likelihood as compared to patients with the TT genotype. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased likelihood of adverse events",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "temsirolimus",
+              "drugId": "CHEMBL1201182"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype and bladder cancer may have increased metabolism of temsirolimus as compared to patients with the TT genotype. Patients with the CT genotype who are administered temsirolimus may also have a decreased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CC genotypes and a increased likelihood as compared to patients with the TT genotype. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased metabolism of temsirolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sirolimus",
+              "drugId": "CHEMBL413"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype and bladder cancer may have decreased metabolism of temsirolimus as compared to patients with the CC or CT genotypes, and an decreased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CT or CC genotypes. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased likelihood of adverse events",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sirolimus",
+              "drugId": "CHEMBL413"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype and bladder cancer may have decreased metabolism of temsirolimus as compared to patients with the CC or CT genotypes, and an decreased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CT or CC genotypes. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased metabolism of temsirolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sirolimus",
+              "drugId": "CHEMBL413"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype and bladder cancer may have decreased metabolism of temsirolimus as compared to patients with the CC or CT genotypes, and an decreased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CT or CC genotypes. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased likelihood of adverse events",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sirolimus",
+              "drugId": "CHEMBL413"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype and bladder cancer may have decreased metabolism of temsirolimus as compared to patients with the CC or CT genotypes, and an decreased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CT or CC genotypes. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased metabolism of temsirolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "temsirolimus",
+              "drugId": "CHEMBL1201182"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype and bladder cancer may have decreased metabolism of temsirolimus as compared to patients with the CC or CT genotypes, and an decreased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CT or CC genotypes. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased likelihood of adverse events",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "temsirolimus",
+              "drugId": "CHEMBL1201182"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype and bladder cancer may have decreased metabolism of temsirolimus as compared to patients with the CC or CT genotypes, and an decreased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CT or CC genotypes. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased metabolism of temsirolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "temsirolimus",
+              "drugId": "CHEMBL1201182"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype and bladder cancer may have decreased metabolism of temsirolimus as compared to patients with the CC or CT genotypes, and an decreased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CT or CC genotypes. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased likelihood of adverse events",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "temsirolimus",
+              "drugId": "CHEMBL1201182"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype and bladder cancer may have decreased metabolism of temsirolimus as compared to patients with the CC or CT genotypes, and an decreased likelihood of adverse events including bone marrow, gastro-intestinal and other toxicities as compared to patients with the CT or CC genotypes. Other clinical and genetic factors may also influence metabolism of temsirolimus as well as likelihood of adverse events in patients with bladder cancer.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased metabolism of temsirolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814055",
+          "variantFunctionalConsequenceId": "SO_0001623",
+          "evidenceLevel": "3",
+          "studyId": "1449140063"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "irinotecan",
+              "drugId": "CHEMBL481"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AA genotype and colonic neoplasms may have decreased area under the curve of irinotecan-based therapy as compared to patients with the AG or GG genotypes. Other genetic and clinical factors may also influence the AUC of irinotecan.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased area under the curve of irinotecan-based therapy",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs10934498",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1448097455"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "rifampin",
+              "drugId": "CHEMBL374478"
+            }
+          ],
+          "genotypeAnnotationText": "Genotype CC is associated with higher CYP3A4 acitvity induced by rifampin compared to genotype CT or TT in liver samples.",
+          "pgxCategory": "other",
+          "phenotypeText": "higher CYP3A4 activity induced by rifampin",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs2472677",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "655385045"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "carbamazepine",
+              "drugId": "CHEMBL108"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AA genotype and epilepsy may have decreased metabolism of carbamazepine as compared to patients with the CC genotype. Other genetic and clinical factors may also influence metabolism of carbamazepine.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased metabolism of carbamazepine",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs2461817",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1447987052"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "carbamazepine",
+              "drugId": "CHEMBL108"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AC genotype and epilepsy may have decreased metabolism of carbamazepine as compared to patients with the CC genotype, or increased metabolism as compared to patients with the AA genotype. Other genetic and clinical factors may also influence metabolism of carbamazepine.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased metabolism of carbamazepine",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs2461817",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1447987052"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "carbamazepine",
+              "drugId": "CHEMBL108"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AA genotype and epilepsy may have decreased metabolism of carbamazepine as compared to patients with the GG genotype. Other genetic and clinical factors may also influence metabolism of carbamazepine.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased metabolism of carbamazepine",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs7643645",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1447987059"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sirolimus",
+              "drugId": "CHEMBL413"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AG genotype and bladder cancer who are treated with temsirolimus may have decreased exposure to temsirolimus or sirolimus as compared to patients with the GG genotype, and decreased likelihood of bone marrow and gastrointestinal toxicities, or other adverse events as compared to patients with the AA genotypes. Other clinical and genetic factors may also influence metabolism of and likelihood of adverse events with temsirolimus or sirolimus in patients with bladder cancer.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased exposure to temsirolimus or sirolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1449140069"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sirolimus",
+              "drugId": "CHEMBL413"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AG genotype and bladder cancer who are treated with temsirolimus may have decreased exposure to temsirolimus or sirolimus as compared to patients with the GG genotype, and decreased likelihood of bone marrow and gastrointestinal toxicities, or other adverse events as compared to patients with the AA genotypes. Other clinical and genetic factors may also influence metabolism of and likelihood of adverse events with temsirolimus or sirolimus in patients with bladder cancer.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased likelihood of bone marrow and gastrointestinal toxicities",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1449140069"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sirolimus",
+              "drugId": "CHEMBL413"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AG genotype and bladder cancer who are treated with temsirolimus may have decreased exposure to temsirolimus or sirolimus as compared to patients with the GG genotype, and decreased likelihood of bone marrow and gastrointestinal toxicities, or other adverse events as compared to patients with the AA genotypes. Other clinical and genetic factors may also influence metabolism of and likelihood of adverse events with temsirolimus or sirolimus in patients with bladder cancer.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased exposure to temsirolimus or sirolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1449140069"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "sirolimus",
+              "drugId": "CHEMBL413"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AG genotype and bladder cancer who are treated with temsirolimus may have decreased exposure to temsirolimus or sirolimus as compared to patients with the GG genotype, and decreased likelihood of bone marrow and gastrointestinal toxicities, or other adverse events as compared to patients with the AA genotypes. Other clinical and genetic factors may also influence metabolism of and likelihood of adverse events with temsirolimus or sirolimus in patients with bladder cancer.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased likelihood of bone marrow and gastrointestinal toxicities",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1449140069"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "temsirolimus",
+              "drugId": "CHEMBL1201182"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AG genotype and bladder cancer who are treated with temsirolimus may have decreased exposure to temsirolimus or sirolimus as compared to patients with the GG genotype, and decreased likelihood of bone marrow and gastrointestinal toxicities, or other adverse events as compared to patients with the AA genotypes. Other clinical and genetic factors may also influence metabolism of and likelihood of adverse events with temsirolimus or sirolimus in patients with bladder cancer.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased exposure to temsirolimus or sirolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1449140069"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "temsirolimus",
+              "drugId": "CHEMBL1201182"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AG genotype and bladder cancer who are treated with temsirolimus may have decreased exposure to temsirolimus or sirolimus as compared to patients with the GG genotype, and decreased likelihood of bone marrow and gastrointestinal toxicities, or other adverse events as compared to patients with the AA genotypes. Other clinical and genetic factors may also influence metabolism of and likelihood of adverse events with temsirolimus or sirolimus in patients with bladder cancer.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased likelihood of bone marrow and gastrointestinal toxicities",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1449140069"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "temsirolimus",
+              "drugId": "CHEMBL1201182"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AG genotype and bladder cancer who are treated with temsirolimus may have decreased exposure to temsirolimus or sirolimus as compared to patients with the GG genotype, and decreased likelihood of bone marrow and gastrointestinal toxicities, or other adverse events as compared to patients with the AA genotypes. Other clinical and genetic factors may also influence metabolism of and likelihood of adverse events with temsirolimus or sirolimus in patients with bladder cancer.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased exposure to temsirolimus or sirolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1449140069"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "temsirolimus",
+              "drugId": "CHEMBL1201182"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AG genotype and bladder cancer who are treated with temsirolimus may have decreased exposure to temsirolimus or sirolimus as compared to patients with the GG genotype, and decreased likelihood of bone marrow and gastrointestinal toxicities, or other adverse events as compared to patients with the AA genotypes. Other clinical and genetic factors may also influence metabolism of and likelihood of adverse events with temsirolimus or sirolimus in patients with bladder cancer.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased likelihood of bone marrow and gastrointestinal toxicities",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs6785049",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1449140069"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "tacrolimus",
+              "drugId": "CHEMBL3989887"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype who are undergoing kidney transplantation may have increased dose-adjusted trough concentrations of tacrolimus as compared to patients with the CT or TT genotype. Other genetic and clinical factors may also influence concentrations of tacrolimus.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased dose-adjusted trough concentrations of tacrolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs2276707",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1444686914"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "risperidone",
+              "drugId": "CHEMBL85"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype and psychiatric disorders may have increased clearance of risperidone compared to patients with the CC genotypes. Other clinical and genetic factors may affect clearance of risperidone.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased clearance of risperidone",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs2276707",
+          "variantFunctionalConsequenceId": "SO_0002169",
+          "evidenceLevel": "3",
+          "studyId": "1448266429"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "docetaxel",
+              "drugId": "CHEMBL3545252"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with nasopharyngeal cancer and the CC genotype may have more severe anemia as compared to patients with the CT genotype who are treated with docetaxel. Other clinical and genetic factors may also influence severity of anemia in patients with nasopharyngeal cancer who are treated with docetaxel.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "more severe anemia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs3814058",
+          "variantFunctionalConsequenceId": "SO_0001624",
+          "evidenceLevel": "3",
+          "studyId": "1448098320"
+        }
+      ],
+      "chemicalProbes": [
+        {
+          "id": "hyperforin",
+          "control": "",
+          "drugId": "CHEMBL501711",
+          "mechanismOfAction": [],
+          "isHighQuality": false,
+          "origin": [
+            "calculated"
+          ],
+          "probesDrugsScore": 10,
+          "probeMinerScore": 38,
+          "scoreInCells": null,
+          "scoreInOrganisms": 0,
+          "targetFromSourceId": "O75469",
+          "urls": [
+            {
+              "url": "http://pubs.acs.org/doi/abs/10.1021/acs.jcim.7b00343?journalCode=jcisd8"
+            }
+          ]
+        }
+      ],
+      "pathways": [
+        {
+          "pathwayId": "R-HSA-4090294",
+          "pathway": "SUMOylation of intracellular receptors",
+          "topLevelTerm": "Metabolism of proteins"
+        },
+        {
+          "pathwayId": "R-HSA-383280",
+          "pathway": "Nuclear Receptor transcription pathway",
+          "topLevelTerm": "Gene expression (Transcription)"
+        }
+      ]
+    }
+  }
+}
