@@ -9,36 +9,78 @@ on:
 permissions:
   contents: read
 
+# Cancel superseded runs on the same branch to keep CI snappy.
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  test:
-    name: lint + tests
+  reproducibility:
+    name: lint + tests + figure regen
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
 
       - name: Install uv
         uses: astral-sh/setup-uv@v4
         with:
           version: "latest"
+          enable-cache: true
+          cache-dependency-glob: |
+            uv.lock
+            pyproject.toml
+            requirements-lock.txt
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      # Sync from uv.lock so the resolution is identical to the committed lock,
+      # then install the project + dev extras. --frozen forbids resolver
+      # drift if pyproject.toml diverges from uv.lock.
+      - name: Install package + dev deps (frozen)
+        run: uv sync --extra dev --frozen
+
+      - name: Ruff format check (src/ scripts/ tests/)
+        run: uv run ruff format --check src scripts tests
+
+      - name: Ruff lint (src/ scripts/ tests/)
+        run: uv run ruff check src scripts tests
+
+      - name: Run pytest
+        run: uv run pytest -v --tb=short
+
+      # Reproducibility smoke test: re-render the supplementary figures from the
+      # cached CSVs in data/processed/. This exercises the full plotting stack
+      # without needing the 40 MB nr1i2_atlas.h5ad, so it runs in seconds and
+      # gives reviewers a CI-attached visual diff of every push.
+      - name: Regenerate supplementary figures from cached CSVs
+        run: uv run python scripts/render_supp_figures.py
+
+      - name: Verify regenerated figures exist
+        run: |
+          set -euo pipefail
+          for fig in \
+            figures/fig2a_significance_overlay.png \
+            figures/fig2b_forest_hepatocyte.png \
+            figures/figS1_parameter_sensitivity.png \
+            figures/figS2_subsample_stability.png
+          do
+            if [ ! -s "$fig" ]; then
+              echo "::error::Expected figure missing or empty: $fig"
+              exit 1
+            fi
+          done
+          echo "All 4 figures regenerated successfully."
+
+      - name: Upload regenerated figures as CI artifact
+        if: always()
+        uses: actions/upload-artifact@v4
         with:
-          python-version: "3.12"
-
-      - name: Install package + dev deps
-        run: |
-          uv sync --extra dev
-
-      - name: Lint (ruff)
-        run: |
-          uv run ruff check src tests scripts
-
-      - name: Format check (ruff)
-        run: |
-          uv run ruff format --check src tests scripts
-
-      - name: Tests
-        run: |
-          uv run pytest -v --tb=short
+          name: regenerated-figures-${{ github.sha }}
+          path: figures/*.png
+          if-no-files-found: error
+          retention-days: 30
