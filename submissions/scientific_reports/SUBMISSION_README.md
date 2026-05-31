@@ -17,7 +17,7 @@
 
 ## Format requirements (per Scientific Reports author guidelines)
 
-- **Abstract:** unstructured, <= 200 words. (The version in `manuscript.md` is approximately 320 words and must be trimmed to meet the limit — please review and condense before final submission.)
+- **Abstract:** unstructured, <= 200 words. The abstract in `manuscript.md` is exactly 200 words (verified at commit time); re-check if you edit it further.
 - **Main text structure:** Introduction -> Results -> Discussion -> Methods (Methods come AFTER Discussion, not before).
 - **Word count:** no fixed limit, but typical articles 4,000 to 8,000 words including Methods.
 - **References:** Vancouver-style numbered citations; cited sequentially. Use journal abbreviations per the Nature reference style (already in place).
@@ -45,13 +45,13 @@
 
 ## Pre-submission checklist
 
-- [ ] **TRIM ABSTRACT TO <= 200 WORDS.** The current abstract in `manuscript.md` is ~320 words; Scientific Reports rejects abstracts over the limit at editorial pre-screen.
+- [x] Abstract is at 200 words (the Scientific Reports cap). Re-verify if you edit it.
 - [ ] Manuscript converted from Markdown to DOCX with figures embedded near first citation: `pandoc manuscript.md -o manuscript.docx --resource-path=.:..:../..`.
 - [ ] All figures at 300 DPI minimum, RGB, <= 18 cm wide.
 - [ ] Multi-panel Fig 2 assembled (a + b panels labelled).
 - [ ] Supplementary PDF assembled (S1 + S2 + S3 + Supplementary Methods).
 - [ ] References checked: Vancouver style, sequentially numbered, journal abbreviations per Nature style.
-- [ ] GitHub repository URL reconciled (currently a discrepancy between `xX-its-amit-Xx/...` in the manuscript and `ashenoy00000/...` in CITATION.cff).
+- [x] GitHub repository URL reconciled — CITATION.cff now points to `xX-its-amit-Xx/pxr-effector-uncoupling` (matches manuscript and README).
 - [ ] CITATION.cff present at repository root.
 
 ## Article processing charge

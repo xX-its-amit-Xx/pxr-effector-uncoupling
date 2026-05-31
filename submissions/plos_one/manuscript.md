@@ -151,7 +151,7 @@ HEPG2 ranked first of 18 cell lines in rifampicin signature strength (mean |log 
 
 ### 3.10. External validation: top genes recover textbook pharmacology in Open Targets
 
-The Open Targets Platform's curated disease-association graph independently flagged the top 5 hep-selective genes as drug-response loci: CYP2C9 -> warfarin/anticoagulant response (score 0.41); SLCO1B1 -> Rotor syndrome (0.66), statin response (0.42); ABCC2 -> Dubin-Johnson syndrome (0.82), intrahepatic cholestasis (0.48); CYP3A5 -> HIV infection (0.61, protease-inhibitor metabolism), chronic HCV (0.57); CYP2C8 -> drug-metabolism-relevant cancers. Matched controls (ALB -> analbuminemia, HNF4A -> MODY/type 2 diabetes, GAPDH -> neurodegenerative) showed no pharmacology signature (**Fig 7**).
+The Open Targets Platform's curated disease-association graph independently flagged the top 5 hep-selective genes as drug-response loci: CYP2C9 -> cholesterol embolism (score 0.49), response to anticoagulant (0.41); SLCO1B1 -> Rotor syndrome (0.66), statin response (0.42); ABCC2 -> Dubin-Johnson syndrome (0.82), intrahepatic cholestasis (0.48); CYP3A5 -> HIV infection (0.61, protease-inhibitor metabolism), chronic HCV (0.57); CYP2C8 -> drug-metabolism-relevant cancers. Matched controls (ALB -> analbuminemia, HNF4A -> MODY/type 2 diabetes, GAPDH -> neurodegenerative) showed no pharmacology signature (**Fig 7**).
 
 **Fig 7. Top hep-selective genes recover textbook pharmacology in an independent disease-association graph.** See `figures/fig7_opentargets.png`.
 
