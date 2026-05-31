@@ -1,0 +1,42 @@
+[
+  {
+    "pmid": "42198405",
+    "title": "From Genotype to Functional Risk: A Multi-Omic Approach to Predicting Thiopurine and Methotrexate Co-Therapy-Induced Liver Injury.",
+    "first_author": "Moln\u00e1r",
+    "year": "",
+    "journal": "Pharmaceuticals (Basel)",
+    "abstract": "The combination of thiopurine and methotrexate (MTX) is a standard co-therapy regimen for acute lymphoblastic leukemia (ALL). Despite its efficacy, this regimen is constrained by a narrow therapeutic window and considerable inter-individual variability, which heightens the risk of drug-induced liver injury (DILI). MTX-induced metabolic strain further destabilizes cytokine-sensitive thiopurine detoxification pathways during systemic inflammation. Conventional pharmacogenetic (PGx) testing for TPMT and NUDT15 variants is effective in predicting myelosuppression, but often fails to detect hepatot"
+  },
+  {
+    "pmid": "40903183",
+    "title": "Pharmacogenetics of First-Line Antitubercular Drugs: An Update.",
+    "first_author": "Manca",
+    "year": "",
+    "journal": "Ther Drug Monit",
+    "abstract": "Tuberculosis (TB) treatment relies on a prolonged first-line antibiotic regimen, including isoniazid, rifampicin (RF), ethambutol (EMB), and pyrazinamide.Pharmacogenetics plays a crucial role in optimizing TB treatment by addressing individual variability in drug metabolism and responses. Genetic polymorphisms can significantly affect pharmacokinetics and therapeutic outcomes. The aim of this review was to explore the role of pharmacogenetics in first-line antibiotics used to treat TB. We reviewed the literature using PubMed, Scopus, Web of Science, and the Cochrane Library, focusing on articl"
+  },
+  {
+    "pmid": "40783160",
+    "title": "Structural equation modelling of nucleotide polymorphisms and pharmacokinetics in direct oral anticoagulant use for stroke and embolism prevention in atrial fibrillation.",
+    "first_author": "Pham",
+    "year": "",
+    "journal": "Eur J Pharmacol",
+    "abstract": "Genetic factors affect DOAC pharmacokinetics and efficacy in atrial fibrillation (AF) patients, yet no pharmacogenomic guidelines exist. This study aims to assess their impact on supporting personalized therapy. Following PRISMA-2020 (PROSPERO: CRD42024592412), a systematic review analysed 31 studies with 8558 AF patients across Asia and Europe. Structural Equation Modelling (SEM) in R Studio (v2024.12) assessed 331 genotypes affecting pharmacokinetics and clinical events. Monte Carlo simulations, pathway enrichment, PCA clustering, and logistic regression further refined the analysis. Dabigat"
+  },
+  {
+    "pmid": "40980418",
+    "title": "CYP2C8-Mediated Drug-Drug Interactions and the Factors Influencing the Interaction Magnitude.",
+    "first_author": "Zhu",
+    "year": "",
+    "journal": "Drug Des Devel Ther",
+    "abstract": "Older adults often have multiple morbidities that may lead to polypharmacy. Cytochrome P450 (CYP) 2C8\u00a0has shown significant contributions in the metabolism of various medications; however, its related drug-drug interactions (DDIs) appear to be underrecognized in clinical practice compared to the major CYP enzymes (eg, CYP3A4, CYP2D6). This review summarizes the progress of CYP2C8-mediated DDIs and factors influencing the interaction magnitude. Using CYP2C8 and drug interactions as the search terms, literature was searched through PubMed, Web of Science, and Embase as of January 2025. Eligible "
+  },
+  {
+    "pmid": "39470346",
+    "title": "Pharmacogenetics of tuberculosis treatment toxicity and effectiveness in a large Brazilian cohort.",
+    "first_author": "Amorim",
+    "year": "",
+    "journal": "Pharmacogenet Genomics",
+    "abstract": "Genetic polymorphisms have been associated with risk of antituberculosis treatment toxicity. We characterized associations with adverse events and treatment failure/recurrence among adults treated for tuberculosis in Brazil. Participants were followed in Regional Prospective Observational Research in Tuberculosis (RePORT)-Brazil. We included persons with culture-confirmed drug-susceptible pulmonary tuberculosis who started treatment between 2015 and 2019, and who were eligible for pharmacogenetics. Treatment included 2\u2005months of isoniazid, rifampin or rifabutin, pyrazinamide, and ethambutol, t"
+  }
+]

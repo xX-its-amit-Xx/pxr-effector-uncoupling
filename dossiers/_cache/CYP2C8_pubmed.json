@@ -1,0 +1,42 @@
+[
+  {
+    "pmid": "41419033",
+    "title": "Interactions of neocryptotanshinone and human cytochrome P450 in silico and in vitro.",
+    "first_author": "Chen",
+    "year": "",
+    "journal": "Toxicol In Vitro",
+    "abstract": "Neocryptotanshinone (NCTS), an ingredient of Salviae Miltiorrhizae Radix et Rhizoma, is a promising compound for development since it exhibits various pharmacological effects including hypoglycemic and anti-inflammatory activities. In this study, we aimed to elucidate the interactions between NCTS and cytochrome P450s (CYPs), including the CYP-mediated NCTS metabolism and NCTS-induced CYP regulation. The results revealed that NCTS was mainly metabolized by CYPs in human liver microsomes (HLMs), and CYP2C8 and 2C9 were identified as the main CYPs involved; the relative contributions of CYP2C8 a"
+  },
+  {
+    "pmid": "40980418",
+    "title": "CYP2C8-Mediated Drug-Drug Interactions and the Factors Influencing the Interaction Magnitude.",
+    "first_author": "Zhu",
+    "year": "",
+    "journal": "Drug Des Devel Ther",
+    "abstract": "Older adults often have multiple morbidities that may lead to polypharmacy. Cytochrome P450 (CYP) 2C8\u00a0has shown significant contributions in the metabolism of various medications; however, its related drug-drug interactions (DDIs) appear to be underrecognized in clinical practice compared to the major CYP enzymes (eg, CYP3A4, CYP2D6). This review summarizes the progress of CYP2C8-mediated DDIs and factors influencing the interaction magnitude. Using CYP2C8 and drug interactions as the search terms, literature was searched through PubMed, Web of Science, and Embase as of January 2025. Eligible "
+  },
+  {
+    "pmid": "36113565",
+    "title": "Adenosine N6-methylation upregulates the expression of human CYP2B6 by altering the chromatin status.",
+    "first_author": "Isono",
+    "year": "",
+    "journal": "Biochem Pharmacol",
+    "abstract": "N6-Methyladenosine (m6A) modification is the most prevalent RNA modification in mammals. We have recently demonstrated that inhibition of m6A modification by 3-deazaadenosine results in an increase in the expression of the cytochrome P450 (CYP) isoforms CYP1A2, CYP2B6, and CYP2C8 in human liver-derived cells. In the present study, we aimed to clarify the mechanism of m6A-mediated regulation of CYP2B6 expression. RNA immunoprecipitation using an anti-m6A antibody revealed that CYP2B6 mRNA in human liver and hepatocarcinoma-derived HepaRG cells was m6A-modified around the stop codon. In contrast"
+  },
+  {
+    "pmid": "33807592",
+    "title": "Pharmacogenetics Approach for the Improvement of COVID-19 Treatment.",
+    "first_author": "Fricke-Galindo",
+    "year": "",
+    "journal": "Viruses",
+    "abstract": "The treatment of coronavirus disease 2019 (COVID-19) has been a challenge. The efficacy of several drugs has been evaluated and variability in drug response has been observed. Pharmacogenetics could explain this variation and improve patients' outcomes with this complex disease; nevertheless, several disease-related issues must be carefully reviewed in the pharmacogenetic study of COVID-19 treatment. We aimed to describe the pharmacogenetic variants reported for drugs used for COVID-19 treatment (remdesivir, oseltamivir, lopinavir, ritonavir, azithromycin, chloroquine, hydroxychloroquine, iver"
+  },
+  {
+    "pmid": "33350342",
+    "title": "Expression of cytochrome P450 isozyme transcripts and activities in human livers.",
+    "first_author": "Liu",
+    "year": "",
+    "journal": "Xenobiotica",
+    "abstract": "Individual differences in cytochrome P450 (CYP) enzymes contribute to responses to drugs and environmental chemicals. The expression of CYPs is influenced by sex, age, and ethnicity. Human CYP studies are often conducted with human liver microsomes and liver cells to evaluate chemical induction and drug interactions. However, the basal or constitutive expression of CYP transcripts and enzyme activities in the intact liver are also important in our understanding of individual variation in CYPs. This study utilised 100 human liver samples to profile the constitutive expression of CYP1A2, 2B6, 2C"
+  }
+]

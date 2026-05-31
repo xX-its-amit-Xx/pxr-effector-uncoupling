@@ -1,0 +1,42 @@
+[
+  {
+    "pmid": "42198405",
+    "title": "From Genotype to Functional Risk: A Multi-Omic Approach to Predicting Thiopurine and Methotrexate Co-Therapy-Induced Liver Injury.",
+    "first_author": "Moln\u00e1r",
+    "year": "",
+    "journal": "Pharmaceuticals (Basel)",
+    "abstract": "The combination of thiopurine and methotrexate (MTX) is a standard co-therapy regimen for acute lymphoblastic leukemia (ALL). Despite its efficacy, this regimen is constrained by a narrow therapeutic window and considerable inter-individual variability, which heightens the risk of drug-induced liver injury (DILI). MTX-induced metabolic strain further destabilizes cytokine-sensitive thiopurine detoxification pathways during systemic inflammation. Conventional pharmacogenetic (PGx) testing for TPMT and NUDT15 variants is effective in predicting myelosuppression, but often fails to detect hepatot"
+  },
+  {
+    "pmid": "41553485",
+    "title": "Influence of pharmacokinetics-related polymorphisms on asciminib exposure in patients with Japanese chronic myeloid leukemia.",
+    "first_author": "Takahashi",
+    "year": "",
+    "journal": "Eur J Clin Pharmacol",
+    "abstract": "The effects of polymorphisms in CYP3A4, UGT2B7, ABCB1, ABCG2, ABCC2, NR1I2, and AHR genes on asciminib exposure were evaluated in Japanese patients with chronic myeloid leukemia. Plasma concentrations of asciminib (40\u00a0mg twice daily [BID] or 80\u00a0mg once daily [QD]) were measured by high-performance liquid chromatography. Statistical analysis was performed using SPSS (P\u2009<\u20090.05). For both regimens, the median asciminib area under the concentration-time curve (AUC) was significantly higher in female than in male patients (P\u2009=\u20090.009 and 0.004, respectively). Significant correlations were observed b"
+  },
+  {
+    "pmid": "41465322",
+    "title": "Gut Microbiota in the Regulation of Intestinal Drug Transporters: Molecular Mechanisms and Pharmacokinetic Implications.",
+    "first_author": "Rzeczycki",
+    "year": "",
+    "journal": "Int J Mol Sci",
+    "abstract": "Gut microbiota, through both its species composition and its metabolites, impacts expression and activity of intestinal drug transporters. This phenomenon directly affects absorption process of orally administered drugs and contributes to the observed inter-individual variability in pharmacotherapeutic responses. This review summarizes mechanistic evidence from in vitro and animal studies and integrates clinical observations in which alterations in gut microbiota are associated with changes in oral drug exposure, consistent with potential regulation of key intestinal drug transporters-such as "
+  },
+  {
+    "pmid": "41106060",
+    "title": "Activation of pregnane X receptor-organic anion transporting polypeptide 1a/b /P-glycoprotein/multidrug resistance protein 2 axis mediates the accelerated blood and liver clearance of PEGylated liposomes.",
+    "first_author": "Pan",
+    "year": "",
+    "journal": "Drug Metab Dispos",
+    "abstract": "Previous studies revealed that pregnane X receptor (PXR) was involved in the \"accelerated blood clearance (ABC)\" phenomenon induced by repeated injections of PEGylated liposomes, and observed the quickly reduced hepatic accumulation of the second dose in rats at 12 hours after the last injection, compared with the increased hepatic accumulation characteristic of the ABC phenomenon. Among the downstream target genes of PXR, organic anion transporting polypeptide 1a/b (Oatp1a/b), P-glycoprotein (P-gp), and multidrug resistance protein 2 (Mrp2) are responsible for regulating the absorption, distr"
+  },
+  {
+    "pmid": "39683740",
+    "title": "Unsymmetrical Bisacridines' Interactions with ABC Transporters and Their Cellular Impact on Colon LS 174T and Prostate DU 145 Cancer Cells.",
+    "first_author": "Paw\u0142owska",
+    "year": "",
+    "journal": "Molecules",
+    "abstract": "Multidrug resistance (MDR) is a process that constitutes a significant obstacle to effective anticancer therapy. Here, we examined whether unsymmetrical bisacridines (UAs) are substrates for ABC transporters and can influence their expression in human colon LS 174T and prostate DU 145 cancer cells. Moreover, we investigated the cytotoxicity and the cellular response induced by UAs in these cells. The ATPase activities of MDR1, MRP1, and MRP2 were measured using vesicles prepared from insect Sf9 cells expressing particular ABC transporters. The gene expression and protein levels were analyzed u"
+  }
+]

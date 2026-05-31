@@ -1,0 +1,2179 @@
+{
+  "data": {
+    "target": {
+      "id": "ENSG00000138115",
+      "approvedSymbol": "CYP2C8",
+      "approvedName": "cytochrome P450 family 2 subfamily C member 8",
+      "biotype": "protein_coding",
+      "functionDescriptions": [
+        "A cytochrome P450 monooxygenase involved in the metabolism of various endogenous substrates, including fatty acids, steroid hormones and vitamins (PubMed:11093772, PubMed:14559847, PubMed:15766564, PubMed:19965576, PubMed:7574697). Mechanistically, uses molecular oxygen inserting one oxygen atom into a substrate, and reducing the second into a water molecule, with two electrons provided by NADPH via cytochrome P450 reductase (NADPH--hemoprotein reductase) (PubMed:11093772, PubMed:14559847, PubMed:15766564, PubMed:19965576, PubMed:7574697). Primarily catalyzes the epoxidation of double bonds of polyunsaturated fatty acids (PUFA) with a preference for the last double bond (PubMed:15766564, PubMed:19965576, PubMed:7574697). Catalyzes the hydroxylation of carbon-hydrogen bonds. Metabolizes all trans-retinoic acid toward its 4-hydroxylated form (PubMed:11093772). Displays 16-alpha hydroxylase activity toward estrogen steroid hormones, 17beta-estradiol (E2) and estrone (E1) (PubMed:14559847). Plays a role in the oxidative metabolism of xenobiotics. It is the principal enzyme responsible for the metabolism of the anti-cancer drug paclitaxel (taxol) (PubMed:26427316). {ECO:0000269|PubMed:11093772, ECO:0000269|PubMed:14559847, ECO:0000269|PubMed:15766564, ECO:0000269|PubMed:19965576, ECO:0000269|PubMed:26427316, ECO:0000269|PubMed:7574697}."
+      ],
+      "nameSynonyms": [
+        {
+          "label": "Cytochrome P450 2C8",
+          "source": "uniprot"
+        },
+        {
+          "label": "CYPIIC8",
+          "source": "uniprot"
+        },
+        {
+          "label": "Cytochrome P450 IIC2",
+          "source": "uniprot"
+        },
+        {
+          "label": "Cytochrome P450 MP-12",
+          "source": "uniprot"
+        },
+        {
+          "label": "Cytochrome P450 MP-20",
+          "source": "uniprot"
+        },
+        {
+          "label": "Cytochrome P450 form 1",
+          "source": "uniprot"
+        },
+        {
+          "label": "S-mephenytoin 4-hydroxylase",
+          "source": "uniprot"
+        },
+        {
+          "label": "cytochrome P450 2C8",
+          "source": "NCBI_entrez"
+        },
+        {
+          "label": "P450 form 1",
+          "source": "NCBI_entrez"
+        },
+        {
+          "label": "cytochrome P450 IIC2",
+          "source": "NCBI_entrez"
+        },
+        {
+          "label": "cytochrome P450 MP-12",
+          "source": "NCBI_entrez"
+        },
+        {
+          "label": "cytochrome P450 MP-20",
+          "source": "NCBI_entrez"
+        },
+        {
+          "label": "cytochrome P450 form 1",
+          "source": "NCBI_entrez"
+        },
+        {
+          "label": "cytochrome P450, family 2, subfamily C, polypeptide 8",
+          "source": "NCBI_entrez"
+        },
+        {
+          "label": "cytochrome P450, subfamily IIC (mephenytoin 4-hydroxylase), polypeptide 8",
+          "source": "NCBI_entrez"
+        },
+        {
+          "label": "flavoprotein-linked monooxygenase",
+          "source": "NCBI_entrez"
+        },
+        {
+          "label": "microsomal monooxygenase",
+          "source": "NCBI_entrez"
+        },
+        {
+          "label": "s-mephenytoin 4-hydroxylase",
+          "source": "NCBI_entrez"
+        },
+        {
+          "label": "xenobiotic monooxygenase",
+          "source": "NCBI_entrez"
+        }
+      ],
+      "tractability": [
+        {
+          "modality": "SM",
+          "value": false,
+          "label": "Approved Drug"
+        },
+        {
+          "modality": "SM",
+          "value": false,
+          "label": "Advanced Clinical"
+        },
+        {
+          "modality": "SM",
+          "value": false,
+          "label": "Phase 1 Clinical"
+        },
+        {
+          "modality": "SM",
+          "value": true,
+          "label": "Structure with Ligand"
+        },
+        {
+          "modality": "SM",
+          "value": false,
+          "label": "High-Quality Ligand"
+        },
+        {
+          "modality": "SM",
+          "value": true,
+          "label": "High-Quality Pocket"
+        },
+        {
+          "modality": "SM",
+          "value": false,
+          "label": "Med-Quality Pocket"
+        },
+        {
+          "modality": "SM",
+          "value": true,
+          "label": "Druggable Family"
+        },
+        {
+          "modality": "AB",
+          "value": false,
+          "label": "Approved Drug"
+        },
+        {
+          "modality": "AB",
+          "value": false,
+          "label": "Advanced Clinical"
+        },
+        {
+          "modality": "AB",
+          "value": false,
+          "label": "Phase 1 Clinical"
+        },
+        {
+          "modality": "AB",
+          "value": false,
+          "label": "UniProt loc high conf"
+        },
+        {
+          "modality": "AB",
+          "value": true,
+          "label": "GO CC high conf"
+        },
+        {
+          "modality": "AB",
+          "value": true,
+          "label": "UniProt loc med conf"
+        },
+        {
+          "modality": "AB",
+          "value": false,
+          "label": "UniProt SigP or TMHMM"
+        },
+        {
+          "modality": "AB",
+          "value": false,
+          "label": "GO CC med conf"
+        },
+        {
+          "modality": "AB",
+          "value": false,
+          "label": "Human Protein Atlas loc"
+        },
+        {
+          "modality": "PR",
+          "value": false,
+          "label": "Approved Drug"
+        },
+        {
+          "modality": "PR",
+          "value": false,
+          "label": "Advanced Clinical"
+        },
+        {
+          "modality": "PR",
+          "value": false,
+          "label": "Phase 1 Clinical"
+        },
+        {
+          "modality": "PR",
+          "value": false,
+          "label": "Literature"
+        },
+        {
+          "modality": "PR",
+          "value": false,
+          "label": "UniProt Ubiquitination"
+        },
+        {
+          "modality": "PR",
+          "value": false,
+          "label": "Database Ubiquitination"
+        },
+        {
+          "modality": "PR",
+          "value": true,
+          "label": "Half-life Data"
+        },
+        {
+          "modality": "PR",
+          "value": true,
+          "label": "Small Molecule Binder"
+        },
+        {
+          "modality": "OC",
+          "value": false,
+          "label": "Approved Drug"
+        },
+        {
+          "modality": "OC",
+          "value": false,
+          "label": "Advanced Clinical"
+        },
+        {
+          "modality": "OC",
+          "value": false,
+          "label": "Phase 1 Clinical"
+        }
+      ],
+      "drugAndClinicalCandidates": {
+        "count": 0,
+        "rows": []
+      },
+      "associatedDiseases": {
+        "count": 266,
+        "rows": [
+          {
+            "disease": {
+              "id": "HP_0000924",
+              "name": "Abnormality of the skeletal system",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000651",
+                  "name": "phenotype"
+                }
+              ]
+            },
+            "score": 0.3211518152079769,
+            "datatypeScores": [
+              {
+                "id": "genetic_association",
+                "score": 0.5282703499636582
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000756",
+              "name": "melanoma",
+              "therapeuticAreas": [
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.22315966331067058,
+            "datatypeScores": [
+              {
+                "id": "somatic_mutation",
+                "score": 0.2936645607525046
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000182",
+              "name": "hepatocellular carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "EFO_0001379",
+                  "name": "endocrine system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.21268276504645098,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.7525629140284713
+              },
+              {
+                "id": "rna_expression",
+                "score": 0.3714054449461823
+              },
+              {
+                "id": "genetic_association",
+                "score": 0
+              },
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0004986",
+              "name": "urinary bladder carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0009690",
+                  "name": "urinary system disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.19985030642075247,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.4954636000534711
+              },
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000571",
+              "name": "lung adenocarcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000010",
+                  "name": "respiratory or thoracic disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.19282828918174316,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.26444989696105514
+              },
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0000178",
+              "name": "gastric carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.1896691718676564,
+            "datatypeScores": [
+              {
+                "id": "rna_expression",
+                "score": 0.16051973495913047
+              },
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0001378",
+              "name": "multiple myeloma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0000540",
+                  "name": "immune system disease"
+                },
+                {
+                  "id": "EFO_0005803",
+                  "name": "hematologic disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                },
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                }
+              ]
+            },
+            "score": 0.187798098894657,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.09896427567494036
+              },
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "MONDO_0011719",
+              "name": "gastrointestinal stromal tumor",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000018",
+                  "name": "genetic, familial or congenital disease"
+                },
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.18769523564445562,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.09558023095782708
+              },
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0005922",
+              "name": "esophageal squamous cell carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "EFO_0010282",
+                  "name": "gastrointestinal disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.18759361658960796,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.021277577916406734
+              },
+              {
+                "id": "rna_expression",
+                "score": 0.08278041708215925
+              },
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          },
+          {
+            "disease": {
+              "id": "EFO_0003060",
+              "name": "non-small cell lung carcinoma",
+              "therapeuticAreas": [
+                {
+                  "id": "OTAR_0000010",
+                  "name": "respiratory or thoracic disease"
+                },
+                {
+                  "id": "MONDO_0045024",
+                  "name": "cancer or benign tumor"
+                }
+              ]
+            },
+            "score": 0.187469381288815,
+            "datatypeScores": [
+              {
+                "id": "literature",
+                "score": 0.08814996565368506
+              },
+              {
+                "id": "somatic_mutation",
+                "score": 0.3039653988058105
+              }
+            ]
+          }
+        ]
+      },
+      "safetyLiabilities": [
+        {
+          "event": "anemia",
+          "eventId": "",
+          "effects": [],
+          "biosamples": [],
+          "datasource": "ClinPGx",
+          "literature": null
+        },
+        {
+          "event": "thrombocytopenia",
+          "eventId": "",
+          "effects": [],
+          "biosamples": [],
+          "datasource": "ClinPGx",
+          "literature": null
+        },
+        {
+          "event": "side effects",
+          "eventId": "",
+          "effects": [],
+          "biosamples": [],
+          "datasource": "ClinPGx",
+          "literature": null
+        },
+        {
+          "event": "neurotoxicity",
+          "eventId": "",
+          "effects": [],
+          "biosamples": [],
+          "datasource": "ClinPGx",
+          "literature": null
+        },
+        {
+          "event": "leukopenia",
+          "eventId": "",
+          "effects": [],
+          "biosamples": [],
+          "datasource": "ClinPGx",
+          "literature": null
+        },
+        {
+          "event": "kidney dysfunction",
+          "eventId": "",
+          "effects": [],
+          "biosamples": [],
+          "datasource": "ClinPGx",
+          "literature": null
+        },
+        {
+          "event": "weight gain and edema",
+          "eventId": "",
+          "effects": [],
+          "biosamples": [],
+          "datasource": "ClinPGx",
+          "literature": null
+        },
+        {
+          "event": "better kidney function",
+          "eventId": "",
+          "effects": [],
+          "biosamples": [],
+          "datasource": "ClinPGx",
+          "literature": null
+        },
+        {
+          "event": "osteonecrosis of the jaw",
+          "eventId": "",
+          "effects": [],
+          "biosamples": [],
+          "datasource": "ClinPGx",
+          "literature": null
+        },
+        {
+          "event": "regulation of transcription factor activity",
+          "eventId": "",
+          "effects": [],
+          "biosamples": [
+            {
+              "tissueLabel": null,
+              "cellLabel": "HepaRG"
+            }
+          ],
+          "datasource": "ToxCast",
+          "literature": null
+        },
+        {
+          "event": "regulation of catalytic activity",
+          "eventId": "",
+          "effects": [],
+          "biosamples": [
+            {
+              "tissueLabel": null,
+              "cellLabel": null
+            }
+          ],
+          "datasource": "ToxCast",
+          "literature": null
+        }
+      ],
+      "pharmacogenomics": [
+        {
+          "drugs": [
+            {
+              "drugFromSource": "diclofenac",
+              "drugId": "CHEMBL139"
+            }
+          ],
+          "genotypeAnnotationText": "Patients carrying CYP2C8*1/*1 may have increased metabolism of diclofenac as compared to patients with CYP2C8*3 or *4. Other genetic and clinical factors may also impact the metabolism of diclofenac.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased metabolism of diclofenac",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "1451135569"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "rosiglitazone",
+              "drugId": "CHEMBL121"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CYP2C8*1 allele in combination with another *1 allele may have increased weight gain and increased risk of edema when treated with rosiglitazone as compared to patients with one or two copies of the *3 allele. Other genetic and clinical factors may also influence the toxicity to rosiglitazone.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased weight gain and increased risk of edema",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "1451257280"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "rosiglitazone",
+              "drugId": "CHEMBL121"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CYP2C8*3 allele in combination with *1 or another *3 allele may have decreased weight gain and decreased risk of edema when treated with rosiglitazone as compared to patients with the CYP2C8*1/*1. Other genetic and clinical factors may also influence the toxicity to rosiglitazone.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased weight gain and decreased risk of edema",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "1451257280"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "paclitaxel",
+              "drugId": "CHEMBL428647"
+            }
+          ],
+          "genotypeAnnotationText": "The current evidence base suggests that there is no significant association between the CYP2C8*4 allele and risk of drug toxicity when treated with paclitaxel. However, conflicting evidence has been reported. Other genetic and clinical factors may also influence risk of drug toxicity when treated with paclitaxel.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "no significant association",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "4",
+          "studyId": "1451726789"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "carboplatin",
+              "drugId": "CHEMBL1351"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with non-small cell lung cancer and the AA genotype may experience a decreased severity of thrombocytopenia when treated with carboplatin and gemcitabine as compared to patients with the GG genotype. Other genetic and clinical factors may also affect severity of thrombocytopenia.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased severity of thrombocytopenia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1058932",
+          "variantFunctionalConsequenceId": "SO_0001624",
+          "evidenceLevel": "3",
+          "studyId": "1451125646"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "gemcitabine",
+              "drugId": "CHEMBL888"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with non-small cell lung cancer and the AA genotype may experience a decreased severity of thrombocytopenia when treated with carboplatin and gemcitabine as compared to patients with the GG genotype. Other genetic and clinical factors may also affect severity of thrombocytopenia.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased severity of thrombocytopenia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1058932",
+          "variantFunctionalConsequenceId": "SO_0001624",
+          "evidenceLevel": "3",
+          "studyId": "1451125646"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "bisphosphonates",
+              "drugId": ""
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype may have decreased but not non-existent risk for osteonecrosis of the jaw in response to bisphosphonates as compared to patients with the TT genotype. Other genetic and clinical factors may also influence adverse responses to bisphosphonates.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased risk for osteonecrosis of the jaw",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1934951",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "4",
+          "studyId": "655384597"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "pamidronate",
+              "drugId": ""
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype may have decreased but not non-existent risk for osteonecrosis of the jaw in response to bisphosphonates as compared to patients with the TT genotype. Other genetic and clinical factors may also influence adverse responses to bisphosphonates.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased risk for osteonecrosis of the jaw",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1934951",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "4",
+          "studyId": "655384597"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "zoledronate",
+              "drugId": ""
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype may have decreased but not non-existent risk for osteonecrosis of the jaw in response to bisphosphonates as compared to patients with the TT genotype. Other genetic and clinical factors may also influence adverse responses to bisphosphonates.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased risk for osteonecrosis of the jaw",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1934951",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "4",
+          "studyId": "655384597"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "paclitaxel",
+              "drugId": "CHEMBL428647"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype may have decreased metabolism of paclitaxel as compared to patients with the TT genotype, however this has not been shown in vivo. Other genetic and clinical factors may also influence clearance of paclitaxel.",
+          "pgxCategory": "other",
+          "phenotypeText": "decreased metabolism of paclitaxel",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs10509681",
+          "variantFunctionalConsequenceId": "SO_0001583",
+          "evidenceLevel": "3",
+          "studyId": "655384838"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "amodiaquine",
+              "drugId": "CHEMBL682"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype may have increased risk of side effects to amodiaquine as compared to patients with the TT genotype. Other genetic and clinical factors may also influence a patient's risk for side effects.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased risk of side effects",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs10509681",
+          "variantFunctionalConsequenceId": "SO_0001583",
+          "evidenceLevel": "3",
+          "studyId": "637879595"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "amodiaquine",
+              "drugId": "CHEMBL682"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype may have increased risk of side effects to amodiaquine as compared to patients with the TT genotype. Other genetic and clinical factors may also influence a patient's risk for side effects.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased risk of side effects",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs10509681",
+          "variantFunctionalConsequenceId": "SO_0001583",
+          "evidenceLevel": "3",
+          "studyId": "637879595"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "paclitaxel",
+              "drugId": "CHEMBL428647"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CG genotype may have decreased risk of neurotoxicity in people with neoplasms treated with paclitaxel as compared to patients with the CC genotype. Other genetic and clinical factors may also influence a patient's risk for toxicity.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased risk of neurotoxicity",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1113129",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "699639328"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "paclitaxel",
+              "drugId": "CHEMBL428647"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype may be at decreased, but not absent, risk of neurotoxicity when treated with paclitaxel compared to patients with the TT genotype. Other genetic and clinical factors may also influence a patient's risk of neurotoxicity.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased risk of neurotoxicity",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs11572080",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "655384842"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "paclitaxel",
+              "drugId": "CHEMBL428647"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype may be at decreased, but not absent, risk of neurotoxicity when treated with paclitaxel compared to patients with the TT genotype or may be at increased risk of neurotoxicity when treated with paclitaxel compared to patients with the CC genotype. Other genetic and clinical factors may also influence a patient's risk of neurotoxicity.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased risk of neurotoxicity",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs11572080",
+          "variantFunctionalConsequenceId": "SO_0001583",
+          "evidenceLevel": "3",
+          "studyId": "655384842"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "paclitaxel",
+              "drugId": "CHEMBL428647"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype may be at decreased, but not absent, risk of neurotoxicity when treated with paclitaxel compared to patients with the TT genotype or may be at increased risk of neurotoxicity when treated with paclitaxel compared to patients with the CC genotype. Other genetic and clinical factors may also influence a patient's risk of neurotoxicity.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased risk of neurotoxicity",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs11572080",
+          "variantFunctionalConsequenceId": "SO_0001583",
+          "evidenceLevel": "3",
+          "studyId": "655384842"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "paclitaxel",
+              "drugId": "CHEMBL428647"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype may have decreased metabolism of paclitaxel as compared to patients with the CC genotype, however this has not been shown in vivo. Other genetic and clinical factors may also influence clearance of paclitaxel.",
+          "pgxCategory": "other",
+          "phenotypeText": "decreased metabolism of paclitaxel",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs11572080",
+          "variantFunctionalConsequenceId": "SO_0001583",
+          "evidenceLevel": "3",
+          "studyId": "655384834"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "paclitaxel",
+              "drugId": "CHEMBL428647"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype may have decreased metabolism of paclitaxel as compared to patients with the CC genotype, however this has not been shown in vivo. Other genetic and clinical factors may also influence clearance of paclitaxel.",
+          "pgxCategory": "other",
+          "phenotypeText": "decreased metabolism of paclitaxel",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs11572080",
+          "variantFunctionalConsequenceId": "SO_0001583",
+          "evidenceLevel": "3",
+          "studyId": "655384834"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "carboplatin",
+              "drugId": "CHEMBL1351"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with non-small cell lung cancer and the AA genotype may experience a decreased severity of thrombocytopenia when treated with carboplatin and gemcitabine as compared to patients with the del/del genotype. Other genetic and clinical factors may also affect severity of thrombocytopenia.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased severity of thrombocytopenia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs11572078",
+          "variantFunctionalConsequenceId": "SO_0001589",
+          "evidenceLevel": "3",
+          "studyId": "1451125660"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "gemcitabine",
+              "drugId": "CHEMBL888"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with non-small cell lung cancer and the AA genotype may experience a decreased severity of thrombocytopenia when treated with carboplatin and gemcitabine as compared to patients with the del/del genotype. Other genetic and clinical factors may also affect severity of thrombocytopenia.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased severity of thrombocytopenia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs11572078",
+          "variantFunctionalConsequenceId": "SO_0001589",
+          "evidenceLevel": "3",
+          "studyId": "1451125660"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "mycophenolate mofetil",
+              "drugId": "CHEMBL1456"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype and Kidney Transplantation who are treated with mycophenolate mofetil may have a decreased risk of leukopenia as compared to patients with the CT genotype. Other genetic and clinical factors may also influence a patient's risk for leukopenia.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased risk of leukopenia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs11572076",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1444607863"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "ibuprofen",
+              "drugId": "CHEMBL521"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the *1 allele in combination with another allele of *1 may have increased metabolism of ibuprofen as compared to patients carrying one or two copies of *3 allele. Other genetic and clinical factors may also influence metabolism of ibuprofen.This annotation only covers the pharmacokinetic relationship between CYP2C8 and ibuprofen and does not include evidence about clinical outcomes.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased metabolism of ibuprofen",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "1450935242"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "ibuprofen",
+              "drugId": "CHEMBL521"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the *3 allele in combination with a *1 or *3 allele may have decreased metabolism of ibuprofen as compared to patients with *1/*1. Other genetic and clinical factors may also influence metabolism of ibuprofen.This annotation only covers the pharmacokinetic relationship between CYP2C8 and ibuprofen and does not include evidence about clinical outcomes.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased metabolism of ibuprofen",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "1450935242"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "tacrolimus",
+              "drugId": "CHEMBL3989887"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the *3/*3 genotype who are undergoing kidney transplantation may have an increased risk for kidney dysfunction as compared to patients with the *1/*1 genotypes. However, one study found that those with the *3/*3 variant had increased estimated glomerular filtration rate, or better kidney function, as compared to those with the *1/*1 genotype. Other genetic and clinical factors may also influence kidney dysfunction.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased risk for kidney dysfunction",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "1449172004"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "tacrolimus",
+              "drugId": "CHEMBL3989887"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the *3/*3 genotype who are undergoing kidney transplantation may have increased concentrations of tacrolimus as compared to patients with the *1/*1 genotype. Other genetic and clinical factors may also influence tacrolimus concentrations.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased concentrations of tacrolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "1449171944"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "rosiglitazone",
+              "drugId": "CHEMBL121"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CYP2C8*1 allele in combination with another *1 allele may have decreased metabolism of rosiglitazone as compared to patients with one or two copies of the *3 allele. Other genetic and clinical factors may also influence metabolism of rosiglitazone. This annotation only covers the pharmacokinetic relationship between CYP2C8 and rosiglitazone and does not include evidence about clinical outcomes.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased metabolism of rosiglitazone",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "655384653"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "rosiglitazone",
+              "drugId": "CHEMBL121"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CYP2C8*3 allele in combination with *1 or another *3 allele may have increased metabolism of rosiglitazone as compared to patients with the CYP2C8*1/*1. Other genetic and clinical factors may also influence metabolism of rosiglitazone. This annotation only covers the pharmacokinetic relationship between CYP2C8 and rosiglitazone and does not include evidence about clinical outcomes.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased metabolism of rosiglitazone",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "655384653"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "carboplatin",
+              "drugId": "CHEMBL1351"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with non-small cell lung cancer and the AG genotype may experience a decreased severity of thrombocytopenia when treated with carboplatin and gemcitabine as compared to patients with the GG genotype. Other genetic and clinical factors may also affect severity of thrombocytopenia.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased severity of thrombocytopenia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1058932",
+          "variantFunctionalConsequenceId": "SO_0001624",
+          "evidenceLevel": "3",
+          "studyId": "1451125646"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "gemcitabine",
+              "drugId": "CHEMBL888"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with non-small cell lung cancer and the AG genotype may experience a decreased severity of thrombocytopenia when treated with carboplatin and gemcitabine as compared to patients with the GG genotype. Other genetic and clinical factors may also affect severity of thrombocytopenia.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased severity of thrombocytopenia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1058932",
+          "variantFunctionalConsequenceId": "SO_0001624",
+          "evidenceLevel": "3",
+          "studyId": "1451125646"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "carboplatin",
+              "drugId": "CHEMBL1351"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with non-small cell lung cancer and the GG genotype may experience an increased severity of thrombocytopenia when treated with carboplatin and gemcitabine as compared to patients with the AA or AG genotypes. Other genetic and clinical factors may also affect severity of thrombocytopenia.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased severity of thrombocytopenia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1058932",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1451125646"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "gemcitabine",
+              "drugId": "CHEMBL888"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with non-small cell lung cancer and the GG genotype may experience an increased severity of thrombocytopenia when treated with carboplatin and gemcitabine as compared to patients with the AA or AG genotypes. Other genetic and clinical factors may also affect severity of thrombocytopenia.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased severity of thrombocytopenia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1058932",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1451125646"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "paclitaxel",
+              "drugId": "CHEMBL428647"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype may have decreased metabolism of paclitaxel as compared to patients with the TT genotype, however this has not been shown in vivo. Other genetic and clinical factors may also influence clearance of paclitaxel.",
+          "pgxCategory": "other",
+          "phenotypeText": "decreased metabolism of paclitaxel",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs10509681",
+          "variantFunctionalConsequenceId": "SO_0001583",
+          "evidenceLevel": "3",
+          "studyId": "655384838"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "paclitaxel",
+              "drugId": "CHEMBL428647"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype and breast cancer may have a decreased risk for anemia when treated with paclitaxel as compared to patients with the CG or GG genotype. Other genetic and clinical factors may also influence risk for anemia.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased risk for anemia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1113129",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1445401824"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "paclitaxel",
+              "drugId": "CHEMBL428647"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the GG genotype may have decreased risk of neurotoxicity in people with neoplasms treated with paclitaxel as compared to patients with the CC genotype. Other genetic and clinical factors may also influence a patient's risk for toxicity.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased risk of neurotoxicity",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1113129",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "699639328"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "paclitaxel",
+              "drugId": "CHEMBL428647"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AA genotype may have decreased clearance of paclitaxel as compared to patients with the TT genotype, however this has not been shown in vivo. Other genetic and clinical factors may also influence clearance of paclitaxel.",
+          "pgxCategory": "dosage",
+          "phenotypeText": "decreased clearance of paclitaxel",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs11572103",
+          "variantFunctionalConsequenceId": "SO_0001583",
+          "evidenceLevel": "4",
+          "studyId": "655384587"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "paclitaxel",
+              "drugId": "CHEMBL428647"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype may be at increased risk of neurotoxicity when treated with paclitaxel compared to patients with the CC genotype. Other genetic and clinical factors may also influence a patient's risk of neurotoxicity.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased risk of neurotoxicity",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs11572080",
+          "variantFunctionalConsequenceId": "SO_0001583",
+          "evidenceLevel": "3",
+          "studyId": "655384842"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "pioglitazone",
+              "drugId": "CHEMBL595"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the *2 allele may have decreased pioglitazone metabolism as compared to patients with *1/*1 genotypes. Other genetic and clinical factors may also influence the metabolism and response to pioglitazone.",
+          "pgxCategory": "other",
+          "phenotypeText": "decreased pioglitazone metabolism",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "982046070"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "montelukast",
+              "drugId": "CHEMBL787"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the *3 allele may have decreased plasma concentrations of montelukast as compared to patients carrying *1/*1. Other genetic and clinical factors may also influence the metabolism of montelukast.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased plasma concentrations",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "1449576572"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "rosiglitazone",
+              "drugId": "CHEMBL121"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CYP2C8*1 allele in combination with another *1 allele may have increased response to rosiglitazone as compared to patients with one or two copies of the *3 allele. Other genetic and clinical factors may also influence the response to rosiglitazone.",
+          "pgxCategory": "efficacy",
+          "phenotypeText": null,
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "1451257285"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "rosiglitazone",
+              "drugId": "CHEMBL121"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CYP2C8*1 allele in combination with another *1 allele may have increased response to rosiglitazone as compared to patients with one or two copies of the *3 allele. Other genetic and clinical factors may also influence the response to rosiglitazone.",
+          "pgxCategory": "efficacy",
+          "phenotypeText": "increased response",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "1451257285"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "ibuprofen",
+              "drugId": "CHEMBL521"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CYP2C8*1/*1 diplotype may require increased dose of ibuprofen as compared to patients with CYP2C8*3. Other Other genetic and clinical factors may also influence the dose of ibuprofen.",
+          "pgxCategory": "dosage",
+          "phenotypeText": "increased dose of ibuprofen",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "1450935288"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "ibuprofen",
+              "drugId": "CHEMBL521"
+            }
+          ],
+          "genotypeAnnotationText": "The current evidence base suggests that there is no significant association between the CYP2C8*3 allele and response to ibuprofen. However, conflicting evidence has been reported. Other genetic and clinical factors may also influence response to ibuprofen.",
+          "pgxCategory": "efficacy",
+          "phenotypeText": "no significant association",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "4",
+          "studyId": "1451400040"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "paclitaxel",
+              "drugId": "CHEMBL428647"
+            }
+          ],
+          "genotypeAnnotationText": "The current evidence base suggests that there is no significant association between the CYP2C8*3 allele and risk of drug toxicity when treated with paclitaxel. However, conflicting evidence has been reported. Other genetic and clinical factors may also influence risk of drug toxicity when treated with paclitaxel.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "no significant association",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "4",
+          "studyId": "1451726789"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "ibuprofen",
+              "drugId": "CHEMBL521"
+            }
+          ],
+          "genotypeAnnotationText": "The current evidence base suggests that there is no significant association between the CYP2C8*4 allele and response to ibuprofen. However, conflicting evidence has been reported. Other genetic and clinical factors may also influence response to ibuprofen.",
+          "pgxCategory": "efficacy",
+          "phenotypeText": "no significant association",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "4",
+          "studyId": "1451400040"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "repaglinide",
+              "drugId": "CHEMBL1272"
+            }
+          ],
+          "genotypeAnnotationText": "Individuals with the CC genotype were not studied, however individuals with the CT (CYP2C8*3/*1) genotype may have increased metabolism of repaglinide compared to patients with the TT genotype (CYP2C8*1/*1). No association was found with differences in blood glucose lowering efficacy. Please note, the study supporting this annotation was carried out in healthy volunteers. Other genetic and clinical factors may also influence metabolism of repaglinide and blood glucose levels.",
+          "pgxCategory": "other",
+          "phenotypeText": "increased metabolism of repaglinide",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs10509681",
+          "variantFunctionalConsequenceId": "SO_0001583",
+          "evidenceLevel": "3",
+          "studyId": "978639596"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "paclitaxel",
+              "drugId": "CHEMBL428647"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype may have increased metabolism of paclitaxel as compared to patients with the CT or CC genotypes, however this has not been shown in vivo. Other genetic and clinical factors may also influence clearance of paclitaxel.",
+          "pgxCategory": "other",
+          "phenotypeText": "increased metabolism of paclitaxel",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs10509681",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "655384838"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "paclitaxel",
+              "drugId": "CHEMBL428647"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype may have increased risk of neurotoxicity in people with neoplasms treated with paclitaxel as compared to patients with the CG or GG genotype. Other genetic and clinical factors may also influence a patient's risk for toxicity.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "risk of neurotoxicity",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1113129",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "699639328"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "paclitaxel",
+              "drugId": "CHEMBL428647"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the GG genotype and breast cancer may have an increased risk for anemia when treated with paclitaxel as compared to patients with the CC genotype. Other genetic and clinical factors may also influence risk for anemia.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased risk for anemia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1113129",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1445401824"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "paclitaxel",
+              "drugId": "CHEMBL428647"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the AT genotype may have decreased clearance of paclitaxel as compared to patients with the TT genotype, however this has not been shown in vivo. Other genetic and clinical factors may also influence clearance of paclitaxel.",
+          "pgxCategory": "dosage",
+          "phenotypeText": "decreased clearance of paclitaxel",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs11572103",
+          "variantFunctionalConsequenceId": "SO_0001583",
+          "evidenceLevel": "4",
+          "studyId": "655384587"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "mycophenolate mofetil",
+              "drugId": "CHEMBL1456"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype and Kidney Transplantation who are treated with mycophenolate mofetil may have an increased risk of leukopenia as compared to patients with the CC genotype. Other genetic and clinical factors may also influence a patient's risk for leukopenia.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased risk of leukopenia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs11572076",
+          "variantFunctionalConsequenceId": "SO_0001583",
+          "evidenceLevel": "3",
+          "studyId": "1444607863"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "diclofenac",
+              "drugId": "CHEMBL139"
+            }
+          ],
+          "genotypeAnnotationText": "Patients carrying CYP2C8*4 allele may have reduced metabolism of diclofenac as compared to patients with CYP2C8*1/*1. Other genetic and clinical factors may also impact the metabolism of diclofenac.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "reduced metabolism of diclofenac",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "1451135569"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "tacrolimus",
+              "drugId": "CHEMBL3989887"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the *1/*1 genotype who are undergoing kidney transplantation may have decreased concentrations of tacrolimus as compared to patients with the *1/*3 and *3/*3 genotypes. Other genetic and clinical factors may also influence tacrolimus concentrations.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "decreased concentrations of tacrolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "1449171944"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "montelukast",
+              "drugId": "CHEMBL787"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the *1/*1 may have increased plasma concentrations of montelukast as compared to patients with the *3 allele, or decreased concentration of the *4 allele. Other genetic and clinical factors may also influence the metabolism of montelukast.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased plasma concentrations",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "1449576572"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "pioglitazone",
+              "drugId": "CHEMBL595"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the *3 allele may have decreased plasma concentration and increased clearance when exposed to pioglitazone as compared to patients with *1/*1 genotypes. Other genetic and clinical factors may also influence the metabolism and response to pioglitazone.",
+          "pgxCategory": "other",
+          "phenotypeText": "decreased plasma concentration and increased clearance",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "982046070"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "ibuprofen",
+              "drugId": "CHEMBL521"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CYP2C8*1/*3 diplotype may require decreased dose of ibuprofen as compared to patients with CYP2C8*1/*1. Other Other genetic and clinical factors may also influence the dose of ibuprofen.",
+          "pgxCategory": "dosage",
+          "phenotypeText": "decreased dose of ibuprofen",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "1450935288"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "ibuprofen",
+              "drugId": "CHEMBL521"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CYP2C8*3/*3 diplotype may require decreased dose of ibuprofen as compared to patients with CYP2C8*1/*1. Other Other genetic and clinical factors may also influence the dose of ibuprofen.",
+          "pgxCategory": "dosage",
+          "phenotypeText": "decreased dose of ibuprofen",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "1450935288"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "ibuprofen",
+              "drugId": "CHEMBL521"
+            }
+          ],
+          "genotypeAnnotationText": "The current evidence base suggests that there is no significant association between the CYP2C8*1 allele and response to ibuprofen. However, conflicting evidence has been reported. Other genetic and clinical factors may also influence response to ibuprofen.",
+          "pgxCategory": "efficacy",
+          "phenotypeText": "no significant association",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "4",
+          "studyId": "1451400040"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "paclitaxel",
+              "drugId": "CHEMBL428647"
+            }
+          ],
+          "genotypeAnnotationText": "The current evidence base suggests that there is no significant association between the CYP2C8*1 allele and risk of drug toxicity when treated with paclitaxel. However, conflicting evidence has been reported. Other genetic and clinical factors may also influence risk of drug toxicity when treated with paclitaxel.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "no significant association",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "4",
+          "studyId": "1451726789"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "ibuprofen",
+              "drugId": "CHEMBL521"
+            }
+          ],
+          "genotypeAnnotationText": "The current evidence base suggests that there is no significant association between the CYP2C8*2 allele and response to ibuprofen. However, conflicting evidence has been reported. Other genetic and clinical factors may also influence response to ibuprofen.",
+          "pgxCategory": "efficacy",
+          "phenotypeText": "no significant association",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "4",
+          "studyId": "1451400040"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "paclitaxel",
+              "drugId": "CHEMBL428647"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype and breast cancer may have a decreased risk for anemia, but not neuropathy, when treated with paclitaxel as compared to patients with the CT or TT genotype. Other genetic and clinical factors may also influence risk for anemia.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased risk for anemia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1934951",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "4",
+          "studyId": "1445401817"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "bisphosphonates",
+              "drugId": ""
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype may have decreased but not non-existent risk for osteonecrosis of the jaw in response to bisphosphonates as compared to patients with the TT genotype. Other genetic and clinical factors may also influence adverse responses to bisphosphonates.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased risk for osteonecrosis of the jaw",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1934951",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "4",
+          "studyId": "655384597"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "pamidronate",
+              "drugId": ""
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype may have decreased but not non-existent risk for osteonecrosis of the jaw in response to bisphosphonates as compared to patients with the TT genotype. Other genetic and clinical factors may also influence adverse responses to bisphosphonates.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased risk for osteonecrosis of the jaw",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1934951",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "4",
+          "studyId": "655384597"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "zoledronate",
+              "drugId": ""
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype may have decreased but not non-existent risk for osteonecrosis of the jaw in response to bisphosphonates as compared to patients with the TT genotype. Other genetic and clinical factors may also influence adverse responses to bisphosphonates.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased risk for osteonecrosis of the jaw",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1934951",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "4",
+          "studyId": "655384597"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "bisphosphonates",
+              "drugId": ""
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype may have increased risk for osteonecrosis of the jaw in response to bisphosphonates as compared to patients with the CC or CT genotype. Other genetic and clinical factors may also influence adverse responses to bisphosphonates.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "risk for osteonecrosis of the jaw",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1934951",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "4",
+          "studyId": "655384597"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "pamidronate",
+              "drugId": ""
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype may have increased risk for osteonecrosis of the jaw in response to bisphosphonates as compared to patients with the CC or CT genotype. Other genetic and clinical factors may also influence adverse responses to bisphosphonates.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "risk for osteonecrosis of the jaw",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1934951",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "4",
+          "studyId": "655384597"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "zoledronate",
+              "drugId": ""
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype may have increased risk for osteonecrosis of the jaw in response to bisphosphonates as compared to patients with the CC or CT genotype. Other genetic and clinical factors may also influence adverse responses to bisphosphonates.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "risk for osteonecrosis of the jaw",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1934951",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "4",
+          "studyId": "655384597"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "repaglinide",
+              "drugId": "CHEMBL1272"
+            }
+          ],
+          "genotypeAnnotationText": "Individuals with the CT (CYP2C8*3/*1) genotype may have increased metabolism of repaglinide compared to patients with the TT genotype (CYP2C8*1/*1). No association was found with differences in blood glucose lowering efficacy. Please note, the study supporting this annotation was carried out in healthy volunteers. Other genetic and clinical factors may also influence metabolism of repaglinide.",
+          "pgxCategory": "other",
+          "phenotypeText": "increased metabolism of repaglinide",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs10509681",
+          "variantFunctionalConsequenceId": "SO_0001583",
+          "evidenceLevel": "3",
+          "studyId": "978639596"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "repaglinide",
+              "drugId": "CHEMBL1272"
+            }
+          ],
+          "genotypeAnnotationText": "Individuals with the TT (CYP2C8*1/*1) genotype may have decreased metabolism of repaglinide compared to patients with the CT genotype (CYP2C8*3/*1). No association was found with differences in blood glucose lowering efficacy. Please note, the study supporting this annotation was carried out in healthy volunteers. Other genetic and clinical factors may also influence metabolism of repaglinide.",
+          "pgxCategory": "other",
+          "phenotypeText": "decreased metabolism of repaglinide",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs10509681",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "978639596"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "paclitaxel",
+              "drugId": "CHEMBL428647"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype may have increased clearance of paclitaxel as compared to patients with the CT or TT genotypes, however this has not been shown in vivo. Other genetic and clinical factors may also influence clearance of paclitaxel.",
+          "pgxCategory": "other",
+          "phenotypeText": "increased clearance of paclitaxel",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs11572080",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "655384834"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "amodiaquine",
+              "drugId": "CHEMBL682"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype may have increased risk of side effects with amodiaquine as compared to patients with the CC genotype. Other genetic and clinical factors may also influence a patient's risk for adverse events.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased risk of side effects",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs11572080",
+          "variantFunctionalConsequenceId": "SO_0001583",
+          "evidenceLevel": "3",
+          "studyId": "637879590"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "repaglinide",
+              "drugId": "CHEMBL1272"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype may have reduced plasma concentrations of repaglinide in healthy volunteers as compared to patients with the CC genotype. Other genetic or clinical factors may influence a patient's response to repaglinide. This variant was analyzed together with rs10509681 as part of CYP2C8*3 haplotype.",
+          "pgxCategory": "dosage",
+          "phenotypeText": "reduced plasma concentrations of repaglinide",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs11572080",
+          "variantFunctionalConsequenceId": "SO_0001583",
+          "evidenceLevel": "3",
+          "studyId": "982029200"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "carboplatin",
+              "drugId": "CHEMBL1351"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with non-small cell lung cancer and the del/del genotype may experience an increased severity of thrombocytopenia when treated with carboplatin and gemcitabine as compared to patients with the AA or A/del genotypes. Other genetic and clinical factors may also affect severity of thrombocytopenia.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased severity of thrombocytopenia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs11572078",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1451125660"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "gemcitabine",
+              "drugId": "CHEMBL888"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with non-small cell lung cancer and the del/del genotype may experience an increased severity of thrombocytopenia when treated with carboplatin and gemcitabine as compared to patients with the AA or A/del genotypes. Other genetic and clinical factors may also affect severity of thrombocytopenia.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased severity of thrombocytopenia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs11572078",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "1451125660"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "mycophenolate mofetil",
+              "drugId": "CHEMBL1456"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype were not studied but patients with the CT genotype and Kidney Transplantation who are treated with mycophenolate mofetil may have an increased risk of leukopenia as compared to patients with the CC genotype. Other genetic and clinical factors may also influence a patient's risk for leukopenia.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased risk of leukopenia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs11572076",
+          "variantFunctionalConsequenceId": "SO_0001583",
+          "evidenceLevel": "3",
+          "studyId": "1444607863"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "diclofenac",
+              "drugId": "CHEMBL139"
+            }
+          ],
+          "genotypeAnnotationText": "Patients carrying CYP2C8*3 allele may have reduced metabolism of diclofenac as compared to patients with CYP2C8*1/*1. Other genetic and clinical factors may also impact the metabolism of diclofenac.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "reduced metabolism",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "1451135569"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "pioglitazone",
+              "drugId": "CHEMBL595"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with *1/*1 genotypes may have increased pioglitazone metabolism as compared to patients with the *2 or *3 alleles. Other genetic and clinical factors may also influence the metabolism and response to pioglitazone.",
+          "pgxCategory": "other",
+          "phenotypeText": "increased pioglitazone metabolism",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "982046070"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "tacrolimus",
+              "drugId": "CHEMBL3989887"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the *1/*1 genotype who are undergoing kidney transplantation may have a decreased risk for kidney dysfunction as compared to patients with the *1/*3 and *3/*3 genotypes. However, one study found that those with the *1/*1 variant had decreased estimated glomerular filtration rate, or poorer kidney function, as compared to those with the *1/*3 or *3/*3 genotypes. Other genetic and clinical factors may also influence kidney dysfunction.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": null,
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "1449172004"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "tacrolimus",
+              "drugId": "CHEMBL3989887"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the *1/*1 genotype who are undergoing kidney transplantation may have a decreased risk for kidney dysfunction as compared to patients with the *1/*3 and *3/*3 genotypes. However, one study found that those with the *1/*1 variant had decreased estimated glomerular filtration rate, or poorer kidney function, as compared to those with the *1/*3 or *3/*3 genotypes. Other genetic and clinical factors may also influence kidney dysfunction.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased risk for kidney dysfunction",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "1449172004"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "tacrolimus",
+              "drugId": "CHEMBL3989887"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the *1/*3 genotype who are undergoing kidney transplantation may have an increased risk for kidney dysfunction as compared to patients with the *1/*1 genotypes. However, one study found that those with the *1/*3 variant had increased estimated glomerular filtration rate, or better kidney function, as compared to those with the *1/*1 genotype. Other genetic and clinical factors may also influence kidney dysfunction.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "better kidney function",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "1449172004"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "tacrolimus",
+              "drugId": "CHEMBL3989887"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the *1/*3 genotype who are undergoing kidney transplantation may have an increased risk for kidney dysfunction as compared to patients with the *1/*1 genotypes. However, one study found that those with the *1/*3 variant had increased estimated glomerular filtration rate, or better kidney function, as compared to those with the *1/*1 genotype. Other genetic and clinical factors may also influence kidney dysfunction.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased risk for kidney dysfunction",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "1449172004"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "tacrolimus",
+              "drugId": "CHEMBL3989887"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the *1/*3 genotype who are undergoing kidney transplantation may have increased concentrations of tacrolimus as compared to patients with the *1/*1 genotype. Other genetic and clinical factors may also influence tacrolimus concentrations.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased concentrations of tacrolimus",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "1449171944"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "montelukast",
+              "drugId": "CHEMBL787"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the *4 allele may have increased plasma concentrations of montelukast as compared to patients carrying *1/*1. Other genetic and clinical factors may also influence the metabolism of montelukast.",
+          "pgxCategory": "metabolism/pk",
+          "phenotypeText": "increased plasma concentrations",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "1449576572"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "rosiglitazone",
+              "drugId": "CHEMBL121"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CYP2C8*3 allele in combination with *1 or another *3 allele may have decreased response to rosiglitazone as compared to patients with the CYP2C8*1/*1 genotype. Other genetic and clinical factors may also influence the response to rosiglitazone.",
+          "pgxCategory": "efficacy",
+          "phenotypeText": "decreased response to rosiglitazone",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "3",
+          "studyId": "1451257285"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "paclitaxel",
+              "drugId": "CHEMBL428647"
+            }
+          ],
+          "genotypeAnnotationText": "The current evidence base suggests that there is no significant association between the CYP2C8*2 allele and risk of drug toxicity when treated with paclitaxel. However, conflicting evidence has been reported. Other genetic and clinical factors may also influence risk of drug toxicity when treated with paclitaxel.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "no significant association",
+          "phenotypeFromSourceId": null,
+          "variantRsId": null,
+          "variantFunctionalConsequenceId": null,
+          "evidenceLevel": "4",
+          "studyId": "1451726789"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "paclitaxel",
+              "drugId": "CHEMBL428647"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype and breast cancer may have an increased risk for anemia, but not neuropathy, when treated with paclitaxel as compared to patients with the CC genotype. Other genetic and clinical factors may also influence risk for anemia.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased risk for anemia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1934951",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "4",
+          "studyId": "1445401817"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "paclitaxel",
+              "drugId": "CHEMBL428647"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype and breast cancer may have an increased risk for anemia, but not neuropathy, when treated with paclitaxel as compared to patients with the CC genotype. Other genetic and clinical factors may also influence risk for anemia.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased risk for anemia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1934951",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "4",
+          "studyId": "1445401817"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "amodiaquine",
+              "drugId": "CHEMBL682"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype may have decreased but not non-existent risk of side effects to amodiaquine as compared to patients with the CC or CT genotype. Other genetic and clinical factors may also influence a patient's risk for side effects.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased risk of side effects",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs10509681",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "637879595"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "paclitaxel",
+              "drugId": "CHEMBL428647"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CG genotype and breast cancer may have an increased risk for anemia when treated with paclitaxel as compared to patients with the CC genotype. Other genetic and clinical factors may also influence risk for anemia.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased risk for anemia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs1113129",
+          "variantFunctionalConsequenceId": "SO_0001627",
+          "evidenceLevel": "3",
+          "studyId": "1445401824"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "paclitaxel",
+              "drugId": "CHEMBL428647"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype may have increased clearance of paclitaxel as compared to patients with the AA or AT genotypes, however this has not been shown in vivo. Other genetic and clinical factors may also influence clearance of paclitaxel.",
+          "pgxCategory": "dosage",
+          "phenotypeText": "increased clearance of paclitaxel",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs11572103",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "4",
+          "studyId": "655384587"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "amodiaquine",
+              "drugId": "CHEMBL682"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype may have decreased risk of side effects with amodiaquine as compared to patients with the CT or TT genotype. Patients with the CC genotype may still be at risk for adverse events when taking amodiaquine based on their genotype. Other genetic and clinical factors may also influence a patient's risk for adverse events.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased risk of side effects",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs11572080",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "637879590"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "repaglinide",
+              "drugId": "CHEMBL1272"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CC genotype may have increased plasma concentrations of repaglinide in healthy volunteers as compared to patients with the TT or CT genotype. Other genetic or clinical factors may influence a patient's response to repaglinide. This variant was analyzed together with rs10509681 as part of CYP2C8*3 haplotype.",
+          "pgxCategory": "dosage",
+          "phenotypeText": "increased plasma concentrations of repaglinide",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs11572080",
+          "variantFunctionalConsequenceId": "SO_0002073",
+          "evidenceLevel": "3",
+          "studyId": "982029200"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "repaglinide",
+              "drugId": "CHEMBL1272"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the CT genotype may have reduced plasma concentrations of repaglinide in healthy volunteers as compared to patients with the CC genotype. Other genetic or clinical factors may influence a patient's response to repaglinide. This variant was analyzed together with rs10509681 as part of CYP2C8*3 haplotype.",
+          "pgxCategory": "dosage",
+          "phenotypeText": "reduced plasma concentrations of repaglinide",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs11572080",
+          "variantFunctionalConsequenceId": "SO_0001583",
+          "evidenceLevel": "3",
+          "studyId": "982029200"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "amodiaquine",
+              "drugId": "CHEMBL682"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with the TT genotype may have increased risk of side effects with amodiaquine as compared to patients with the CC genotype. Other genetic and clinical factors may also influence a patient's risk for adverse events.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "increased risk of side effects",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs11572080",
+          "variantFunctionalConsequenceId": "SO_0001583",
+          "evidenceLevel": "3",
+          "studyId": "637879590"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "carboplatin",
+              "drugId": "CHEMBL1351"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with non-small cell lung cancer and the A/del genotype may experience a decreased severity of thrombocytopenia when treated with carboplatin and gemcitabine as compared to patients with the del/del genotype. Other genetic and clinical factors may also affect severity of thrombocytopenia.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased severity of thrombocytopenia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs11572078",
+          "variantFunctionalConsequenceId": "SO_0001589",
+          "evidenceLevel": "3",
+          "studyId": "1451125660"
+        },
+        {
+          "drugs": [
+            {
+              "drugFromSource": "gemcitabine",
+              "drugId": "CHEMBL888"
+            }
+          ],
+          "genotypeAnnotationText": "Patients with non-small cell lung cancer and the A/del genotype may experience a decreased severity of thrombocytopenia when treated with carboplatin and gemcitabine as compared to patients with the del/del genotype. Other genetic and clinical factors may also affect severity of thrombocytopenia.",
+          "pgxCategory": "toxicity",
+          "phenotypeText": "decreased severity of thrombocytopenia",
+          "phenotypeFromSourceId": null,
+          "variantRsId": "rs11572078",
+          "variantFunctionalConsequenceId": "SO_0001589",
+          "evidenceLevel": "3",
+          "studyId": "1451125660"
+        }
+      ],
+      "chemicalProbes": [],
+      "pathways": [
+        {
+          "pathwayId": "R-HSA-2142670",
+          "pathway": "Synthesis of epoxy (EET) and dihydroxyeicosatrienoic acids (DHET)",
+          "topLevelTerm": "Metabolism"
+        },
+        {
+          "pathwayId": "R-HSA-9027307",
+          "pathway": "Biosynthesis of maresin-like SPMs",
+          "topLevelTerm": "Metabolism"
+        },
+        {
+          "pathwayId": "R-HSA-2142816",
+          "pathway": "Synthesis of (16-20)-hydroxyeicosatetraenoic acids (HETE)",
+          "topLevelTerm": "Metabolism"
+        },
+        {
+          "pathwayId": "R-HSA-211981",
+          "pathway": "Xenobiotics",
+          "topLevelTerm": "Metabolism"
+        },
+        {
+          "pathwayId": "R-HSA-9749641",
+          "pathway": "Aspirin ADME",
+          "topLevelTerm": "Drug ADME"
+        },
+        {
+          "pathwayId": "R-HSA-211999",
+          "pathway": "CYP2E1 reactions",
+          "topLevelTerm": "Metabolism"
+        }
+      ]
+    }
+  }
+}

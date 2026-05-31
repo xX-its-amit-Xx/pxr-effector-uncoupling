@@ -1,8 +1,58 @@
 # pxr-effector-uncoupling
 
+[![CI](https://github.com/xX-its-amit-Xx/pxr-effector-uncoupling/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/xX-its-amit-Xx/pxr-effector-uncoupling/actions/workflows/ci.yml)
+[![Python](https://img.shields.io/badge/python-%E2%89%A53.11-blue)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![DOI](https://img.shields.io/badge/cite-CITATION.cff-purple)](CITATION.cff)
+
 A cell-type-resolved, statistically-grounded map of which PXR (NR1I2) target genes stay coupled to receptor expression vs. which decouple — distinguishing epithelial-barrier tissues (liver + intestine) where PXR drives a transcriptional program from immune and placental tissues where it does not, and nominating hepatocyte-selective readouts for next-generation PXR modulators.
 
 ![Decoupling heatmap](figures/fig1_coupling_heatmap.png)
+
+## Reproduce in one command
+
+The full pipeline is deterministic and re-runs from cached single-cell + bulk + perturbation data in ~20 minutes on a 16 GB workstation. From a clean checkout on Python 3.11 + Ubuntu / macOS / WSL:
+
+```bash
+# Option A — uv (matches CI exactly; see docs/reproducibility.md)
+uv sync --extra dev --frozen
+uv run python scripts/run_analysis.py        # main coupling + Fig 1
+uv run python scripts/render_supp_figures.py # Figs 2a/2b + S1/S2 (cached CSVs only)
+```
+
+```bash
+# Option B — vanilla pip + the pinned lock file
+python3.11 -m venv .venv && source .venv/bin/activate
+pip install -r requirements-lock.txt && pip install -e .
+python scripts/run_analysis.py
+python scripts/render_supp_figures.py
+```
+
+The supplementary-figure step needs only the cached CSVs in `data/processed/` (no 40 MB H5AD), and is exactly what CI re-runs on every push to validate end-to-end reproducibility. The full multi-stage pipeline (negative controls, GTEx, GEO, LINCS, Open Targets, per-dataset) is documented in [`docs/reproducibility.md`](docs/reproducibility.md).
+
+### Dependencies
+
+- Python `>=3.11`
+- Every transitive dependency is pinned in [`requirements-lock.txt`](requirements-lock.txt) (generated from [`uv.lock`](uv.lock); same hashes either way)
+- Core: `anndata`, `scanpy`, `cellxgene-census`, `scikit-learn`, `numpy`, `pandas`, `scipy`, `pyarrow`, `matplotlib`, `seaborn`, `httpx`, `tenacity`, `adjustText` (see [`pyproject.toml`](pyproject.toml))
+- Dev: `pytest`, `ruff`, `jupyter`
+
+### Documentation
+
+- [`docs/reproducibility.md`](docs/reproducibility.md) — full step-by-step rebuild, per-stage runtime, troubleshooting
+- [`docs/data_dictionary.md`](docs/data_dictionary.md) — every column of every CSV/JSON in `data/processed/`, with formulas
+
+### Data availability
+
+- **Single-cell atlas.** CELLxGENE Census release `2025-01-30` (pinned in `src/pxr_uncoupling/config.py::CENSUS_VERSION`). Fetched via `scripts/fetch_atlas.py`; the resulting `data/raw/nr1i2_atlas.h5ad` is `.gitignore`d (≈ 40 MB) and is regenerated on Ubuntu via the `fetch_atlas.yml` GitHub Actions workflow.
+- **Bulk RNA-seq replication.** GTEx v8 portal API (per-gene per-tissue donor TPM); per-gene JSON cached in `data/cache/gtex_<SYMBOL>.json`.
+- **Direct rifamycin perturbation.** GEO accession `GSE139896` (Dyavar et al. 2020); processed Excel cached as `data/cache/GSE139896_processed.xlsx`.
+- **L1000 perturbation context.** 121 rifampicin signatures across 18 cell lines from iLINCS (`data/cache/lincs_LINCSCP_*.tsv`).
+- **External pharmacology validation.** Open Targets Platform GraphQL API (`api.platform.opentargets.org/api/v4/graphql`), per-gene JSON cached in `data/cache/opentargets_<SYMBOL>.json`.
+
+### Citation
+
+Citation metadata is in [`CITATION.cff`](CITATION.cff). GitHub renders a "Cite this repository" button from it; tools like [cffconvert](https://github.com/citation-file-format/cffconvert) can emit BibTeX/RIS.
 
 ## Key Finding
 
@@ -209,51 +259,39 @@ src/pxr_uncoupling/
   supplementary_plots.py  Forest, FDR overlay, sensitivity, stability
   cellxgene.py            Census data access utilities
 tests/                    pytest unit tests (16 tests, all passing)
+docs/
+  reproducibility.md      Full step-by-step rebuild guide, runtimes, troubleshooting
+  data_dictionary.md      Every column of every CSV/JSON in data/processed/
 .github/workflows/
   fetch_atlas.yml         Census fetch on Ubuntu (workaround for musl)
-  ci.yml                  Lint + tests on push / PR
+  ci.yml                  Lint + tests + figure re-render + artifact upload, on push / PR
 CITATION.cff              Citation metadata
+requirements-lock.txt     Fully-pinned dependency set (mirror of uv.lock)
+uv.lock                   uv-native lockfile (byte-exact resolution; used by CI)
 ```
 
-## Reproducing
+## Reproducing — full multi-stage pipeline
 
-### Option A — start from cached outputs (no Census fetch required)
+The one-command quick start at the top of this README covers the headline figure plus the supplementary figures. The full external-validation pipeline (negative controls, GTEx, GEO rifamycin, LINCS, Open Targets, per-dataset) is documented end-to-end in [`docs/reproducibility.md`](docs/reproducibility.md), and every output column is defined in [`docs/data_dictionary.md`](docs/data_dictionary.md).
 
-`data/processed/` already contains every CSV generated by the analysis. The heatmaps in `figures/` can be re-rendered from those CSVs:
+### Atlas re-fetch (CELLxGENE Census, optional)
 
-```bash
-uv sync --extra dev
-uv run python scripts/run_analysis.py        # only re-derives if H5AD present
-uv run python scripts/render_supp_figures.py
-```
-
-### Option B — full re-derivation from CELLxGENE Census
+`data/raw/nr1i2_atlas.h5ad` is gitignored (≈ 40 MB). To regenerate it from CELLxGENE Census `2025-01-30`:
 
 ```bash
-# 1. Fetch the atlas — runs on Ubuntu via GitHub Actions
+# Trigger the Ubuntu/glibc fetch on GitHub Actions (avoids musl deadlock)
 gh workflow run fetch_atlas.yml
 gh run watch
 git fetch origin data/atlas
 git checkout origin/data/atlas -- data/raw/nr1i2_atlas.h5ad
 
-# 2. Compute coupling, decoupling, heatmap
+# Then re-run any downstream stage locally
 uv run python scripts/run_analysis.py
-
-# 3. Run robustness analyses (≈ 2 min)
 uv run python scripts/run_robustness.py
-
-# 4. Render supplementary figures
-uv run python scripts/render_supp_figures.py
-
-# 5. Tests
 uv run pytest -v
 ```
 
 > **musl/Alpine note**: `cellxgene-census` uses TileDB's C++ thread pool, which deadlocks on musl pthreads. The fetch workflow runs on `ubuntu-latest` to avoid this. Once the H5AD is local, all downstream analysis runs fine on Alpine, Windows, or macOS.
-
-## Citation
-
-Please cite as described in [`CITATION.cff`](CITATION.cff).
 
 ## References
 
